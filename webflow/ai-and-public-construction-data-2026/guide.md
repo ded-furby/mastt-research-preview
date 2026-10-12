@@ -16,16 +16,16 @@ Webflow build guide. Work top to bottom: paste each **Text** step into the post 
 Notes
 - Built to the Mastt Research Visualization Guidelines: one visual per HTML Embed, each with its own mastt- root id and class prefix, scoped CSS, no shadows, gradients, libraries or font imports.
 - Paste each embed into its own HTML Embed in the post body, directly under the text that comes before it in this guide.
-- Step 1 is the structured data (JSON-LD). Replace AUTHOR NAME and YYYY-MM-DD with the author and publish date shown on the page before publishing, then test the page in Google's Rich Results Test.
+- Step 1 is the structured data (JSON-LD). Paste it as it is, then test the page in Google's Rich Results Test after publishing.
 - The template builds "In this research" from the H2s, so the article has no table of contents of its own.
 - Charts animate each time they scroll into view and respond to hover on the published page. The Designer shows them finished and still. Visitors with reduced motion or without JavaScript see the finished chart.
 - Each embed is under Webflow's 50,000 character limit. Paste it exactly as given. preview.html (next to this guide) stacks every embed for testing only; never paste it into Webflow.
 
 ---
 
-## Step 1: Embed 1, Structured data (JSON-LD): replace AUTHOR NAME and YYYY-MM-DD before publishing
+## Step 1: Embed 1, Structured data (JSON-LD)
 
-File: `00-mastt-aip-schema.html`. Add an HTML Embed at the top of the post body and paste this. Replace AUTHOR NAME and YYYY-MM-DD first. (4,992 characters).
+File: `00-mastt-aip-schema.html`. Add an HTML Embed at the top of the post body and paste this as it is. (4,871 characters).
 
 ```html
 <script type="application/ld+json">
@@ -37,10 +37,6 @@ File: `00-mastt-aip-schema.html`. Add an HTML Embed at the top of the post body 
       "headline": "AI in Construction Project Management: What Public Project Data Can and Can't Predict in 2026",
       "description": "Surveys ask what project teams expect from AI. This research tests what simple models can do with public project records, and shows where those records run out.",
       "articleSection": "AI Agents",
-      "author": {
-        "@type": "Person",
-        "name": "AUTHOR NAME"
-      },
       "publisher": {
         "@type": "Organization",
         "name": "Mastt",
@@ -50,7 +46,6 @@ File: `00-mastt-aip-schema.html`. Add an HTML Embed at the top of the post body 
           "url": "https://cdn.prod.website-files.com/607f739c92f9cfa16116b34d/607f978bbd76e475e2229a43_Mastt%20Logo.svg"
         }
       },
-      "datePublished": "YYYY-MM-DD",
       "mainEntityOfPage": "https://www.mastt.com/research/ai-and-public-construction-data-2026"
     },
     {
