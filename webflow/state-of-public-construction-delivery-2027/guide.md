@@ -348,6 +348,8 @@ A portfolio with about one job in six past its allowed time is in line with the 
  
 ## Does the halfway mark predict late penalties?
 
+ It is a useful early warning, based on one snapshot so far. Jobs more than 10 points behind at the halfway mark ended with late penalties 47% of the time, against 10% for jobs on track. The penalties themselves are usually small.
+
  
 ### Late penalties are common but small
 
@@ -1613,8 +1615,6 @@ Paste into the post body (Rich Text).
 
  
 ## FAQs
-
- Short answers, each led by the figure.
 
 ---
 

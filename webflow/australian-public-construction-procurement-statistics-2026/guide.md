@@ -1556,8 +1556,6 @@ Paste into the post body (Rich Text).
  
 ## FAQs
 
- Short answers, each led by the figure.
-
 ---
 
 ## Step 42: Embed 22, FAQs (accordion)

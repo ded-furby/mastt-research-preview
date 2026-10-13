@@ -636,6 +636,8 @@ Paste into the post body (Rich Text).
  
 ## How often are Texas DOT jobs late, and what do penalties cost?
 
+ About one active Texas DOT job in six is past its allowed time, and 22% of completed jobs are charged late penalties. The penalties are small: the median was $18,000, or 0.7% of contract value.
+
  
 ### One in six active jobs is past its allowed days
 
@@ -1031,6 +1033,8 @@ Paste into the post body (Rich Text).
  
 ## What does an unchanged risk register look like?
 
+ It looks like the same table copied from one report to the next. In six 2024 reports from one public hospital program, the same 17 risks appeared word for word and no risk was ever closed.
+
  
 ### The same 17 risks appear all year
 
@@ -1097,6 +1101,8 @@ Paste into the post body (Rich Text).
 
  
 ## How long do approvals and delivery take?
+
+ Approvals can take months, and finish dates often move. A New York City school change took a median 224 days to approve, Thruway contracts took a median 327 days from letting to completion, and 47% of Victorian projects in two or more budgets had their finish date pushed back.
 
  
 ### NYC school change orders
@@ -1320,8 +1326,6 @@ Paste into the post body (Rich Text).
 
  
 ## FAQs
-
- Short answers, each led by the figure.
 
 ---
 

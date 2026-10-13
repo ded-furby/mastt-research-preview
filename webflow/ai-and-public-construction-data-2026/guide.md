@@ -1547,8 +1547,6 @@ Any AI claim can be tested the way these were. Check:
  
 ## FAQs
 
- Short answers, each led by the figure.
-
 ---
 
 ## Step 41: Embed 23, FAQs (accordion)
