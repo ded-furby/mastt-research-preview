@@ -25,7 +25,7 @@ Notes
 
 ## Step 1: Embed 1, Structured data (JSON-LD)
 
-File: `00-mastt-aip-schema.html`. Add an HTML Embed at the top of the post body and paste this as it is. (4,871 characters).
+File: `00-mastt-aip-schema.html`. Add an HTML Embed at the top of the post body and paste this as it is. (4,873 characters).
 
 ```html
 <script type="application/ld+json">
@@ -51,7 +51,7 @@ File: `00-mastt-aip-schema.html`. Add an HTML Embed at the top of the post body 
     {
       "@type": "Dataset",
       "name": "AI in Construction Project Management: What Public Project Data Can and Can't Predict in 2026",
-      "description": "Mastt's own findings come from analysis of public contract records. The price, late-finish, climate, halfway and track record tests use completed and in-progress Texas DOT construction and maintenance contracts, bid results and monthly progress reports. The price test covers 2,770 lettings held in 2023 and 2024, priced from winning bids in the previous 12 months. The late-finish model trained on 7,160 completed contracts awarded up to 2021 and was tested on 4,066 awarded from 2022. The climate test trained on 16,353 contracts awarded 2009 to 2020 and tested on 8,717 awarded 2021 to 2024, with 30-year climate averages and rain gauge records.",
+      "description": "Mastt's own findings come from an internal Mastt study of public contract records. The price, late-finish, climate, halfway and track record tests use completed and in-progress Texas DOT construction and maintenance contracts, bid results and monthly progress reports: Price test: Covers 2,770 lettings held in 2023 and 2024, priced from winning bids in the previous 12 months. Late-finish model: Trained on 7,160 completed contracts awarded up to 2021 and tested on 4,066 awarded from 2022. Climate test: Trained on 16,353 contracts awarded 2009 to 2020 and tested on 8,717 awarded 2021 to 2024, with 30-year climate averages and rain gauge records.",
       "creator": {
         "@type": "Organization",
         "name": "Mastt",
@@ -130,7 +130,9 @@ File: `00-mastt-aip-schema.html`. Add an HTML Embed at the top of the post body 
 
 Paste into the post body (Rich Text).
 
-This page is a data companion to Mastt's survey report, [State of AI in Construction Project Management 2026](https://www.mastt.com/research/ai-in-construction-project-management-2026). The survey asked 108 project management professionals how they use AI. This page asks what simple models can predict from thousands of real public project records, and what they cannot. Every figure is labelled with its period and its sample. Figures from Mastt's own analysis describe Texas DOT work unless a label says otherwise, and they say nothing about construction as a whole.
+This page is a data companion to Mastt's survey report, [State of AI in Construction Project Management 2026](https://www.mastt.com/research/ai-in-construction-project-management-2026). The survey asked 108 project management professionals how they use AI. This page asks what simple models can predict from thousands of real public project records, and what they cannot.
+
+ Every figure is labelled with its period and its sample. Figures from Mastt's own analysis describe Texas DOT work unless a label says otherwise, and they say nothing about construction as a whole.
 
 ---
 
@@ -176,7 +178,11 @@ Paste into the post body (Rich Text).
  
 ## What do project teams expect from AI, and what can public data test?
 
- Mastt's survey found that AI is already routine for project teams. About 72% of respondents use AI at least weekly, yet only 9.3% use AI agents today and another 46.3% plan to start. Accuracy and trust ranked as the number one barrier to wider use ([Mastt, State of AI in Construction Project Management 2026](https://www.mastt.com/research/ai-in-construction-project-management-2026), 108 respondents, surveyed March to June 2026).
+ Mastt's survey found that AI is already routine for project teams:
+
+ - **Weekly use:** About 72% of respondents use AI at least weekly.
+- **AI agents:** Only 9.3% use AI agents today and another 46.3% plan to start.
+- **Top barrier:** Accuracy and trust ranked as the number one barrier to wider use ([Mastt, State of AI in Construction Project Management 2026](https://www.mastt.com/research/ai-in-construction-project-management-2026), 108 respondents, surveyed March to June 2026).
 
 ---
 
@@ -209,14 +215,35 @@ var mxTip=function(host){var tip=host.querySelector(':scope>.maipkeyfigures2-tip
 
 Paste into the post body (Rich Text).
 
-Trust depends on evidence. A tool that predicts a price, a late finish or a document type can be checked against what happened. Public records allow that check for a narrow set of tasks, mainly at transport agencies that publish contract records in volume. We ran three prediction tests on Texas DOT records, one document classification test and one inventory of public contract documents. The tests are deliberately plain. A plain model sets the bar that any AI tool has to clear before its extra cost and complexity are worth paying for.
+Trust depends on evidence. A tool that predicts a price, a late finish or a document type can be checked against what happened. Public records allow that check for a narrow set of tasks, mainly at transport agencies that publish contract records in volume. We ran these tests:
+
+ - **Prediction tests:** Three tests, all on Texas DOT records.
+- **Classification test:** One document classification test.
+- **Inventory:** One inventory of public contract documents.
+
+ The tests are deliberately plain. A plain model sets the bar that any AI tool has to clear before its extra cost and complexity are worth paying for.
 
  
 ## Can a simple price model beat the engineer's estimate?
 
- The test prices every Texas DOT letting held in 2023 and 2024 using earlier data only. For each bid item, the model takes the median winning unit price for the same item, unit and quantity band over the previous 12 months, then multiplies by the engineer's quantities. Where an item has no earlier winning bid, the model falls back to the engineer's unit price. That affected about 2% of items in the median construction letting and none in the median maintenance letting. The result is compared with the low bid that won the contract.
+ The test prices every Texas DOT letting held in 2023 and 2024 using earlier data only, then compares the result with the low bid that won the contract.
 
- On 1,585 state construction lettings, the model missed the winning bid by a median 16.7%. The engineer's estimate missed by 12.8%. The model was closer than the engineer on 38% of lettings. On 1,185 maintenance lettings the model missed by 16.2% against 12.8%, and was closer on 41%.
+ 
+### How the model prices a letting
+
+ For each bid item, the model works as follows:
+
+ - **Price history:** Takes the median winning unit price for the same item, unit and quantity band over the previous 12 months.
+- **Quantities:** Multiplies that price by the engineer's quantities.
+- **Fallback:** Where an item has no earlier winning bid, uses the engineer's unit price. That affected about 2% of items in the median construction letting and none in the median maintenance letting.
+
+ 
+### The model misses by more than the estimate
+
+ The model trailed the engineer's estimate in both segments:
+
+ - **Construction lettings:** On 1,585 state construction lettings, the model missed the winning bid by a median 16.7%. The engineer's estimate missed by 12.8%, and the model was closer than the engineer on 38% of lettings.
+- **Maintenance lettings:** On 1,185 maintenance lettings the model missed by 16.2% against 12.8%, and was closer on 41%.
 
 ---
 
@@ -249,7 +276,12 @@ var mxTip=function(host){var tip=host.querySelector(':scope>.maipkeyfigures3-tip
 
 Paste into the post body (Rich Text).
 
-The texture of the misses matters as much as the median. The engineer's estimate sits 4.6% above the winning bid at the median, and the model sits 2.5% above. The model is less biased but noisier. It missed by more than 40% on 16.9% of construction lettings, against 7.9% for the engineer's estimate.
+The texture of the misses matters as much as the median:
+
+ - **Bias:** The engineer's estimate sits 4.6% above the winning bid at the median, and the model sits 2.5% above.
+- **Large misses:** The model missed by more than 40% on 16.9% of construction lettings, against 7.9% for the engineer's estimate.
+
+ The model is less biased but noisier.
 
 ---
 
@@ -322,7 +354,11 @@ fit();if('ResizeObserver' in window){new ResizeObserver(fit).observe(plot);}else
 
 Paste into the post body (Rich Text).
 
-Texas DOT's own estimating manual describes the same approach. It says unit prices are usually determined by evaluating previously submitted low bid prices or average low bid prices, and that those figures should only be used as a starting point from which a more accurate price is derived with good engineering judgement ([Texas DOT, PS&E Preparation Manual, section 5.4.1](https://www.txdot.gov/manuals/des/pse/chapter-5--engineer-s-estimate/section-4--prices/estimated-bid-price-determination.html)). Our model is that starting point without the judgement. The result suggests the judgement is doing real work.
+### The engineer's judgement does real work
+
+ Texas DOT's own estimating manual describes the same approach. It says unit prices are usually determined by evaluating previously submitted low bid prices or average low bid prices, and that those figures should only be used as a starting point from which a more accurate price is derived with good engineering judgement ([Texas DOT, PS&E Preparation Manual, section 5.4.1](https://www.txdot.gov/manuals/des/pse/chapter-5--engineer-s-estimate/section-4--prices/estimated-bid-price-determination.html)).
+
+ Our model is that starting point without the judgement. The result suggests the judgement is doing real work.
 
 ---
 
@@ -360,7 +396,12 @@ var rows=[].slice.call(tb.rows);rows.sort(function(a,c){var x=a.cells[k],y=c.cel
 
 Paste into the post body (Rich Text).
 
-A 50/50 blend of the model and the engineer's estimate missed by 13.4% on construction and 12.4% on maintenance. That roughly matches the engineer alone at 12.8%. The model added little that the engineer had not already captured, which is a reasonable outcome for a model that sees only item prices.
+A 50/50 blend of the model and the engineer's estimate roughly matched the engineer alone at 12.8%:
+
+ - **Construction:** The blend missed by 13.4%.
+- **Maintenance:** The blend missed by 12.4%.
+
+ The model added little that the engineer had not already captured, which is a reasonable outcome for a model that sees only item prices.
 
 ---
 
@@ -506,23 +547,56 @@ b.addEventListener('blur',function(){pre=-1;update();});});}
 
 Paste into the post body (Rich Text).
 
-Published machine learning work reports lower errors with richer inputs. A 2022 study of public highway projects completed between 2004 and 2015 reported mean absolute percentage errors of 7.4% for duration and 4.5% for cost ([Mohamed and Moselhi, Journal of Information Technology in Construction, 2022](https://itcon.org/paper/2022/29)). That study addressed early conceptual estimates built from project characteristics, and it tested on 29 and 56 randomly selected projects. It reports a mean error on a different task and a small test sample, so it cannot be set directly against our median misses on 2,770 lettings priced from data that existed before each letting. It does suggest that project context, not item averages, is where an AI estimator may earn its place.
+### What published research reports
 
- **What this means for project teams:** If a vendor claims AI estimating, ask for the median miss against winning bids on jobs the model has not seen, and compare it with your own estimates. In this Texas test the bar is 12.8%. Use item price history as an input to your estimate, and keep the estimator's judgement in the loop.
+ Published machine learning work reports lower errors with richer inputs. A 2022 study of public highway projects completed between 2004 and 2015 reported mean absolute percentage errors of 7.4% for duration and 4.5% for cost ([Mohamed and Moselhi, Journal of Information Technology in Construction, 2022](https://itcon.org/paper/2022/29)).
+
+ That study cannot be set directly against our results:
+
+ - **Different task:** It addressed early conceptual estimates built from project characteristics.
+- **Small test sample:** It tested on 29 and 56 randomly selected projects.
+- **Different measure:** It reports a mean error, while ours are median misses on 2,770 lettings priced from data that existed before each letting.
+
+ It does suggest that project context, not item averages, is where an AI estimator may earn its place.
+
+ **What this means for project teams:** If a vendor claims AI estimating:
+
+- Ask for the median miss against winning bids on jobs the model has not seen, and compare it with your own estimates. In this Texas test the bar is 12.8%.
+- Use item price history as an input to your estimate.
+- Keep the estimator's judgement in the loop.
 
  
 ## Can public data predict which projects finish late?
 
  Here a job counts as late when it uses more than 100% of its contract time. Texas DOT's contract administration manual treats the time set for completion as an essential element of the contract, and it requires damages to be assessed for each day over the contracted time ([Texas DOT, Construction Contract Administration Manual, Failure to Complete Work on Time](https://www.txdot.gov/manuals/cst/cah/prosecution_and_progress/progress_schedules-bcejejfc/failure_to_complete_work_on_time-i1019822.html)).
 
- The model is a simple machine learning model trained on completed Texas DOT contracts. It uses what is known at award, including the contract time allowed, job size, type of work, district, number of bid items, addenda, how the bidding went and the winning firm's earlier record with the owner. It trained on 7,160 completed contracts awarded up to 2021 and was tested on 4,066 contracts awarded from 2022.
+ 
+### What goes into the model
+
+ The model is a simple machine learning model trained on completed Texas DOT contracts. It uses what is known at award, including:
+
+ - The contract time allowed, job size and type of work.
+- The district, number of bid items and addenda.
+- How the bidding went.
+- The winning firm's earlier record with the owner.
+
+ It trained on 7,160 completed contracts awarded up to 2021 and was tested on 4,066 contracts awarded from 2022.
 
  
 ### What the 0.79 score means
 
- The score is AUC. In plain words, pick one job that ran late and one that finished on time, both at random. The AUC is the share of such pairs where the model gave the late job the higher risk. A coin flip scores 0.5 and a perfect model scores 1.0 ([Google, Machine Learning Crash Course, ROC and AUC](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc)). On later years the model scored 0.79, so it ranked the late job higher about four times in five.
+ The score is AUC. In plain words, pick one job that ran late and one that finished on time, both at random. The AUC is the share of such pairs where the model gave the late job the higher risk.
 
- On a random split of the same contracts the score was 0.83. A random split lets the model see jobs from the same years it is tested on, which tends to flatter it. Leakage of information from test data into training is a known source of inflated results. A review by Princeton researchers found leakage errors in 17 fields, affecting 329 papers and in some cases leading to badly overoptimistic conclusions ([Kapoor and Narayanan, Leakage and the Reproducibility Crisis in ML-based Science](https://arxiv.org/abs/2207.07048)). The later-years score is the one to trust.
+ - **Reference points:** A coin flip scores 0.5 and a perfect model scores 1.0 ([Google, Machine Learning Crash Course, ROC and AUC](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc)).
+- **Later years:** The model scored 0.79, so it ranked the late job higher about four times in five.
+- **Random split:** On a random split of the same contracts the score was 0.83.
+
+ A random split lets the model see jobs from the same years it is tested on, which tends to flatter it. Leakage of information from test data into training is a known source of inflated results.
+
+ A review by Princeton researchers found leakage errors in 17 fields, affecting 329 papers and in some cases leading to badly overoptimistic conclusions ([Kapoor and Narayanan, Leakage and the Reproducibility Crisis in ML-based Science](https://arxiv.org/abs/2207.07048)). The later-years score is the one to trust.
+
+ 
+### A risk flag is a prompt to look, not a verdict
 
 ---
 
@@ -587,7 +661,12 @@ plot.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='Ar
 
 Paste into the post body (Rich Text).
 
-The ranking is useful, and it has limits. Across all tested jobs, 8.2% ran late. Even in the riskiest fifth, 77% of jobs finished within their time. A flag is a reason to look at a job, not a verdict on it.
+The ranking is useful, and it has limits:
+
+ - **Overall late rate:** Across all tested jobs, 8.2% ran late.
+- **Riskiest fifth:** Even here, 77% of jobs finished within their time.
+
+ A flag is a reason to look at a job, not a verdict on it.
 
 ---
 
@@ -687,12 +766,20 @@ paint();
 
 Paste into the post body (Rich Text).
 
-Calibration means that when a model says a job has a 30% chance of running late, about 30% of such jobs do ([scikit-learn, Probability calibration](https://scikit-learn.org/stable/modules/calibration.html)). Without calibration the model's expected error was 7.3 points on the random split. With it, the expected error was 1.6 points on the random split and 1.9 points on later years. The average hides a pattern, because the bands from 10 to 30% still ran about 4 points above the actual late rate.
+Calibration means that when a model says a job has a 30% chance of running late, about 30% of such jobs do ([scikit-learn, Probability calibration](https://scikit-learn.org/stable/modules/calibration.html)). The expected error shows what it changes:
+
+ - **Without calibration:** The expected error was 7.3 points on the random split.
+- **With calibration, random split:** The expected error was 1.6 points.
+- **With calibration, later years:** The expected error was 1.9 points.
+
+ The average hides a pattern, because the bands from 10 to 30% still ran about 4 points above the actual late rate.
 
  
 ### What it flags on live jobs
 
- The same approach can be pointed at jobs under way. We scored monthly progress reports dated January to September 2026 for 3,275 Texas DOT jobs. The live watchlist gives each job a model risk score. Separately, a schedule rule flags 851 of them, or 26%, as behind schedule. The rule applies when time used is more than 15 points ahead of work complete and over half of the contract time has gone.
+ The same approach can be pointed at jobs under way. We scored monthly progress reports dated January to September 2026 for 3,275 Texas DOT jobs. The live watchlist gives each job a model risk score.
+
+ Separately, a schedule rule flags 851 of them, or 26%, as behind schedule. The rule applies when time used is more than 15 points ahead of work complete and over half of the contract time has gone.
 
 ---
 
@@ -725,7 +812,10 @@ var mxTip=function(host){var tip=host.querySelector(':scope>.maipstats1-tip');if
 
 Paste into the post body (Rich Text).
 
-**What this means for project teams:** Ask any AI scheduling tool for its score on later years, not on a random split, and for a calibration check. Treat a risk flag as a prompt to review the programme, the contractor's resources and the open variations, because most flagged jobs still finish in time.
+**What this means for project teams:**
+
+- Ask any AI scheduling tool for its score on later years, not on a random split, and for a calibration check.
+- Treat a risk flag as a prompt to review the programme, the contractor's resources and the open variations, because most flagged jobs still finish in time.
 
  
 ## What drives the late-finish prediction?
@@ -770,16 +860,47 @@ plot.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='Ar
 
 Paste into the post body (Rich Text).
 
-Contract time allowed produced the biggest fall at 7.1 points of AUC (0.071), followed by type of work at 5.1, job size at 4.9, contractor record at 4.4 and place at 3.5. The bidding pattern, addenda and award year added nothing measurable. The contractor record shows up in plain counts too. Among 9,692 completed jobs whose winner had worked for the owner before, jobs won by firms in the top quarter for past late-penalty rate ran late 19.6% of the time, against 5.2% for firms with no late penalties on earlier jobs.
+### Contract time allowed matters most
 
- These results suggest the model relies mostly on structural facts about a job, such as how tight the contract time is and what kind of work it is. A planner already knows those facts. The model's likely use is ranking a whole portfolio quickly, not telling an experienced planner something new about one job.
+ The fall in score for each input group, in points of AUC, was:
 
- **What this means for project teams:** Ask any vendor which inputs drive a risk score. If the score mostly mirrors contract time, job type and size, use it to sort a portfolio, and add the inputs only your team holds, such as programme logic, resourcing and open variations.
+ - **Contract time allowed:** The biggest fall, at 7.1 points of AUC (0.071).
+- **Type of work:** A fall of 5.1 points.
+- **Job size:** A fall of 4.9 points.
+- **Contractor record:** A fall of 4.4 points.
+- **Place:** A fall of 3.5 points.
+- **Bidding, addenda and award year:** These groups added nothing measurable.
+
+ The contractor record shows up in plain counts too. Among 9,692 completed jobs whose winner had worked for the owner before:
+
+ - **Highest past penalty rate:** Jobs won by firms in the top quarter for past late-penalty rate ran late 19.6% of the time.
+- **No past penalties:** Jobs won by firms with no late penalties on earlier jobs ran late 5.2% of the time.
+
+ 
+### Best used to rank a portfolio
+
+ These results suggest the model relies mostly on structural facts about a job, such as how tight the contract time is and what kind of work it is. A planner already knows those facts.
+
+ The model's likely use is ranking a whole portfolio quickly, not telling an experienced planner something new about one job.
+
+ **What this means for project teams:**
+
+- Ask any vendor which inputs drive a risk score.
+- If the score mostly mirrors contract time, job type and size, use it to sort a portfolio.
+- Add the inputs only your team holds, such as programme logic, resourcing and open variations.
 
  
 ## Does local climate help predict late finishes?
 
- For predicting late finishes at bid time, the climate of the place and season adds almost nothing. We added 30-year averages of rain, freeze and heat days for each job's county and planned work window to two models trained on completed Texas DOT contracts, a simple one and a stronger tree-based one that this page calls the boosted model. Climate normals are averages over a 30-year period, and the latest World Meteorological Organization standard period is 1991 to 2020 ([World Meteorological Organization, WMO Climatological Normals](https://community.wmo.int/node/36682)).
+ For predicting late finishes at bid time, the climate of the place and season adds almost nothing. We added 30-year averages of rain, freeze and heat days for each job's county and planned work window to two models trained on completed Texas DOT contracts:
+
+ - **Simple model:** The simpler of the two.
+- **Boosted model:** A stronger tree-based one.
+
+ Climate normals are averages over a 30-year period, and the latest World Meteorological Organization standard period is 1991 to 2020 ([World Meteorological Organization, WMO Climatological Normals](https://community.wmo.int/node/36682)).
+
+ 
+### Climate averages barely move the late-finish score
 
 ---
 
@@ -851,18 +972,48 @@ if(window.ResizeObserver)new ResizeObserver(function(){measure();place();}).obse
 
 Paste into the post body (Rich Text).
 
-The late-finish change of 0.002 sits inside the margin of error, with a 95% interval of -0.001 to 0.004. Weather that actually happened lifts the score further, to 0.785 in the simple model and 0.802 in the boosted model. Nobody knows that weather at bid time, so it explains outcomes without helping to predict them.
+- **Climate averages:** The late-finish change of 0.002 sits inside the margin of error, with a 95% interval of -0.001 to 0.004.
+- **Weather that happened:** Weather that actually happened lifts the score further, to 0.785 in the simple model and 0.802 in the boosted model.
 
- Change orders behave differently. Climate averages gave the simple model a small but measurable lift for predicting a change order that added contract days, from 0.675 to 0.684, and almost none for the boosted model. Weather that actually happened lifted the boosted model from 0.742 to 0.800, which points to weather driving added days once it arrives, even though climate averages do not foretell it.
+ Nobody knows that weather at bid time, so it explains outcomes without helping to predict them.
 
- **What this means for project teams:** Do not buy a weather-aware tool to forecast finish dates from climate averages. Use climate data to set realistic allowed days and float at the start, and use live weather records to explain delays and support time claims after the fact.
+ 
+### Change orders behave differently
+
+ - **Simple model:** Climate averages gave a small but measurable lift for predicting a change order that added contract days, from 0.675 to 0.684.
+- **Boosted model:** Climate averages gave almost none.
+- **Weather that happened:** It lifted the boosted model from 0.742 to 0.800.
+
+ That points to weather driving added days once it arrives, even though climate averages do not foretell it.
+
+ **What this means for project teams:**
+
+- Do not buy a weather-aware tool to forecast finish dates from climate averages.
+- Use climate data to set realistic allowed days and float at the start.
+- Use live weather records to explain delays and support time claims after the fact.
 
  
 ## How accurately can AI sort contract documents?
 
- Sorting documents into types is a basic task for AI in contract administration. We trained a simple text classifier on the first 4,000 characters of each document. It covers 24 classes, made up of the 23 document types with at least 20 examples and a catch-all class for documents outside contract administration. It trained on 14,595 documents and was tested on 3,393, with documents from the same council, contract or court case kept on the same side of the split. Large classes were capped at 400 test documents, so the accuracy figure describes this capped test set and not the full public collection.
+ Sorting documents into types is a basic task for AI in contract administration. We trained a simple text classifier on the first 4,000 characters of each document.
 
- Overall accuracy was 94.1%. The balanced score, called macro-F1, was only 0.74. Macro-F1 averages the per-type F1 score, so every type counts equally whether it has 400 test documents or one. F1 itself balances precision and recall. Accuracy on its own can mislead when some classes are far larger than others, as Google's machine learning course points out ([Google, Machine Learning Crash Course, Classification: Accuracy, recall, precision](https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall)).
+ 
+### How the classifier was built
+
+ The classifier was set up as follows:
+
+ - **Classes:** It covers 24 classes, made up of the 23 document types with at least 20 examples and a catch-all class for documents outside contract administration.
+- **Training and test sets:** It trained on 14,595 documents and was tested on 3,393.
+- **Grouped split:** Documents from the same council, contract or court case were kept on the same side of the split.
+- **Capped test set:** Large classes were capped at 400 test documents, so the accuracy figure describes this capped test set and not the full public collection.
+
+ 
+### Accuracy is high but the balanced score is low
+
+ - **Accuracy:** Overall accuracy was 94.1%.
+- **Balanced score:** The balanced score, called macro-F1, was only 0.74.
+
+ Macro-F1 averages the per-type F1 score, so every type counts equally whether it has 400 test documents or one. F1 itself balances precision and recall. Accuracy on its own can mislead when some classes are far larger than others, as Google's machine learning course points out ([Google, Machine Learning Crash Course, Classification: Accuracy, recall, precision](https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall)).
 
 ---
 
@@ -900,16 +1051,41 @@ var rows=[].slice.call(tb.rows);rows.sort(function(a,c){var x=a.cells[k],y=c.cel
 
 Paste into the post body (Rich Text).
 
-Final certificates (F1 0.95, 400 test documents), extension of time registers (0.98) and liquidated damages certificates (0.97) score highly, probably because they are formulaic. The look-alikes score poorly. The model found only 15% of final payment claims (F1 0.24), and progress claims scored 0.40 and change proposals 0.33. These types likely share wording and layout with their neighbours, and a wrong filing matters because they carry payment and variation rights.
+### Look-alike documents score poorly
 
- Two cautions apply. The labels came from rules that filed each document by its name and opening page, not from human review, so some of the errors may be label noise. The split was grouped by contract, but some Texas projects still appear on both sides of it, which probably flatters the 94%. The result is best read as an upper estimate for a simple method, to be re-tested with a stricter split and a hand-checked set before anyone relies on it.
+ Final certificates (F1 0.95, 400 test documents), extension of time registers (0.98) and liquidated damages certificates (0.97) score highly, probably because they are formulaic. The look-alikes score poorly:
 
- **What this means for project teams:** AI can sort the common documents now, which saves filing time. Keep a person on the look-alikes, such as progress claims, final claims and change proposals, and ask any vendor for per-type scores rather than a single accuracy figure.
+ - **Final payment claims:** The model found only 15% of them (F1 0.24).
+- **Progress claims:** They scored 0.40.
+- **Change proposals:** They scored 0.33.
+
+ These types likely share wording and layout with their neighbours, and a wrong filing matters because they carry payment and variation rights.
+
+ 
+### Two cautions on the 94%
+
+ Two cautions apply:
+
+ - **Rule-based labels:** The labels came from rules that filed each document by its name and opening page, not from human review, so some of the errors may be label noise.
+- **Split overlap:** The split was grouped by contract, but some Texas projects still appear on both sides of it, which probably flatters the 94%.
+
+ The result is best read as an upper estimate for a simple method, to be re-tested with a stricter split and a hand-checked set before anyone relies on it.
+
+ **What this means for project teams:**
+
+- AI can sort the common documents now, which saves filing time.
+- Keep a person on the look-alikes, such as progress claims, final claims and change proposals.
+- Ask any vendor for per-type scores rather than a single accuracy figure.
 
  
 ## Why can't public data show everyday project paperwork?
 
- RFIs, submittals, site instructions and defect notices are the daily work of contract administration, and they almost never become public. The public document set behind this research holds 103,102 documents from Australian and US public sources. Only 19 are RFIs. An industry body reporting a Navigant Construction Forum study of 1,362 projects says those projects averaged about 800 RFIs each ([American Society of Concrete Contractors, Request for Information (RFI) and Rework, 2020](https://ascconline.org/Home/News/articleType/ArticleView/articleId/121/Request-for-Information-RFI-and-Rework)). The average project in that study produced far more RFIs than the whole public set holds.
+ RFIs, submittals, site instructions and defect notices are the daily work of contract administration, and they almost never become public. Compare the public record with a typical project:
+
+ - **Public document set:** The set behind this research holds 103,102 documents from Australian and US public sources. Only 19 are RFIs.
+- **Typical project:** An industry body reporting a Navigant Construction Forum study of 1,362 projects says those projects averaged about 800 RFIs each ([American Society of Concrete Contractors, Request for Information (RFI) and Rework, 2020](https://ascconline.org/Home/News/articleType/ArticleView/articleId/121/Request-for-Information-RFI-and-Rework)).
+
+ The average project in that study produced far more RFIs than the whole public set holds.
 
 ---
 
@@ -1025,13 +1201,20 @@ if('MutationObserver' in window)new MutationObserver(function(){if(!root.classLi
 
 Paste into the post body (Rich Text).
 
-The set is also lopsided in source. Texas DOT accounts for 74,473 of the 103,102 documents, or 72%, so a model trained on this data learns the paperwork habits of one state transport agency. Owners publish outcomes such as awards, payments and completion certificates, while the working records behind those outcomes stay inside the project. That is the likely reason the everyday records are missing.
+### One owner supplies most of the set
+
+ The set is also lopsided in source. Texas DOT accounts for 74,473 of the 103,102 documents, or 72%, so a model trained on this data learns the paperwork habits of one state transport agency.
+
+ Owners publish outcomes such as awards, payments and completion certificates, while the working records behind those outcomes stay inside the project. That is the likely reason the everyday records are missing.
+
+ 
+### Everyday record types are missing
 
 ---
 
 ## Step 31: Embed 17, Figure 12: Document types by number of public examples
 
-File: `31-mastt-aip-f12-document-types-by-number-of.html`. Add an HTML Embed here, directly under the text above, and paste this (25,342 characters).
+File: `31-mastt-aip-f12-document-types-by-number-of.html`. Add an HTML Embed here, directly under the text above, and paste this (25,351 characters).
 
 ```html
 <div id="mastt-aip-f12" class="maipf12" role="figure" aria-label="Donut chart: Figure 12: Document types by number of public examples. 100 or more documents: Value 16, Share 25%; 20 to 99 documents: Value 7, Share 11%; 1 to 19 documents: Value 30, Share 48%; No documents: Value 10, Share 16%. Of 63 types in Mastt's contract administration taxonomy, 40 have fewer than 20 public examples, and 10 of those have none.">
@@ -1065,7 +1248,7 @@ var total=function(){if(T)return T[mask()];var m=num.exec(D.f),d=(m[2].split('.'
 var desc=function(i){return D.L[i]+', '+D.V[i]+sf+', '+share(D.v[i]/(tot()||1))+((D.m&&D.m[i])||'');};
 var paint=function(){var t=tot()||1,at=0,g=hid.filter(function(h){return!h;}).length>1?GAP:0;segs.forEach(function(s,i){var l=hid[i]?0:D.v[i]/t*100,d=Math.max(0,l-g);s.style.setProperty('--a',+d.toFixed(2));s.style.setProperty('--r',+(100-d).toFixed(2));s.style.setProperty('--o',+(-(at+g/2)).toFixed(2));at+=l;});};
 var texts=function(){var t=tot();rows.forEach(function(r,i){r.querySelector('.maipf12-dn-rs').textContent=share(hid[i]||!t?0:D.v[i]/t);});box.setAttribute('data-sh',hid.some(Boolean)?'1':sh0);};
-var show=function(){var k=cur,t=tot(),v=k<0?total():D.V[k],a=k<0?D.tl:D.L[k],m=k<0?(D.u&&D.u.toLowerCase()!==D.tl.toLowerCase()?D.u:''):(box.getAttribute('data-sh')==='1'?share(D.v[k]/(t||1))+' of total':'');
+var show=function(){var k=cur,t=tot(),v=k<0?total():D.V[k],a=k<0?D.tl:D.L[k],m=k<0?(D.u&&D.tl.toLowerCase().indexOf(D.u.toLowerCase())<0?D.u:''):(box.getAttribute('data-sh')==='1'?share(D.v[k]/(t||1))+' of total':'');
 cv.textContent=v;tag(cv,v);cl.textContent=a;cm.textContent=m||'\u00a0';ring.style.setProperty('--ct',k<0?'':getComputedStyle(segs[k]).getPropertyValue('--t'));
 if(k!==shown&&!RM){ctr.classList.remove('maipf12-roll');void ctr.offsetWidth;ctr.classList.add('maipf12-roll');}shown=k;};
 var update=function(){var k=[pre,pin].filter(function(i){return i>=0&&!hid[i];})[0];cur=k===undefined?-1:k;
@@ -1135,9 +1318,17 @@ var rows=[].slice.call(tb.rows);rows.sort(function(a,c){var x=a.cells[k],y=c.cel
 
 Paste into the post body (Rich Text).
 
-Ten document types have no public examples, including RFI registers, submittal registers, defect registers and risk registers. Another 30 types have between one and 19. The registers that a contract administrator updates every week exist only inside projects.
+Many document types have few or no public examples:
 
- **What this means for project teams:** AI tools that read RFIs, submittals and defect notices need a project's own data. Check that a tool is built on your records, not only on public ones, and keep those records structured, with consistent types, dates, owners and responses, so that a model has something to learn from.
+ - **No public examples:** Ten document types, including RFI registers, submittal registers, defect registers and risk registers.
+- **One to 19 examples:** Another 30 types have between one and 19.
+
+ The registers that a contract administrator updates every week exist only inside projects.
+
+ **What this means for project teams:** AI tools that read RFIs, submittals and defect notices need a project's own data.
+
+- Check that a tool is built on your records, not only on public ones.
+- Keep those records structured, with consistent types, dates, owners and responses, so that a model has something to learn from.
 
  
 ## Which simple rules already work without AI?
@@ -1147,7 +1338,13 @@ Ten document types have no public examples, including RFI registers, submittal r
  
 ### The halfway progress check
 
- Halfway through a job, compare the percentage of time used with the percentage of the contract value earned. We took the January 2017 monthly progress report for Texas DOT state construction jobs and kept the 436 jobs that were 20% to 80% through their time and could be matched to final records. Jobs whose earnings were level with or ahead of their time used paid late penalties 10% of the time. Jobs more than 10 points behind paid 47% of the time, and the median among those that paid was 46 days. Jobs more than 20 points behind paid 55% of the time.
+ Halfway through a job, compare the percentage of time used with the percentage of the contract value earned. We took the January 2017 monthly progress report for Texas DOT state construction jobs and kept the 436 jobs that were 20% to 80% through their time and could be matched to final records.
+
+ Late penalties rose with the progress gap:
+
+ - **Level or ahead:** Jobs whose earnings were level with or ahead of their time used paid late penalties 10% of the time.
+- **More than 10 points behind:** These jobs paid 47% of the time, and the median among those that paid was 46 days.
+- **More than 20 points behind:** These jobs paid 55% of the time.
 
 ---
 
@@ -1207,7 +1404,16 @@ Paste into the post body (Rich Text).
 
 ### Contractor track record
 
- The second rule asks how many jobs a firm has already done for the owner. We took 10,012 completed Texas DOT construction contracts, mostly awarded from 2009 to 2025. Firms with no award from the owner before 2012 count as new, and a cross-check against bid records suggests that label is right for about 94% of them. Their first jobs paid late penalties on 26% of 444 jobs, against 20% of 5,550 jobs for firms already working for the owner. On their second to fifth jobs the new firms were at 27%, and on jobs 6 to 20 they were at 26%. The rate fell to 21% from the twenty-first job, but firms that reach that point are the survivors. The pattern suggests the gap is about the firm and not only the first job.
+ The second rule asks how many jobs a firm has already done for the owner. We took 10,012 completed Texas DOT construction contracts, mostly awarded from 2009 to 2025. Firms with no award from the owner before 2012 count as new, and a cross-check against bid records suggests that label is right for about 94% of them.
+
+ The late-penalty rates for new firms were:
+
+ - **First jobs:** 26% of 444 first jobs paid late penalties, against 20% of 5,550 jobs for firms already working for the owner.
+- **Second to fifth jobs:** The new firms were at 27%.
+- **Jobs 6 to 20:** The new firms were at 26%.
+- **From the twenty-first job:** The rate fell to 21%, but firms that reach that point are the survivors.
+
+ The pattern suggests the gap is about the firm and not only the first job.
 
 ---
 
@@ -1281,12 +1487,22 @@ Paste into the post body (Rich Text).
 
 An earlier model had put the first-job rate near 43%. A direct count of completed jobs found 26%. A simple count on good records is the first check any AI claim should face.
 
- **What this means for project teams:** At the halfway mark, compare time used with money earned and review any job more than 10 points behind. When you assess bidders, ask for track record with other owners and treat a new firm as a modest extra risk rather than a reason to exclude it.
+ **What this means for project teams:**
+
+- At the halfway mark, compare time used with money earned and review any job more than 10 points behind.
+- When you assess bidders, ask for track record with other owners and treat a new firm as a modest extra risk rather than a reason to exclude it.
 
  
 ## What public data can and cannot do for AI
 
- Public records are good for setting the bar. They showed that item price history alone does not beat the engineer, that a late-finish ranking works modestly and holds up on later years, that climate averages do not help at bid time, and that common documents are easy to sort while look-alikes are not. They are poor at the work that fills a project manager's week.
+ Public records are good for setting the bar. They showed that:
+
+ - **Prices:** Item price history alone does not beat the engineer.
+- **Late finishes:** A late-finish ranking works modestly and holds up on later years.
+- **Climate:** Climate averages do not help at bid time.
+- **Documents:** Common documents are easy to sort while look-alikes are not.
+
+ Public records are poor at the work that fills a project manager's week.
 
 ---
 
@@ -1319,7 +1535,14 @@ var mxTip=function(host){var tip=host.querySelector(':scope>.maipquote1-tip');if
 
 Paste into the post body (Rich Text).
 
-Any AI claim can be tested the way these were. What was it tested on, did the test use later years, how does it compare with a simple rule, and what data does it need? For RFIs, submittals, variations and risk, the answer to the last question is a project's own records.
+Any AI claim can be tested the way these were. Check:
+
+ - What it was tested on.
+- Whether the test used later years.
+- How it compares with a simple rule.
+- What data it needs.
+
+ For RFIs, submittals, variations and risk, the answer to the last point is a project's own records.
 
  
 ## FAQs
@@ -1362,11 +1585,23 @@ Paste into the post body (Rich Text).
 
 ## Sources and methodology
 
- Mastt's own findings come from analysis of public contract records. The price, late-finish, climate, halfway and track record tests use completed and in-progress Texas DOT construction and maintenance contracts, bid results and monthly progress reports. The price test covers 2,770 lettings held in 2023 and 2024, priced from winning bids in the previous 12 months. The late-finish model trained on 7,160 completed contracts awarded up to 2021 and was tested on 4,066 awarded from 2022. The climate test trained on 16,353 contracts awarded 2009 to 2020 and tested on 8,717 awarded 2021 to 2024, with 30-year climate averages and rain gauge records.
+ Mastt's own findings come from an internal Mastt study of public contract records. The price, late-finish, climate, halfway and track record tests use completed and in-progress Texas DOT construction and maintenance contracts, bid results and monthly progress reports:
 
- The document tests use 103,102 public contract documents from United States and Australian public sources, collected in 2026 and filed into 63 document types by rules applied to titles and opening pages. Those labels are not human annotation, so some errors between look-alike types may come from the labels. The classifier used the first 4,000 characters of text and was tested on documents from councils, contracts and cases it had not seen in training, with the limits described above.
+ - **Price test:** Covers 2,770 lettings held in 2023 and 2024, priced from winning bids in the previous 12 months.
+- **Late-finish model:** Trained on 7,160 completed contracts awarded up to 2021 and tested on 4,066 awarded from 2022.
+- **Climate test:** Trained on 16,353 contracts awarded 2009 to 2020 and tested on 8,717 awarded 2021 to 2024, with 30-year climate averages and rain gauge records.
 
- Texas figures describe Texas DOT work only and are not a measure of construction as a whole. Findings are signals, not proof, and the models are simple tests rather than production tools. A job counts as late when it uses more than 100% of its contract time, and a late penalty means liquidated damages were charged. Includes public sector information from Australian federal, state, territory and local governments, used under Creative Commons Attribution 4.0 licences.
+ The document tests use 103,102 public contract documents from United States and Australian public sources, collected in 2026:
+
+ - **Labels:** Documents were filed into 63 document types by rules applied to titles and opening pages. Those labels are not human annotation, so some errors between look-alike types may come from the labels.
+- **Classifier:** It used the first 4,000 characters of text and was tested on documents from councils, contracts and cases it had not seen in training, with the limits described above.
+
+ Limits and definitions:
+
+ - **Scope:** Texas figures describe Texas DOT work only and are not a measure of construction as a whole.
+- **Status:** Findings are signals, not proof, and the models are simple tests rather than production tools.
+- **Late:** A job counts as late when it uses more than 100% of its contract time, and a late penalty means liquidated damages were charged.
+- **Licence:** Includes public sector information from Australian federal, state, territory and local governments, used under Creative Commons Attribution 4.0 licences.
 
  
 ### Sources

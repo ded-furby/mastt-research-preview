@@ -25,7 +25,7 @@ Notes
 
 ## Step 1: Embed 1, Structured data (JSON-LD)
 
-File: `00-mastt-pcd-schema.html`. Add an HTML Embed at the top of the post body and paste this as it is. (4,788 characters).
+File: `00-mastt-pcd-schema.html`. Add an HTML Embed at the top of the post body and paste this as it is. (4,752 characters).
 
 ```html
 <script type="application/ld+json">
@@ -51,7 +51,7 @@ File: `00-mastt-pcd-schema.html`. Add an HTML Embed at the top of the post body 
     {
       "@type": "Dataset",
       "name": "State of Public Construction Delivery 2027",
-      "description": "Records. Mastt analysed published contract and project records. Texas DOT records cover 10,041 completed construction contracts, awarded mostly between 2009 and 2025, of which 5,265 were matched line by line to their bids, plus monthly progress reports on 3,632 active jobs in January 2017 and November 2024. US federal records cover 583,728 completed construction contracts and delivery orders from federal fiscal years 2008 to 2026. Australian records cover 31,773 Commonwealth construction contract notices, mostly signed between 2013 and 2026. Florida DOT and New York City records add 431 and 1,142 completed projects. The risk register analysis covers 64 public registers, 53 Australian and 11 US.",
+      "description": "Records. This is an internal Mastt study of published contract and project records. It draws on: Texas DOT: 10,041 completed construction contracts, awarded mostly between 2009 and 2025, of which 5,265 were matched line by line to their bids, plus monthly progress reports on 3,632 active jobs in January 2017 and November 2024. US federal: 583,728 completed construction contracts and delivery orders from federal fiscal years 2008 to 2026. Australia: 31,773 Commonwealth construction contract notices, mostly signed between 2013 and 2026. Florida DOT and New York City: 431 and 1,142 completed projects. Risk registers: 64 public registers, 53 Australian and 11 US.",
       "creator": {
         "@type": "Organization",
         "name": "Mastt",
@@ -130,9 +130,14 @@ File: `00-mastt-pcd-schema.html`. Add an HTML Embed at the top of the post body 
 
 Paste into the post body (Rich Text).
 
-This page is a citable benchmark of how public construction work is delivered. It draws on completed contracts and project records that governments have already published, so every figure counts what happened on real jobs, not what people recall in a survey. Every figure is labelled with its period, its population and its source. Where a number is our own calculation, we say so.
+This page is a citable benchmark of how public construction work is delivered. It draws on completed contracts and project records that governments have already published, so every figure counts what happened on real jobs, not what people recall in a survey.
 
- Four bodies of records sit behind it. More than 10,000 completed Texas DOT construction contracts give the deepest view of time, cost and change inside one owner. More than 580,000 completed US federal construction contracts show how change behaves across agencies and contract types. About 31,800 Commonwealth contract notices give the Australian comparison. Sixty-four public project risk registers show what teams plan for.
+ Every figure is labelled with its period, its population and its source. Where a number is our own calculation, we say so. Four bodies of records sit behind it:
+
+ - **Texas DOT:** More than 10,000 completed construction contracts give the deepest view of time, cost and change inside one owner.
+- **US federal:** More than 580,000 completed construction contracts show how change behaves across agencies and contract types.
+- **Australia:** About 31,800 Commonwealth contract notices give the Australian comparison.
+- **Risk registers:** Sixty-four public project risk registers show what teams plan for.
 
 ---
 
@@ -236,9 +241,14 @@ Paste into the post body (Rich Text).
 
 ## How often do Texas DOT jobs finish on the allowed day?
 
- Texas DOT charges contractors working days against a contract time that is set in the contract and can be adjusted by change order. [The Texas DOT Construction Contract Administration Manual](https://www.txdot.gov/manuals/cst/cah/prosecution_and_progress/contract_time-bceeiiih.html) says time is charged by the standard workweek method unless the contract says otherwise, and that the number of working days can be adjusted by change order in extraordinary circumstances. At final estimate, each job carries a count of days charged and a count of days allowed. Comparing the two for 10,041 completed construction jobs shows a pattern that a natural spread of finish times would not produce.
+ Texas DOT charges contractors working days against a contract time that is set in the contract and can be adjusted by change order. [The Texas DOT Construction Contract Administration Manual](https://www.txdot.gov/manuals/cst/cah/prosecution_and_progress/contract_time-bceeiiih.html) says time is charged by the standard workweek method unless the contract says otherwise, and that the number of working days can be adjusted by change order in extraordinary circumstances.
 
- 1,682 jobs, or 17%, were charged exactly the days they were allowed. Only 83 were charged one day more, and 559 were charged one day fewer. The allowed day holds 6.7 times the daily average of the three days on either side of it. Beyond the spike, 61% of jobs were charged fewer days than allowed and 22% more, so the spike sits between two much broader groups.
+ At final estimate, each job carries a count of days charged and a count of days allowed. Comparing the two for 10,041 completed construction jobs shows a pattern that a natural spread of finish times would not produce:
+
+ - **Exactly on the day:** 1,682 jobs, or 17%, were charged exactly the days they were allowed.
+- **One day either side:** Only 83 were charged one day more, and 559 were charged one day fewer.
+- **A sharp spike:** The allowed day holds 6.7 times the daily average of the three days on either side of it.
+- **Beyond the spike:** 61% of jobs were charged fewer days than allowed and 22% more, so the spike sits between two much broader groups.
 
 ---
 
@@ -278,14 +288,29 @@ plot.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='Ar
 
 Paste into the post body (Rich Text).
 
-The pattern is easier to explain by how records close than by how crews work. About 41% of jobs received extra days by change order. Those jobs landed exactly on their new allowed day 23.5% of the time. Jobs with no extra days were charged exactly their original days 12.0% of the time. That gap suggests the recorded finish is often a number agreed at close-out, not only a measurement taken on site. The pile-up is in the records. The explanation is our reading.
+### Why the finish lands on the allowed day
 
- **What this means for project teams:** When you assess a time claim or a delay analysis, the final finish date may have been sized to fit. Keep the daily progress records from during the job, because they hold evidence that a final time statement may not.
+ The pattern is easier to explain by how records close than by how crews work. About 41% of jobs received extra days by change order, and the two groups closed differently:
+
+ - **Jobs given extra days:** Landed exactly on their new allowed day 23.5% of the time.
+- **Jobs with no extra days:** Were charged exactly their original days 12.0% of the time.
+
+ That gap suggests the recorded finish is often a number agreed at close-out, not only a measurement taken on site. The pile-up is in the records. The explanation is our reading.
+
+ **What this means for project teams:**
+
+- When you assess a time claim or a delay analysis, remember the final finish date may have been sized to fit.
+- Keep the daily progress records from during the job, because they hold evidence that a final time statement may not.
 
  
 ### One job in six is running late at any moment
 
- Monthly district reports on active construction jobs give a view of work in progress. On 11 January 2017, 17.0% of 1,520 active Texas DOT jobs had already used more than their allowed days. On 10 November 2024, the figure was 16.4% of 2,112 jobs. The statewide book of active work grew from $14.5 billion to $40.7 billion between those dates, before any adjustment for inflation, and the share running late hardly moved.
+ Monthly district reports on active construction jobs give a view of work in progress. Two snapshots show almost the same share of jobs past their allowed days:
+
+ - **11 January 2017:** 17.0% of 1,520 active Texas DOT jobs had already used more than their allowed days.
+- **10 November 2024:** The figure was 16.4% of 2,112 jobs.
+
+ The statewide book of active work grew from $14.5 billion to $40.7 billion between those dates, before any adjustment for inflation, and the share running late hardly moved.
 
 ---
 
@@ -326,7 +351,11 @@ A portfolio with about one job in six past its allowed time is in line with the 
  
 ### Late penalties are common but small
 
- 22% of the 10,041 jobs, 2,201 in all, were charged late penalties, which Texas DOT calls liquidated damages. The typical penalised job was charged for 21 days and $18,000, which is 0.7% of its contract value. All penalties together came to $109 million on $57 billion of awarded work.
+ Texas DOT calls its late penalties liquidated damages. Across the 10,041 completed jobs:
+
+ - **How often:** 22% of jobs, 2,201 in all, were charged late penalties.
+- **Typical penalty:** The typical penalised job was charged for 21 days and $18,000, which is 0.7% of its contract value.
+- **All penalties:** Together they came to $109 million on $57 billion of awarded work.
 
 ---
 
@@ -359,14 +388,21 @@ var mxTip=function(host){var tip=host.querySelector(':scope>.mpcdstats1-tip');if
 
 Paste into the post body (Rich Text).
 
-Texas DOT describes these charges as [cost recovery, not a penalty](https://www.txdot.gov/manuals/cst/cah/prosecution_and_progress/progress_schedules-bcejejfc/failure_to_complete_work_on_time-i1019822.html), and sets the daily rate from the original bid value of the contract. Federal highway rules require each state transportation department to set rates that cover, as a minimum, the estimated average daily construction engineering cost ([23 CFR 635.127](https://www.law.cornell.edu/cfr/text/23/635.127)). That points to why the amounts stay small. A rate built around the owner's daily engineering cost does not try to price the full cost of delay.
+Two rules point to why the amounts stay small:
+
+ - **Texas DOT practice:** It describes these charges as [cost recovery, not a penalty](https://www.txdot.gov/manuals/cst/cah/prosecution_and_progress/progress_schedules-bcejejfc/failure_to_complete_work_on_time-i1019822.html), and sets the daily rate from the original bid value of the contract.
+- **Federal highway rules:** Each state transportation department must set rates that cover, as a minimum, the estimated average daily construction engineering cost ([23 CFR 635.127](https://www.law.cornell.edu/cfr/text/23/635.127)).
+
+ A rate built around the owner's daily engineering cost does not try to price the full cost of delay.
 
  
 ### The halfway check
 
- The monthly reports also show the percent of time used and the percent of money earned. In January 2017, 436 active construction jobs were between 20% and 80% of the way through their allowed time. Matching them to their final records shows how the gap between time used and money earned at that point lined up with penalties at the end.
+ The monthly reports also show the percent of time used and the percent of money earned. In January 2017, 436 active construction jobs were between 20% and 80% of the way through their allowed time. Matching them to their final records shows how the gap between time used and money earned at that point lined up with penalties at the end:
 
- Jobs whose earnings were level with or ahead of their time used ended with penalties 10% of the time. Jobs more than 10 points behind ended with penalties 47% of the time, almost five times as often, and the penalised ones were charged a median of 46 days late. Among jobs more than 20 points behind, 55% paid penalties.
+ - **On track or ahead:** Jobs whose earnings were level with or ahead of their time used ended with penalties 10% of the time.
+- **More than 10 points behind:** Ended with penalties 47% of the time, almost five times as often, and the penalised ones were charged a median of 46 days late.
+- **More than 20 points behind:** 55% paid penalties.
 
 ---
 
@@ -468,20 +504,31 @@ Paste into the post body (Rich Text).
 
 The check uses two numbers most project teams already hold. Compare the percent of time used with the percent of money earned at about the halfway point. A job that has used 50% of its time and earned 30% of its money is 20 points behind.
 
- **What this means for project teams:** Add a time-against-money gap line to your monthly report. Treat a gap of more than 10 points near the halfway mark as a trigger to review the program, not as a footnote. This is a single snapshot, so test the thresholds against your own history before you set hard limits.
+ **What this means for project teams:**
 
-Do not count on penalties to recover delay costs. They are common, but the typical charge is under 1% of contract value, so they are unlikely to cover what a late job costs the owner.
+- Add a time-against-money gap line to your monthly report.
+- Treat a gap of more than 10 points near the halfway mark as a trigger to review the program, not as a footnote.
+- This is a single snapshot, so test the thresholds against your own history before you set hard limits.
+- Do not count on penalties to recover delay costs. They are common, but the typical charge is under 1% of contract value, so they are unlikely to cover what a late job costs the owner.
 
  
 ## How much does the work change under the net figure?
 
- Final cost against award is the number most reports show. On 5,265 completed Texas DOT construction contracts with about $30 billion awarded, each matched line by line to its bid, the net change was 5.0%. Underneath that figure, three movements pulled in different directions. Items in the original bid were paid 3.9% below their awarded value. Item types that were never in the bid added 7.5%. Force account work and price adjustments added another 1.4%. Adding the movements up without regard to direction, 12.8% of contract value changed, or 13%.
+ Final cost against award is the number most reports show. On 5,265 completed Texas DOT construction contracts with about $30 billion awarded, each matched line by line to its bid, the net change was 5.0%.
+
+ Underneath that figure, three movements pulled in different directions:
+
+ - **Original bid items:** Paid 3.9% below their awarded value.
+- **New item types:** Items that were never in the bid added 7.5%.
+- **Force account and price adjustments:** Added another 1.4%.
+
+ Adding the movements up without regard to direction, 12.8% of contract value changed, or 13%.
 
 ---
 
 ## Step 16: Embed 9, Figure 4: Where the 13% of movement came from
 
-File: `16-mastt-pcd-f04-where-the-13-of-movement.html`. Add an HTML Embed here, directly under the text above, and paste this (25,238 characters).
+File: `16-mastt-pcd-f04-where-the-13-of-movement.html`. Add an HTML Embed here, directly under the text above, and paste this (25,247 characters).
 
 ```html
 <div id="mastt-pcd-f04" class="mpcdf04" role="figure" aria-label="Donut chart: Figure 4: Where the 13% of movement came from. Original items paid below bid value: Value 3.9% of award, Share 30%; Item types not in the bid: Value 7.5% of award, Share 59%; Force account and price adjustments: Value 1.4% of award, Share 11%. Item types not in the bid added the most, and original items paid below their bid value pulled the other way.">
@@ -515,7 +562,7 @@ var total=function(){if(T)return T[mask()];var m=num.exec(D.f),d=(m[2].split('.'
 var desc=function(i){return D.L[i]+', '+D.V[i]+sf+', '+share(D.v[i]/(tot()||1))+((D.m&&D.m[i])||'');};
 var paint=function(){var t=tot()||1,at=0,g=hid.filter(function(h){return!h;}).length>1?GAP:0;segs.forEach(function(s,i){var l=hid[i]?0:D.v[i]/t*100,d=Math.max(0,l-g);s.style.setProperty('--a',+d.toFixed(2));s.style.setProperty('--r',+(100-d).toFixed(2));s.style.setProperty('--o',+(-(at+g/2)).toFixed(2));at+=l;});};
 var texts=function(){var t=tot();rows.forEach(function(r,i){r.querySelector('.mpcdf04-dn-rs').textContent=share(hid[i]||!t?0:D.v[i]/t);});box.setAttribute('data-sh',hid.some(Boolean)?'1':sh0);};
-var show=function(){var k=cur,t=tot(),v=k<0?total():D.V[k],a=k<0?D.tl:D.L[k],m=k<0?(D.u&&D.u.toLowerCase()!==D.tl.toLowerCase()?D.u:''):(box.getAttribute('data-sh')==='1'?share(D.v[k]/(t||1))+' of total':'');
+var show=function(){var k=cur,t=tot(),v=k<0?total():D.V[k],a=k<0?D.tl:D.L[k],m=k<0?(D.u&&D.tl.toLowerCase().indexOf(D.u.toLowerCase())<0?D.u:''):(box.getAttribute('data-sh')==='1'?share(D.v[k]/(t||1))+' of total':'');
 cv.textContent=v;tag(cv,v);cl.textContent=a;cm.textContent=m||'\u00a0';ring.style.setProperty('--ct',k<0?'':getComputedStyle(segs[k]).getPropertyValue('--t'));
 if(k!==shown&&!RM){ctr.classList.remove('mpcdf04-roll');void ctr.offsetWidth;ctr.classList.add('mpcdf04-roll');}shown=k;};
 var update=function(){var k=[pre,pin].filter(function(i){return i>=0&&!hid[i];})[0];cur=k===undefined?-1:k;
@@ -624,7 +671,17 @@ b.addEventListener('blur',function(){pre=-1;update();});});}
 
 Paste into the post body (Rich Text).
 
-The change is broad as well as large. Across 341,637 bid lines on the same 5,265 contracts, 13.4% were never paid at all, about 1 in 7. Only 39.1% ended at exactly the bid quantity. 17.6% overran by more than 10%, and 30.6% underran by more than 10% when the unpaid lines are counted. Vegetative watering went unused on 58% of the jobs that bid it. That points to quantities set with a margin. A check of bid quantities can find them before the work is priced.
+### How bid lines ended
+
+ The change is broad as well as large. Across 341,637 bid lines on the same 5,265 contracts:
+
+ - **Never paid:** 13.4% were never paid at all, about 1 in 7.
+- **Exact quantity:** Only 39.1% ended at exactly the bid quantity.
+- **Overruns:** 17.6% overran by more than 10%.
+- **Underruns:** 30.6% underran by more than 10% when the unpaid lines are counted.
+- **Vegetative watering:** Went unused on 58% of the jobs that bid it.
+
+ That points to quantities set with a margin. A check of bid quantities can find them before the work is priced.
 
 ---
 
@@ -657,14 +714,27 @@ var mxTip=function(host){var tip=host.querySelector(':scope>.mpcdquote1-tip');if
 
 Paste into the post body (Rich Text).
 
-Other public owners report net figures too. The Victorian Auditor-General reported a net rise of 8.7% in total estimated investment across 113 major projects worth $145.5 billion in [its 2024 review](https://www.audit.vic.gov.au/node/34906). A net figure of that kind does not show how many projects moved up or down, or by how much, which is the same limit the Texas DOT contracts show.
+### Net figures hide the movement
 
- **What this means for project teams:** Report gross additions and gross reductions beside the net figure in your change register. Check quantities, especially for temporary and erosion-control items, before tender. Carry an allowance for item types that are not in the bid, because they were the largest single driver of change on these jobs.
+ Other public owners report net figures too. The Victorian Auditor-General reported a net rise of 8.7% in total estimated investment across 113 major projects worth $145.5 billion in [its 2024 review](https://www.audit.vic.gov.au/node/34906).
+
+ A net figure of that kind does not show how many projects moved up or down, or by how much, which is the same limit the Texas DOT contracts show.
+
+ **What this means for project teams:**
+
+- Report gross additions and gross reductions beside the net figure in your change register.
+- Check quantities, especially for temporary and erosion-control items, before tender.
+- Carry an allowance for item types that are not in the bid, because they were the largest single driver of change on these jobs.
 
  
 ## Do bigger jobs change more?
 
- Yes, and by a wide margin. 79% of Texas DOT jobs over $20m received extra days, against 8% of jobs under $100k. Jobs of $1m to $5m got extra days 41% of the time and jobs of $5m to $20m 58% of the time. The median extension among jobs that got extra days grows from 5 days under $100k to 112 days over $20m. Median cost growth rises from -0.3% on jobs under $100k to 5.2% on jobs over $20m.
+ Yes, and by a wide margin. On Texas DOT work, every measure of change climbs with job size:
+
+ - **Extra days:** 79% of jobs over $20m received extra days, against 8% of jobs under $100k.
+- **Middle bands:** Jobs of $1m to $5m got extra days 41% of the time and jobs of $5m to $20m 58% of the time.
+- **Length of extension:** The median extension among jobs that got extra days grows from 5 days under $100k to 112 days over $20m.
+- **Cost growth:** The median rises from -0.3% on jobs under $100k to 5.2% on jobs over $20m.
 
 ---
 
@@ -764,7 +834,11 @@ paint();
 
 Paste into the post body (Rich Text).
 
-The daily late-penalty rate rises with size, from a median $570 a day under $100k to $2,590 a day over $20m. The share of jobs actually penalised does not follow. It sits between 21% and 24% for every band from $1m up. Extra days climb with size far more than penalty rates do.
+### Penalty rates rise, penalties do not
+
+ The daily late-penalty rate rises with size, from a median $570 a day under $100k to $2,590 a day over $20m. The share of jobs actually penalised does not follow. It sits between 21% and 24% for every band from $1m up.
+
+ Extra days climb with size far more than penalty rates do.
 
 ---
 
@@ -802,7 +876,14 @@ var rows=[].slice.call(tb.rows);rows.sort(function(a,c){var x=a.cells[k],y=c.cel
 
 Paste into the post body (Rich Text).
 
-The spread widens with size as well. The middle half of jobs under $100k moved between -3.6% and +3.0%. For jobs over $20m, the middle half moved between +1.5% and +11.0%. The whole distribution shifts right as jobs grow, and the right tail stretches.
+### The spread widens with size
+
+ Bigger jobs do not only change more on average. The range of outcomes widens too:
+
+ - **Jobs under $100k:** The middle half moved between -3.6% and +3.0%.
+- **Jobs over $20m:** The middle half moved between +1.5% and +11.0%.
+
+ The whole distribution shifts right as jobs grow, and the right tail stretches.
 
 ---
 
@@ -875,12 +956,20 @@ fit();if('ResizeObserver' in window){new ResizeObserver(fit).observe(plot);}else
 
 Paste into the post body (Rich Text).
 
-**What this means for project teams:** Set contingency by job size. A flat percentage is too much for small jobs and too little for big ones. For work over $20m, plan for days as well as dollars, because four in five such jobs received extra time.
+**What this means for project teams:**
+
+- Set contingency by job size. A flat percentage is too much for small jobs and too little for big ones.
+- For work over $20m, plan for days as well as dollars, because four in five such jobs received extra time.
 
  
 ### Districts differ inside one owner
 
- Twenty-five Texas DOT districts work under the same owner, specifications and contract forms. Median cost growth runs from +5.3% in Houston to -0.5% in Lufkin. The share of jobs charged late penalties runs from 13% in Odessa to 39% in San Angelo. Work mix and local markets may explain some of that spread. The rest points to local practice.
+ Twenty-five Texas DOT districts work under the same owner, specifications and contract forms. Their results still differ widely:
+
+ - **Cost growth:** The median runs from +5.3% in Houston to -0.5% in Lufkin.
+- **Late penalties:** The share of jobs charged runs from 13% in Odessa to 39% in San Angelo.
+
+ Work mix and local markets may explain some of that spread. The rest points to local practice.
 
 ---
 
@@ -923,7 +1012,17 @@ Paste into the post body (Rich Text).
  
 ## Who delivers the work?
 
- Subcontracting is the norm on Texas DOT work. Across 3,632 active construction jobs in the January 2017 and November 2024 reports, 77% declared subcontractors, and the median active job listed 5. The median share of contract value declared as subcontracted was between 12% and 15% across the two dates. Weighted by dollars it was between 22% and 25%, because larger jobs subcontract more.
+ Subcontracting is the norm on Texas DOT work, and firms new to it are charged late penalties a little more often than established ones.
+
+ 
+### Subcontracting is the norm
+
+ Across 3,632 active construction jobs in the January 2017 and November 2024 reports:
+
+ - **Jobs declaring subcontractors:** 77% declared subcontractors.
+- **Subcontractors per job:** The median active job listed 5.
+- **Share of value:** The median share of contract value declared as subcontracted was between 12% and 15% across the two dates.
+- **Weighted by dollars:** It was between 22% and 25%, because larger jobs subcontract more.
 
 ---
 
@@ -956,7 +1055,16 @@ var mxTip=function(host){var tip=host.querySelector(':scope>.mpcdstats2-tip');if
 
 Paste into the post body (Rich Text).
 
-Firms new to Texas DOT work were charged late penalties on 26% of their first jobs, against 20% for established firms. New here means no Texas DOT award before 2012, and the comparison covers jobs from 2012 onward. On their second to fifth jobs the new firms were at 27%, and on their sixth to twentieth at 26%. That suggests the gap is about the firm and not only the first job. Firms that reach 21 or more jobs are the survivors, which may explain the lower rate in the last group.
+### New firms stay riskier for longer
+
+ Firms new to Texas DOT work were charged late penalties on 26% of their first jobs, against 20% for established firms. New here means no Texas DOT award before 2012, and the comparison covers jobs from 2012 onward.
+
+ The higher rate did not fade as the new firms took on more work:
+
+ - **Second to fifth jobs:** The new firms were at 27%.
+- **Sixth to twentieth jobs:** They were at 26%.
+
+ That suggests the gap is about the firm and not only the first job. Firms that reach 21 or more jobs are the survivors, which may explain the lower rate in the last group.
 
 ---
 
@@ -989,14 +1097,32 @@ var mxTip=function(host){var tip=host.querySelector(':scope>.mpcdf10-tip');if(!t
 
 Paste into the post body (Rich Text).
 
-**What this means for project teams:** Treat a new bidder as a modest extra risk, not a disaster. Ask for a track record with other owners. With about five subcontractors on a typical job, plan the paperwork and the payment chain for that many firms from the start.
+**What this means for project teams:**
+
+- Treat a new bidder as a modest extra risk, not a disaster, and ask for a track record with other owners.
+- With about five subcontractors on a typical job, plan the paperwork and the payment chain for that many firms from the start.
 
  
 ## How often do US federal contracts change after signing?
 
- Of 73,571 completed US federal construction contracts over $1m, 78.5% changed in value after signing, and 38% received a formal change order. 74% ran past their original end date. The median shift in end date across all of these contracts was 150 days, and 258 days among those that were extended. Leaving out option exercises, the typical value growth was 2.9%, and one contract in ten grew by about 31% or more. Across all 583,728 completed contracts from federal fiscal years 2008 to 2026, 39% changed in value and 16% received a change order.
+ Most large federal construction contracts change after signing. Of 73,571 completed US federal construction contracts over $1m:
 
- Change orders are a designed part of the system. The standard federal construction changes clause lets the contracting officer order changes within the general scope of the contract, and requires an equitable adjustment when a change affects cost or time ([FAR 52.243-4](https://www.acquisition.gov/far/52.243-4)). The US Government Accountability Office reported in 2019 that federal agencies spent more than $36 billion on construction contracts in fiscal year 2018, and that neither the General Services Administration nor the Army Corps of Engineers regularly monitors how long it takes to finalise construction contract changes ([GAO-19-500](https://www.gao.gov/products/gao-19-500)). Where finalising a change is not tracked, delay in pricing it is hard to see.
+ - **Changed in value:** 78.5% changed in value after signing, and 38% received a formal change order.
+- **Ran late:** 74% ran past their original end date.
+- **Time shift:** The median shift in end date was 150 days across all of these contracts, and 258 days among those that were extended.
+- **Value growth:** Leaving out option exercises, the typical growth was 2.9%, and one contract in ten grew by about 31% or more.
+
+ Across all 583,728 completed contracts from federal fiscal years 2008 to 2026, 39% changed in value and 16% received a change order.
+
+ 
+### Change is built into the rules
+
+ Change orders are a designed part of the system:
+
+ - **The changes clause:** The standard federal construction clause lets the contracting officer order changes within the general scope of the contract, and requires an equitable adjustment when a change affects cost or time ([FAR 52.243-4](https://www.acquisition.gov/far/52.243-4)).
+- **Little tracking:** The US Government Accountability Office reported in 2019 that federal agencies spent more than $36 billion on construction contracts in fiscal year 2018, and that neither the General Services Administration nor the Army Corps of Engineers regularly monitors how long it takes to finalise construction contract changes ([GAO-19-500](https://www.gao.gov/products/gao-19-500)).
+
+ Where finalising a change is not tracked, delay in pricing it is hard to see.
 
 ---
 
@@ -1029,18 +1155,47 @@ var mxTip=function(host){var tip=host.querySelector(':scope>.mpcdf11-tip');if(!t
 
 Paste into the post body (Rich Text).
 
-Cost-plus contracts changed in value 71% of the time, against 39% for firm fixed price. Under the federal cost-reimbursement rules, the contract states an estimated total cost that works as a ceiling the contractor may not exceed, except at its own risk, without the contracting officer's approval ([FAR 16.301-1](https://www.acquisition.gov/far/16.301-1)), so growth on these jobs can reflect a ceiling being raised. The top tenth of cost-plus contracts grew by more than 285%, against 19.5% for firm fixed price. Cost-plus work is rare in construction, with 1,094 contracts against 576,302 firm fixed price.
+### Cost-plus contracts change most
 
- Single-bid contracts changed less often, 37% against 46% for contracts with three or four offers. One bidder does not mean a runaway job. Single offers may be more common on small or specialist work, which changes less anyway. By type of work, 29% of other heavy and civil contracts had a change order, against 8% for building finishing. Utility systems stood at 19%, non-residential building at 18%, highways and bridges at 14%, and residential building at 9%.
+ Cost-plus contracts changed in value 71% of the time, against 39% for firm fixed price. Under the federal cost-reimbursement rules, the contract states an estimated total cost that works as a ceiling the contractor may not exceed, except at its own risk, without the contracting officer's approval ([FAR 16.301-1](https://www.acquisition.gov/far/16.301-1)), so growth on these jobs can reflect a ceiling being raised.
 
- Firm size alone does not predict change. Small businesses and larger firms both saw about 39% of contracts change in value. Larger firms collected more formal change orders per contract, 0.57 against 0.34, which may reflect the longer and bigger jobs they take on.
+ - **Top tenth:** The top tenth of cost-plus contracts grew by more than 285%, against 19.5% for firm fixed price.
+- **Rare in construction:** Cost-plus work covers 1,094 contracts against 576,302 firm fixed price.
 
- **What this means for project teams:** On big federal jobs, change is the normal case. Plan contingency and administration for it from day one. Watch cost-plus jobs far more closely than fixed-price ones, and set contingency by type of work, with more for civil and utility work than for finishing trades.
+ 
+### Bids and type of work
+
+ Single-bid contracts changed less often, 37% against 46% for contracts with three or four offers. One bidder does not mean a runaway job. Single offers may be more common on small or specialist work, which changes less anyway.
+
+ By type of work, the share of contracts with a change order was:
+
+ - **Other heavy and civil:** 29%.
+- **Utility systems:** 19%.
+- **Non-residential building:** 18%.
+- **Highways and bridges:** 14%.
+- **Residential building:** 9%.
+- **Building finishing:** 8%.
+
+ 
+### Firm size alone does not predict change
+
+ Small businesses and larger firms both saw about 39% of contracts change in value. Larger firms collected more formal change orders per contract, 0.57 against 0.34, which may reflect the longer and bigger jobs they take on.
+
+ **What this means for project teams:**
+
+- On big federal jobs, change is the normal case. Plan contingency and administration for it from day one.
+- Watch cost-plus jobs far more closely than fixed-price ones.
+- Set contingency by type of work, with more for civil and utility work than for finishing trades.
 
  
 ## How do Australian and US contract changes compare?
 
- The size rule holds in both countries. In US federal contracts, the share changing in value rises from 24% under $100k to 88% at $10m to $100m. In Commonwealth construction contract notices, the share amended rises from 15% to 72% over the same span. At every size band, the US share is higher, although the two are within one point at $100k to $1m.
+ The size rule holds in both countries. From contracts under $100k to contracts of $10m to $100m:
+
+ - **US federal:** The share changing in value rises from 24% to 88%.
+- **Commonwealth:** The share of construction contract notices amended rises from 15% to 72%.
+
+ At every size band, the US share is higher, although the two are within one point at $100k to $1m.
 
 ---
 
@@ -1112,14 +1267,36 @@ if(window.ResizeObserver)new ResizeObserver(function(){measure();place();}).obse
 
 Paste into the post body (Rich Text).
 
-The two records are not the same measure. US records type every modification, and the figure here counts any modification that changed contract value. Commonwealth notices record only whether a contract was amended, and amendments include time extensions and option exercises as well as scope changes. Under Department of Finance guidance, [options, extensions and renewals that change a contract's value by $10,000 or more](https://finance.gov.au/publications/resource-management-guides/procurement-publishing-and-reporting-obligations-rmg-423/contracting-reporting) are reported as amendments to the original contract notice. Even so, the direction is the same.
+### The two records measure different things
 
- 33.6% of the 31,773 Commonwealth construction contract notices were amended at least once. The Commonwealth Procurement Rules set a [$7.5 million threshold for construction services](https://www.finance.gov.au/government/procurement/commonwealth-procurement-rules/procurement-method), and 73% of the 890 contracts at or above that level were amended. Big public jobs change often in all three sets of records. 70% of Texas DOT jobs over $10m received extra days, 73% of Commonwealth contracts over $7.5m were amended, and 78.5% of US federal contracts over $1m changed in value. The definitions differ, so the figures show a common pattern and not a ranking.
+ The two records are not the same measure, so read the comparison as a direction, not a ranking:
+
+ - **US records:** Type every modification, and the figure here counts any modification that changed contract value.
+- **Commonwealth notices:** Record only whether a contract was amended, and amendments include time extensions and option exercises as well as scope changes.
+- **Reporting rule:** Under Department of Finance guidance, [options, extensions and renewals that change a contract's value by $10,000 or more](https://finance.gov.au/publications/resource-management-guides/procurement-publishing-and-reporting-obligations-rmg-423/contracting-reporting) are reported as amendments to the original contract notice.
+
+ Even so, the direction is the same.
+
+ 
+### Big public jobs change in every record
+
+ 33.6% of the 31,773 Commonwealth construction contract notices were amended at least once. The Commonwealth Procurement Rules set a [$7.5 million threshold for construction services](https://www.finance.gov.au/government/procurement/commonwealth-procurement-rules/procurement-method), and 73% of the 890 contracts at or above that level were amended.
+
+ Big public jobs change often in all three sets of records:
+
+ - **Texas DOT:** 70% of jobs over $10m received extra days.
+- **Commonwealth:** 73% of contracts over $7.5m were amended.
+- **US federal:** 78.5% of contracts over $1m changed in value.
+
+ The definitions differ, so the figures show a common pattern and not a ranking.
 
  
 ### Defence is most of the federal record
 
- The Department of Defense awarded 62% of the completed US federal construction contracts, 363,102 of 583,728. In Australia, Defence holds 53% of the contract notices and 69% of the amended ones. US Defense contracts changed in value slightly less often than the average, 36.5% against 39.1%. Australian Defence contracts were amended more often than the rest, 43% against 22%.
+ Defence is the largest single buyer of public construction in both countries:
+
+ - **United States:** The Department of Defense awarded 62% of the completed US federal construction contracts, 363,102 of 583,728. Its contracts changed in value slightly less often than the average, 36.5% against 39.1%.
+- **Australia:** Defence holds 53% of the contract notices and 69% of the amended ones. Its contracts were amended more often than the rest, 43% against 22%.
 
 ---
 
@@ -1235,14 +1412,31 @@ if('MutationObserver' in window)new MutationObserver(function(){if(!root.classLi
 
 Paste into the post body (Rich Text).
 
-Agencies working under the same federal rules differ widely. Justice changed 19% of its contracts in value, Interior 51% and Transportation 54%. The top tenth of Federal Aviation Administration contracts grew by about 490%. Practice inside each agency matters as much as the rules.
+Agencies working under the same federal rules differ widely:
 
- **What this means for project teams:** Any national federal benchmark is mostly a Defence benchmark, so split it out before you compare it with your own portfolio. When you borrow a figure from another country, check how that country defines change before you use it.
+ - **Justice:** Changed 19% of its contracts in value.
+- **Interior:** Changed 51%.
+- **Transportation:** Changed 54%.
+- **Federal Aviation Administration:** The top tenth of its contracts grew by about 490%.
+
+ Practice inside each agency matters as much as the rules.
+
+ **What this means for project teams:**
+
+- Any national federal benchmark is mostly a Defence benchmark, so split it out before you compare it with your own portfolio.
+- When you borrow a figure from another country, check how that country defines change before you use it.
 
  
 ### Contract change is not budget growth
 
- Contract growth and budget growth are different measures, and they differ by an order of magnitude. Median cost growth on completed contracts is close to 2% for both Texas DOT and Florida DOT. Completed New York City capital projects, measured from the first recorded budget, grew by a median of 28%, a figure that includes funding added in stages. The measures are not like for like, but a gap this size suggests that much of the growth in a public project budget happens before award or sits outside the contract. A 2002 study in the Journal of the American Planning Association points the same way. Its [sample of 258 transport projects worth US$90 billion](https://arxiv.org/abs/1303.6604) showed cost estimates that were systematically misleading.
+ Contract growth and budget growth are different measures, and they differ by an order of magnitude:
+
+ - **Contract growth:** Median cost growth on completed contracts is close to 2% for both Texas DOT and Florida DOT.
+- **Budget growth:** Completed New York City capital projects, measured from the first recorded budget, grew by a median of 28%, a figure that includes funding added in stages.
+
+ The measures are not like for like, but a gap this size suggests that much of the growth in a public project budget happens before award or sits outside the contract.
+
+ A 2002 study in the Journal of the American Planning Association points the same way. Its [sample of 258 transport projects worth US$90 billion](https://arxiv.org/abs/1303.6604) showed cost estimates that were systematically misleading.
 
 ---
 
@@ -1280,26 +1474,39 @@ var rows=[].slice.call(tb.rows);rows.sort(function(a,c){var x=a.cells[k],y=c.cel
 
 Paste into the post body (Rich Text).
 
-**What this means for project teams:** Hold a contingency for change inside the contract and a second allowance for change that enters through scope, staging and escalation outside it. A contract benchmark of 2% will not cover a project budget that has historically grown by far more.
+**What this means for project teams:**
+
+- Hold a contingency for change inside the contract.
+- Hold a second allowance for change that enters through scope, staging and escalation outside it.
+- Remember that a contract benchmark of 2% will not cover a project budget that has historically grown by far more.
 
  
 ## What do public risk registers plan for?
 
- The risk register is where a project team writes down what it expects to go wrong. We read the latest version of 64 public project risk registers, 53 Australian and 11 US, covering terminal stations, motorways, rail, aquatic centres, galleries and other public works. The most common themes are community and stakeholders, approvals, weather and heritage. Contractor insolvency, by contrast, is rare.
+ The risk register is where a project team writes down what it expects to go wrong. We read the latest version of 64 public project risk registers, 53 Australian and 11 US, covering terminal stations, motorways, rail, aquatic centres, galleries and other public works.
 
- 9 of the 64 registers, 14%, mention a contractor or subcontractor going insolvent. Only 3 of the 18 Australian registers dated 2022 or later do, and seven of those 18 come from one network company. Each match was read by hand. Where a fix is given, it is usually a financial check of the contractor at tender.
+ The most common themes are community and stakeholders, approvals, weather and heritage. Contractor insolvency, by contrast, is rare.
+
+ 
+### Few registers plan for contractor insolvency
+
+ - **All registers:** 9 of the 64, 14%, mention a contractor or subcontractor going insolvent.
+- **Recent Australian registers:** Only 3 of the 18 dated 2022 or later do, and seven of those 18 come from one network company.
+- **The fix given:** Where there is one, it is usually a financial check of the contractor at tender.
+
+ Each match was read by hand.
 
 ---
 
 ## Step 41: Embed 22, Figure 15: Risk registers that mention contractor insolvency
 
-File: `41-mastt-pcd-f15-risk-registers-that-mention-contractor.html`. Add an HTML Embed here, directly under the text above, and paste this (23,233 characters).
+File: `41-mastt-pcd-f15-risk-registers-that-mention-contractor.html`. Add an HTML Embed here, directly under the text above, and paste this (23,173 characters).
 
 ```html
-<div id="mastt-pcd-f15" class="mpcdf15" role="figure" aria-label="Waffle chart: Figure 15: Risk registers that mention contractor insolvency. Yes: Value 9 registers registers, Share 14%, Cells 14; No: Value 55 registers registers, Share 86%, Cells 86. Nine of 64 registers, about one in seven, plan for it.">
+<div id="mastt-pcd-f15" class="mpcdf15" role="figure" aria-label="Waffle chart: Figure 15: Risk registers that mention contractor insolvency. Yes: Value 9 registers, Share 14%, Cells 14; No: Value 55 registers, Share 86%, Cells 86. Nine of 64 registers, about one in seven, plan for it.">
 <script>(function(){var r=document.getElementById('mastt-pcd-f15');if(!r)return;try{if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;}catch(e){}r.className+=' mpcdf15-js';})();</script>
 <style>#mastt-pcd-f15{--mpcdf15-ink:#0C2029;--mpcdf15-ink-2:#45525B;--mpcdf15-muted:#94A2AB;--mpcdf15-axis-label:#48555E;--mpcdf15-faint:#94A2AB;--mpcdf15-line:#ECEFF1;--mpcdf15-line-h:#DDE6EE;--mpcdf15-wash:#F6F8F9;--mpcdf15-grid:#EAEEF1;--mpcdf15-axis:#CDD5DA;--mpcdf15-card:#FFFFFF;--mpcdf15-accent:#E9720E;--mpcdf15-accent-ink:#E9720E;--mpcdf15-blue:#0096DD;--mpcdf15-link:#1476BE;--mpcdf15-link-h:#0C4F86;--mpcdf15-orange:#E9720E;--mpcdf15-green:#5BB65E;--mpcdf15-green-d:#2E7D33;--mpcdf15-purple:#7E52C4;--mpcdf15-amber:#F9B140;--mpcdf15-cyan:#29BFD3;--mpcdf15-red:#E8544E;--mpcdf15-slate:#5F7D8B;--mpcdf15-gray:#C6CBD0;--mpcdf15-green-ink:#3F9E4C;--mpcdf15-red-ink:#D8433D;--mpcdf15-amber-ink:#C77F1A;--mpcdf15-gray-ink:#8A97A0;--mpcdf15-gray-val:#7C8B94;--series-1:#E9720E;--series-2:#0096DD;--series-3:#5BB65E;--series-4:#7E52C4;--series-5:#F9B140;--series-6:#29BFD3;--series-7:#E8544E;--foreground:var(--mpcdf15-ink);--text-secondary:var(--mpcdf15-ink-2);--text-muted:var(--mpcdf15-gray-ink);--border:var(--mpcdf15-line);--border-subtle:var(--mpcdf15-grid);--border-strong:var(--mpcdf15-axis);--surface:#FFFFFF;--surface-muted:var(--mpcdf15-wash);--background:#FFFFFF;--accent:var(--mpcdf15-accent);--accent-strong:var(--mpcdf15-accent-ink);--accent-subtle:rgba(233,114,14,.12);--success:var(--mpcdf15-green);--warning:var(--mpcdf15-amber);--danger:var(--mpcdf15-red);box-sizing:border-box;position:relative;display:block;width:100%;max-width:800px;margin:0 auto 24px;padding:0;color:var(--mpcdf15-ink);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;font-weight:400;letter-spacing:normal;text-align:left;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}#mastt-pcd-f15.mpcdf15-wide{max-width:900px}#mastt-pcd-f15 *,#mastt-pcd-f15 *::before,#mastt-pcd-f15 *::after{box-sizing:border-box}#mastt-pcd-f15 :where(div,p,span,ul,ol,li,a,b,strong,em,i,small,table,thead,tbody,tr,th,td,caption,button,details,summary,dl,dt,dd,blockquote,figure,figcaption,cite,sup,sub,code){font-family:inherit;font-size:inherit;line-height:inherit;font-weight:inherit;font-style:inherit;letter-spacing:inherit;text-transform:none;color:inherit;margin:0;padding:0;border:0;border-radius:0;background:none;text-align:inherit;text-decoration:none;max-width:none;width:auto;float:none;min-height:0;box-shadow:none;quotes:none}#mastt-pcd-f15 :where(h2,h3,h4){margin:0;padding:0;border:0;background:none;color:var(--mpcdf15-ink);text-transform:none;letter-spacing:normal;max-width:none}#mastt-pcd-f15 :where(b,strong){font-weight:700}#mastt-pcd-f15 :where(em,i){font-style:italic}#mastt-pcd-f15 :where(cite){font-style:normal}#mastt-pcd-f15 :where(a){color:var(--mpcdf15-link);text-decoration:none;align-self:flex-start}#mastt-pcd-f15 :where(a):hover{color:var(--mpcdf15-link-h)}#mastt-pcd-f15 :where(blockquote)::before,#mastt-pcd-f15 :where(blockquote)::after{content:none}#mastt-pcd-f15 svg{display:block;overflow:visible;max-width:none}#mastt-pcd-f15 :where(svg text){font-family:inherit}#mastt-pcd-f15 .mpcdf15-sr{position:absolute!important;left:0;top:0;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}#mastt-pcd-f15 table.mpcdf15-sr{display:block}#mastt-pcd-f15 .mpcdf15-card{background:var(--mpcdf15-card);border:1px solid var(--mpcdf15-line);border-radius:16px;padding:26px 30px 20px;display:flex;flex-direction:column}#mastt-pcd-f15 .mpcdf15-callout{background:var(--mpcdf15-wash);border-radius:10px;padding:14px 18px;font-size:17px;line-height:1.45;color:var(--mpcdf15-ink-2);font-weight:400}#mastt-pcd-f15 .mpcdf15-callout strong{color:var(--mpcdf15-accent);font-weight:700}#mastt-pcd-f15 .mpcdf15-body{min-width:0;display:flex;flex-direction:column;gap:14px;margin-top:24px}#mastt-pcd-f15 .mpcdf15-card>.mpcdf15-body:first-child{margin-top:4px}#mastt-pcd-f15 .mpcdf15-cap{margin-top:22px;text-align:center;font-size:13px;line-height:1.45;font-weight:600;letter-spacing:1.4px;text-transform:uppercase;color:var(--mpcdf15-ink)}#mastt-pcd-f15 .mpcdf15-src{margin-top:7px;text-align:center;font-size:11.5px;line-height:1.45;color:var(--mpcdf15-muted);font-weight:400}#mastt-pcd-f15 .mpcdf15-src+.mpcdf15-src{margin-top:3px}#mastt-pcd-f15 .mpcdf15-scroll{overflow-x:auto;min-width:0;max-width:100%}#mastt-pcd-f15 :where(.mpcdf15-body div,.mpcdf15-body table){min-width:0}#mastt-pcd-f15 .mpcdf15-body>*{max-width:100%}#mastt-pcd-f15 .mpcdf15-tip{position:absolute;z-index:5;pointer-events:none;background:var(--mpcdf15-ink);color:#fff;font-size:13px;line-height:1.35;padding:7px 10px;border-radius:8px;white-space:nowrap;opacity:0;transition:opacity .12s;transform:translate(-50%,calc(-100% - 10px))}#mastt-pcd-f15 .mpcdf15-tip b{color:#fff;font-weight:700}#mastt-pcd-f15 .mpcdf15-tip.mpcdf15-on{opacity:1}#mastt-pcd-f15 .mpcdf15-legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:14px;color:var(--mpcdf15-ink)}#mastt-pcd-f15 .mpcdf15-key{display:inline-flex;align-items:center;gap:7px}#mastt-pcd-f15 .mpcdf15-sw{width:12px;height:12px;border-radius:3px;flex:none;display:inline-block}#mastt-pcd-f15 .mpcdf15-tabs{display:flex;flex-direction:column;gap:16px}#mastt-pcd-f15 .mpcdf15-tablist{display:inline-flex;flex-wrap:wrap;gap:4px;padding:4px;background:var(--mpcdf15-wash);border-radius:10px;align-self:center;max-width:100%}#mastt-pcd-f15 .mpcdf15-tab{cursor:pointer;font-size:14px;font-weight:600;line-height:1.2;color:var(--mpcdf15-ink-2);padding:8px 14px;border-radius:7px;border:1px solid transparent;transition:color .18s ease,background-color .18s ease,border-color .18s ease}#mastt-pcd-f15 .mpcdf15-tab:hover{color:var(--mpcdf15-blue)}#mastt-pcd-f15 .mpcdf15-tab[aria-selected="true"]{background:#fff;color:var(--mpcdf15-ink);border-color:var(--mpcdf15-line-h)}#mastt-pcd-f15 .mpcdf15-tab:focus-visible{outline:2px solid var(--mpcdf15-blue);outline-offset:2px}#mastt-pcd-f15 .mpcdf15-panel[hidden]{display:none!important}#mastt-pcd-f15 .mpcdf15-note{font-size:13px;color:var(--mpcdf15-muted)}#mastt-pcd-f15 .mpcdf15-gap{height:24px}@media (max-width:560px){#mastt-pcd-f15 .mpcdf15-card{padding:18px 14px 14px;border-radius:12px}#mastt-pcd-f15 .mpcdf15-callout{font-size:14px;padding:11px 13px}#mastt-pcd-f15 .mpcdf15-cap{font-size:10.5px;letter-spacing:.8px;margin-top:16px}#mastt-pcd-f15 .mpcdf15-body{margin-top:18px}}#mastt-pcd-f15 .mpcdf15-k0{--s:var(--mpcdf15-accent);--t:var(--mpcdf15-accent)}#mastt-pcd-f15 .mpcdf15-k1{--s:var(--mpcdf15-blue);--t:var(--mpcdf15-blue)}#mastt-pcd-f15 .mpcdf15-k2{--s:var(--mpcdf15-green);--t:var(--mpcdf15-green-ink)}#mastt-pcd-f15 .mpcdf15-k3{--s:var(--mpcdf15-purple);--t:var(--mpcdf15-purple)}#mastt-pcd-f15 .mpcdf15-k4{--s:var(--mpcdf15-amber);--t:var(--mpcdf15-amber-ink)}#mastt-pcd-f15 .mpcdf15-k5{--s:var(--mpcdf15-cyan);--t:#17A2B4}#mastt-pcd-f15 .mpcdf15-k6{--s:var(--mpcdf15-red);--t:var(--mpcdf15-red-ink)}#mastt-pcd-f15 .mpcdf15-k7{--s:var(--mpcdf15-slate);--t:var(--mpcdf15-slate)}#mastt-pcd-f15 .mpcdf15-kg{--s:var(--mpcdf15-gray);--t:var(--mpcdf15-gray-val)}#mastt-pcd-f15 .mpcdf15-wf{position:relative;min-width:0}#mastt-pcd-f15 .mpcdf15-wf-body{display:flex;flex-wrap:wrap;align-items:center;gap:24px 34px;min-width:0}#mastt-pcd-f15 .mpcdf15-wf-board{flex:0 1 max(284px,calc((460px - 100%)*999));min-width:0}#mastt-pcd-f15 .mpcdf15-wf-nl .mpcdf15-wf-board{flex:1 1 100%}#mastt-pcd-f15 .mpcdf15-wf-grid{position:relative;width:100%;max-width:284px;margin:0 auto;display:grid;grid-auto-flow:column;grid-template-columns:repeat(var(--cols),minmax(0,1fr));grid-template-rows:repeat(var(--rows),auto);gap:3px;transform:scaleY(-1);outline:none;touch-action:pan-y;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent;cursor:default}#mastt-pcd-f15 .mpcdf15-wf-grid:focus-visible{outline:2px solid var(--mpcdf15-blue);outline-offset:4px;border-radius:4px}#mastt-pcd-f15 .mpcdf15-wf-grid .mpcdf15-g{display:contents;--cell:var(--s)}#mastt-pcd-f15 .mpcdf15-wf-grid i{display:block;aspect-ratio:1;border-radius:22%;background:var(--cell);transition:opacity .24s ease,filter .18s ease}#mastt-pcd-f15 .mpcdf15-wf-grid .mpcdf15-r i{border-radius:50%}#mastt-pcd-f15 .mpcdf15-wf-grid .mpcdf15-f i{position:relative}#mastt-pcd-f15 .mpcdf15-wf-grid .mpcdf15-f i::after{content:"";position:absolute;inset:3px;border:1.5px solid #fff;border-radius:inherit}#mastt-pcd-f15 .mpcdf15-wf-grid.mpcdf15-act .mpcdf15-g:not(.mpcdf15-on) i{opacity:.4}#mastt-pcd-f15 .mpcdf15-wf-grid.mpcdf15-act .mpcdf15-g.mpcdf15-on i{filter:brightness(1.07) saturate(1.05)}#mastt-pcd-f15 .mpcdf15-wf-grid i.mpcdf15-cur{position:relative;outline:2px solid var(--mpcdf15-ink);outline-offset:1px}#mastt-pcd-f15 .mpcdf15-wf-msg{display:grid;min-height:160px;place-items:center;font-size:14px;color:var(--mpcdf15-muted)}#mastt-pcd-f15 .mpcdf15-wf-legend{flex:1 1 140px;min-width:0;max-width:max(340px,calc((100% - 460px)*999));margin:0 auto;padding:0;list-style:none;display:grid;grid-template-columns:16px max-content minmax(0,1fr);column-gap:12px;row-gap:6px}#mastt-pcd-f15 .mpcdf15-wf-legend li{grid-column:1/-1;display:grid;grid-template-columns:16px 4em minmax(0,1fr);grid-template-columns:subgrid;margin:0;padding:0;list-style:none}#mastt-pcd-f15 .mpcdf15-wf-legend li::before,#mastt-pcd-f15 .mpcdf15-wf-legend li::marker{content:none}#mastt-pcd-f15 .mpcdf15-wf-item{--cell:var(--s);grid-column:1/-1;display:grid;grid-template-columns:16px 4em minmax(0,1fr);grid-template-columns:subgrid;align-items:center;width:100%;min-height:40px;color:var(--mpcdf15-ink);cursor:pointer;font-size:16px;line-height:1.3;text-align:left;-webkit-tap-highlight-color:transparent;transition:opacity .2s ease}#mastt-pcd-f15 .mpcdf15-wf-item:focus-visible{outline:2px solid var(--mpcdf15-blue);outline-offset:3px;border-radius:6px}#mastt-pcd-f15 .mpcdf15-wf-item.mpcdf15-dim{opacity:.55}#mastt-pcd-f15 .mpcdf15-wf-sw{position:relative;display:block;width:16px;height:16px;border-radius:4px;border:2px solid var(--cell);background:var(--cell)}#mastt-pcd-f15 .mpcdf15-wf-sw.mpcdf15-r{border-radius:50%}#mastt-pcd-f15 .mpcdf15-wf-sw.mpcdf15-f::after{content:"";position:absolute;inset:1px;border:1.5px solid #fff;border-radius:2px}#mastt-pcd-f15 .mpcdf15-wf-is{font-size:18px;font-weight:700;line-height:1;color:var(--t);font-variant-numeric:tabular-nums;transform-origin:left center;transition:transform .18s ease}#mastt-pcd-f15 .mpcdf15-wf-item.mpcdf15-lead .mpcdf15-wf-is{font-size:22px}#mastt-pcd-f15 .mpcdf15-wf-item.mpcdf15-on .mpcdf15-wf-is{transform:scale(1.06)}#mastt-pcd-f15 .mpcdf15-wf-il{min-width:0;overflow-wrap:anywhere}#mastt-pcd-f15 .mpcdf15-wf-tc{display:block;width:max-content;max-width:min(240px,100%);white-space:normal;line-height:1.3}#mastt-pcd-f15 .mpcdf15-wf-tr{display:flex;align-items:center;gap:8px}#mastt-pcd-f15 .mpcdf15-wf-ts{position:relative;flex:none;width:10px;height:10px;border-radius:3px;background:var(--cell)}#mastt-pcd-f15 .mpcdf15-wf-ts.mpcdf15-r{border-radius:50%}#mastt-pcd-f15 .mpcdf15-wf-ts.mpcdf15-f::after{content:"";position:absolute;inset:2px;border:1px solid var(--mpcdf15-ink);border-radius:1px}#mastt-pcd-f15 .mpcdf15-wf-tv{margin-left:auto;padding-left:8px;font-variant-numeric:tabular-nums}#mastt-pcd-f15 .mpcdf15-wf-tm{display:block;margin-left:18px;font-size:12px;opacity:.78;font-variant-numeric:tabular-nums}@keyframes mpcdf15-wf-in{from{opacity:0;transform:scale(.4)}}#mastt-pcd-f15.mpcdf15-js:not(.mpcdf15-in) .mpcdf15-wf-grid i{opacity:0}#mastt-pcd-f15.mpcdf15-js.mpcdf15-in .mpcdf15-wf-grid i{animation:mpcdf15-wf-in .5s cubic-bezier(.16,1,.3,1) var(--d,0s) backwards}#mastt-pcd-f15.mpcdf15-js .mpcdf15-wf-legend li{opacity:0;transform:translateY(6px)}#mastt-pcd-f15.mpcdf15-js.mpcdf15-in .mpcdf15-wf-legend li{opacity:1;transform:none;transition:opacity .5s ease calc(.15s + var(--i,0)*.08s),transform .5s ease calc(.15s + var(--i,0)*.08s)}@media (max-width:620px){#mastt-pcd-f15 .mpcdf15-wf-legend{column-gap:10px}#mastt-pcd-f15 .mpcdf15-wf-item{font-size:14px}#mastt-pcd-f15 .mpcdf15-wf-is{font-size:16px}#mastt-pcd-f15 .mpcdf15-wf-item.mpcdf15-lead .mpcdf15-wf-is{font-size:20px}}@media (prefers-reduced-motion:reduce){#mastt-pcd-f15 .mpcdf15-wf-grid i,#mastt-pcd-f15 .mpcdf15-wf-item,#mastt-pcd-f15 .mpcdf15-wf-is{transition:none}}</style>
-<div class="mpcdf15-card"><p class="mpcdf15-callout"><strong>Nine of 64 registers</strong>, about one in seven, plan for it.</p><div class="mpcdf15-body"><div class="mpcdf15-wf" role="group" aria-label="Public risk registers by mention of contractor insolvency" data-w='{"r":10,"c":10,"p":-1,"n":[14,86],"L":["Yes","No"],"S":["14%","86%"],"M":["9 registers registers","55 registers registers"],"C":["var(--mpcdf15-accent)","var(--mpcdf15-blue)"],"H":["",""]}'><div class="mpcdf15-wf-body"><div class="mpcdf15-wf-board"><div class="mpcdf15-wf-grid" style="--cols:10;--rows:10" tabindex="0" role="group" aria-roledescription="waffle chart" aria-label="Public risk registers by mention of contractor insolvency. 100 cells. Use arrow keys to move between cells, Page Up and Page Down to jump between categories."><b class="mpcdf15-g mpcdf15-k0"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></b><b class="mpcdf15-g mpcdf15-k1"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></b></div></div><ul class="mpcdf15-wf-legend" aria-label="Categories"><li style="--i:0"><button type="button" class="mpcdf15-wf-item mpcdf15-k0 mpcdf15-lead" aria-pressed="false"><span class="mpcdf15-wf-sw" aria-hidden="true"></span><span class="mpcdf15-wf-is" data-to="14" data-suf="%">14%</span><span class="mpcdf15-wf-il">Yes</span></button></li><li style="--i:1"><button type="button" class="mpcdf15-wf-item mpcdf15-k1" aria-pressed="false"><span class="mpcdf15-wf-sw" aria-hidden="true"></span><span class="mpcdf15-wf-is" data-to="86" data-suf="%">86%</span><span class="mpcdf15-wf-il">No</span></button></li></ul></div><p class="mpcdf15-sr mpcdf15-wf-live" aria-live="polite" aria-atomic="true"></p><table class="mpcdf15-sr"><caption>Public risk registers by mention of contractor insolvency</caption><thead><tr><th scope="col">Category</th><th scope="col">Value</th><th scope="col">Share</th><th scope="col">Cells</th></tr></thead><tbody><tr><th scope="row">Yes</th><td>9 registers registers</td><td>14%</td><td>14</td></tr><tr><th scope="row">No</th><td>55 registers registers</td><td>86%</td><td>86</td></tr></tbody></table></div></div><p class="mpcdf15-cap">Figure 15: Risk registers that mention contractor insolvency</p><p class="mpcdf15-src">Source: Mastt analysis of public project risk registers, 53 Australian and 11 US, latest version of each</p></div>
+<div class="mpcdf15-card"><p class="mpcdf15-callout"><strong>Nine of 64 registers</strong>, about one in seven, plan for it.</p><div class="mpcdf15-body"><div class="mpcdf15-wf" role="group" aria-label="Public risk registers by mention of contractor insolvency" data-w='{"r":10,"c":10,"p":-1,"n":[14,86],"L":["Yes","No"],"S":["14%","86%"],"M":["9 registers","55 registers"],"C":["var(--mpcdf15-accent)","var(--mpcdf15-blue)"],"H":["",""]}'><div class="mpcdf15-wf-body"><div class="mpcdf15-wf-board"><div class="mpcdf15-wf-grid" style="--cols:10;--rows:10" tabindex="0" role="group" aria-roledescription="waffle chart" aria-label="Public risk registers by mention of contractor insolvency. 100 cells. Use arrow keys to move between cells, Page Up and Page Down to jump between categories."><b class="mpcdf15-g mpcdf15-k0"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></b><b class="mpcdf15-g mpcdf15-k1"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></b></div></div><ul class="mpcdf15-wf-legend" aria-label="Categories"><li style="--i:0"><button type="button" class="mpcdf15-wf-item mpcdf15-k0 mpcdf15-lead" aria-pressed="false"><span class="mpcdf15-wf-sw" aria-hidden="true"></span><span class="mpcdf15-wf-is" data-to="14" data-suf="%">14%</span><span class="mpcdf15-wf-il">Yes</span></button></li><li style="--i:1"><button type="button" class="mpcdf15-wf-item mpcdf15-k1" aria-pressed="false"><span class="mpcdf15-wf-sw" aria-hidden="true"></span><span class="mpcdf15-wf-is" data-to="86" data-suf="%">86%</span><span class="mpcdf15-wf-il">No</span></button></li></ul></div><p class="mpcdf15-sr mpcdf15-wf-live" aria-live="polite" aria-atomic="true"></p><table class="mpcdf15-sr"><caption>Public risk registers by mention of contractor insolvency</caption><thead><tr><th scope="col">Category</th><th scope="col">Value</th><th scope="col">Share</th><th scope="col">Cells</th></tr></thead><tbody><tr><th scope="row">Yes</th><td>9 registers</td><td>14%</td><td>14</td></tr><tr><th scope="row">No</th><td>55 registers</td><td>86%</td><td>86</td></tr></tbody></table></div></div><p class="mpcdf15-cap">Figure 15: Risk registers that mention contractor insolvency</p><p class="mpcdf15-src">Source: Mastt analysis of public project risk registers, 53 Australian and 11 US, latest version of each</p></div>
 <script>(function(){var root=document.getElementById('mastt-pcd-f15');if(!root||root.getAttribute('data-mpcdf15-on'))return;root.setAttribute('data-mpcdf15-on','1');
 var RM=!root.classList.contains('mpcdf15-js');
 var mxGen=0;
@@ -1389,9 +1596,20 @@ var mxTip=function(host){var tip=host.querySelector(':scope>.mpcdf16-tip');if(!t
 
 Paste into the post body (Rich Text).
 
-The same reading shows other gaps. Climate change is mentioned in six registers, but in only three as a risk to the project. In the other three it appears in a definitions legend or as the project's own emissions. None of the 64 registers mention cyber risk, and about one in five, 13 of 64, still mention COVID or pandemics. Contractor failure is a known issue in Australian public work. A Senate inquiry into the scale and incidence of insolvency in the construction industry [reported on 3 December 2015](https://www.aph.gov.au/Parliamentary_Business/Committees/Senate/Economics/Insolvency_construction/Report). Much of the evidence it received, particularly on security of payment and imbalances in market power, was critical of the large companies at the top of the contracting chain.
+### Other gaps in the registers
 
- **What this means for project teams:** Put contractor insolvency in the register, with a trigger to recheck the contractor's finances during the job, not only at tender. For assets that will be in service for decades, put climate risk in the project register where the team will see it.
+ The same reading shows other gaps:
+
+ - **Climate change:** Mentioned in six registers, but in only three as a risk to the project. In the other three it appears in a definitions legend or as the project's own emissions.
+- **Cyber risk:** None of the 64 registers mention it.
+- **COVID or pandemics:** About one in five, 13 of 64, still mention them.
+
+ Contractor failure is a known issue in Australian public work. A Senate inquiry into the scale and incidence of insolvency in the construction industry [reported on 3 December 2015](https://www.aph.gov.au/Parliamentary_Business/Committees/Senate/Economics/Insolvency_construction/Report). Much of the evidence it received, particularly on security of payment and imbalances in market power, was critical of the large companies at the top of the contracting chain.
+
+ **What this means for project teams:**
+
+- Put contractor insolvency in the register, with a trigger to recheck the contractor's finances during the job, not only at tender.
+- For assets that will be in service for decades, put climate risk in the project register where the team will see it.
 
  
 ## FAQs
@@ -1434,11 +1652,29 @@ Paste into the post body (Rich Text).
 
 ## Sources and methodology
 
- **Records.** Mastt analysed published contract and project records. Texas DOT records cover 10,041 completed construction contracts, awarded mostly between 2009 and 2025, of which 5,265 were matched line by line to their bids, plus monthly progress reports on 3,632 active jobs in January 2017 and November 2024. US federal records cover 583,728 completed construction contracts and delivery orders from federal fiscal years 2008 to 2026. Australian records cover 31,773 Commonwealth construction contract notices, mostly signed between 2013 and 2026. Florida DOT and New York City records add 431 and 1,142 completed projects. The risk register analysis covers 64 public registers, 53 Australian and 11 US.
+ **Records.** This is an internal Mastt study of published contract and project records. It draws on:
 
- **Filters.** Texas DOT work is limited to construction contracts and excludes maintenance and supply contracts. Days allowed are the bid days plus days added by change order, and a late penalty is any charge for days over that time. Cost growth is measured on jobs awarded at $10,000 or more. For US federal work, completed means the final end date had passed, and a contract changed in value if any modification altered its value. Size bands use the original contract value.
+ - **Texas DOT:** 10,041 completed construction contracts, awarded mostly between 2009 and 2025, of which 5,265 were matched line by line to their bids, plus monthly progress reports on 3,632 active jobs in January 2017 and November 2024.
+- **US federal:** 583,728 completed construction contracts and delivery orders from federal fiscal years 2008 to 2026.
+- **Australia:** 31,773 Commonwealth construction contract notices, mostly signed between 2013 and 2026.
+- **Florida DOT and New York City:** 431 and 1,142 completed projects.
+- **Risk registers:** 64 public registers, 53 Australian and 11 US.
 
- **Limits.** These are public records, so figures show what was recorded and not always what happened on site. Recent contracts lean toward shorter jobs because long jobs are still open. Reasons given for patterns are our reading, not proof. The halfway check rests on one snapshot date. Definitions differ between countries and dollars are not converted. Texas figures describe Texas DOT work only.
+ **Filters.**
+
+ - Texas DOT work is limited to construction contracts and excludes maintenance and supply contracts.
+- Days allowed are the bid days plus days added by change order, and a late penalty is any charge for days over that time.
+- Cost growth is measured on jobs awarded at $10,000 or more.
+- For US federal work, completed means the final end date had passed, and a contract changed in value if any modification altered its value.
+- Size bands use the original contract value.
+
+ **Limits.**
+
+ - These are public records, so figures show what was recorded and not always what happened on site.
+- Recent contracts lean toward shorter jobs because long jobs are still open.
+- Reasons given for patterns are our reading, not proof.
+- The halfway check rests on one snapshot date.
+- Definitions differ between countries and dollars are not converted. Texas figures describe Texas DOT work only.
 
  Includes public sector information from Australian federal, state, territory and local governments, used under Creative Commons Attribution 4.0 licences.
 

@@ -25,7 +25,7 @@ Notes
 
 ## Step 1: Embed 1, Structured data (JSON-LD)
 
-File: `00-mastt-bpe-schema.html`. Add an HTML Embed at the top of the post body and paste this as it is. (4,883 characters).
+File: `00-mastt-bpe-schema.html`. Add an HTML Embed at the top of the post body and paste this as it is. (4,899 characters).
 
 ```html
 <script type="application/ld+json">
@@ -51,7 +51,7 @@ File: `00-mastt-bpe-schema.html`. Add an HTML Embed at the top of the post body 
     {
       "@type": "Dataset",
       "name": "Construction Bid Prices vs Engineer's Estimates: 2017 to 2024 Trends",
-      "description": "Our own figures come from Mastt's analysis of public Texas DOT contract records. The price index starts from the unit prices on about 13,700 lettings from 2017 to 2024. It holds a fixed basket of 523 items priced per unit, each with at least 15 winning-bid prices in every year, which together appear on about 10,800 lettings. It combines each item's yearly median winning and estimated price with weights based on the dollars bid. The letting comparisons use 5,912 state-let construction lettings, with the low bid compared against the engineer's estimate, and the all-lettings view adds maintenance and local lettings.",
+      "description": "Records. Our own figures come from an internal Mastt study of public Texas DOT contract records: The price index starts from the unit prices on about 13,700 lettings from 2017 to 2024. It holds a fixed basket of 523 items priced per unit, each with at least 15 winning-bid prices in every year, which together appear on about 10,800 lettings. It combines each item's yearly median winning and estimated price with weights based on the dollars bid. The letting comparisons use 5,912 state-let construction lettings, with the low bid compared against the engineer's estimate, and the all-lettings view adds maintenance and local lettings.",
       "creator": {
         "@type": "Organization",
         "name": "Mastt",
@@ -130,7 +130,11 @@ File: `00-mastt-bpe-schema.html`. Add an HTML Embed at the top of the post body 
 
 Paste into the post body (Rich Text).
 
-This page is a citable reference for how construction bid prices moved against engineer's estimates in Texas from 2017 to 2024, and for what happened to bid items and budgets after award. Every figure is labelled with its period. Our own findings come from Mastt's analysis of public Texas Department of Transportation (Texas DOT) contract records, and outside figures link to their source. Texas figures describe Texas DOT road and bridge work only and should not be read as a measure of construction as a whole.
+This page is a citable reference for how construction bid prices moved against engineer's estimates in Texas from 2017 to 2024, and for what happened to bid items and budgets after award.
+
+ Every figure is labelled with its period. Our own findings come from Mastt's analysis of public Texas Department of Transportation (Texas DOT) contract records, and outside figures link to their source.
+
+ Texas figures describe Texas DOT road and bridge work only and should not be read as a measure of construction as a whole.
 
  An engineer's estimate is the owner's own price for the work, built from past bid prices before bids open. A letting is one tender round for a contract. A bid item is one priced line of a contract, such as a length of silt fence or a square yard of seeding.
 
@@ -178,7 +182,13 @@ Paste into the post body (Rich Text).
  
 ## How far did Texas DOT bid prices rise from 2017 to 2024?
 
- Mastt tracked the prices bidders put on the same 523 items across Texas DOT lettings from 2017 to 2024. The basket holds items priced per unit that had at least 15 winning-bid prices in every year, with lump sums left out because they scale with job size. Each item is weighted by the dollars bid on it. Indexed to 2017 as 100, winning bid prices reached 168.3 in 2024, a rise of 68%. The engineer's estimate for the same items reached 170.0.
+ Mastt tracked the prices bidders put on the same 523 items across Texas DOT lettings from 2017 to 2024. The basket is built as follows:
+
+ - **Items:** Items priced per unit that had at least 15 winning-bid prices in every year.
+- **Lump sums:** Left out because they scale with job size.
+- **Weighting:** Each item is weighted by the dollars bid on it.
+
+ Indexed to 2017 as 100, winning bid prices reached 168.3 in 2024, a rise of 68%. The engineer's estimate for the same items reached 170.0.
 
 ---
 
@@ -278,14 +288,40 @@ paint();
 
 Paste into the post body (Rich Text).
 
-The path was not smooth. Prices dipped in 2018, rose to 109.0 in 2019 and held between 107 and 109 through 2021. Winning bids then jumped 23.4% in 2022 and a further 17.0% in 2023. Estimates rose 11.6% in 2022 and 27.1% in 2023. The two series crossed in 2024, when estimates sat 1.0% above winning bids. A smaller version of the same pattern showed in 2019, when winning bids ran 9.7% ahead of the estimate index before the gap closed the following year.
+### Bid prices jumped in 2022 and 2023
+
+ The path was not smooth:
+
+ - **2018 to 2021:** Prices dipped in 2018, rose to 109.0 in 2019 and held between 107 and 109 through 2021.
+- **Winning bids:** Jumped 23.4% in 2022 and a further 17.0% in 2023.
+- **Estimates:** Rose 11.6% in 2022 and 27.1% in 2023.
+- **2024:** The two series crossed, when estimates sat 1.0% above winning bids.
+
+ A smaller version of the same pattern showed in 2019, when winning bids ran 9.7% ahead of the estimate index before the gap closed the following year.
 
  
 ### How do these prices compare with national indices?
 
- The Federal Highway Administration (FHWA) publishes the [National Highway Construction Cost Index](https://www.fhwa.dot.gov/policy/otps/nhcci/methodology.cfm) (NHCCI), built from the winning bids that states post online and calculated as a chained Fisher index. On annual averages the NHCCI rose 93% from 2017 to 2024 and 26.3% in 2022 alone, close to the 23.4% rise in the Texas basket that year. The two are built differently, so they are not expected to match, and the Texas basket rose by less over the full period.
+ The Federal Highway Administration (FHWA) publishes the [National Highway Construction Cost Index](https://www.fhwa.dot.gov/policy/otps/nhcci/methodology.cfm) (NHCCI), built from the winning bids that states post online and calculated as a chained Fisher index. On annual averages:
 
- The US Bureau of Labor Statistics (BLS) [producer price index for inputs to highway and street construction](https://fred.stlouisfed.org/series/WPUIP231231) rose 46% over the same years. It tracks the prices of inputs to highway and street construction and excludes labour, capital investment and imports. It rose 17.2% in 2021 and 16.1% in 2022 on annual averages, then 0.3% in 2023 and 0.5% in 2024. Texas winning bids barely moved in 2021 (+0.5%) and rose in 2022 and 2023, which points to bid prices following input costs by about a year.
+ - **2017 to 2024:** The NHCCI rose 93%.
+- **2022:** It rose 26.3% in 2022 alone, close to the 23.4% rise in the Texas basket that year.
+
+ The two are built differently, so they are not expected to match, and the Texas basket rose by less over the full period.
+
+ 
+### Input costs led and bids followed
+
+ The US Bureau of Labor Statistics (BLS) [producer price index for inputs to highway and street construction](https://fred.stlouisfed.org/series/WPUIP231231) rose 46% over the same years. It tracks the prices of inputs to highway and street construction and excludes labour, capital investment and imports.
+
+ On annual averages, the index moved as follows:
+
+ - **2021:** Up 17.2%.
+- **2022:** Up 16.1%.
+- **2023:** Up 0.3%.
+- **2024:** Up 0.5%.
+
+ Texas winning bids barely moved in 2021 (+0.5%) and rose in 2022 and 2023, which points to bid prices following input costs by about a year.
 
 ---
 
@@ -385,14 +421,21 @@ paint();
 
 Paste into the post body (Rich Text).
 
-**What this means for project teams:** Choose an escalation index that matches the work you are buying, then test it against your own last few tenders. In Australia the ABS producer price indexes play the same role. The [June quarter 2026 release](https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/producer-price-indexes-australia/jun-2026) showed heavy and civil engineering construction prices up 3.6% over twelve months, with road and bridge construction up 4.5% in the quarter on higher bitumen and diesel prices.
+**What this means for project teams:**
 
-A basket of the items you buy most is a better guide than a general inflation rate, because input prices and bid prices can move a year apart.
+- Choose an escalation index that matches the work you are buying, then test it against your own last few tenders.
+- A basket of the items you buy most is a better guide than a general inflation rate, because input prices and bid prices can move a year apart.
+
+In Australia the ABS producer price indexes play the same role. The [June quarter 2026 release](https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/producer-price-indexes-australia/jun-2026) showed heavy and civil engineering construction prices up 3.6% over twelve months, with road and bridge construction up 4.5% in the quarter on higher bitumen and diesel prices.
 
  
 ## Did winning bids run ahead of the engineer's estimate in 2022?
 
- Yes. For state-let construction jobs, the median winning bid was 4.7% under the estimate in 2021 and 5.4% over it in 2022. It was the only year in the series when the median winning bid finished above the estimate. Across 2017 to 2024 the yearly median ran between 7.5% under and 5.4% over.
+ Yes. For state-let construction jobs, the median winning bid was:
+
+ - **2021:** 4.7% under the estimate.
+- **2022:** 5.4% over the estimate, the only year in the series when the median winning bid finished above it.
+- **2017 to 2024:** The yearly median ran between 7.5% under and 5.4% over.
 
 ---
 
@@ -432,14 +475,34 @@ plot.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='Ar
 
 Paste into the post body (Rich Text).
 
-The flip shows up across the distribution. In 2022 59.9% of state-let construction jobs were won above the estimate, against 26% to 48% in the other years. Nearly one job in four (22.6%) was won at least 20% above, against 4.8% to 14.8% in other years. That 20% line matters to owners, because the Texas DOT design manual calls for a [written justification](https://www.txdot.gov/manuals/des/pse/chapter-8--post-letting-guidelines/section-2--letting-overrun-underrun-justification.html) when the apparent low bid is 20% or more over or under the estimate and there are two or more bidders. With only one bidder, the trigger is a bid more than 10% either side of the estimate.
+### Most 2022 jobs were won above the estimate
 
- **What this means for project teams:** Track the share of your tenders won 20% or more over the estimate, not only the average. In 2022 that share reached 22.6% of Texas DOT state-let construction jobs, against 4.8% to 14.8% in other years. Set the review trigger before bids open and record the reason for each large variance, as the Texas DOT manual requires.
+ The flip shows up across the distribution. In 2022:
+
+ - **Above the estimate:** 59.9% of state-let construction jobs were won above the estimate, against 26% to 48% in the other years.
+- **At least 20% above:** Nearly one job in four (22.6%) was won at least 20% above, against 4.8% to 14.8% in other years.
+
+ 
+### Why the 20% line matters
+
+ That 20% line matters to owners, because the Texas DOT design manual calls for a [written justification](https://www.txdot.gov/manuals/des/pse/chapter-8--post-letting-guidelines/section-2--letting-overrun-underrun-justification.html) in two cases:
+
+ - **Two or more bidders:** When the apparent low bid is 20% or more over or under the estimate.
+- **One bidder:** When the bid is more than 10% either side of the estimate.
+
+ **What this means for project teams:**
+
+- Track the share of your tenders won 20% or more over the estimate, not only the average, since in 2022 that share reached 22.6% of Texas DOT state-let construction jobs, against 4.8% to 14.8% in other years.
+- Set the review trigger before bids open and record the reason for each large variance, as the Texas DOT manual requires.
 
  
 ## Did fewer bidders push prices up?
 
- Competition thinned in 2022. Bidders per state-let construction job fell from 5.1 in 2021 to 3.9 in 2022 and 3.7 in 2023, against about 5.1 a job over 2017 to 2021. Single-bid jobs rose from 3.7% of jobs in 2021 to 6.0% in 2022 and 6.7% in 2023, roughly double their 3.2% average over 2017 to 2021. Bidders recovered to 4.4 a job in 2024.
+ Competition thinned in 2022. Across state-let construction jobs:
+
+ - **Bidders per job:** Fell from 5.1 in 2021 to 3.9 in 2022 and 3.7 in 2023, against about 5.1 a job over 2017 to 2021.
+- **Single-bid jobs:** Rose from 3.7% of jobs in 2021 to 6.0% in 2022 and 6.7% in 2023, roughly double their 3.2% average over 2017 to 2021.
+- **Recovery:** Bidders recovered to 4.4 a job in 2024.
 
 ---
 
@@ -539,7 +602,16 @@ paint();
 
 Paste into the post body (Rich Text).
 
-Competition and price move together across the whole period. Jobs with one bidder were won at a median 17.6% over the estimate. Jobs with two bidders were won at 5.3% over. From three bidders the median sits under the estimate, at 0.8% under with three, 3.7% under with four, 5.9% under with five and 9.1% under with six or more.
+### Winning bids fall as bidder numbers rise
+
+ Competition and price move together across the whole period. The median winning bid against the estimate, by number of bidders:
+
+ - **One bidder:** 17.6% over.
+- **Two bidders:** 5.3% over.
+- **Three bidders:** 0.8% under.
+- **Four bidders:** 3.7% under.
+- **Five bidders:** 5.9% under.
+- **Six or more bidders:** 9.1% under.
 
 ---
 
@@ -579,23 +651,46 @@ plot.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='Ar
 
 Paste into the post body (Rich Text).
 
-These are associations across jobs, not proof that bidder numbers set the price. Larger and more complex jobs draw fewer bidders and also price higher. The 2022 pattern is still consistent with contractors having less room or less appetite to bid that year, although public records cannot show why.
+### Association, not proof
 
- **What this means for project teams:** If you expect one or two bidders, plan for a winning bid 5% to 18% above your estimate. Ask how many bidders your last three tenders drew before you trust an estimate built from older prices.
+ These are associations across jobs, not proof that bidder numbers set the price. Larger and more complex jobs draw fewer bidders and also price higher. The 2022 pattern is still consistent with contractors having less room or less appetite to bid that year, although public records cannot show why.
+
+ **What this means for project teams:**
+
+- If you expect one or two bidders, plan for a winning bid 5% to 18% above your estimate.
+- Ask how many bidders your last three tenders drew before you trust an estimate built from older prices.
 
  
 ## How long did estimates take to catch up?
 
- About a year. Estimates built from historical bid data trail a moving market. On the Texas basket the gap between winning bids and estimates was 12.7% in 2022, 3.7% in 2023 and -1.0% in 2024. FHWA's [2015 national review of state cost estimation practice](https://www.fhwa.dot.gov/construction/contracts/2014cost.pdf) described the same mechanism in the opposite direction. It records that during the 2008 to 2010 downturn a nationwide pattern of lower bids left them 10% to 30% below state engineer's estimates, and says the estimates lagged market conditions.
+ About a year. Estimates built from historical bid data trail a moving market. On the Texas basket the gap between winning bids and estimates was:
 
- Estimate accuracy is a long-running concern. FHWA's guidance says an estimate should be within 10% of the low bid for at least half of projects, and the 2015 review found 48% of 1,611 projects within that band nationally. Texas DOT's own [internal audit of plan review and bid estimation](https://ftp.txdot.gov/pub/txdot-info/aud/reports/Plan_Review_and_Bid_Estimation_Effectiveness_Final_Internal_Audit_Report.pdf) tested 842 completed projects in eight districts it selected, let from 2016 to August 2020. It found the yearly average for the combined districts ranged from 42% to 53% against the 50% goal. Mastt's records for state-let construction jobs in every district show 45% to 53% within 10% across 2017 to 2020 and 41.6% across 2023 and 2024 (1,585 lettings), in line with the audit and a little lower in the latest years.
+ - **2022:** 12.7%.
+- **2023:** 3.7%.
+- **2024:** -1.0%.
+
+ 
+### FHWA saw the same lag in a downturn
+
+ FHWA's [2015 national review of state cost estimation practice](https://www.fhwa.dot.gov/construction/contracts/2014cost.pdf) described the same mechanism in the opposite direction. It records that during the 2008 to 2010 downturn a nationwide pattern of lower bids left them 10% to 30% below state engineer's estimates, and says the estimates lagged market conditions.
+
+ 
+### Estimate accuracy is a long-running concern
+
+ FHWA's guidance says an estimate should be within 10% of the low bid for at least half of projects. Checks of how often that holds:
+
+ - **National review:** The 2015 review found 48% of 1,611 projects within that band nationally.
+- **Texas DOT audit:** Texas DOT's own [internal audit of plan review and bid estimation](https://ftp.txdot.gov/pub/txdot-info/aud/reports/Plan_Review_and_Bid_Estimation_Effectiveness_Final_Internal_Audit_Report.pdf) tested 842 completed projects in eight districts it selected, let from 2016 to August 2020, and found the yearly average for the combined districts ranged from 42% to 53% against the 50% goal.
+- **Mastt records:** State-let construction jobs in every district show 45% to 53% within 10% across 2017 to 2020 and 41.6% across 2023 and 2024 (1,585 lettings), in line with the audit and a little lower in the latest years.
 
  The [US Department of Transportation Inspector General](https://www.oversight.gov/reports/audit/fhwa-lacks-adequate-oversight-and-guidance-engineers-estimates) found in 2019 that FHWA lacked adequate guidance and processes to oversee the accuracy of engineer's estimates, so how closely estimates track bids is a national question as well as a Texas one.
 
  
 ### Can a price-history model do better?
 
- Mastt tested a simple model that priced each 2023 and 2024 state-let construction letting from the median winning price of every item over the previous 12 months, using only data that existed before the letting. Across 1,585 lettings its median miss against the winning bid was 16.7%, against 12.8% for the engineer's estimate. It came closer than the engineer on 38.4% of lettings. A 50/50 blend of the two missed by 13.4%, no better than the estimate alone.
+ Mastt tested a simple model that priced each 2023 and 2024 state-let construction letting from the median winning price of every item over the previous 12 months, using only data that existed before the letting.
+
+ Across 1,585 lettings its median miss against the winning bid was 16.7%, against 12.8% for the engineer's estimate. It came closer than the engineer on 38.4% of lettings. A 50/50 blend of the two missed by 13.4%, no better than the estimate alone.
 
 ---
 
@@ -630,12 +725,21 @@ Paste into the post body (Rich Text).
 
 That suggests item averages carry price history but not project context such as location, staging, traffic and site conditions. Any estimating model has to beat 12.8% and will need project information to do it.
 
- **What this means for project teams:** When prices are rising, estimates built on last year's bids will be low. Add escalation to the estimate in the quarter prices start to move, then compare it with the latest bids rather than waiting for the next scheduled review.
+ **What this means for project teams:** When prices are rising, estimates built on last year's bids will be low.
+
+- Add escalation to the estimate in the quarter prices start to move.
+- Compare it with the latest bids rather than waiting for the next scheduled review.
 
  
 ## How often are bid quantities right?
 
- Prices are half of contract value and quantities are the other half. Mastt joined 341,637 bid lines on 5,265 completed Texas DOT construction contracts to the quantity finally paid on each line. One in seven bid items (13.4%) was never used, and only 39.1% ended at exactly the bid quantity. Counting the unused lines, 30.6% underran by more than 10%, and 17.6% overran by more than 10%. The remaining 12.8% finished within 10% of the bid quantity without matching it.
+ Prices are half of contract value and quantities are the other half. Mastt joined 341,637 bid lines on 5,265 completed Texas DOT construction contracts to the quantity finally paid on each line. The lines ended as follows:
+
+ - **Never used:** One in seven bid items (13.4%).
+- **Exact bid quantity:** Only 39.1% ended at exactly the bid quantity.
+- **Underran by more than 10%:** 30.6%, counting the unused lines.
+- **Overran by more than 10%:** 17.6%.
+- **Within 10%:** The remaining 12.8% finished within 10% of the bid quantity without matching it.
 
 ---
 
@@ -714,7 +818,13 @@ Paste into the post body (Rich Text).
 
 ### Which items are most over-quantified?
 
- Padding sits in temporary and support items. Vegetative watering went unused on 58% of the jobs that bid it, and the typical bid line for it was paid nothing. Construction exits and temporary seeding were never used on 59% and 54% of the lines that bid them. As a group, the erosion and sediment control items under Item 506 used a median 40% of bid quantity, and the erosion-control seeding items under Item 164 used 43%. Rock filter dams on their own used a median 36%. Silt fence used a median 67%, the highest in the table below.
+ Padding sits in temporary and support items:
+
+ - **Vegetative watering:** Went unused on 58% of the jobs that bid it, and the typical bid line for it was paid nothing.
+- **Construction exits and temporary seeding:** Never used on 59% and 54% of the lines that bid them.
+- **Erosion control groups:** As a group, the erosion and sediment control items under Item 506 used a median 40% of bid quantity, and the erosion-control seeding items under Item 164 used 43%.
+- **Rock filter dams:** On their own used a median 36%.
+- **Silt fence:** Used a median 67%, the highest in the table below.
 
 ---
 
@@ -752,20 +862,34 @@ var rows=[].slice.call(tb.rows);rows.sort(function(a,c){var x=a.cells[k],y=c.cel
 
 Paste into the post body (Rich Text).
 
-A likely reason is that these quantities depend on weather, staging and how the contractor works, so designers bid generous amounts. Owners pay only for what goes in, so padding costs nothing at payment. It can still distort bid comparison and hide how much is installed, and it may escape review. The [Texas DOT contract administration handbook](https://www.txdot.gov/manuals/cst/cah/changes_to_the_contract/change_orders-ceghciif.html) ties its change-order checks to major items, defined as items worth at least 5% of the original contract or $100,000, whichever is less, that move more than 25% from the bid quantity. Erosion control is a median 0.3% of a contract's final cost, so on a typical job its lines fall below that test.
+### Why quantities are padded
 
- **What this means for project teams:** Check temporary and erosion-control quantities before you go to tender, using paid quantities from your last jobs rather than the design allowance. When you compare bids, look at unit prices on the padded items as well as the totals.
+ A likely reason is that these quantities depend on weather, staging and how the contractor works, so designers bid generous amounts. Owners pay only for what goes in, so padding costs nothing at payment. It can still distort bid comparison and hide how much is installed, and it may escape review.
+
+ The [Texas DOT contract administration handbook](https://www.txdot.gov/manuals/cst/cah/changes_to_the_contract/change_orders-ceghciif.html) ties its change-order checks to major items, defined as items worth at least 5% of the original contract or $100,000, whichever is less, that move more than 25% from the bid quantity. Erosion control is a median 0.3% of a contract's final cost, so on a typical job its lines fall below that test.
+
+ **What this means for project teams:**
+
+- Check temporary and erosion-control quantities before you go to tender, using paid quantities from your last jobs rather than the design allowance.
+- When you compare bids, look at unit prices on the padded items as well as the totals.
 
  
 ## Where does the money move between award and final payment?
 
- The net change on a completed contract hides far more movement than it shows. For 5,266 completed Texas DOT construction contracts, with $30.2bn awarded, final payments ran 5.0% above award value. Underneath, items in the original bid were paid 3.9% below award value, and item types that bidders never priced added 7.5%. Price and payment adjustments added 0.8% and force account work added 0.6%. Gross movement was 12.8%, about 13%, against a net 5.0%.
+ The net change on a completed contract hides far more movement than it shows. For 5,266 completed Texas DOT construction contracts, with $30.2bn awarded, final payments ran 5.0% above award value. Underneath, the movements were:
+
+ - **Original bid items:** Paid 3.9% below award value.
+- **New item types:** Item types that bidders never priced added 7.5%.
+- **Price and payment adjustments:** Added 0.8%.
+- **Force account work:** Added 0.6%.
+
+ Gross movement was 12.8%, about 13%, against a net 5.0%.
 
 ---
 
 ## Step 21: Embed 11, Figure 8: What moved underneath the 5.0% net change, as a share of award value
 
-File: `21-mastt-bpe-f08-what-moved-underneath-the-5.html`. Add an HTML Embed here, directly under the text above, and paste this (25,944 characters).
+File: `21-mastt-bpe-f08-what-moved-underneath-the-5.html`. Add an HTML Embed here, directly under the text above, and paste this (25,953 characters).
 
 ```html
 <div id="mastt-bpe-f08" class="mbpef08" role="figure" aria-label="Donut chart: Figure 8: What moved underneath the 5.0% net change, as a share of award value. New item types added after award: Value 7.5%, Share 59%; Reductions on items in the original bid: Value 3.9%, Share 30%; Price and payment adjustments: Value 0.8%, Share 6%; Force account work: Value 0.6%, Share 5%. New item types were the largest piece of movement.">
@@ -799,7 +923,7 @@ var total=function(){if(T)return T[mask()];var m=num.exec(D.f),d=(m[2].split('.'
 var desc=function(i){return D.L[i]+', '+D.V[i]+sf+', '+share(D.v[i]/(tot()||1))+((D.m&&D.m[i])||'');};
 var paint=function(){var t=tot()||1,at=0,g=hid.filter(function(h){return!h;}).length>1?GAP:0;segs.forEach(function(s,i){var l=hid[i]?0:D.v[i]/t*100,d=Math.max(0,l-g);s.style.setProperty('--a',+d.toFixed(2));s.style.setProperty('--r',+(100-d).toFixed(2));s.style.setProperty('--o',+(-(at+g/2)).toFixed(2));at+=l;});};
 var texts=function(){var t=tot();rows.forEach(function(r,i){r.querySelector('.mbpef08-dn-rs').textContent=share(hid[i]||!t?0:D.v[i]/t);});box.setAttribute('data-sh',hid.some(Boolean)?'1':sh0);};
-var show=function(){var k=cur,t=tot(),v=k<0?total():D.V[k],a=k<0?D.tl:D.L[k],m=k<0?(D.u&&D.u.toLowerCase()!==D.tl.toLowerCase()?D.u:''):(box.getAttribute('data-sh')==='1'?share(D.v[k]/(t||1))+' of total':'');
+var show=function(){var k=cur,t=tot(),v=k<0?total():D.V[k],a=k<0?D.tl:D.L[k],m=k<0?(D.u&&D.tl.toLowerCase().indexOf(D.u.toLowerCase())<0?D.u:''):(box.getAttribute('data-sh')==='1'?share(D.v[k]/(t||1))+' of total':'');
 cv.textContent=v;tag(cv,v);cl.textContent=a;cm.textContent=m||'\u00a0';ring.style.setProperty('--ct',k<0?'':getComputedStyle(segs[k]).getPropertyValue('--t'));
 if(k!==shown&&!RM){ctr.classList.remove('mbpef08-roll');void ctr.offsetWidth;ctr.classList.add('mbpef08-roll');}shown=k;};
 var update=function(){var k=[pre,pin].filter(function(i){return i>=0&&!hid[i];})[0];cur=k===undefined?-1:k;
@@ -864,16 +988,42 @@ var mxTip=function(host){var tip=host.querySelector(':scope>.mbpestats1-tip');if
 
 Paste into the post body (Rich Text).
 
-New item types added $2.27bn across the 5,266 contracts. Ordinary items that were missing from the bid made up $1.46bn of that. The rest ran through placeholder codes, used for work with no standard item. Generic change order lines added $588m across 2,318 jobs, and police traffic control, the largest single line, was paid $152m across 2,510 jobs. Other placeholder lines made up about $75m.
+### Where the new item types came from
 
- **What this means for project teams:** A change register that shows only the net figure hides most of the work your team managed. Report gross additions and reductions as well, and carry an allowance for the lines you know will arrive, such as police traffic control.
+ New item types added $2.27bn across the 5,266 contracts. Ordinary items that were missing from the bid made up $1.46bn of that. The rest ran through placeholder codes, used for work with no standard item:
+
+ - **Generic change order lines:** Added $588m across 2,318 jobs.
+- **Police traffic control:** The largest single line, paid $152m across 2,510 jobs.
+- **Other placeholder lines:** About $75m.
+
+ **What this means for project teams:** A change register that shows only the net figure hides most of the work your team managed.
+
+- Report gross additions and reductions as well.
+- Carry an allowance for the lines you know will arrive, such as police traffic control.
 
  
 ## Do bigger jobs and some districts change more?
 
- Yes to both. On 9,979 completed construction contracts, median cost growth rises from -0.3% on jobs under $100k to +5.2% on jobs over $20m. 79% of jobs over $20m were given extra days, against 8% of jobs under $100k. The median daily late penalty (liquidated damages) rises from $570 to $2,590 across the same bands.
+ Yes to both. Mastt compared completed Texas DOT construction contracts by job size and by district.
 
- Across 25 Texas DOT districts working under the same owner, rules and contracts, median cost growth runs from +5.3% in Houston to -0.5% in Lufkin. The share of jobs charged late penalties runs from 13% in Odessa to 39% in San Angelo. Work mix and local markets may explain part of that spread, and the rest points to local practice.
+ 
+### Bigger jobs change more
+
+ On 9,979 completed construction contracts:
+
+ - **Cost growth:** Median cost growth rises from -0.3% on jobs under $100k to +5.2% on jobs over $20m.
+- **Extra days:** 79% of jobs over $20m were given extra days, against 8% of jobs under $100k.
+- **Late penalties:** The median daily late penalty (liquidated damages) rises from $570 to $2,590 across the same bands.
+
+ 
+### Districts differ under the same rules
+
+ Across 25 Texas DOT districts working under the same owner, rules and contracts:
+
+ - **Cost growth:** The median runs from +5.3% in Houston to -0.5% in Lufkin.
+- **Late penalties:** The share of jobs charged runs from 13% in Odessa to 39% in San Angelo.
+
+ Work mix and local markets may explain part of that spread, and the rest points to local practice.
 
 ---
 
@@ -911,14 +1061,31 @@ var rows=[].slice.call(tb.rows);rows.sort(function(a,c){var x=a.cells[k],y=c.cel
 
 Paste into the post body (Rich Text).
 
-**What this means for project teams:** Set contingency by job size. A flat percentage is too much for small jobs and too little for large ones. Compare like with like when you benchmark a delivery team, because a statewide average hides large regional differences.
+**What this means for project teams:**
+
+- Set contingency by job size, because a flat percentage is too much for small jobs and too little for large ones.
+- Compare like with like when you benchmark a delivery team, because a statewide average hides large regional differences.
 
  
 ## What do environmental items cost, and what happens to them after award?
 
- Environmental line items are the controls and mitigation work on a road job, such as erosion and sediment control, revegetation, hazardous material handling and noise walls. Texas requires a stormwater pollution prevention plan for construction sites that disturb an acre or more of soil and discharge stormwater to surface water, under the [construction general permit](https://www.tceq.texas.gov/permitting/stormwater/construction/index) renewed with effect from 5 March 2023, so most road jobs carry these items.
+ Environmental line items are the controls and mitigation work on a road job, such as:
 
- Environmental items appear on 81% of 9,018 completed Texas DOT construction contracts, yet they take a median 1.0% of final cost and 1.6% of all construction dollars, $0.77bn of $48.9bn. Erosion control is on 79% of jobs and revegetation on 62%. Mitigation is on 5.4% and hazardous items on 1.1%. Only 11% of maintenance contracts have any.
+ - Erosion and sediment control.
+- Revegetation.
+- Hazardous material handling.
+- Noise walls.
+
+ Texas requires a stormwater pollution prevention plan for construction sites that disturb an acre or more of soil and discharge stormwater to surface water, under the [construction general permit](https://www.tceq.texas.gov/permitting/stormwater/construction/index) renewed with effect from 5 March 2023, so most road jobs carry these items.
+
+ Environmental items appear on 81% of 9,018 completed Texas DOT construction contracts, yet they take a median 1.0% of final cost and 1.6% of all construction dollars, $0.77bn of $48.9bn. The share of jobs carrying each type:
+
+ - **Erosion control:** On 79% of jobs.
+- **Revegetation:** On 62% of jobs.
+- **Mitigation:** On 5.4% of jobs.
+- **Hazardous items:** On 1.1% of jobs.
+
+ Only 11% of maintenance contracts have any.
 
 ---
 
@@ -1036,13 +1203,20 @@ Paste into the post body (Rich Text).
 
 ### Erosion control is paid at about half its bid
 
- Across 7,074 jobs with erosion and sediment control bid items, the typical job was paid 56% of the bid value. One job in five (20%) was paid nothing for them. Weighted by dollars the underrun is 26%. Revegetation underruns less, with a typical 73% paid. The whole contract still lands near +2%, a median 1.8% growth across the 9,018 jobs, as other items make up the gap.
+ Across 7,074 jobs with erosion and sediment control bid items:
+
+ - **Typical job:** Paid 56% of the bid value.
+- **Paid nothing:** One job in five (20%) was paid nothing for them.
+- **By dollars:** Weighted by dollars the underrun is 26%.
+- **Revegetation:** Underruns less, with a typical 73% paid.
+
+ The whole contract still lands near +2%, a median 1.8% growth across the 9,018 jobs, as other items make up the gap.
 
 ---
 
 ## Step 28: Embed 15, Figure 11: Paid as a share of bid value per job, erosion control and revegetation
 
-File: `28-mastt-bpe-f11-paid-as-a-share-of.html`. Add an HTML Embed here, directly under the text above, and paste this (31,515 characters).
+File: `28-mastt-bpe-f11-paid-as-a-share-of.html`. Add an HTML Embed here, directly under the text above, and paste this (31,524 characters).
 
 ```html
 <div id="mastt-bpe-f11" class="mbpef11" role="figure" aria-label="Donut chart: Figure 11: Paid as a share of bid value per job, erosion control and revegetation. Paid nothing: Value 20.4%, Share 20%; Under half of the bid: Value 25.4%, Share 25%; Half to under 95% of the bid: Value 27.8%, Share 28%; About the bid (95% to 105%): Value 9.7%, Share 10%; More than 105% of the bid: Value 16.6%, Share 17%; Paid nothing: Value 10.4%, Share 10%; Under half of the bid: Value 22.8%, Share 23%; Half to under 95% of the bid: Value 34.8%, Share 35%; About the bid (95% to 105%): Value 11.3%, Share 11%; More than 105% of the bid: Value 20.6%, Share 21%. One erosion control job in five was paid nothing, and one in six was paid more than 105% of its bid.">
@@ -1076,7 +1250,7 @@ var total=function(){if(T)return T[mask()];var m=num.exec(D.f),d=(m[2].split('.'
 var desc=function(i){return D.L[i]+', '+D.V[i]+sf+', '+share(D.v[i]/(tot()||1))+((D.m&&D.m[i])||'');};
 var paint=function(){var t=tot()||1,at=0,g=hid.filter(function(h){return!h;}).length>1?GAP:0;segs.forEach(function(s,i){var l=hid[i]?0:D.v[i]/t*100,d=Math.max(0,l-g);s.style.setProperty('--a',+d.toFixed(2));s.style.setProperty('--r',+(100-d).toFixed(2));s.style.setProperty('--o',+(-(at+g/2)).toFixed(2));at+=l;});};
 var texts=function(){var t=tot();rows.forEach(function(r,i){r.querySelector('.mbpef11-dn-rs').textContent=share(hid[i]||!t?0:D.v[i]/t);});box.setAttribute('data-sh',hid.some(Boolean)?'1':sh0);};
-var show=function(){var k=cur,t=tot(),v=k<0?total():D.V[k],a=k<0?D.tl:D.L[k],m=k<0?(D.u&&D.u.toLowerCase()!==D.tl.toLowerCase()?D.u:''):(box.getAttribute('data-sh')==='1'?share(D.v[k]/(t||1))+' of total':'');
+var show=function(){var k=cur,t=tot(),v=k<0?total():D.V[k],a=k<0?D.tl:D.L[k],m=k<0?(D.u&&D.tl.toLowerCase().indexOf(D.u.toLowerCase())<0?D.u:''):(box.getAttribute('data-sh')==='1'?share(D.v[k]/(t||1))+' of total':'');
 cv.textContent=v;tag(cv,v);cl.textContent=a;cm.textContent=m||'\u00a0';ring.style.setProperty('--ct',k<0?'':getComputedStyle(segs[k]).getPropertyValue('--t'));
 if(k!==shown&&!RM){ctr.classList.remove('mbpef11-roll');void ctr.offsetWidth;ctr.classList.add('mbpef11-roll');}shown=k;};
 var update=function(){var k=[pre,pin].filter(function(i){return i>=0&&!hid[i];})[0];cur=k===undefined?-1:k;
@@ -1118,7 +1292,11 @@ Paste into the post body (Rich Text).
 
 ### Contamination is found during the job, not bid before it
 
- Asbestos, lead paint and contaminated soil tend to be found once work starts. Hazardous items appear on 1.1% of construction jobs, yet the money is large when they do. They were bid at $1.3m and paid $35.4m, about 27 times the bid. $32.4m of that (92%) arrived through force account and unique change order lines rather than bid items, which suggests the work was not known at tender. Contaminated soil and groundwater was the largest category at $20.9m.
+ Asbestos, lead paint and contaminated soil tend to be found once work starts. Hazardous items appear on 1.1% of construction jobs, yet the money is large when they do:
+
+ - **Bid against paid:** They were bid at $1.3m and paid $35.4m, about 27 times the bid.
+- **Force account:** $32.4m of that (92%) arrived through force account and unique change order lines rather than bid items, which suggests the work was not known at tender.
+- **Largest category:** Contaminated soil and groundwater, at $20.9m.
 
 ---
 
@@ -1220,12 +1398,23 @@ Asbestos can be surveyed before tender. The US rule on [demolition and renovatio
  
 ### Change orders add environmental work nobody bid
 
- 11% of construction jobs added environmental lines by change order, worth $64.2m. A further $65.2m was paid through force account and unique change order lines. That is about $129m of environmental work added after award across 9,018 jobs. Revegetation made up $40.0m of the change order lines and noise walls and other mitigation $14.6m.
+ Environmental work was added after award in two ways:
+
+ - **Change orders:** 11% of construction jobs added environmental lines by change order, worth $64.2m.
+- **Force account and unique lines:** A further $65.2m was paid through force account and unique change order lines.
+
+ That is about $129m of environmental work added after award across 9,018 jobs. Revegetation made up $40.0m of the change order lines and noise walls and other mitigation $14.6m.
 
  
 ### Do winning bidders game environmental items?
 
- Erosion items underrun so often that a bid reviewer might expect winners to price them low. The records do not show it. Across 26,720 environmental items on 3,632 jobs, the winner's unit price was a median 1.00 times the estimate, against 1.01 for all other items. Within the same job the difference is not statistically significant (p = 0.3). The underrun looks like padding in the quantities rather than a bidding tactic.
+ Erosion items underrun so often that a bid reviewer might expect winners to price them low. The records do not show it. Across 26,720 environmental items on 3,632 jobs:
+
+ - **Environmental items:** The winner's unit price was a median 1.00 times the estimate.
+- **All other items:** 1.01 times the estimate.
+- **Within the same job:** The difference is not statistically significant (p = 0.3).
+
+ The underrun looks like padding in the quantities rather than a bidding tactic.
 
 ---
 
@@ -1260,20 +1449,39 @@ Paste into the post body (Rich Text).
 
 One caution applies. Weighted by dollars, winners priced environmental items at 0.86 of the estimate and other items at 0.97, so the check does not rule out pricing on a few large items. On the median, which describes the typical line, there is no sign of it.
 
- **What this means for project teams:** Budget about 1% of cost for environmental controls and watch the exceptions. Pay for what goes in and check it stays maintained. Carry a contingency for contamination, because a bid line will not cover it. Track environmental change as its own category, so it does not disappear inside the net.
+ **What this means for project teams:**
+
+- Budget about 1% of cost for environmental controls and watch the exceptions.
+- Pay for what goes in and check it stays maintained.
+- Carry a contingency for contamination, because a bid line will not cover it.
+- Track environmental change as its own category, so it does not disappear inside the net.
 
  
 ## What does this mean for contingency and escalation?
 
  The Texas records point to four separate sources of movement, and a budget needs a different answer to each.
 
- **Price escalation.** Bid prices rose 23.4% in 2022 and 17.0% in 2023 on the Texas basket, and estimates took about a year to follow. A budget set during a price surge goes stale quickly. Add escalation in the quarter prices begin to move, and check the budget against the latest bids instead of last year's.
+ 
+### Price escalation
 
- **Competition.** Jobs with one or two bidders were won at a median 5% to 18% over the estimate. When tender interest is thin, treat the estimate as the lower bound and hold the premium in contingency.
+ Bid prices rose 23.4% in 2022 and 17.0% in 2023 on the Texas basket, and estimates took about a year to follow. A budget set during a price surge goes stale quickly.
 
- **Quantity and scope movement.** A 5.0% net change hid 12.8% gross movement, and 77% of jobs gained at least one item that was not in the tender. Hold contingency for gross movement, not only the net outcome, and scale it by job size. Median growth runs from -0.3% under $100k to +5.2% over $20m.
+ Add escalation in the quarter prices begin to move, and check the budget against the latest bids instead of last year's.
 
- **Known unknowns.** Police traffic control, contamination and environmental change orders recur across Texas DOT jobs. Carry them as named allowances, which keeps general contingency for risks no one has priced yet.
+ 
+### Competition
+
+ Jobs with one or two bidders were won at a median 5% to 18% over the estimate. When tender interest is thin, treat the estimate as the lower bound and hold the premium in contingency.
+
+ 
+### Quantity and scope movement
+
+ A 5.0% net change hid 12.8% gross movement, and 77% of jobs gained at least one item that was not in the tender. Hold contingency for gross movement, not only the net outcome, and scale it by job size. Median growth runs from -0.3% under $100k to +5.2% over $20m.
+
+ 
+### Known unknowns
+
+ Police traffic control, contamination and environmental change orders recur across Texas DOT jobs. Carry them as named allowances, which keeps general contingency for risks no one has priced yet.
 
 ---
 
@@ -1355,11 +1563,29 @@ Paste into the post body (Rich Text).
 
 ## Sources and methodology
 
- Our own figures come from Mastt's analysis of public Texas DOT contract records. The price index starts from the unit prices on about 13,700 lettings from 2017 to 2024. It holds a fixed basket of 523 items priced per unit, each with at least 15 winning-bid prices in every year, which together appear on about 10,800 lettings. It combines each item's yearly median winning and estimated price with weights based on the dollars bid. The letting comparisons use 5,912 state-let construction lettings, with the low bid compared against the engineer's estimate, and the all-lettings view adds maintenance and local lettings.
+ **Records.** Our own figures come from an internal Mastt study of public Texas DOT contract records:
 
- Post-award figures link each bid line to the quantity finally paid. They cover 341,637 bid lines on 5,265 completed construction contracts let from 2015 to 2024, 5,266 completed contracts from the same lettings with $30.2bn awarded for the gross and net change, 9,979 completed contracts awarded from 2003 to 2026 for job size and district, and 9,018 completed construction contracts awarded from 2004 to 2026 for environmental items, built from more than 80,000 paid environmental lines. Environmental lines are tagged from item numbers and hand-reviewed descriptions. Dollars are nominal.
+ - The price index starts from the unit prices on about 13,700 lettings from 2017 to 2024.
+- It holds a fixed basket of 523 items priced per unit, each with at least 15 winning-bid prices in every year, which together appear on about 10,800 lettings.
+- It combines each item's yearly median winning and estimated price with weights based on the dollars bid.
+- The letting comparisons use 5,912 state-let construction lettings, with the low bid compared against the engineer's estimate, and the all-lettings view adds maintenance and local lettings.
 
- These are signals, not proof. Texas figures describe Texas DOT work only. Recent contracts lean toward shorter jobs because long jobs are not final yet. Environmental work paid inside other items is not visible, and change orders classified from free text give a lower bound. National index values are annual averages of the published quarterly or monthly series, rebased to 2017. The Mastt model result is a test of a simple price-history approach on 2023 and 2024 lettings and does not describe any commercial estimating tool.
+ **Post-award figures.** These link each bid line to the quantity finally paid. They cover:
+
+ - 341,637 bid lines on 5,265 completed construction contracts let from 2015 to 2024.
+- 5,266 completed contracts from the same lettings with $30.2bn awarded, for the gross and net change.
+- 9,979 completed contracts awarded from 2003 to 2026, for job size and district.
+- 9,018 completed construction contracts awarded from 2004 to 2026, for environmental items, built from more than 80,000 paid environmental lines.
+
+ Environmental lines are tagged from item numbers and hand-reviewed descriptions. Dollars are nominal.
+
+ **Limits.** These are signals, not proof:
+
+ - Texas figures describe Texas DOT work only.
+- Recent contracts lean toward shorter jobs because long jobs are not final yet.
+- Environmental work paid inside other items is not visible, and change orders classified from free text give a lower bound.
+- National index values are annual averages of the published quarterly or monthly series, rebased to 2017.
+- The Mastt model result is a test of a simple price-history approach on 2023 and 2024 lettings and does not describe any commercial estimating tool.
 
  Includes public sector information from Australian federal, state, territory and local governments, used under Creative Commons Attribution 4.0 licences.
 

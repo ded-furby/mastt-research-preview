@@ -11,7 +11,7 @@ Webflow build guide. Work top to bottom: paste each **Text** step into the post 
 | Meta description | Statistics on how Australian governments buy and manage construction, from Commonwealth contract thresholds and amendments to council tenders, payment times and defect orders. |
 | Date | October 2026 |
 | Read time | 20 min |
-| Steps | 20 text blocks, 22 embeds |
+| Steps | 21 text blocks, 22 embeds |
 
 Notes
 - Built to the Mastt Research Visualization Guidelines: one visual per HTML Embed, each with its own mastt- root id and class prefix, scoped CSS, no shadows, gradients, libraries or font imports.
@@ -25,7 +25,7 @@ Notes
 
 ## Step 1: Embed 1, Structured data (JSON-LD)
 
-File: `00-mastt-aup-schema.html`. Add an HTML Embed at the top of the post body and paste this as it is. (4,743 characters).
+File: `00-mastt-aup-schema.html`. Add an HTML Embed at the top of the post body and paste this as it is. (4,602 characters).
 
 ```html
 <script type="application/ld+json">
@@ -51,7 +51,7 @@ File: `00-mastt-aup-schema.html`. Add an HTML Embed at the top of the post body 
     {
       "@type": "Dataset",
       "name": "Australian Public Construction Procurement: 2026 Statistics",
-      "description": "Mastt analysed published public records. These were about 31,800 Commonwealth contract notices for building, construction and related services (mostly 2013 to 2026), about 68,000 Queensland contract disclosure rows (mostly 2019 to 2026), project listings in Queensland state budgets (12 budgets from 2014-15 to 2026-27) and Victorian state budgets (three machine-readable years), 702 Brisbane City Council contract decisions (August 2020 to April 2025), 13,262 ACT invoices (2017 to 2026) and 137 NSW building work orders (to 28 September 2026). We also counted standard contract letter suites and used Texas DOT bid results (2016 to 2024) and US federal contract awards (fiscal years 2008 to 2026) for comparison.",
+      "description": "Records. This is an internal Mastt study of published public records. It draws on: About 31,800 Commonwealth contract notices for building, construction and related services (mostly 2013 to 2026). About 68,000 Queensland contract disclosure rows (mostly 2019 to 2026). Project listings in Queensland state budgets (12 budgets from 2014-15 to 2026-27) and Victorian state budgets (three machine-readable years). 702 Brisbane City Council contract decisions (August 2020 to April 2025). 13,262 ACT invoices (2017 to 2026). 137 NSW building work orders (to 28 September 2026).",
       "creator": {
         "@type": "Organization",
         "name": "Mastt",
@@ -130,7 +130,11 @@ File: `00-mastt-aup-schema.html`. Add an HTML Embed at the top of the post body 
 
 Paste into the post body (Rich Text).
 
-This page is a citable reference to how Australian governments buy and manage construction. It brings together Mastt's analysis of public contract records, from Commonwealth contract notices to council tender decisions, with context from official sources. Every figure is labelled with its period. Where a number is our own calculation, we say so, and every outside source is linked where it is used. Findings are signals, not proof. Texas figures describe Texas DOT work only. Please cite as: Mastt, Australian Public Construction Procurement: 2026 Statistics, mastt.com.
+This page is a citable reference to how Australian governments buy and manage construction. It brings together Mastt's analysis of public contract records, from Commonwealth contract notices to council tender decisions, with context from official sources.
+
+ Every figure is labelled with its period. Where a number is our own calculation, we say so, and every outside source is linked where it is used.
+
+ Findings are signals, not proof. Texas figures describe Texas DOT work only. Please cite as: Mastt, Australian Public Construction Procurement: 2026 Statistics, mastt.com.
 
 ---
 
@@ -178,21 +182,36 @@ Paste into the post body (Rich Text).
 
  **Note on definitions.** A Commonwealth construction contract here means a contract for building, construction or related services, or one with a works-type description. Values are original contract values including GST unless stated. Percentages are shares of records that carry the field in question.
 
+ 
+### Commonwealth contracts
+
  - **44% more contracts just under $80,000** than nearby bands predict: 550 Commonwealth contracts valued $75,000 to $79,999 against about 383 expected, mostly 2013 to 2026 (Mastt analysis). The general threshold [rose to $125,000](https://hallandwilcox.com.au/news/commonwealth-procurement-rules-key-updates-to-be-aware-of/) from 17 November 2025.
 - **98 contracts at exactly $88,000**, against 24 at exactly $80,000. Twelve agencies account for all 98, and two of them for 71.
 - **33.6% of Commonwealth construction contracts were amended**: 10,661 of 31,773 (Mastt analysis, mostly 2013 to 2026).
 - **73% of contracts over $100 million were amended**, against 15% of contracts under $100,000.
 - **29% median value growth** among amended Commonwealth contracts, or 24% with Defence removed.
 - **69% of amended Commonwealth contracts are Defence**, which holds 53% of all contracts.
-- **34% of Queensland works worth $200,000 to $1 million went to limited tender** and 16% to open tender, with 30% not stating a method (68,394 contracts, mostly 2019 to 2026).
+
+ 
+### Queensland and Victoria
+
+ - **34% of Queensland works worth $200,000 to $1 million went to limited tender** and 16% to open tender, with 30% not stating a method (68,394 contracts, mostly 2019 to 2026).
 - **33% of Queensland contracts that state a form use the Main Roads Transport Infrastructure Contract**. AS 4000 accounts for 3.1%. Only 450 of 14,804 contracts state a form at all.
 - **+24% median cost growth** for Queensland projects listed in three or more state budgets, and 59% grew by more than 10%.
 - **47% of Victorian projects** in two or more budgets pushed back their finish date, by a typical 4 quarters.
-- **40.5% of priced Brisbane tenders** went to someone other than the cheapest tenderer. Another **23.3%** of tendered awards recorded a single tenderer and **12.0%** of all awards skipped tender.
+
+ 
+### Brisbane and the ACT
+
+ - **40.5% of priced Brisbane tenders** went to someone other than the cheapest tenderer. Another **23.3%** of tendered awards recorded a single tenderer and **12.0%** of all awards skipped tender.
 - **56% of Brisbane tendered awards were lump sum**, 44% schedule of rates.
 - **7 days median** for the ACT to pay a construction invoice, with 3.4% taking more than 30 days.
 - **75% of ACT payments** to construction suppliers land on a Tuesday or Thursday.
-- **49 NSW building work orders** issued in 2026 to 28 September are listed, against 15 from 2023. Only orders still in force stay listed.
+
+ 
+### NSW and US comparisons
+
+ - **49 NSW building work orders** issued in 2026 to 28 September are listed, against 15 from 2023. Only orders still in force stay listed.
 - **109 standard letters** in the NSW GC21 sample letter suite, 105 in MW21, and 60 clause-numbered notices in the ACT design services suite.
 - **98.9% against 59.5%** of awards went to the lowest bid in Texas DOT contracts and Brisbane tenders.
 - **62% against 53%** of federal construction contracts come from Defense in the United States and Defence in Australia.
@@ -202,7 +221,15 @@ Paste into the post body (Rich Text).
 
  Commonwealth buyers must follow additional procurement rules once a purchase reaches a set value. For most purchases by non-corporate entities that value was $80,000. [Hall & Wilcox](https://hallandwilcox.com.au/news/commonwealth-procurement-rules-key-updates-to-be-aware-of/) reports that it rose to $125,000 under paragraph 9.7 of the [Commonwealth Procurement Rules](https://www.legislation.gov.au/F2025L01263/asmade/text), with effect from 17 November 2025, and that all thresholds in the Rules count GST.
 
- Mastt analysed 31,773 Commonwealth construction contracts with a stated value, signed between 2005 and 2026, 98% of them from 2013. The $75,000 to $79,999 band holds 550 contracts. A smooth curve fitted to the nearby bands predicts about 383, so the band holds 44% more contracts than expected. The count then steps down after $80,000 (Figure 1).
+ 
+### Contracts bunch just under $80,000
+
+ Mastt analysed 31,773 Commonwealth construction contracts with a stated value, signed between 2005 and 2026, 98% of them from 2013. The $75,000 to $79,999 band stands out (Figure 1):
+
+ - **Actual count:** The band holds 550 contracts.
+- **Expected count:** A smooth curve fitted to the nearby bands predicts about 383.
+- **Excess:** The band holds 44% more contracts than expected.
+- **After $80,000:** The count steps down.
 
 ---
 
@@ -269,9 +296,17 @@ Paste into the post body (Rich Text).
 
 ### The spike at $88,000
 
- The tallest bar sits in the $88,000 band, which holds 159 contracts against 70 in the band below and 58 in the band above. Most of that spike is 98 contracts valued at exactly $88,000, which is $80,000 plus 10% GST. Because the Rules count GST, a contract at $88,000 is above the old $80,000 limit. The pattern suggests some buyers read the limit as excluding GST.
+ The tallest bar sits in the $88,000 band, which holds 159 contracts against 70 in the band below and 58 in the band above. Most of that spike is 98 contracts valued at exactly $88,000, which is $80,000 plus 10% GST.
 
- The spike is narrow. Twelve agencies account for all 98, and two of them account for 71. Of the 98, 38 are described as project management or project fees. It reads as a habit among a few buyers, not a national convention. Round figures plus GST are common across the range: $66,000, $77,000 and $110,000 all rank among the ten most common exact values, and each equals a round amount plus 10% GST (Figure 2).
+ Because the Rules count GST, a contract at $88,000 is above the old $80,000 limit. The pattern suggests some buyers read the limit as excluding GST.
+
+ The spike is narrow. It reads as a habit among a few buyers, not a national convention:
+
+ - **Twelve agencies:** They account for all 98 contracts at $88,000.
+- **Two agencies:** They account for 71 of the 98.
+- **Project fees:** 38 of the 98 are described as project management or project fees.
+
+ Round figures plus GST are common across the range: $66,000, $77,000 and $110,000 all rank among the ten most common exact values, and each equals a round amount plus 10% GST (Figure 2).
 
 ---
 
@@ -313,19 +348,35 @@ Paste into the post body (Rich Text).
 
  The Rules set a separate threshold of $7.5 million for construction services, and Hall & Wilcox reports that it was left unchanged. The pile near $80,000 therefore points to the general threshold applying to much of the building-related work agencies buy, such as maintenance, project management and design, rather than to works contracts as such.
 
- Bunching below procurement thresholds is a documented pattern. [Palguta and Pertold (2017)](https://researchportal.uc3m.es/display/act549288) found that public buyers clustered contracts just below newly introduced discretionary thresholds, mostly in construction and services. Bunching does not prove improper conduct. Lighter rules below a threshold can also save time and cost on small purchases.
+ Bunching below procurement thresholds is a documented pattern. [Palguta and Pertold (2017)](https://researchportal.uc3m.es/display/act549288) found that public buyers clustered contracts just below newly introduced discretionary thresholds, mostly in construction and services.
+
+ Bunching does not prove improper conduct. Lighter rules below a threshold can also save time and cost on small purchases.
 
  
 ### Is the pile about to move?
 
- The change applies to new approaches to market released on or after 17 November 2025, according to [MinterEllison](https://www.minterellison.com/articles/new-commonwealth-procurement-rules-commence-17-november-2025). Contracts signed in the months after that date mostly came from approaches released before it, so any effect arrives slowly. Of 1,915 contracts signed from 17 November 2025 to 28 September 2026, 33 sit in the $75,000 to $79,999 band, where about 21 would be expected, and 17 sit in the $120,000 to $124,999 band, where about 15 would be expected. That is no clear move yet. The number to watch is the count just under $125,000 in contracts signed from late 2026.
+ The change applies to new approaches to market released on or after 17 November 2025, according to [MinterEllison](https://www.minterellison.com/articles/new-commonwealth-procurement-rules-commence-17-november-2025). Contracts signed in the months after that date mostly came from approaches released before it, so any effect arrives slowly.
 
- **What this means for project teams:** Value contracts on the same GST basis the Rules use, and record how each scope was sized against a threshold. If you sell to Commonwealth agencies, expect small-works and services scopes sized to fit under the limit. If you manage a pipeline, watch for the pile moving to $125,000 and review how work is packaged when it does.
+ Of 1,915 contracts signed from 17 November 2025 to 28 September 2026:
+
+ - **$75,000 to $79,999:** 33 contracts, where about 21 would be expected.
+- **$120,000 to $124,999:** 17 contracts, where about 15 would be expected.
+
+ That is no clear move yet. The number to watch is the count just under $125,000 in contracts signed from late 2026.
+
+ **What this means for project teams:**
+
+- Value contracts on the same GST basis the Rules use, and record how each scope was sized against a threshold.
+- If you sell to Commonwealth agencies, expect small-works and services scopes sized to fit under the limit.
+- If you manage a pipeline, watch for the pile moving to $125,000 and review how work is packaged when it does.
 
  
 ## How often are Commonwealth construction contracts amended?
 
- Of 31,773 Commonwealth construction contracts, 10,661 (33.6%) were amended at least once, mostly 2013 to 2026. The rate rises with contract size (Figure 3). About 1 in 7 contracts under $100,000 was amended, against roughly 7 in 10 at $1 million and above.
+ Of 31,773 Commonwealth construction contracts, 10,661 (33.6%) were amended at least once, mostly 2013 to 2026. The rate rises with contract size (Figure 3):
+
+ - **Under $100,000:** About 1 in 7 contracts was amended.
+- **$1 million and above:** Roughly 7 in 10 contracts were amended.
 
 ---
 
@@ -365,9 +416,19 @@ plot.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='Ar
 
 Paste into the post body (Rich Text).
 
-Amendments are not all scope change. The Commonwealth contract notice system records option exercises and time extensions as amendments, so the rate overstates how often scope changed. Among amended contracts, the median value growth was 29.4% (10,302 contracts).
+### Amendments are not all scope change
 
- Smaller contracts that are amended grow by more in proportion. The median amended contract under $100,000 grew 79.6%, against 7.3% for those over $100 million (Figure 4). One extra variation weighs more on a small base.
+ The Commonwealth contract notice system records option exercises and time extensions as amendments, so the rate overstates how often scope changed. Among amended contracts, the median value growth was 29.4% (10,302 contracts).
+
+ 
+### Small contracts grow more in proportion
+
+ Smaller contracts that are amended grow by more in proportion (Figure 4):
+
+ - **Under $100,000:** The median amended contract grew 79.6%.
+- **Over $100 million:** The median amended contract grew 7.3%.
+
+ One extra variation weighs more on a small base.
 
 ---
 
@@ -407,19 +468,24 @@ Paste into the post body (Rich Text).
 
 ### How much of this is Defence?
 
- Defence holds 53.0% of the contracts and 68.8% of the amended ones (Figure 5). Its amendment rate is 43.5%, against 22.3% for every other agency combined. With Defence removed, amended contracts grew a median 24.4%, against 29.4% overall. Any national benchmark for Commonwealth construction is largely a Defence benchmark, so split it out before comparing an agency's own rate.
+ Defence holds 53.0% of the contracts and 68.8% of the amended ones (Figure 5). Separating Defence changes two measures:
+
+ - **Amendment rate:** 43.5% for Defence, against 22.3% for every other agency combined.
+- **Value growth:** With Defence removed, amended contracts grew a median 24.4%, against 29.4% overall.
+
+ Any national benchmark for Commonwealth construction is largely a Defence benchmark, so split it out before comparing an agency's own rate.
 
 ---
 
 ## Step 14: Embed 8, Figure 5: Defence share of Commonwealth construction contracts
 
-File: `14-mastt-aup-f05-defence-share-of-commonwealth-construction.html`. Add an HTML Embed here, directly under the text above, and paste this (26,879 characters).
+File: `14-mastt-aup-f05-defence-share-of-commonwealth-construction.html`. Add an HTML Embed here, directly under the text above, and paste this (26,885 characters).
 
 ```html
 <div id="mastt-aup-f05" class="maupf05" role="figure" aria-label="Donut chart: Figure 5: Defence share of Commonwealth construction contracts. Defence: Value 16,854 contracts, Share 53%; All other agencies: Value 14,919 contracts, Share 47%; Defence: Value 7,330 contracts, Share 69%; All other agencies: Value 3,331 contracts, Share 31%. Defence is about half of all contracts and just over two thirds of the amended ones.">
 <script>(function(){var r=document.getElementById('mastt-aup-f05');if(!r)return;try{if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;}catch(e){}r.className+=' maupf05-js';})();</script>
 <style>#mastt-aup-f05{--maupf05-ink:#0C2029;--maupf05-ink-2:#45525B;--maupf05-muted:#94A2AB;--maupf05-axis-label:#48555E;--maupf05-faint:#94A2AB;--maupf05-line:#ECEFF1;--maupf05-line-h:#DDE6EE;--maupf05-wash:#F6F8F9;--maupf05-grid:#EAEEF1;--maupf05-axis:#CDD5DA;--maupf05-card:#FFFFFF;--maupf05-accent:#E9720E;--maupf05-accent-ink:#E9720E;--maupf05-blue:#0096DD;--maupf05-link:#1476BE;--maupf05-link-h:#0C4F86;--maupf05-orange:#E9720E;--maupf05-green:#5BB65E;--maupf05-green-d:#2E7D33;--maupf05-purple:#7E52C4;--maupf05-amber:#F9B140;--maupf05-cyan:#29BFD3;--maupf05-red:#E8544E;--maupf05-slate:#5F7D8B;--maupf05-gray:#C6CBD0;--maupf05-green-ink:#3F9E4C;--maupf05-red-ink:#D8433D;--maupf05-amber-ink:#C77F1A;--maupf05-gray-ink:#8A97A0;--maupf05-gray-val:#7C8B94;--series-1:#E9720E;--series-2:#0096DD;--series-3:#5BB65E;--series-4:#7E52C4;--series-5:#F9B140;--series-6:#29BFD3;--series-7:#E8544E;--foreground:var(--maupf05-ink);--text-secondary:var(--maupf05-ink-2);--text-muted:var(--maupf05-gray-ink);--border:var(--maupf05-line);--border-subtle:var(--maupf05-grid);--border-strong:var(--maupf05-axis);--surface:#FFFFFF;--surface-muted:var(--maupf05-wash);--background:#FFFFFF;--accent:var(--maupf05-accent);--accent-strong:var(--maupf05-accent-ink);--accent-subtle:rgba(233,114,14,.12);--success:var(--maupf05-green);--warning:var(--maupf05-amber);--danger:var(--maupf05-red);box-sizing:border-box;position:relative;display:block;width:100%;max-width:800px;margin:0 auto 24px;padding:0;color:var(--maupf05-ink);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;font-weight:400;letter-spacing:normal;text-align:left;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}#mastt-aup-f05.maupf05-wide{max-width:900px}#mastt-aup-f05 *,#mastt-aup-f05 *::before,#mastt-aup-f05 *::after{box-sizing:border-box}#mastt-aup-f05 :where(div,p,span,ul,ol,li,a,b,strong,em,i,small,table,thead,tbody,tr,th,td,caption,button,details,summary,dl,dt,dd,blockquote,figure,figcaption,cite,sup,sub,code){font-family:inherit;font-size:inherit;line-height:inherit;font-weight:inherit;font-style:inherit;letter-spacing:inherit;text-transform:none;color:inherit;margin:0;padding:0;border:0;border-radius:0;background:none;text-align:inherit;text-decoration:none;max-width:none;width:auto;float:none;min-height:0;box-shadow:none;quotes:none}#mastt-aup-f05 :where(h2,h3,h4){margin:0;padding:0;border:0;background:none;color:var(--maupf05-ink);text-transform:none;letter-spacing:normal;max-width:none}#mastt-aup-f05 :where(b,strong){font-weight:700}#mastt-aup-f05 :where(em,i){font-style:italic}#mastt-aup-f05 :where(cite){font-style:normal}#mastt-aup-f05 :where(a){color:var(--maupf05-link);text-decoration:none;align-self:flex-start}#mastt-aup-f05 :where(a):hover{color:var(--maupf05-link-h)}#mastt-aup-f05 :where(blockquote)::before,#mastt-aup-f05 :where(blockquote)::after{content:none}#mastt-aup-f05 svg{display:block;overflow:visible;max-width:none}#mastt-aup-f05 :where(svg text){font-family:inherit}#mastt-aup-f05 .maupf05-sr{position:absolute!important;left:0;top:0;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}#mastt-aup-f05 table.maupf05-sr{display:block}#mastt-aup-f05 .maupf05-card{background:var(--maupf05-card);border:1px solid var(--maupf05-line);border-radius:16px;padding:26px 30px 20px;display:flex;flex-direction:column}#mastt-aup-f05 .maupf05-callout{background:var(--maupf05-wash);border-radius:10px;padding:14px 18px;font-size:17px;line-height:1.45;color:var(--maupf05-ink-2);font-weight:400}#mastt-aup-f05 .maupf05-callout strong{color:var(--maupf05-accent);font-weight:700}#mastt-aup-f05 .maupf05-body{min-width:0;display:flex;flex-direction:column;gap:14px;margin-top:24px}#mastt-aup-f05 .maupf05-card>.maupf05-body:first-child{margin-top:4px}#mastt-aup-f05 .maupf05-cap{margin-top:22px;text-align:center;font-size:13px;line-height:1.45;font-weight:600;letter-spacing:1.4px;text-transform:uppercase;color:var(--maupf05-ink)}#mastt-aup-f05 .maupf05-src{margin-top:7px;text-align:center;font-size:11.5px;line-height:1.45;color:var(--maupf05-muted);font-weight:400}#mastt-aup-f05 .maupf05-src+.maupf05-src{margin-top:3px}#mastt-aup-f05 .maupf05-scroll{overflow-x:auto;min-width:0;max-width:100%}#mastt-aup-f05 :where(.maupf05-body div,.maupf05-body table){min-width:0}#mastt-aup-f05 .maupf05-body>*{max-width:100%}#mastt-aup-f05 .maupf05-tip{position:absolute;z-index:5;pointer-events:none;background:var(--maupf05-ink);color:#fff;font-size:13px;line-height:1.35;padding:7px 10px;border-radius:8px;white-space:nowrap;opacity:0;transition:opacity .12s;transform:translate(-50%,calc(-100% - 10px))}#mastt-aup-f05 .maupf05-tip b{color:#fff;font-weight:700}#mastt-aup-f05 .maupf05-tip.maupf05-on{opacity:1}#mastt-aup-f05 .maupf05-legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:14px;color:var(--maupf05-ink)}#mastt-aup-f05 .maupf05-key{display:inline-flex;align-items:center;gap:7px}#mastt-aup-f05 .maupf05-sw{width:12px;height:12px;border-radius:3px;flex:none;display:inline-block}#mastt-aup-f05 .maupf05-tabs{display:flex;flex-direction:column;gap:16px}#mastt-aup-f05 .maupf05-tablist{display:inline-flex;flex-wrap:wrap;gap:4px;padding:4px;background:var(--maupf05-wash);border-radius:10px;align-self:center;max-width:100%}#mastt-aup-f05 .maupf05-tab{cursor:pointer;font-size:14px;font-weight:600;line-height:1.2;color:var(--maupf05-ink-2);padding:8px 14px;border-radius:7px;border:1px solid transparent;transition:color .18s ease,background-color .18s ease,border-color .18s ease}#mastt-aup-f05 .maupf05-tab:hover{color:var(--maupf05-blue)}#mastt-aup-f05 .maupf05-tab[aria-selected="true"]{background:#fff;color:var(--maupf05-ink);border-color:var(--maupf05-line-h)}#mastt-aup-f05 .maupf05-tab:focus-visible{outline:2px solid var(--maupf05-blue);outline-offset:2px}#mastt-aup-f05 .maupf05-panel[hidden]{display:none!important}#mastt-aup-f05 .maupf05-note{font-size:13px;color:var(--maupf05-muted)}#mastt-aup-f05 .maupf05-gap{height:24px}@media (max-width:560px){#mastt-aup-f05 .maupf05-card{padding:18px 14px 14px;border-radius:12px}#mastt-aup-f05 .maupf05-callout{font-size:14px;padding:11px 13px}#mastt-aup-f05 .maupf05-cap{font-size:10.5px;letter-spacing:.8px;margin-top:16px}#mastt-aup-f05 .maupf05-body{margin-top:18px}}#mastt-aup-f05 .maupf05-dn{display:flex;align-items:center;gap:34px;min-width:0}#mastt-aup-f05 .maupf05-dn-ring{position:relative;flex:0 0 auto;width:284px;max-width:100%;aspect-ratio:1;outline:none;-webkit-tap-highlight-color:transparent}#mastt-aup-f05 .maupf05-dn-ring:focus-visible{outline:2px solid var(--maupf05-blue);outline-offset:4px;border-radius:50%}#mastt-aup-f05 .maupf05-dn-ring svg{width:100%;height:100%}#mastt-aup-f05 .maupf05-k0{--s:var(--maupf05-accent);--t:var(--maupf05-accent)}#mastt-aup-f05 .maupf05-k1{--s:var(--maupf05-blue);--t:var(--maupf05-blue)}#mastt-aup-f05 .maupf05-k2{--s:var(--maupf05-green);--t:var(--maupf05-green-ink)}#mastt-aup-f05 .maupf05-k3{--s:var(--maupf05-purple);--t:var(--maupf05-purple)}#mastt-aup-f05 .maupf05-k4{--s:var(--maupf05-amber);--t:var(--maupf05-amber-ink)}#mastt-aup-f05 .maupf05-k5{--s:var(--maupf05-cyan);--t:#17A2B4}#mastt-aup-f05 .maupf05-k6{--s:var(--maupf05-red);--t:var(--maupf05-red-ink)}#mastt-aup-f05 .maupf05-k7{--s:var(--maupf05-slate);--t:var(--maupf05-slate)}#mastt-aup-f05 .maupf05-kg{--s:var(--maupf05-gray);--t:var(--maupf05-gray-val)}#mastt-aup-f05 .maupf05-dn-trk{fill:none;stroke:var(--maupf05-wash);stroke-width:7}#mastt-aup-f05 .maupf05-dn-seg{fill:none;stroke:var(--s);stroke-width:7;stroke-linecap:butt;stroke-dasharray:var(--a) var(--r);stroke-dashoffset:var(--o);cursor:pointer;transition:stroke-dasharray .9s ease var(--d,0s),stroke-dashoffset .9s ease var(--d,0s),stroke-width .2s ease,opacity .2s ease,filter .2s ease}#mastt-aup-f05 .maupf05-dn-seg.maupf05-on{stroke-width:8.6;filter:brightness(1.07) saturate(1.05)}#mastt-aup-f05 .maupf05-dn-ring.maupf05-act .maupf05-dn-seg:not(.maupf05-on){opacity:.5}#mastt-aup-f05 .maupf05-dn-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 21%;text-align:center;pointer-events:none}#mastt-aup-f05 .maupf05-dn-center>*{max-width:100%}#mastt-aup-f05 .maupf05-dn-cv{display:block;font-size:calc(var(--cs,46)*1px);font-weight:700;line-height:1;white-space:nowrap;color:var(--ct,var(--maupf05-accent));font-variant-numeric:tabular-nums}#mastt-aup-f05 .maupf05-dn-cl{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;margin-top:9px;font-size:12.5px;font-weight:700;letter-spacing:1.4px;line-height:1.35;text-transform:uppercase;color:#55636C;overflow-wrap:anywhere}#mastt-aup-f05 .maupf05-dn-cm{display:block;min-height:1.3em;margin-top:3px;font-size:12px;line-height:1.3;color:var(--maupf05-muted);font-variant-numeric:tabular-nums}@keyframes maupf05-dn-roll{from{opacity:0;transform:translateY(.3em)}}#mastt-aup-f05 .maupf05-dn-center.maupf05-roll>*{animation:maupf05-dn-roll .24s cubic-bezier(.16,1,.3,1)}#mastt-aup-f05 .maupf05-dn-legend{flex:1 1 auto;min-width:0;display:grid;grid-template-columns:16px max-content minmax(0,1fr) auto;column-gap:12px;row-gap:6px;margin:0;padding:0;list-style:none}#mastt-aup-f05 .maupf05-dn[data-sh="0"] .maupf05-dn-legend{grid-template-columns:16px max-content minmax(0,1fr)}#mastt-aup-f05 .maupf05-dn[data-sh="0"] .maupf05-dn-rs{display:none}#mastt-aup-f05 .maupf05-dn-legend li{grid-column:1/-1;display:grid;grid-template-columns:16px 4.5em minmax(0,1fr) auto;grid-template-columns:subgrid;margin:0;padding:0;list-style:none}#mastt-aup-f05 .maupf05-dn-legend li::before,#mastt-aup-f05 .maupf05-dn-legend li::marker{content:none}#mastt-aup-f05 .maupf05-dn-row{grid-column:1/-1;display:grid;grid-template-columns:16px 4.5em minmax(0,1fr) auto;grid-template-columns:subgrid;align-items:center;width:100%;min-height:40px;color:var(--maupf05-ink);cursor:pointer;font-size:16px;line-height:1.3;text-align:left;-webkit-tap-highlight-color:transparent}#mastt-aup-f05 .maupf05-dn-row:focus-visible{outline:2px solid var(--maupf05-blue);outline-offset:3px;border-radius:6px}#mastt-aup-f05 .maupf05-dn-dot{width:16px;height:16px;border-radius:4px;border:2px solid var(--s);background:var(--s);transition:background-color .2s ease}#mastt-aup-f05 .maupf05-dn-rv{font-size:18px;font-weight:700;line-height:1;color:var(--t);font-variant-numeric:tabular-nums;transform-origin:left center;transition:transform .18s ease}#mastt-aup-f05 .maupf05-dn-legend li:first-child .maupf05-dn-rv{font-size:22px}#mastt-aup-f05 .maupf05-dn-row.maupf05-on .maupf05-dn-rv{transform:scale(1.06)}#mastt-aup-f05 .maupf05-dn-rt{display:grid;min-width:0}#mastt-aup-f05 .maupf05-dn-rl{color:var(--maupf05-ink);overflow-wrap:anywhere}#mastt-aup-f05 .maupf05-dn-row.maupf05-pin .maupf05-dn-rl{font-weight:600}#mastt-aup-f05 .maupf05-dn-rm{font-size:13px;line-height:1.35;color:var(--maupf05-muted)}#mastt-aup-f05 .maupf05-dn-rs{justify-self:end;font-size:15px;font-weight:500;color:var(--maupf05-ink-2);font-variant-numeric:tabular-nums}#mastt-aup-f05 .maupf05-dn-row.maupf05-off .maupf05-dn-dot{background:transparent}#mastt-aup-f05 .maupf05-dn-row.maupf05-off .maupf05-dn-rv,#mastt-aup-f05 .maupf05-dn-row.maupf05-off .maupf05-dn-rl,#mastt-aup-f05 .maupf05-dn-row.maupf05-off .maupf05-dn-rs{color:var(--maupf05-muted)}#mastt-aup-f05.maupf05-js .maupf05-dn-seg{stroke-dasharray:0 100}#mastt-aup-f05.maupf05-js.maupf05-in .maupf05-dn-seg{stroke-dasharray:var(--a) var(--r)}#mastt-aup-f05.maupf05-js .maupf05-dn-legend li{opacity:0;transform:translateY(6px)}#mastt-aup-f05.maupf05-js.maupf05-in .maupf05-dn-legend li{opacity:1;transform:none;transition:opacity .5s ease calc(.15s + var(--i,0)*.08s),transform .5s ease calc(.15s + var(--i,0)*.08s)}@media (max-width:620px){#mastt-aup-f05 .maupf05-dn{flex-direction:column;gap:22px}#mastt-aup-f05 .maupf05-dn-ring{width:220px}#mastt-aup-f05 .maupf05-dn-cv{font-size:calc(var(--cs,46)*.82px)}#mastt-aup-f05 .maupf05-dn-cl{margin-top:6px;font-size:11px;letter-spacing:1px}#mastt-aup-f05 .maupf05-dn-cm{font-size:11px}#mastt-aup-f05 .maupf05-dn-legend{align-self:stretch;width:100%;column-gap:10px}#mastt-aup-f05 .maupf05-dn-row{font-size:14px}#mastt-aup-f05 .maupf05-dn-rv{font-size:16px}#mastt-aup-f05 .maupf05-dn-legend li:first-child .maupf05-dn-rv{font-size:20px}#mastt-aup-f05 .maupf05-dn-rs{font-size:14px}#mastt-aup-f05 .maupf05-dn-rm{font-size:12px}}@media (prefers-reduced-motion:reduce){#mastt-aup-f05 .maupf05-dn-seg,#mastt-aup-f05 .maupf05-dn-rv,#mastt-aup-f05 .maupf05-dn-dot{transition:none}#mastt-aup-f05 .maupf05-dn-center.maupf05-roll>*{animation:none}}</style>
-<div class="maupf05-card"><p class="maupf05-callout"><strong>Defence is about half of all contracts and just over two thirds of the amended ones.</strong></p><div class="maupf05-body"><div class="maupf05-tabs"><div class="maupf05-tablist" role="tablist"><button type="button" class="maupf05-tab" role="tab" data-v="all" aria-selected="true" tabindex="0">All contracts</button><button type="button" class="maupf05-tab" role="tab" data-v="amended" aria-selected="false" tabindex="-1">Amended contracts</button></div><div class="maupf05-panel" role="tabpanel" data-v="all"><div class="maupf05-dn" role="group" aria-label="Commonwealth construction contracts by buyer" data-sh="1" style="--cs:38" data-d='{"v":[16854,14919],"h":[0,0],"p":-1,"ac":"toggle","tl":"Contracts","u":"contracts","L":["Defence","All other agencies"],"V":["16,854","14,919"],"f":"31,773"}'><div class="maupf05-dn-ring"><svg viewBox="0 0 42 42" aria-hidden="true" focusable="false"><g transform="rotate(-90 21 21)"><circle class="maupf05-dn-trk" cx="21" cy="21" r="15.915"/><circle class="maupf05-dn-seg maupf05-k0" cx="21" cy="21" r="15.915" style="--a:52.55;--r:47.45;--o:-0.25;--d:0s"/><circle class="maupf05-dn-seg maupf05-k1" cx="21" cy="21" r="15.915" style="--a:46.45;--r:53.55;--o:-53.3;--d:0.1s"/></g></svg><div class="maupf05-dn-center" aria-hidden="true"><b class="maupf05-dn-cv" data-to="31773">31,773</b><span class="maupf05-dn-cl">Contracts</span><span class="maupf05-dn-cm">&nbsp;</span></div></div><ul class="maupf05-dn-legend" aria-label="Segments. Press a segment to show or hide it"><li style="--i:0"><button type="button" class="maupf05-dn-row maupf05-k0" aria-pressed="true"><span class="maupf05-dn-dot" aria-hidden="true"></span><span class="maupf05-dn-rv" data-to="16854">16,854</span><span class="maupf05-dn-rt"><span class="maupf05-dn-rl">Defence</span></span><span class="maupf05-dn-rs">53%</span></button></li><li style="--i:1"><button type="button" class="maupf05-dn-row maupf05-k1" aria-pressed="true"><span class="maupf05-dn-dot" aria-hidden="true"></span><span class="maupf05-dn-rv" data-to="14919">14,919</span><span class="maupf05-dn-rt"><span class="maupf05-dn-rl">All other agencies</span></span><span class="maupf05-dn-rs">47%</span></button></li></ul><p class="maupf05-sr maupf05-dn-live" aria-live="polite"></p><table class="maupf05-sr"><caption>Commonwealth construction contracts by buyer</caption><thead><tr><th scope="col">Segment</th><th scope="col">Value</th><th scope="col">Share</th></tr></thead><tbody><tr><th scope="row">Defence</th><td>16,854 contracts</td><td>53%</td></tr><tr><th scope="row">All other agencies</th><td>14,919 contracts</td><td>47%</td></tr></tbody></table></div></div><div class="maupf05-panel" role="tabpanel" data-v="amended" hidden=""><div class="maupf05-dn" role="group" aria-label="Amended Commonwealth construction contracts by buyer" data-sh="1" style="--cs:38" data-d='{"v":[7330,3331],"h":[0,0],"p":-1,"ac":"toggle","tl":"Amended contracts","u":"contracts","L":["Defence","All other agencies"],"V":["7,330","3,331"],"f":"10,661"}'><div class="maupf05-dn-ring"><svg viewBox="0 0 42 42" aria-hidden="true" focusable="false"><g transform="rotate(-90 21 21)"><circle class="maupf05-dn-trk" cx="21" cy="21" r="15.915"/><circle class="maupf05-dn-seg maupf05-k0" cx="21" cy="21" r="15.915" style="--a:68.26;--r:31.74;--o:-0.25;--d:0s"/><circle class="maupf05-dn-seg maupf05-k1" cx="21" cy="21" r="15.915" style="--a:30.74;--r:69.26;--o:-69.01;--d:0.1s"/></g></svg><div class="maupf05-dn-center" aria-hidden="true"><b class="maupf05-dn-cv" data-to="10661">10,661</b><span class="maupf05-dn-cl">Amended contracts</span><span class="maupf05-dn-cm">contracts</span></div></div><ul class="maupf05-dn-legend" aria-label="Segments. Press a segment to show or hide it"><li style="--i:0"><button type="button" class="maupf05-dn-row maupf05-k0" aria-pressed="true"><span class="maupf05-dn-dot" aria-hidden="true"></span><span class="maupf05-dn-rv" data-to="7330">7,330</span><span class="maupf05-dn-rt"><span class="maupf05-dn-rl">Defence</span></span><span class="maupf05-dn-rs">69%</span></button></li><li style="--i:1"><button type="button" class="maupf05-dn-row maupf05-k1" aria-pressed="true"><span class="maupf05-dn-dot" aria-hidden="true"></span><span class="maupf05-dn-rv" data-to="3331">3,331</span><span class="maupf05-dn-rt"><span class="maupf05-dn-rl">All other agencies</span></span><span class="maupf05-dn-rs">31%</span></button></li></ul><p class="maupf05-sr maupf05-dn-live" aria-live="polite"></p><table class="maupf05-sr"><caption>Amended Commonwealth construction contracts by buyer</caption><thead><tr><th scope="col">Segment</th><th scope="col">Value</th><th scope="col">Share</th></tr></thead><tbody><tr><th scope="row">Defence</th><td>7,330 contracts</td><td>69%</td></tr><tr><th scope="row">All other agencies</th><td>3,331 contracts</td><td>31%</td></tr></tbody></table></div></div></div></div><p class="maupf05-cap">Figure 5: Defence share of Commonwealth construction contracts</p><p class="maupf05-src">Source: Mastt analysis of published Commonwealth contract notices, mostly 2013 to 2026</p></div>
+<div class="maupf05-card"><p class="maupf05-callout"><strong>Defence is about half of all contracts and just over two thirds of the amended ones.</strong></p><div class="maupf05-body"><div class="maupf05-tabs"><div class="maupf05-tablist" role="tablist"><button type="button" class="maupf05-tab" role="tab" data-v="all" aria-selected="true" tabindex="0">All contracts</button><button type="button" class="maupf05-tab" role="tab" data-v="amended" aria-selected="false" tabindex="-1">Amended contracts</button></div><div class="maupf05-panel" role="tabpanel" data-v="all"><div class="maupf05-dn" role="group" aria-label="Commonwealth construction contracts by buyer" data-sh="1" style="--cs:38" data-d='{"v":[16854,14919],"h":[0,0],"p":-1,"ac":"toggle","tl":"Contracts","u":"contracts","L":["Defence","All other agencies"],"V":["16,854","14,919"],"f":"31,773"}'><div class="maupf05-dn-ring"><svg viewBox="0 0 42 42" aria-hidden="true" focusable="false"><g transform="rotate(-90 21 21)"><circle class="maupf05-dn-trk" cx="21" cy="21" r="15.915"/><circle class="maupf05-dn-seg maupf05-k0" cx="21" cy="21" r="15.915" style="--a:52.55;--r:47.45;--o:-0.25;--d:0s"/><circle class="maupf05-dn-seg maupf05-k1" cx="21" cy="21" r="15.915" style="--a:46.45;--r:53.55;--o:-53.3;--d:0.1s"/></g></svg><div class="maupf05-dn-center" aria-hidden="true"><b class="maupf05-dn-cv" data-to="31773">31,773</b><span class="maupf05-dn-cl">Contracts</span><span class="maupf05-dn-cm">&nbsp;</span></div></div><ul class="maupf05-dn-legend" aria-label="Segments. Press a segment to show or hide it"><li style="--i:0"><button type="button" class="maupf05-dn-row maupf05-k0" aria-pressed="true"><span class="maupf05-dn-dot" aria-hidden="true"></span><span class="maupf05-dn-rv" data-to="16854">16,854</span><span class="maupf05-dn-rt"><span class="maupf05-dn-rl">Defence</span></span><span class="maupf05-dn-rs">53%</span></button></li><li style="--i:1"><button type="button" class="maupf05-dn-row maupf05-k1" aria-pressed="true"><span class="maupf05-dn-dot" aria-hidden="true"></span><span class="maupf05-dn-rv" data-to="14919">14,919</span><span class="maupf05-dn-rt"><span class="maupf05-dn-rl">All other agencies</span></span><span class="maupf05-dn-rs">47%</span></button></li></ul><p class="maupf05-sr maupf05-dn-live" aria-live="polite"></p><table class="maupf05-sr"><caption>Commonwealth construction contracts by buyer</caption><thead><tr><th scope="col">Segment</th><th scope="col">Value</th><th scope="col">Share</th></tr></thead><tbody><tr><th scope="row">Defence</th><td>16,854 contracts</td><td>53%</td></tr><tr><th scope="row">All other agencies</th><td>14,919 contracts</td><td>47%</td></tr></tbody></table></div></div><div class="maupf05-panel" role="tabpanel" data-v="amended" hidden=""><div class="maupf05-dn" role="group" aria-label="Amended Commonwealth construction contracts by buyer" data-sh="1" style="--cs:38" data-d='{"v":[7330,3331],"h":[0,0],"p":-1,"ac":"toggle","tl":"Amended contracts","u":"contracts","L":["Defence","All other agencies"],"V":["7,330","3,331"],"f":"10,661"}'><div class="maupf05-dn-ring"><svg viewBox="0 0 42 42" aria-hidden="true" focusable="false"><g transform="rotate(-90 21 21)"><circle class="maupf05-dn-trk" cx="21" cy="21" r="15.915"/><circle class="maupf05-dn-seg maupf05-k0" cx="21" cy="21" r="15.915" style="--a:68.26;--r:31.74;--o:-0.25;--d:0s"/><circle class="maupf05-dn-seg maupf05-k1" cx="21" cy="21" r="15.915" style="--a:30.74;--r:69.26;--o:-69.01;--d:0.1s"/></g></svg><div class="maupf05-dn-center" aria-hidden="true"><b class="maupf05-dn-cv" data-to="10661">10,661</b><span class="maupf05-dn-cl">Amended contracts</span><span class="maupf05-dn-cm">&nbsp;</span></div></div><ul class="maupf05-dn-legend" aria-label="Segments. Press a segment to show or hide it"><li style="--i:0"><button type="button" class="maupf05-dn-row maupf05-k0" aria-pressed="true"><span class="maupf05-dn-dot" aria-hidden="true"></span><span class="maupf05-dn-rv" data-to="7330">7,330</span><span class="maupf05-dn-rt"><span class="maupf05-dn-rl">Defence</span></span><span class="maupf05-dn-rs">69%</span></button></li><li style="--i:1"><button type="button" class="maupf05-dn-row maupf05-k1" aria-pressed="true"><span class="maupf05-dn-dot" aria-hidden="true"></span><span class="maupf05-dn-rv" data-to="3331">3,331</span><span class="maupf05-dn-rt"><span class="maupf05-dn-rl">All other agencies</span></span><span class="maupf05-dn-rs">31%</span></button></li></ul><p class="maupf05-sr maupf05-dn-live" aria-live="polite"></p><table class="maupf05-sr"><caption>Amended Commonwealth construction contracts by buyer</caption><thead><tr><th scope="col">Segment</th><th scope="col">Value</th><th scope="col">Share</th></tr></thead><tbody><tr><th scope="row">Defence</th><td>7,330 contracts</td><td>69%</td></tr><tr><th scope="row">All other agencies</th><td>3,331 contracts</td><td>31%</td></tr></tbody></table></div></div></div></div><p class="maupf05-cap">Figure 5: Defence share of Commonwealth construction contracts</p><p class="maupf05-src">Source: Mastt analysis of published Commonwealth contract notices, mostly 2013 to 2026</p></div>
 <script>(function(){var root=document.getElementById('mastt-aup-f05');if(!root||root.getAttribute('data-maupf05-on'))return;root.setAttribute('data-maupf05-on','1');
 var RM=!root.classList.contains('maupf05-js');
 var mxGen=0;
@@ -447,7 +513,7 @@ var total=function(){if(T)return T[mask()];var m=num.exec(D.f),d=(m[2].split('.'
 var desc=function(i){return D.L[i]+', '+D.V[i]+sf+', '+share(D.v[i]/(tot()||1))+((D.m&&D.m[i])||'');};
 var paint=function(){var t=tot()||1,at=0,g=hid.filter(function(h){return!h;}).length>1?GAP:0;segs.forEach(function(s,i){var l=hid[i]?0:D.v[i]/t*100,d=Math.max(0,l-g);s.style.setProperty('--a',+d.toFixed(2));s.style.setProperty('--r',+(100-d).toFixed(2));s.style.setProperty('--o',+(-(at+g/2)).toFixed(2));at+=l;});};
 var texts=function(){var t=tot();rows.forEach(function(r,i){r.querySelector('.maupf05-dn-rs').textContent=share(hid[i]||!t?0:D.v[i]/t);});box.setAttribute('data-sh',hid.some(Boolean)?'1':sh0);};
-var show=function(){var k=cur,t=tot(),v=k<0?total():D.V[k],a=k<0?D.tl:D.L[k],m=k<0?(D.u&&D.u.toLowerCase()!==D.tl.toLowerCase()?D.u:''):(box.getAttribute('data-sh')==='1'?share(D.v[k]/(t||1))+' of total':'');
+var show=function(){var k=cur,t=tot(),v=k<0?total():D.V[k],a=k<0?D.tl:D.L[k],m=k<0?(D.u&&D.tl.toLowerCase().indexOf(D.u.toLowerCase())<0?D.u:''):(box.getAttribute('data-sh')==='1'?share(D.v[k]/(t||1))+' of total':'');
 cv.textContent=v;tag(cv,v);cl.textContent=a;cm.textContent=m||'\u00a0';ring.style.setProperty('--ct',k<0?'':getComputedStyle(segs[k]).getPropertyValue('--t'));
 if(k!==shown&&!RM){ctr.classList.remove('maupf05-roll');void ctr.offsetWidth;ctr.classList.add('maupf05-roll');}shown=k;};
 var update=function(){var k=[pre,pin].filter(function(i){return i>=0&&!hid[i];})[0];cur=k===undefined?-1:k;
@@ -487,22 +553,48 @@ var ix=vis.indexOf(cur),k=step(e.key,ix<0?(/Up$|Left$/.test(e.key)?0:-1):ix,vis.
 
 Paste into the post body (Rich Text).
 
-**What this means for project teams:** Plan for change as the normal case on anything at $1 million and above, where 7 in 10 contracts are amended. Report option exercises and time extensions separately from scope change so your own rate can be compared with these figures. If you are a non-Defence agency, benchmark against the non-Defence rate of 22%.
+**What this means for project teams:**
+
+- Plan for change as the normal case on anything at $1 million and above, where 7 in 10 contracts are amended.
+- Report option exercises and time extensions separately from scope change so your own rate can be compared with these figures.
+- If you are a non-Defence agency, benchmark against the non-Defence rate of 22%.
 
  
 ## How do Queensland agencies buy construction?
 
- Queensland agencies must publish details of awarded contracts of $10,000 and above, including GST, within 60 days of award, according to the [Queensland Government contract disclosure guide](https://www.forgov.qld.gov.au/__data/assets/pdf_file/0021/183630/Contract-disclosure-guide.pdf). For contracts of $500,000 and above, the guide requires the procurement method to be recorded as open, selective or limited. That requirement may help explain why no method is recorded for 73% of disclosed contracts under $200,000 and 30% from $200,000 to $1 million, against 3% from $1 million to $10 million.
+ Queensland agencies must publish details of awarded contracts of $10,000 and above, including GST, within 60 days of award, according to the [Queensland Government contract disclosure guide](https://www.forgov.qld.gov.au/__data/assets/pdf_file/0021/183630/Contract-disclosure-guide.pdf). For contracts of $500,000 and above, the guide requires the procurement method to be recorded as open, selective or limited.
 
- Disclosure is imperfect. The [Queensland Audit Office](https://www.qao.qld.gov.au/sites/default/files/reports/confidentiality_and_disclosure_of_government_contracts_report_8-2017-18.pdf) examined 90 contracts across five departments and found that only 25% were appropriately disclosed and 21% were not disclosed at all. The figures below are best read as a floor for what agencies did, not a full record.
+ That requirement may help explain why the share of disclosed contracts with no method recorded falls as value rises:
 
- Mastt analysed 68,394 Queensland works-related contracts from about 70 agencies, mostly awarded from 2019 to 2026 and worth A$145 billion in total. Among works worth $200,000 to $1 million, 34% went to limited tender and 16% to open tender, with 15% selective and 30% not stated (Figure 6). From $1 million to $10 million, 31% were limited and 46% open. Above $10 million, open tender covers 74%. By value, open tender accounts for 48% of the total and limited tender for 36%.
+ - **Under $200,000:** No method is recorded for 73% of disclosed contracts.
+- **$200,000 to $1 million:** No method is recorded for 30%.
+- **$1 million to $10 million:** No method is recorded for 3%.
+
+ 
+### Disclosure is imperfect
+
+ The [Queensland Audit Office](https://www.qao.qld.gov.au/sites/default/files/reports/confidentiality_and_disclosure_of_government_contracts_report_8-2017-18.pdf) examined 90 contracts across five departments and found:
+
+ - **Appropriately disclosed:** Only 25% of the contracts.
+- **Not disclosed:** 21% were not disclosed at all.
+
+ The figures below are best read as a floor for what agencies did, not a full record.
+
+ 
+### Open tender takes over as contracts grow
+
+ Mastt analysed 68,394 Queensland works-related contracts from about 70 agencies, mostly awarded from 2019 to 2026 and worth A$145 billion in total. Procurement method varies with contract value (Figure 6):
+
+ - **$200,000 to $1 million:** 34% went to limited tender and 16% to open tender, with 15% selective and 30% not stated.
+- **$1 million to $10 million:** 31% were limited and 46% open.
+- **Above $10 million:** Open tender covers 74%.
+- **By value:** Open tender accounts for 48% of the total and limited tender for 36%.
 
 ---
 
 ## Step 16: Embed 9, Figure 6: Queensland works contracts by procurement method and contract value
 
-File: `16-mastt-aup-f06-queensland-works-contracts-by-procurement.html`. Add an HTML Embed here, directly under the text above, and paste this (39,706 characters).
+File: `16-mastt-aup-f06-queensland-works-contracts-by-procurement.html`. Add an HTML Embed here, directly under the text above, and paste this (39,715 characters).
 
 ```html
 <div id="mastt-aup-f06" class="maupf06" role="figure" aria-label="Donut chart: Figure 6: Queensland works contracts by procurement method and contract value. Limited tender: Value 8,354 contracts, Share 15%; Open tender: Value 3,034 contracts, Share 5%; Selective tender: Value 3,433 contracts, Share 6%; Other method: Value 469 contracts, Share &lt;1%; Not stated: Value 40,734 contracts, Share 73%; Limited tender: Value 2,483 contracts, Share 34%; Open tender: Value 1,179 contracts, Share 16%; Selective tender: Value 1,073 contracts, Share 15%; Other method: Value 299 contracts, Share 4%; Not stated: Value 2,179 contracts, Share 30%; Limited tender: Value 1,252 contracts, Share 31%; Open tender: Value 1,860 contracts, Share 46%; Selective tender: Value 587 contracts, Share 15%; Other method: Value 219 contracts, Share 5%; Not stated: Value 121 contracts, Share 3%; Limited tender: Value 109 contracts, Share 10%; Open tender: Value 810 contracts, Share 74%; Selective tender: Value 99 contracts, Share 9%; Other method: Value 48 contracts, Share 4%; Not stated: Value 29 contracts, Share 3%. Open tender takes over as contracts grow, and mid-size work has the largest share of limited tender among stated methods.">
@@ -536,7 +628,7 @@ var total=function(){if(T)return T[mask()];var m=num.exec(D.f),d=(m[2].split('.'
 var desc=function(i){return D.L[i]+', '+D.V[i]+sf+', '+share(D.v[i]/(tot()||1))+((D.m&&D.m[i])||'');};
 var paint=function(){var t=tot()||1,at=0,g=hid.filter(function(h){return!h;}).length>1?GAP:0;segs.forEach(function(s,i){var l=hid[i]?0:D.v[i]/t*100,d=Math.max(0,l-g);s.style.setProperty('--a',+d.toFixed(2));s.style.setProperty('--r',+(100-d).toFixed(2));s.style.setProperty('--o',+(-(at+g/2)).toFixed(2));at+=l;});};
 var texts=function(){var t=tot();rows.forEach(function(r,i){r.querySelector('.maupf06-dn-rs').textContent=share(hid[i]||!t?0:D.v[i]/t);});box.setAttribute('data-sh',hid.some(Boolean)?'1':sh0);};
-var show=function(){var k=cur,t=tot(),v=k<0?total():D.V[k],a=k<0?D.tl:D.L[k],m=k<0?(D.u&&D.u.toLowerCase()!==D.tl.toLowerCase()?D.u:''):(box.getAttribute('data-sh')==='1'?share(D.v[k]/(t||1))+' of total':'');
+var show=function(){var k=cur,t=tot(),v=k<0?total():D.V[k],a=k<0?D.tl:D.L[k],m=k<0?(D.u&&D.tl.toLowerCase().indexOf(D.u.toLowerCase())<0?D.u:''):(box.getAttribute('data-sh')==='1'?share(D.v[k]/(t||1))+' of total':'');
 cv.textContent=v;tag(cv,v);cl.textContent=a;cm.textContent=m||'\u00a0';ring.style.setProperty('--ct',k<0?'':getComputedStyle(segs[k]).getPropertyValue('--t'));
 if(k!==shown&&!RM){ctr.classList.remove('maupf06-roll');void ctr.offsetWidth;ctr.classList.add('maupf06-roll');}shown=k;};
 var update=function(){var k=[pre,pin].filter(function(i){return i>=0&&!hid[i];})[0];cur=k===undefined?-1:k;
@@ -578,7 +670,16 @@ Paste into the post body (Rich Text).
 
 ### Which contract forms does Queensland use?
 
- Only 450 of 14,804 Queensland contracts (3%) state their form of contract. Of those, 33.3% use the Main Roads Transport Infrastructure Contract, ahead of other forms (22.2%), purchase orders (14.7%), stand-alone or service agreements (12.4%) and panel or standing offers (7.6%). AS 4000 accounts for 3.1% and AS 2124 for 2.9% (Figure 7). Agencies that name a form may differ from those that do not, so the mix is indicative.
+ Only 450 of 14,804 Queensland contracts (3%) state their form of contract. Among those that do, the Main Roads Transport Infrastructure Contract leads (Figure 7):
+
+ - **Main Roads contract:** 33.3% use the Main Roads Transport Infrastructure Contract.
+- **Other forms:** 22.2%.
+- **Purchase orders:** 14.7%.
+- **Stand-alone or service agreements:** 12.4%.
+- **Panel or standing offers:** 7.6%.
+- **AS 4000 and AS 2124:** AS 4000 accounts for 3.1% and AS 2124 for 2.9%.
+
+ Agencies that name a form may differ from those that do not, so the mix is indicative.
 
 ---
 
@@ -694,12 +795,21 @@ if('MutationObserver' in window)new MutationObserver(function(){if(!root.classLi
 
 Paste into the post body (Rich Text).
 
-**What this means for project teams:** Track direct approaches as well as open tenders, because a third of mid-size works went to limited tender. Contract templates built around AS 4000 alone will not match much of the Queensland government work that states a form. If you publish contract data, complete the method and form fields, since blanks make competition impossible to measure.
+**What this means for project teams:**
+
+- Track direct approaches as well as open tenders, because a third of mid-size works went to limited tender.
+- Contract templates built around AS 4000 alone will not match much of the Queensland government work that states a form.
+- If you publish contract data, complete the method and form fields, since blanks make competition impossible to measure.
 
  
 ## How much do state projects grow in cost and slip?
 
- State budgets list the estimated total cost of each capital project year after year. Mastt matched projects across budgets by name and region and compared the first and last estimate. The Queensland data covers 12 budgets from 2014-15 to 2026-27. The Victorian data covers three machine-readable budget years (2016-17, 2017-18 and 2026-27), which also carry completion dates.
+ State budgets list the estimated total cost of each capital project year after year. Mastt matched projects across budgets by name and region and compared the first and last estimate.
+
+ The data covers two states:
+
+ - **Queensland:** 12 budgets from 2014-15 to 2026-27.
+- **Victoria:** Three machine-readable budget years (2016-17, 2017-18 and 2026-27), which also carry completion dates.
 
 ---
 
@@ -737,9 +847,24 @@ var rows=[].slice.call(tb.rows);rows.sort(function(a,c){var x=a.cells[k],y=c.cel
 
 Paste into the post body (Rich Text).
 
-In Queensland, projects listed in three or more budgets grew a median 24.2% from first to last estimate (Figure 8). Of those, 58.7% grew by more than 10% and 14.6% fell. Across all projects in two or more budgets, 38.1% grew by more than 10%. Projects over $100 million drifted least, with 24.0% growing by more than 10%.
+### Queensland estimates grow over time
 
- In Victoria, 27.0% of projects in two or more budgets grew by more than 10%. Of 293 projects with finish dates in more than one budget, 47.1% pushed their finish date back, 16 brought it forward and the rest held it. The typical slip was 4 quarters, and at least a quarter of those that slipped moved by 8 quarters or more.
+ In Queensland, projects listed in three or more budgets grew a median 24.2% from first to last estimate (Figure 8). Behind that median:
+
+ - **Grew by more than 10%:** 58.7% of those projects.
+- **Fell:** 14.6% of those projects.
+- **Two or more budgets:** Across all projects listed in two or more budgets, 38.1% grew by more than 10%.
+- **Projects over $100 million:** They drifted least, with 24.0% growing by more than 10%.
+
+ 
+### Victorian finish dates slip
+
+ In Victoria, 27.0% of projects in two or more budgets grew by more than 10%. Of 293 projects with finish dates in more than one budget:
+
+ - **Pushed back:** 47.1% pushed their finish date back.
+- **Brought forward:** 16 brought it forward.
+- **Held:** The rest held it.
+- **Typical slip:** 4 quarters, and at least a quarter of those that slipped moved by 8 quarters or more.
 
 ---
 
@@ -772,30 +897,60 @@ var mxTip=function(host){var tip=host.querySelector(':scope>.maupstats2-tip');if
 
 Paste into the post body (Rich Text).
 
-The two states are not directly comparable. Queensland covers more years, Victoria's tables list finish dates and Queensland's do not, and both estimates include scope changes as well as price growth. The closest like-for-like comparison, projects in two or more budgets, is 38.1% for Queensland and 27.0% for Victoria.
+### The two states are not directly comparable
 
- The pattern is consistent with earlier work. [Terrill, Coates and Danks](https://grattan.edu.au/wp-content/uploads/2016/11/ATRF2016-cost-overruns-final-submission_updated.pdf) of the Grattan Institute analysed a sample of 836 road and rail projects over $20 million between 2001 and 2015 and found systematic cost overruns, with overruns more likely on projects that were not approved or abandoned quickly. That points the same way as the Queensland result, where projects that stay longer in the budget show larger estimate growth.
+ Three differences matter:
 
- **What this means for project teams:** Treat the first published estimate as a starting point, not a final figure. Record the original budget and finish date beside the current figures in your reports so drift stays visible, and compare projects of the same age rather than the same size.
+ - **Years covered:** Queensland covers more years.
+- **Finish dates:** Victoria's tables list finish dates and Queensland's do not.
+- **Scope:** Both estimates include scope changes as well as price growth.
+
+ The closest like-for-like comparison, projects in two or more budgets, is 38.1% for Queensland and 27.0% for Victoria.
+
+ 
+### Earlier work found systematic overruns
+
+ The pattern is consistent with earlier work. [Terrill, Coates and Danks](https://grattan.edu.au/wp-content/uploads/2016/11/ATRF2016-cost-overruns-final-submission_updated.pdf) of the Grattan Institute analysed a sample of 836 road and rail projects over $20 million between 2001 and 2015 and found systematic cost overruns, with overruns more likely on projects that were not approved or abandoned quickly.
+
+ That points the same way as the Queensland result, where projects that stay longer in the budget show larger estimate growth.
+
+ **What this means for project teams:**
+
+- Treat the first published estimate as a starting point, not a final figure.
+- Record the original budget and finish date beside the current figures in your reports so drift stays visible.
+- Compare projects of the same age rather than the same size.
 
  
 ## How often does Brisbane pick the cheapest tender?
 
- Brisbane City Council publishes its contract decisions. Mastt analysed 702 of them from August 2020 to April 2025. Of these, 618 were tendered and 84 were awarded without tender. In 467 of the tenders, the prices of the other tenderers are recorded, so the winning price can be compared.
+ Brisbane City Council publishes its contract decisions. Mastt analysed 702 of them from August 2020 to April 2025:
 
- In 40.5% of those 467 tenders (189), the contract went to someone other than the cheapest tenderer (Figure 9). That is consistent with council policy. The [Brisbane City Council Procurement Policy and Plan 2025-26](https://www.brisbane.qld.gov.au/content/dam/brisbanecitycouncil/corpwebsite/business/documents/sp103-procurement-policy-and-plan-2025-26.pdf.coredownload.pdf) requires public tenders at $500,000 and above, applies a 30% local benefit weighting in the value for money assessment and describes a value for money index that weighs price and non-price factors equally. Earlier years of the period may have run under different settings.
+ - **Tendered:** 618 were tendered.
+- **Without tender:** 84 were awarded without tender.
+- **Priced tenders:** In 467 of the tenders, the prices of the other tenderers are recorded, so the winning price can be compared.
+
+ 
+### The cheapest tender does not always win
+
+ In 40.5% of those 467 tenders (189), the contract went to someone other than the cheapest tenderer (Figure 9). That is consistent with council policy. The [Brisbane City Council Procurement Policy and Plan 2025-26](https://www.brisbane.qld.gov.au/content/dam/brisbanecitycouncil/corpwebsite/business/documents/sp103-procurement-policy-and-plan-2025-26.pdf.coredownload.pdf) includes these settings:
+
+ - **Public tenders:** Required at $500,000 and above.
+- **Local benefit:** A 30% local benefit weighting applies in the value for money assessment.
+- **Value for money index:** The policy describes an index that weighs price and non-price factors equally.
+
+ Earlier years of the period may have run under different settings.
 
 ---
 
 ## Step 24: Embed 13, Figure 9: Who won among 467 priced Brisbane tenders
 
-File: `24-mastt-aup-f09-who-won-among-467-priced.html`. Add an HTML Embed here, directly under the text above, and paste this (25,834 characters).
+File: `24-mastt-aup-f09-who-won-among-467-priced.html`. Add an HTML Embed here, directly under the text above, and paste this (25,842 characters).
 
 ```html
 <div id="mastt-aup-f09" class="maupf09" role="figure" aria-label="Donut chart: Figure 9: Who won among 467 priced Brisbane tenders. Cheapest tender won: Value 278 tenders, Share 60%; Winner under 10% dearer than the cheapest: Value 76 tenders, Share 16%; Winner 10% to 25% dearer: Value 43 tenders, Share 9%; Winner 25% or more dearer: Value 70 tenders, Share 15%. The cheapest tender won 59.5% of the time, and the winner was usually within 25% of the cheapest.">
 <script>(function(){var r=document.getElementById('mastt-aup-f09');if(!r)return;try{if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;}catch(e){}r.className+=' maupf09-js';})();</script>
 <style>#mastt-aup-f09{--maupf09-ink:#0C2029;--maupf09-ink-2:#45525B;--maupf09-muted:#94A2AB;--maupf09-axis-label:#48555E;--maupf09-faint:#94A2AB;--maupf09-line:#ECEFF1;--maupf09-line-h:#DDE6EE;--maupf09-wash:#F6F8F9;--maupf09-grid:#EAEEF1;--maupf09-axis:#CDD5DA;--maupf09-card:#FFFFFF;--maupf09-accent:#E9720E;--maupf09-accent-ink:#E9720E;--maupf09-blue:#0096DD;--maupf09-link:#1476BE;--maupf09-link-h:#0C4F86;--maupf09-orange:#E9720E;--maupf09-green:#5BB65E;--maupf09-green-d:#2E7D33;--maupf09-purple:#7E52C4;--maupf09-amber:#F9B140;--maupf09-cyan:#29BFD3;--maupf09-red:#E8544E;--maupf09-slate:#5F7D8B;--maupf09-gray:#C6CBD0;--maupf09-green-ink:#3F9E4C;--maupf09-red-ink:#D8433D;--maupf09-amber-ink:#C77F1A;--maupf09-gray-ink:#8A97A0;--maupf09-gray-val:#7C8B94;--series-1:#E9720E;--series-2:#0096DD;--series-3:#5BB65E;--series-4:#7E52C4;--series-5:#F9B140;--series-6:#29BFD3;--series-7:#E8544E;--foreground:var(--maupf09-ink);--text-secondary:var(--maupf09-ink-2);--text-muted:var(--maupf09-gray-ink);--border:var(--maupf09-line);--border-subtle:var(--maupf09-grid);--border-strong:var(--maupf09-axis);--surface:#FFFFFF;--surface-muted:var(--maupf09-wash);--background:#FFFFFF;--accent:var(--maupf09-accent);--accent-strong:var(--maupf09-accent-ink);--accent-subtle:rgba(233,114,14,.12);--success:var(--maupf09-green);--warning:var(--maupf09-amber);--danger:var(--maupf09-red);box-sizing:border-box;position:relative;display:block;width:100%;max-width:800px;margin:0 auto 24px;padding:0;color:var(--maupf09-ink);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;font-weight:400;letter-spacing:normal;text-align:left;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}#mastt-aup-f09.maupf09-wide{max-width:900px}#mastt-aup-f09 *,#mastt-aup-f09 *::before,#mastt-aup-f09 *::after{box-sizing:border-box}#mastt-aup-f09 :where(div,p,span,ul,ol,li,a,b,strong,em,i,small,table,thead,tbody,tr,th,td,caption,button,details,summary,dl,dt,dd,blockquote,figure,figcaption,cite,sup,sub,code){font-family:inherit;font-size:inherit;line-height:inherit;font-weight:inherit;font-style:inherit;letter-spacing:inherit;text-transform:none;color:inherit;margin:0;padding:0;border:0;border-radius:0;background:none;text-align:inherit;text-decoration:none;max-width:none;width:auto;float:none;min-height:0;box-shadow:none;quotes:none}#mastt-aup-f09 :where(h2,h3,h4){margin:0;padding:0;border:0;background:none;color:var(--maupf09-ink);text-transform:none;letter-spacing:normal;max-width:none}#mastt-aup-f09 :where(b,strong){font-weight:700}#mastt-aup-f09 :where(em,i){font-style:italic}#mastt-aup-f09 :where(cite){font-style:normal}#mastt-aup-f09 :where(a){color:var(--maupf09-link);text-decoration:none;align-self:flex-start}#mastt-aup-f09 :where(a):hover{color:var(--maupf09-link-h)}#mastt-aup-f09 :where(blockquote)::before,#mastt-aup-f09 :where(blockquote)::after{content:none}#mastt-aup-f09 svg{display:block;overflow:visible;max-width:none}#mastt-aup-f09 :where(svg text){font-family:inherit}#mastt-aup-f09 .maupf09-sr{position:absolute!important;left:0;top:0;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}#mastt-aup-f09 table.maupf09-sr{display:block}#mastt-aup-f09 .maupf09-card{background:var(--maupf09-card);border:1px solid var(--maupf09-line);border-radius:16px;padding:26px 30px 20px;display:flex;flex-direction:column}#mastt-aup-f09 .maupf09-callout{background:var(--maupf09-wash);border-radius:10px;padding:14px 18px;font-size:17px;line-height:1.45;color:var(--maupf09-ink-2);font-weight:400}#mastt-aup-f09 .maupf09-callout strong{color:var(--maupf09-accent);font-weight:700}#mastt-aup-f09 .maupf09-body{min-width:0;display:flex;flex-direction:column;gap:14px;margin-top:24px}#mastt-aup-f09 .maupf09-card>.maupf09-body:first-child{margin-top:4px}#mastt-aup-f09 .maupf09-cap{margin-top:22px;text-align:center;font-size:13px;line-height:1.45;font-weight:600;letter-spacing:1.4px;text-transform:uppercase;color:var(--maupf09-ink)}#mastt-aup-f09 .maupf09-src{margin-top:7px;text-align:center;font-size:11.5px;line-height:1.45;color:var(--maupf09-muted);font-weight:400}#mastt-aup-f09 .maupf09-src+.maupf09-src{margin-top:3px}#mastt-aup-f09 .maupf09-scroll{overflow-x:auto;min-width:0;max-width:100%}#mastt-aup-f09 :where(.maupf09-body div,.maupf09-body table){min-width:0}#mastt-aup-f09 .maupf09-body>*{max-width:100%}#mastt-aup-f09 .maupf09-tip{position:absolute;z-index:5;pointer-events:none;background:var(--maupf09-ink);color:#fff;font-size:13px;line-height:1.35;padding:7px 10px;border-radius:8px;white-space:nowrap;opacity:0;transition:opacity .12s;transform:translate(-50%,calc(-100% - 10px))}#mastt-aup-f09 .maupf09-tip b{color:#fff;font-weight:700}#mastt-aup-f09 .maupf09-tip.maupf09-on{opacity:1}#mastt-aup-f09 .maupf09-legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:14px;color:var(--maupf09-ink)}#mastt-aup-f09 .maupf09-key{display:inline-flex;align-items:center;gap:7px}#mastt-aup-f09 .maupf09-sw{width:12px;height:12px;border-radius:3px;flex:none;display:inline-block}#mastt-aup-f09 .maupf09-tabs{display:flex;flex-direction:column;gap:16px}#mastt-aup-f09 .maupf09-tablist{display:inline-flex;flex-wrap:wrap;gap:4px;padding:4px;background:var(--maupf09-wash);border-radius:10px;align-self:center;max-width:100%}#mastt-aup-f09 .maupf09-tab{cursor:pointer;font-size:14px;font-weight:600;line-height:1.2;color:var(--maupf09-ink-2);padding:8px 14px;border-radius:7px;border:1px solid transparent;transition:color .18s ease,background-color .18s ease,border-color .18s ease}#mastt-aup-f09 .maupf09-tab:hover{color:var(--maupf09-blue)}#mastt-aup-f09 .maupf09-tab[aria-selected="true"]{background:#fff;color:var(--maupf09-ink);border-color:var(--maupf09-line-h)}#mastt-aup-f09 .maupf09-tab:focus-visible{outline:2px solid var(--maupf09-blue);outline-offset:2px}#mastt-aup-f09 .maupf09-panel[hidden]{display:none!important}#mastt-aup-f09 .maupf09-note{font-size:13px;color:var(--maupf09-muted)}#mastt-aup-f09 .maupf09-gap{height:24px}@media (max-width:560px){#mastt-aup-f09 .maupf09-card{padding:18px 14px 14px;border-radius:12px}#mastt-aup-f09 .maupf09-callout{font-size:14px;padding:11px 13px}#mastt-aup-f09 .maupf09-cap{font-size:10.5px;letter-spacing:.8px;margin-top:16px}#mastt-aup-f09 .maupf09-body{margin-top:18px}}#mastt-aup-f09 .maupf09-dn{display:flex;align-items:center;gap:34px;min-width:0}#mastt-aup-f09 .maupf09-dn-ring{position:relative;flex:0 0 auto;width:284px;max-width:100%;aspect-ratio:1;outline:none;-webkit-tap-highlight-color:transparent}#mastt-aup-f09 .maupf09-dn-ring:focus-visible{outline:2px solid var(--maupf09-blue);outline-offset:4px;border-radius:50%}#mastt-aup-f09 .maupf09-dn-ring svg{width:100%;height:100%}#mastt-aup-f09 .maupf09-k0{--s:var(--maupf09-accent);--t:var(--maupf09-accent)}#mastt-aup-f09 .maupf09-k1{--s:var(--maupf09-blue);--t:var(--maupf09-blue)}#mastt-aup-f09 .maupf09-k2{--s:var(--maupf09-green);--t:var(--maupf09-green-ink)}#mastt-aup-f09 .maupf09-k3{--s:var(--maupf09-purple);--t:var(--maupf09-purple)}#mastt-aup-f09 .maupf09-k4{--s:var(--maupf09-amber);--t:var(--maupf09-amber-ink)}#mastt-aup-f09 .maupf09-k5{--s:var(--maupf09-cyan);--t:#17A2B4}#mastt-aup-f09 .maupf09-k6{--s:var(--maupf09-red);--t:var(--maupf09-red-ink)}#mastt-aup-f09 .maupf09-k7{--s:var(--maupf09-slate);--t:var(--maupf09-slate)}#mastt-aup-f09 .maupf09-kg{--s:var(--maupf09-gray);--t:var(--maupf09-gray-val)}#mastt-aup-f09 .maupf09-dn-trk{fill:none;stroke:var(--maupf09-wash);stroke-width:7}#mastt-aup-f09 .maupf09-dn-seg{fill:none;stroke:var(--s);stroke-width:7;stroke-linecap:butt;stroke-dasharray:var(--a) var(--r);stroke-dashoffset:var(--o);cursor:pointer;transition:stroke-dasharray .9s ease var(--d,0s),stroke-dashoffset .9s ease var(--d,0s),stroke-width .2s ease,opacity .2s ease,filter .2s ease}#mastt-aup-f09 .maupf09-dn-seg.maupf09-on{stroke-width:8.6;filter:brightness(1.07) saturate(1.05)}#mastt-aup-f09 .maupf09-dn-ring.maupf09-act .maupf09-dn-seg:not(.maupf09-on){opacity:.5}#mastt-aup-f09 .maupf09-dn-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 21%;text-align:center;pointer-events:none}#mastt-aup-f09 .maupf09-dn-center>*{max-width:100%}#mastt-aup-f09 .maupf09-dn-cv{display:block;font-size:calc(var(--cs,46)*1px);font-weight:700;line-height:1;white-space:nowrap;color:var(--ct,var(--maupf09-accent));font-variant-numeric:tabular-nums}#mastt-aup-f09 .maupf09-dn-cl{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;margin-top:9px;font-size:12.5px;font-weight:700;letter-spacing:1.4px;line-height:1.35;text-transform:uppercase;color:#55636C;overflow-wrap:anywhere}#mastt-aup-f09 .maupf09-dn-cm{display:block;min-height:1.3em;margin-top:3px;font-size:12px;line-height:1.3;color:var(--maupf09-muted);font-variant-numeric:tabular-nums}@keyframes maupf09-dn-roll{from{opacity:0;transform:translateY(.3em)}}#mastt-aup-f09 .maupf09-dn-center.maupf09-roll>*{animation:maupf09-dn-roll .24s cubic-bezier(.16,1,.3,1)}#mastt-aup-f09 .maupf09-dn-legend{flex:1 1 auto;min-width:0;display:grid;grid-template-columns:16px max-content minmax(0,1fr) auto;column-gap:12px;row-gap:6px;margin:0;padding:0;list-style:none}#mastt-aup-f09 .maupf09-dn[data-sh="0"] .maupf09-dn-legend{grid-template-columns:16px max-content minmax(0,1fr)}#mastt-aup-f09 .maupf09-dn[data-sh="0"] .maupf09-dn-rs{display:none}#mastt-aup-f09 .maupf09-dn-legend li{grid-column:1/-1;display:grid;grid-template-columns:16px 4.5em minmax(0,1fr) auto;grid-template-columns:subgrid;margin:0;padding:0;list-style:none}#mastt-aup-f09 .maupf09-dn-legend li::before,#mastt-aup-f09 .maupf09-dn-legend li::marker{content:none}#mastt-aup-f09 .maupf09-dn-row{grid-column:1/-1;display:grid;grid-template-columns:16px 4.5em minmax(0,1fr) auto;grid-template-columns:subgrid;align-items:center;width:100%;min-height:40px;color:var(--maupf09-ink);cursor:pointer;font-size:16px;line-height:1.3;text-align:left;-webkit-tap-highlight-color:transparent}#mastt-aup-f09 .maupf09-dn-row:focus-visible{outline:2px solid var(--maupf09-blue);outline-offset:3px;border-radius:6px}#mastt-aup-f09 .maupf09-dn-dot{width:16px;height:16px;border-radius:4px;border:2px solid var(--s);background:var(--s);transition:background-color .2s ease}#mastt-aup-f09 .maupf09-dn-rv{font-size:18px;font-weight:700;line-height:1;color:var(--t);font-variant-numeric:tabular-nums;transform-origin:left center;transition:transform .18s ease}#mastt-aup-f09 .maupf09-dn-legend li:first-child .maupf09-dn-rv{font-size:22px}#mastt-aup-f09 .maupf09-dn-row.maupf09-on .maupf09-dn-rv{transform:scale(1.06)}#mastt-aup-f09 .maupf09-dn-rt{display:grid;min-width:0}#mastt-aup-f09 .maupf09-dn-rl{color:var(--maupf09-ink);overflow-wrap:anywhere}#mastt-aup-f09 .maupf09-dn-row.maupf09-pin .maupf09-dn-rl{font-weight:600}#mastt-aup-f09 .maupf09-dn-rm{font-size:13px;line-height:1.35;color:var(--maupf09-muted)}#mastt-aup-f09 .maupf09-dn-rs{justify-self:end;font-size:15px;font-weight:500;color:var(--maupf09-ink-2);font-variant-numeric:tabular-nums}#mastt-aup-f09 .maupf09-dn-row.maupf09-off .maupf09-dn-dot{background:transparent}#mastt-aup-f09 .maupf09-dn-row.maupf09-off .maupf09-dn-rv,#mastt-aup-f09 .maupf09-dn-row.maupf09-off .maupf09-dn-rl,#mastt-aup-f09 .maupf09-dn-row.maupf09-off .maupf09-dn-rs{color:var(--maupf09-muted)}#mastt-aup-f09.maupf09-js .maupf09-dn-seg{stroke-dasharray:0 100}#mastt-aup-f09.maupf09-js.maupf09-in .maupf09-dn-seg{stroke-dasharray:var(--a) var(--r)}#mastt-aup-f09.maupf09-js .maupf09-dn-legend li{opacity:0;transform:translateY(6px)}#mastt-aup-f09.maupf09-js.maupf09-in .maupf09-dn-legend li{opacity:1;transform:none;transition:opacity .5s ease calc(.15s + var(--i,0)*.08s),transform .5s ease calc(.15s + var(--i,0)*.08s)}@media (max-width:620px){#mastt-aup-f09 .maupf09-dn{flex-direction:column;gap:22px}#mastt-aup-f09 .maupf09-dn-ring{width:220px}#mastt-aup-f09 .maupf09-dn-cv{font-size:calc(var(--cs,46)*.82px)}#mastt-aup-f09 .maupf09-dn-cl{margin-top:6px;font-size:11px;letter-spacing:1px}#mastt-aup-f09 .maupf09-dn-cm{font-size:11px}#mastt-aup-f09 .maupf09-dn-legend{align-self:stretch;width:100%;column-gap:10px}#mastt-aup-f09 .maupf09-dn-row{font-size:14px}#mastt-aup-f09 .maupf09-dn-rv{font-size:16px}#mastt-aup-f09 .maupf09-dn-legend li:first-child .maupf09-dn-rv{font-size:20px}#mastt-aup-f09 .maupf09-dn-rs{font-size:14px}#mastt-aup-f09 .maupf09-dn-rm{font-size:12px}}@media (prefers-reduced-motion:reduce){#mastt-aup-f09 .maupf09-dn-seg,#mastt-aup-f09 .maupf09-dn-rv,#mastt-aup-f09 .maupf09-dn-dot{transition:none}#mastt-aup-f09 .maupf09-dn-center.maupf09-roll>*{animation:none}}</style>
-<div class="maupf09-card"><p class="maupf09-callout"><strong>The cheapest tender won 59.5% of the time</strong>, and the winner was usually within 25% of the cheapest.</p><div class="maupf09-body"><div class="maupf09-dn" role="group" aria-label="Priced Brisbane tenders by winner price against the cheapest tender" data-sh="1" style="--cs:46" data-d='{"v":[278,76,43,70],"h":[0,0,0,0],"p":-1,"ac":"toggle","tl":"Priced tenders","u":"tenders","L":["Cheapest tender won","Winner under 10% dearer than the cheapest","Winner 10% to 25% dearer","Winner 25% or more dearer"],"V":["278","76","43","70"],"f":"467"}'><div class="maupf09-dn-ring"><svg viewBox="0 0 42 42" aria-hidden="true" focusable="false"><g transform="rotate(-90 21 21)"><circle class="maupf09-dn-trk" cx="21" cy="21" r="15.915"/><circle class="maupf09-dn-seg maupf09-k0" cx="21" cy="21" r="15.915" style="--a:59.03;--r:40.97;--o:-0.25;--d:0s"/><circle class="maupf09-dn-seg maupf09-k1" cx="21" cy="21" r="15.915" style="--a:15.77;--r:84.23;--o:-59.78;--d:0.1s"/><circle class="maupf09-dn-seg maupf09-k2" cx="21" cy="21" r="15.915" style="--a:8.71;--r:91.29;--o:-76.05;--d:0.2s"/><circle class="maupf09-dn-seg maupf09-k3" cx="21" cy="21" r="15.915" style="--a:14.49;--r:85.51;--o:-85.26;--d:0.3s"/></g></svg><div class="maupf09-dn-center" aria-hidden="true"><b class="maupf09-dn-cv" data-to="467">467</b><span class="maupf09-dn-cl">Priced tenders</span><span class="maupf09-dn-cm">tenders</span></div></div><ul class="maupf09-dn-legend" aria-label="Segments. Press a segment to show or hide it"><li style="--i:0"><button type="button" class="maupf09-dn-row maupf09-k0" aria-pressed="true"><span class="maupf09-dn-dot" aria-hidden="true"></span><span class="maupf09-dn-rv" data-to="278">278</span><span class="maupf09-dn-rt"><span class="maupf09-dn-rl">Cheapest tender won</span></span><span class="maupf09-dn-rs">60%</span></button></li><li style="--i:1"><button type="button" class="maupf09-dn-row maupf09-k1" aria-pressed="true"><span class="maupf09-dn-dot" aria-hidden="true"></span><span class="maupf09-dn-rv" data-to="76">76</span><span class="maupf09-dn-rt"><span class="maupf09-dn-rl">Winner under 10% dearer than the cheapest</span></span><span class="maupf09-dn-rs">16%</span></button></li><li style="--i:2"><button type="button" class="maupf09-dn-row maupf09-k2" aria-pressed="true"><span class="maupf09-dn-dot" aria-hidden="true"></span><span class="maupf09-dn-rv" data-to="43">43</span><span class="maupf09-dn-rt"><span class="maupf09-dn-rl">Winner 10% to 25% dearer</span></span><span class="maupf09-dn-rs">9%</span></button></li><li style="--i:3"><button type="button" class="maupf09-dn-row maupf09-k3" aria-pressed="true"><span class="maupf09-dn-dot" aria-hidden="true"></span><span class="maupf09-dn-rv" data-to="70">70</span><span class="maupf09-dn-rt"><span class="maupf09-dn-rl">Winner 25% or more dearer</span></span><span class="maupf09-dn-rs">15%</span></button></li></ul><p class="maupf09-sr maupf09-dn-live" aria-live="polite"></p><table class="maupf09-sr"><caption>Priced Brisbane tenders by winner price against the cheapest tender</caption><thead><tr><th scope="col">Segment</th><th scope="col">Value</th><th scope="col">Share</th></tr></thead><tbody><tr><th scope="row">Cheapest tender won</th><td>278 tenders</td><td>60%</td></tr><tr><th scope="row">Winner under 10% dearer than the cheapest</th><td>76 tenders</td><td>16%</td></tr><tr><th scope="row">Winner 10% to 25% dearer</th><td>43 tenders</td><td>9%</td></tr><tr><th scope="row">Winner 25% or more dearer</th><td>70 tenders</td><td>15%</td></tr></tbody></table></div></div><p class="maupf09-cap">Figure 9: Who won among 467 priced Brisbane tenders</p><p class="maupf09-src">Source: Mastt analysis of published Brisbane City Council contract decisions, August 2020 to April 2025</p><p class="maupf09-src">Winner premium is how much dearer the winning price was than the cheapest other tender. Some listed prices may not be like for like, for example unit rates against totals, so the largest premiums are indicative.</p></div>
+<div class="maupf09-card"><p class="maupf09-callout"><strong>The cheapest tender won 59.5% of the time</strong>, and the winner was usually within 25% of the cheapest.</p><div class="maupf09-body"><div class="maupf09-dn" role="group" aria-label="Priced Brisbane tenders by winner price against the cheapest tender" data-sh="1" style="--cs:46" data-d='{"v":[278,76,43,70],"h":[0,0,0,0],"p":-1,"ac":"toggle","tl":"Priced tenders","u":"tenders","L":["Cheapest tender won","Winner under 10% dearer than the cheapest","Winner 10% to 25% dearer","Winner 25% or more dearer"],"V":["278","76","43","70"],"f":"467"}'><div class="maupf09-dn-ring"><svg viewBox="0 0 42 42" aria-hidden="true" focusable="false"><g transform="rotate(-90 21 21)"><circle class="maupf09-dn-trk" cx="21" cy="21" r="15.915"/><circle class="maupf09-dn-seg maupf09-k0" cx="21" cy="21" r="15.915" style="--a:59.03;--r:40.97;--o:-0.25;--d:0s"/><circle class="maupf09-dn-seg maupf09-k1" cx="21" cy="21" r="15.915" style="--a:15.77;--r:84.23;--o:-59.78;--d:0.1s"/><circle class="maupf09-dn-seg maupf09-k2" cx="21" cy="21" r="15.915" style="--a:8.71;--r:91.29;--o:-76.05;--d:0.2s"/><circle class="maupf09-dn-seg maupf09-k3" cx="21" cy="21" r="15.915" style="--a:14.49;--r:85.51;--o:-85.26;--d:0.3s"/></g></svg><div class="maupf09-dn-center" aria-hidden="true"><b class="maupf09-dn-cv" data-to="467">467</b><span class="maupf09-dn-cl">Priced tenders</span><span class="maupf09-dn-cm">&nbsp;</span></div></div><ul class="maupf09-dn-legend" aria-label="Segments. Press a segment to show or hide it"><li style="--i:0"><button type="button" class="maupf09-dn-row maupf09-k0" aria-pressed="true"><span class="maupf09-dn-dot" aria-hidden="true"></span><span class="maupf09-dn-rv" data-to="278">278</span><span class="maupf09-dn-rt"><span class="maupf09-dn-rl">Cheapest tender won</span></span><span class="maupf09-dn-rs">60%</span></button></li><li style="--i:1"><button type="button" class="maupf09-dn-row maupf09-k1" aria-pressed="true"><span class="maupf09-dn-dot" aria-hidden="true"></span><span class="maupf09-dn-rv" data-to="76">76</span><span class="maupf09-dn-rt"><span class="maupf09-dn-rl">Winner under 10% dearer than the cheapest</span></span><span class="maupf09-dn-rs">16%</span></button></li><li style="--i:2"><button type="button" class="maupf09-dn-row maupf09-k2" aria-pressed="true"><span class="maupf09-dn-dot" aria-hidden="true"></span><span class="maupf09-dn-rv" data-to="43">43</span><span class="maupf09-dn-rt"><span class="maupf09-dn-rl">Winner 10% to 25% dearer</span></span><span class="maupf09-dn-rs">9%</span></button></li><li style="--i:3"><button type="button" class="maupf09-dn-row maupf09-k3" aria-pressed="true"><span class="maupf09-dn-dot" aria-hidden="true"></span><span class="maupf09-dn-rv" data-to="70">70</span><span class="maupf09-dn-rt"><span class="maupf09-dn-rl">Winner 25% or more dearer</span></span><span class="maupf09-dn-rs">15%</span></button></li></ul><p class="maupf09-sr maupf09-dn-live" aria-live="polite"></p><table class="maupf09-sr"><caption>Priced Brisbane tenders by winner price against the cheapest tender</caption><thead><tr><th scope="col">Segment</th><th scope="col">Value</th><th scope="col">Share</th></tr></thead><tbody><tr><th scope="row">Cheapest tender won</th><td>278 tenders</td><td>60%</td></tr><tr><th scope="row">Winner under 10% dearer than the cheapest</th><td>76 tenders</td><td>16%</td></tr><tr><th scope="row">Winner 10% to 25% dearer</th><td>43 tenders</td><td>9%</td></tr><tr><th scope="row">Winner 25% or more dearer</th><td>70 tenders</td><td>15%</td></tr></tbody></table></div></div><p class="maupf09-cap">Figure 9: Who won among 467 priced Brisbane tenders</p><p class="maupf09-src">Source: Mastt analysis of published Brisbane City Council contract decisions, August 2020 to April 2025</p><p class="maupf09-src">Winner premium is how much dearer the winning price was than the cheapest other tender. Some listed prices may not be like for like, for example unit rates against totals, so the largest premiums are indicative.</p></div>
 <script>(function(){var root=document.getElementById('mastt-aup-f09');if(!root||root.getAttribute('data-maupf09-on'))return;root.setAttribute('data-maupf09-on','1');
 var RM=!root.classList.contains('maupf09-js');
 var mxGen=0;
@@ -823,7 +978,7 @@ var total=function(){if(T)return T[mask()];var m=num.exec(D.f),d=(m[2].split('.'
 var desc=function(i){return D.L[i]+', '+D.V[i]+sf+', '+share(D.v[i]/(tot()||1))+((D.m&&D.m[i])||'');};
 var paint=function(){var t=tot()||1,at=0,g=hid.filter(function(h){return!h;}).length>1?GAP:0;segs.forEach(function(s,i){var l=hid[i]?0:D.v[i]/t*100,d=Math.max(0,l-g);s.style.setProperty('--a',+d.toFixed(2));s.style.setProperty('--r',+(100-d).toFixed(2));s.style.setProperty('--o',+(-(at+g/2)).toFixed(2));at+=l;});};
 var texts=function(){var t=tot();rows.forEach(function(r,i){r.querySelector('.maupf09-dn-rs').textContent=share(hid[i]||!t?0:D.v[i]/t);});box.setAttribute('data-sh',hid.some(Boolean)?'1':sh0);};
-var show=function(){var k=cur,t=tot(),v=k<0?total():D.V[k],a=k<0?D.tl:D.L[k],m=k<0?(D.u&&D.u.toLowerCase()!==D.tl.toLowerCase()?D.u:''):(box.getAttribute('data-sh')==='1'?share(D.v[k]/(t||1))+' of total':'');
+var show=function(){var k=cur,t=tot(),v=k<0?total():D.V[k],a=k<0?D.tl:D.L[k],m=k<0?(D.u&&D.tl.toLowerCase().indexOf(D.u.toLowerCase())<0?D.u:''):(box.getAttribute('data-sh')==='1'?share(D.v[k]/(t||1))+' of total':'');
 cv.textContent=v;tag(cv,v);cl.textContent=a;cm.textContent=m||'\u00a0';ring.style.setProperty('--ct',k<0?'':getComputedStyle(segs[k]).getPropertyValue('--t'));
 if(k!==shown&&!RM){ctr.classList.remove('maupf09-roll');void ctr.offsetWidth;ctr.classList.add('maupf09-roll');}shown=k;};
 var update=function(){var k=[pre,pin].filter(function(i){return i>=0&&!hid[i];})[0];cur=k===undefined?-1:k;
@@ -863,19 +1018,38 @@ var ix=vis.indexOf(cur),k=step(e.key,ix<0?(/Up$|Left$/.test(e.key)?0:-1):ix,vis.
 
 Paste into the post body (Rich Text).
 
-The race is usually close. Among the 189 tenders not won by the cheapest tenderer, the winner was less than 10% dearer in 76, 10% to 25% dearer in 43 and 25% or more dearer in 70. On works contracts, the cheapest of the other tenders was typically 3.8% above the winning price. The extra price paid sits in a minority of awards. Where the cheapest tender did not win, the winning price was a median 15.2% above it.
+### The race is usually close
+
+ Among the 189 tenders not won by the cheapest tenderer, the winner was:
+
+ - **Less than 10% dearer:** In 76 tenders.
+- **10% to 25% dearer:** In 43 tenders.
+- **25% or more dearer:** In 70 tenders.
+
+ On works contracts, the cheapest of the other tenders was typically 3.8% above the winning price. The extra price paid sits in a minority of awards. Where the cheapest tender did not win, the winning price was a median 15.2% above it.
 
  
 ### Single bids and awards without tender
 
- Of the 618 tendered awards, 23.3% recorded a single tenderer. The rate was 40.7% for services and goods (91 awards) and 16.1% for works (347 awards). A typical works tender drew 3 tenderers, and half drew between 2 and 5. A single-tenderer award cannot test its price against alternatives.
+ Of the 618 tendered awards, 23.3% recorded a single tenderer. The rate varied by type of work:
 
- A further 84 of the 702 decisions (12.0%) were awarded without tender under procurement policy exemptions. The policy allows contract extensions by variation without a tender for routine contracts, up to $500,000 in total, and sole sourcing where it is in the public interest or where there is a lack of available tenderers.
+ - **Services and goods:** 40.7% (91 awards).
+- **Works:** 16.1% (347 awards).
+
+ A typical works tender drew 3 tenderers, and half drew between 2 and 5. A single-tenderer award cannot test its price against alternatives.
+
+ A further 84 of the 702 decisions (12.0%) were awarded without tender under procurement policy exemptions. The policy allows:
+
+ - **Extensions:** Contract extensions by variation without a tender for routine contracts, up to $500,000 in total.
+- **Sole sourcing:** Where it is in the public interest or where there is a lack of available tenderers.
 
  
 ### Lump sum or schedule of rates
 
- Of 597 tendered awards that state a pricing basis, 55.8% were lump sum and 44.2% schedule of rates. For works, 238 were lump sum and 103 schedule of rates (Figure 10). Lump sum places more price risk on the contractor. Schedule of rates suits work where quantities are not known up front and leaves more measurement to settle during delivery.
+ Of 597 tendered awards that state a pricing basis, 55.8% were lump sum and 44.2% schedule of rates. For works, 238 were lump sum and 103 schedule of rates (Figure 10). The two bases carry risk differently:
+
+ - **Lump sum:** Places more price risk on the contractor.
+- **Schedule of rates:** Suits work where quantities are not known up front and leaves more measurement to settle during delivery.
 
 ---
 
@@ -952,14 +1126,35 @@ b.addEventListener('blur',function(){pre=-1;update();});});}
 
 Paste into the post body (Rich Text).
 
-**What this means for project teams:** Price alone does not win council work in Brisbane, so read the evaluation weightings before you price. Check whether a tender is lump sum or schedule of rates before you commit, because it decides who carries quantity risk. Services and goods tenders see far more single bids than works tenders.
+**What this means for project teams:**
+
+- Price alone does not win council work in Brisbane, so read the evaluation weightings before you price.
+- Check whether a tender is lump sum or schedule of rates before you commit, because it decides who carries quantity risk.
+- Services and goods tenders see far more single bids than works tenders.
 
  
 ## How fast does the ACT pay construction invoices?
 
  Mastt analysed 13,262 published ACT Government invoices of $25,000 or more to construction suppliers, worth A$4.79 billion, received from April 2017 and paid by August 2026. Each record carries the date the invoice was received and the date it was paid.
 
- The median invoice was paid in 7 calendar days, which is 5 business days. Half were paid within a week, 18% took longer than 14 days, 9.8% longer than 20 days and 3.4% longer than 30 days. Invoice size made no difference to the middle of the pack, with a median of 7 days for invoices under $100,000, from $100,000 to $1 million and over $1 million, and a 75th percentile of 13, 13 and 12 days (Figure 11). The yearly median ranged from 6 days in 2022 to 11 in 2017 and 2019.
+ 
+### Half of invoices are paid within a week
+
+ The median invoice was paid in 7 calendar days, which is 5 business days. Half were paid within a week. The slower invoices:
+
+ - **Over 14 days:** 18% took longer.
+- **Over 20 days:** 9.8% took longer.
+- **Over 30 days:** 3.4% took longer.
+
+ The yearly median ranged from 6 days in 2022 to 11 in 2017 and 2019.
+
+ 
+### Invoice size makes little difference
+
+ Invoice size made no difference to the middle of the pack (Figure 11):
+
+ - **Median:** 7 days for invoices under $100,000, from $100,000 to $1 million and over $1 million.
+- **75th percentile:** 13, 13 and 12 days across the same three groups.
 
 ---
 
@@ -1032,12 +1227,22 @@ fit();if('ResizeObserver' in window){new ResizeObserver(fit).observe(plot);}else
 
 Paste into the post body (Rich Text).
 
-Transport Canberra and City Services, the agency with the most invoices (2,657), was also among the slowest. Its median was 11 days and 7.8% of its invoices took more than 30 days. Of the 13 agencies with 200 or more invoices, 8 had a median of 7 days or less.
+### The busiest agency is among the slowest
+
+ Transport Canberra and City Services, the agency with the most invoices (2,657), was also among the slowest. Its median was 11 days and 7.8% of its invoices took more than 30 days. Of the 13 agencies with 200 or more invoices, 8 had a median of 7 days or less.
 
  
 ### Payments land in runs
 
- Payments cluster on set days, which suggests they go out in runs. Tuesday accounts for 42.6% of payments and Thursday for 32.5%, so 75.1% land on one of those two days. Wednesday takes 16.3%, Friday 4.8% and Monday 3.8% (Figure 12). Two payments were dated on a weekend.
+ Payments cluster on set days, which suggests they go out in runs (Figure 12):
+
+ - **Tuesday:** 42.6% of payments.
+- **Thursday:** 32.5%.
+- **Wednesday:** 16.3%.
+- **Friday:** 4.8%.
+- **Monday:** 3.8%.
+
+ Tuesday and Thursday together take 75.1% of payments. Two payments were dated on a weekend.
 
 ---
 
@@ -1077,14 +1282,30 @@ plot.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='Ar
 
 Paste into the post body (Rich Text).
 
-**What this means for project teams:** A week is a good public benchmark for ACT work, so use 7 days for the central case and 20 days for the slow end when you plan cash flow. Build the forecast around Tuesday and Thursday payment runs. A forecast that assumes payment on the day an invoice is approved can be out by several days.
+**What this means for project teams:**
+
+- A week is a good public benchmark for ACT work, so use 7 days for the central case and 20 days for the slow end when you plan cash flow.
+- Build the forecast around Tuesday and Thursday payment runs.
+- A forecast that assumes payment on the day an invoice is approved can be out by several days.
 
  
 ## Are NSW building defect orders rising?
 
  Building Commission NSW issues stop work orders, prohibition orders, building work rectification orders and rectification orders. A published order stays listed only while it remains in force, so these counts are a floor. Mastt analysed the 137 orders listed to 28 September 2026, the earliest dated December 2021.
 
- By year of issue, the register shows 1 order from 2021, 4 from 2022, 15 from 2023, 41 from 2024, 27 from 2025 and 49 from 2026 to date (Figure 13). Because orders drop off once they are revoked or complied with, earlier years are undercounted and the rise from 2023 is overstated. The 2026 count of 49 already exceeds every earlier full year, and 2025 sits below 2024, so the series shows orders still in force, not a clean count of orders issued.
+ 
+### Orders by year of issue
+
+ By year of issue, the register shows (Figure 13):
+
+ - **2021:** 1 order.
+- **2022:** 4 orders.
+- **2023:** 15 orders.
+- **2024:** 41 orders.
+- **2025:** 27 orders.
+- **2026 to date:** 49 orders.
+
+ Because orders drop off once they are revoked or complied with, earlier years are undercounted and the rise from 2023 is overstated. The 2026 count of 49 already exceeds every earlier full year, and 2025 sits below 2024, so the series shows orders still in force, not a clean count of orders issued.
 
 ---
 
@@ -1120,9 +1341,17 @@ plot.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='Ar
 
 ---
 
-## Step 33: Embed 18, Key numbers: Building work rectification orders, Prohibition orders
+## Step 33: Text block 16
 
-File: `33-mastt-aup-stats-3.html`. Add an HTML Embed here, directly under the text above, and paste this (14,130 characters).
+Paste into the post body (Rich Text).
+
+### Order types and the laws behind them
+
+---
+
+## Step 34: Embed 18, Key numbers: Building work rectification orders, Prohibition orders
+
+File: `34-mastt-aup-stats-3.html`. Add an HTML Embed here, directly under the text above, and paste this (14,130 characters).
 
 ```html
 <div id="mastt-aup-stats-3" class="maupstats3" role="region" aria-label="Key numbers: Building work rectification orders 110; Prohibition orders 14; Median days to fix, where stated 180">
@@ -1145,26 +1374,49 @@ var mxTip=function(host){var tip=host.querySelector(':scope>.maupstats3-tip');if
 
 ---
 
-## Step 34: Text block 16
+## Step 35: Text block 17
 
 Paste into the post body (Rich Text).
 
-Of the 137 orders, 101 were issued under the Residential Apartment Buildings (Compliance and Enforcement Powers) Act 2020, 30 under the Home Building Act 1989 and 4 under the Design and Building Practitioners Act 2020, with 2 not stated. Only 29 of the 110 rectification orders state a time to comply on the register page, and those give a median of 180 days.
+Of the 137 orders, the laws they were issued under are:
 
- **What this means for project teams:** Developers and builders should keep defect records, rectification programmes and sign-off evidence in a form they can produce quickly. When an order sets a period to fix the work, plan on months, not weeks, since 180 days is typical where the period is stated.
+ - **Residential apartment buildings:** 101 under the Residential Apartment Buildings (Compliance and Enforcement Powers) Act 2020.
+- **Home building:** 30 under the Home Building Act 1989.
+- **Design and building practitioners:** 4 under the Design and Building Practitioners Act 2020.
+- **Not stated:** 2.
+
+ Only 29 of the 110 rectification orders state a time to comply on the register page, and those give a median of 180 days.
+
+ **What this means for project teams:**
+
+- Developers and builders should keep defect records, rectification programmes and sign-off evidence in a form they can produce quickly.
+- When an order sets a period to fix the work, plan on months, not weeks, since 180 days is typical where the period is stated.
 
  
 ## How much paperwork sits inside a standard contract?
 
- The NSW Government's [GC21 Edition 2](https://info.buy.nsw.gov.au/resources/gc21) general conditions come with a set of pro-forma letters for the principal's authorised person, which NSW describes as over 100. Mastt counted 109 in the sample letter suite. The MW21 contract for smaller works has 105 templates, 70 from the principal and 35 from the contractor. The ACT Government's design services suite holds 75 documents, of which 60 are clause-numbered notices, requests and instructions, including notices of variation and claim.
+ The NSW Government's [GC21 Edition 2](https://info.buy.nsw.gov.au/resources/gc21) general conditions come with a set of pro-forma letters for the principal's authorised person, which NSW describes as over 100. Mastt counted what each public suite holds:
 
- Mastt grouped the 109 GC21 letters by clause number. Variations and claims take the most, with 20 letters, followed by time and programme with 19 and set-up and instructions with 18 (Figure 14). Each letter is tied to a clause and often to a time limit, so each one is a step a project team must track.
+ - **NSW GC21:** 109 letters in the sample letter suite.
+- **NSW MW21:** 105 templates for smaller works, 70 from the principal and 35 from the contractor.
+- **ACT design services:** 75 documents, of which 60 are clause-numbered notices, requests and instructions, including notices of variation and claim.
+
+ 
+### Variations and claims take the most letters
+
+ Mastt grouped the 109 GC21 letters by clause number (Figure 14):
+
+ - **Variations and claims:** 20 letters, the most of any theme.
+- **Time and programme:** 19 letters.
+- **Set-up and instructions:** 18 letters.
+
+ Each letter is tied to a clause and often to a time limit, so each one is a step a project team must track.
 
 ---
 
-## Step 35: Embed 19, Figure 14: NSW GC21 sample letters by theme
+## Step 36: Embed 19, Figure 14: NSW GC21 sample letters by theme
 
-File: `35-mastt-aup-f14-nsw-gc21-sample-letters-by.html`. Add an HTML Embed here, directly under the text above, and paste this (21,464 characters).
+File: `36-mastt-aup-f14-nsw-gc21-sample-letters-by.html`. Add an HTML Embed here, directly under the text above, and paste this (21,464 characters).
 
 ```html
 <div id="mastt-aup-f14" class="maupf14" role="figure" aria-label="Bar chart: Figure 14: NSW GC21 sample letters by theme. Set-up, authority and instructions 18 letters; Time, programme and completion 19 letters; Variations, claims and site conditions 20 letters; Payment, security and valuation 16 letters; Defects and quality 10 letters; Subcontractors, insurance and third parties 9 letters; Disputes, default and termination 17 letters. Variations, time and set-up account for more than half of the 109 letters.">
@@ -1194,11 +1446,15 @@ plot.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='Ar
 
 ---
 
-## Step 36: Text block 17
+## Step 37: Text block 18
 
 Paste into the post body (Rich Text).
 
-**What this means for project teams:** The administrative load is built into the contract. Map each letter to its trigger and its deadline, keep a register of notices sent and received, and check which letters your special conditions have changed, because NSW notes that amended clauses mean the letters need review.
+**What this means for project teams:** The administrative load is built into the contract.
+
+- Map each letter to its trigger and its deadline.
+- Keep a register of notices sent and received.
+- Check which letters your special conditions have changed, because NSW notes that amended clauses mean the letters need review.
 
  
 ## How do Australian and US public owners compare?
@@ -1208,13 +1464,16 @@ Paste into the post body (Rich Text).
  
 ### Texas almost always takes the lowest bid, Brisbane often does not
 
- Texas DOT awarded 98.9% of 13,596 contracts, 2016 to 2024, at a price within $1 of the lowest bid. Brisbane gave 59.5% of its priced tenders to the cheapest tenderer (Figure 15). The rules suggest part of the reason. [TxDOT guidance](https://www.txdot.gov/manuals/tpd/lgp/letting_and_award/contract_award-i1004090.html) quotes the federal requirement that federal-aid contracts be awarded only on the basis of the lowest responsive bid, while Brisbane scores value for money with a local benefit weighting.
+ Texas DOT awarded 98.9% of 13,596 contracts, 2016 to 2024, at a price within $1 of the lowest bid. Brisbane gave 59.5% of its priced tenders to the cheapest tenderer (Figure 15). The rules suggest part of the reason:
+
+ - **Texas DOT:** [TxDOT guidance](https://www.txdot.gov/manuals/tpd/lgp/letting_and_award/contract_award-i1004090.html) quotes the federal requirement that federal-aid contracts be awarded only on the basis of the lowest responsive bid.
+- **Brisbane:** It scores value for money with a local benefit weighting.
 
 ---
 
-## Step 37: Embed 20, Figure 15: Share of awards won by the lowest bid, Texas DOT and Brisbane
+## Step 38: Embed 20, Figure 15: Share of awards won by the lowest bid, Texas DOT and Brisbane
 
-File: `37-mastt-aup-f15-share-of-awards-won-by.html`. Add an HTML Embed here, directly under the text above, and paste this (14,018 characters).
+File: `38-mastt-aup-f15-share-of-awards-won-by.html`. Add an HTML Embed here, directly under the text above, and paste this (14,018 characters).
 
 ```html
 <div id="mastt-aup-f15" class="maupf15" role="img" aria-label="Gauge: Figure 15: Share of awards won by the lowest bid, Texas DOT and Brisbane. Texas takes the lowest bid almost every time. Brisbane does so about three times in five.">
@@ -1237,22 +1496,32 @@ var mxTip=function(host){var tip=host.querySelector(':scope>.maupf15-tip');if(!t
 
 ---
 
-## Step 38: Text block 18
+## Step 39: Text block 19
 
 Paste into the post body (Rich Text).
 
-Both owners see a similar number of bidders. A typical Brisbane works tender drew 3 tenderers, and a typical Texas DOT letting drew 3 bidders across all work and 4 on state construction.
+Both owners see a similar number of bidders:
+
+ - **Brisbane:** A typical works tender drew 3 tenderers.
+- **Texas DOT:** A typical letting drew 3 bidders across all work and 4 on state construction.
 
  
 ### Defence is the biggest federal buyer in both countries
 
- In the United States, the Department of Defense accounts for 62.2% of 583,728 completed federal construction contracts and delivery orders, fiscal years 2008 to 2026. In Australia, Defence accounts for 53.0% of 31,773 Commonwealth construction contracts. In both countries, Defence moves the national average. US Defense contracts changed value slightly less often than average (36.5% against 39.1%), while Australian Defence contracts were amended more often than the rest (43.5% against 22.3%). The two measures are not identical, so compare direction, not size. Neither figure includes state or local spending.
+ Defence moves the national average in both countries:
+
+ - **United States:** The Department of Defense accounts for 62.2% of 583,728 completed federal construction contracts and delivery orders, fiscal years 2008 to 2026.
+- **Australia:** Defence accounts for 53.0% of 31,773 Commonwealth construction contracts.
+- **US change rate:** Defense contracts changed value slightly less often than average (36.5% against 39.1%).
+- **Australian amendment rate:** Defence contracts were amended more often than the rest (43.5% against 22.3%).
+
+ The two measures are not identical, so compare direction, not size. Neither figure includes state or local spending.
 
 ---
 
-## Step 39: Embed 21, Key numbers: US federal construction from Defense, Australian federal construction from Defence
+## Step 40: Embed 21, Key numbers: US federal construction from Defense, Australian federal construction from Defence
 
-File: `39-mastt-aup-stats-4.html`. Add an HTML Embed here, directly under the text above, and paste this (14,219 characters).
+File: `40-mastt-aup-stats-4.html`. Add an HTML Embed here, directly under the text above, and paste this (14,219 characters).
 
 ```html
 <div id="mastt-aup-stats-4" class="maupstats4" role="region" aria-label="Key numbers: US federal construction from Defense 62%; Australian federal construction from Defence 53%; Australian amended contracts that are Defence 69%">
@@ -1275,11 +1544,14 @@ var mxTip=function(host){var tip=host.querySelector(':scope>.maupstats4-tip');if
 
 ---
 
-## Step 40: Text block 19
+## Step 41: Text block 20
 
 Paste into the post body (Rich Text).
 
-**What this means for project teams:** Any national federal benchmark is mostly a Defence benchmark, in both countries. Split Defence out before you compare your own contracts. When you compare owners, check first whether the winner is chosen on price alone or on a weighted score.
+**What this means for project teams:** Any national federal benchmark is mostly a Defence benchmark, in both countries.
+
+- Split Defence out before you compare your own contracts.
+- When you compare owners, check first whether the winner is chosen on price alone or on a weighted score.
 
  
 ## FAQs
@@ -1288,9 +1560,9 @@ Paste into the post body (Rich Text).
 
 ---
 
-## Step 41: Embed 22, FAQs (accordion)
+## Step 42: Embed 22, FAQs (accordion)
 
-File: `41-mastt-aup-faq-faqs-accordion.html`. Add an HTML Embed here, directly under the text above, and paste this (18,622 characters).
+File: `42-mastt-aup-faq-faqs-accordion.html`. Add an HTML Embed here, directly under the text above, and paste this (18,622 characters).
 
 ```html
 <div id="mastt-aup-faq" class="maupfaq">
@@ -1316,17 +1588,39 @@ root.querySelectorAll('.maupfaq-acc').forEach(function(acc){var items=[].slice.c
 
 ---
 
-## Step 42: Text block 20
+## Step 43: Text block 21
 
 Paste into the post body (Rich Text).
 
 ## Sources and methodology
 
- Mastt analysed published public records. These were about 31,800 Commonwealth contract notices for building, construction and related services (mostly 2013 to 2026), about 68,000 Queensland contract disclosure rows (mostly 2019 to 2026), project listings in Queensland state budgets (12 budgets from 2014-15 to 2026-27) and Victorian state budgets (three machine-readable years), 702 Brisbane City Council contract decisions (August 2020 to April 2025), 13,262 ACT invoices (2017 to 2026) and 137 NSW building work orders (to 28 September 2026). We also counted standard contract letter suites and used Texas DOT bid results (2016 to 2024) and US federal contract awards (fiscal years 2008 to 2026) for comparison.
+ **Records.** This is an internal Mastt study of published public records. It draws on:
 
- A Commonwealth contract counts as construction when it covers building and construction services or has a works-type description. Growth is measured from original to latest value, and changes below minus 95% or above 2,000% are excluded. State project growth is measured from first to last budget listing, matched by name and region, and excludes changes below minus 90% or above 1,000%. ACT invoices with a missing received date, or a paid date before the received date, are excluded. The excess near $80,000 compares the $75,000 to $79,999 band with a smooth curve fitted to $5,000 bands from $40,000 to $200,000, leaving out $75,000 to $95,000.
+ - About 31,800 Commonwealth contract notices for building, construction and related services (mostly 2013 to 2026).
+- About 68,000 Queensland contract disclosure rows (mostly 2019 to 2026).
+- Project listings in Queensland state budgets (12 budgets from 2014-15 to 2026-27) and Victorian state budgets (three machine-readable years).
+- 702 Brisbane City Council contract decisions (August 2020 to April 2025).
+- 13,262 ACT invoices (2017 to 2026).
+- 137 NSW building work orders (to 28 September 2026).
 
- Findings are signals, not proof. Commonwealth amendments include option exercises and time extensions. Many Queensland records leave the method or form blank. State budget estimates include scope changes. The NSW register lists only orders in force. Texas figures describe Texas DOT work only. No contractor or company names are used.
+ We also counted standard contract letter suites and used Texas DOT bid results (2016 to 2024) and US federal contract awards (fiscal years 2008 to 2026) for comparison.
+
+ **Filters.** These rules were applied to the records:
+
+ - A Commonwealth contract counts as construction when it covers building and construction services or has a works-type description.
+- Growth is measured from original to latest value, and changes below minus 95% or above 2,000% are excluded.
+- State project growth is measured from first to last budget listing, matched by name and region, and excludes changes below minus 90% or above 1,000%.
+- ACT invoices with a missing received date, or a paid date before the received date, are excluded.
+- The excess near $80,000 compares the $75,000 to $79,999 band with a smooth curve fitted to $5,000 bands from $40,000 to $200,000, leaving out $75,000 to $95,000.
+
+ **Limits.** Findings are signals, not proof:
+
+ - Commonwealth amendments include option exercises and time extensions.
+- Many Queensland records leave the method or form blank.
+- State budget estimates include scope changes.
+- The NSW register lists only orders in force.
+- Texas figures describe Texas DOT work only.
+- No contractor or company names are used.
 
  Includes public sector information from Australian federal, state, territory and local governments, used under Creative Commons Attribution 4.0 licences.
 
