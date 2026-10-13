@@ -297,10 +297,7 @@ Paste into the post body (Rich Text).
 
  That gap suggests the recorded finish is often a number agreed at close-out, not only a measurement taken on site. The pile-up is in the records. The explanation is our reading.
 
- **What this means for project teams:**
-
-- When you assess a time claim or a delay analysis, remember the final finish date may have been sized to fit.
-- Keep the daily progress records from during the job, because they hold evidence that a final time statement may not.
+ **What this means for project teams:** When you assess a time claim or a delay analysis, remember the final finish date may have been sized to fit. Keep the daily progress records from during the job, because they hold evidence that a final time statement may not.
 
  
 ### One job in six is running late at any moment
@@ -506,12 +503,7 @@ Paste into the post body (Rich Text).
 
 The check uses two numbers most project teams already hold. Compare the percent of time used with the percent of money earned at about the halfway point. A job that has used 50% of its time and earned 30% of its money is 20 points behind.
 
- **What this means for project teams:**
-
-- Add a time-against-money gap line to your monthly report.
-- Treat a gap of more than 10 points near the halfway mark as a trigger to review the program, not as a footnote.
-- This is a single snapshot, so test the thresholds against your own history before you set hard limits.
-- Do not count on penalties to recover delay costs. They are common, but the typical charge is under 1% of contract value, so they are unlikely to cover what a late job costs the owner.
+ **What this means for project teams:** Add a time-against-money gap line to your monthly report, and treat a gap of more than 10 points near the halfway mark as a trigger to review the program. This is a single snapshot, so test the thresholds against your own history before you set hard limits. Do not count on penalties to recover delay costs, because the typical charge is under 1% of contract value.
 
  
 ## How much does the work change under the net figure?
@@ -722,11 +714,7 @@ Paste into the post body (Rich Text).
 
  A net figure of that kind does not show how many projects moved up or down, or by how much, which is the same limit the Texas DOT contracts show.
 
- **What this means for project teams:**
-
-- Report gross additions and gross reductions beside the net figure in your change register.
-- Check quantities, especially for temporary and erosion-control items, before tender.
-- Carry an allowance for item types that are not in the bid, because they were the largest single driver of change on these jobs.
+ **What this means for project teams:** Report gross additions and gross reductions beside the net figure in your change register. Check quantities before tender, especially for temporary and erosion-control items, and carry an allowance for item types that are not in the bid, the largest single driver of change on these jobs.
 
  
 ## Do bigger jobs change more?
@@ -958,10 +946,7 @@ fit();if('ResizeObserver' in window){new ResizeObserver(fit).observe(plot);}else
 
 Paste into the post body (Rich Text).
 
-**What this means for project teams:**
-
-- Set contingency by job size. A flat percentage is too much for small jobs and too little for big ones.
-- For work over $20m, plan for days as well as dollars, because four in five such jobs received extra time.
+**What this means for project teams:** Set contingency by job size, because a flat percentage is too much for small jobs and too little for big ones. For work over $20m, plan for days as well as dollars, because four in five such jobs received extra time.
 
  
 ### Districts differ inside one owner
@@ -1099,10 +1084,7 @@ var mxTip=function(host){var tip=host.querySelector(':scope>.mpcdf10-tip');if(!t
 
 Paste into the post body (Rich Text).
 
-**What this means for project teams:**
-
-- Treat a new bidder as a modest extra risk, not a disaster, and ask for a track record with other owners.
-- With about five subcontractors on a typical job, plan the paperwork and the payment chain for that many firms from the start.
+**What this means for project teams:** Treat a new bidder as a modest extra risk, not a disaster, and ask for a track record with other owners. With about five subcontractors on a typical job, plan the paperwork and the payment chain for that many firms from the start.
 
  
 ## How often do US federal contracts change after signing?
@@ -1183,11 +1165,7 @@ Paste into the post body (Rich Text).
 
  Small businesses and larger firms both saw about 39% of contracts change in value. Larger firms collected more formal change orders per contract, 0.57 against 0.34, which may reflect the longer and bigger jobs they take on.
 
- **What this means for project teams:**
-
-- On big federal jobs, change is the normal case. Plan contingency and administration for it from day one.
-- Watch cost-plus jobs far more closely than fixed-price ones.
-- Set contingency by type of work, with more for civil and utility work than for finishing trades.
+ **What this means for project teams:** On big federal jobs, change is the normal case, so plan contingency and administration for it from day one. Watch cost-plus jobs far more closely than fixed-price ones, and set contingency by type of work, with more for civil and utility work than for finishing trades.
 
  
 ## How do Australian and US contract changes compare?
@@ -1423,10 +1401,7 @@ Agencies working under the same federal rules differ widely:
 
  Practice inside each agency matters as much as the rules.
 
- **What this means for project teams:**
-
-- Any national federal benchmark is mostly a Defence benchmark, so split it out before you compare it with your own portfolio.
-- When you borrow a figure from another country, check how that country defines change before you use it.
+ **What this means for project teams:** Any national federal benchmark is mostly a Defence benchmark, so split it out before you compare it with your own portfolio. When you borrow a figure from another country, check how that country defines change before you use it.
 
  
 ### Contract change is not budget growth
@@ -1476,11 +1451,7 @@ var rows=[].slice.call(tb.rows);rows.sort(function(a,c){var x=a.cells[k],y=c.cel
 
 Paste into the post body (Rich Text).
 
-**What this means for project teams:**
-
-- Hold a contingency for change inside the contract.
-- Hold a second allowance for change that enters through scope, staging and escalation outside it.
-- Remember that a contract benchmark of 2% will not cover a project budget that has historically grown by far more.
+**What this means for project teams:** Hold one contingency for change inside the contract and a second allowance for change that enters through scope, staging and escalation outside it. A contract benchmark of 2% will not cover a project budget that has historically grown by far more.
 
  
 ## What do public risk registers plan for?
@@ -1608,10 +1579,7 @@ Paste into the post body (Rich Text).
 
  Contractor failure is a known issue in Australian public work. A Senate inquiry into the scale and incidence of insolvency in the construction industry [reported on 3 December 2015](https://www.aph.gov.au/Parliamentary_Business/Committees/Senate/Economics/Insolvency_construction/Report). Much of the evidence it received, particularly on security of payment and imbalances in market power, was critical of the large companies at the top of the contracting chain.
 
- **What this means for project teams:**
-
-- Put contractor insolvency in the register, with a trigger to recheck the contractor's finances during the job, not only at tender.
-- For assets that will be in service for decades, put climate risk in the project register where the team will see it.
+ **What this means for project teams:** Put contractor insolvency in the register, with a trigger to recheck the contractor's finances during the job, not only at tender. For assets that will be in service for decades, put climate risk in the project register where the team will see it.
 
  
 ## FAQs

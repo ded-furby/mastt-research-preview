@@ -364,11 +364,7 @@ Paste into the post body (Rich Text).
 
  That is no clear move yet. The number to watch is the count just under $125,000 in contracts signed from late 2026.
 
- **What this means for project teams:**
-
-- Value contracts on the same GST basis the Rules use, and record how each scope was sized against a threshold.
-- If you sell to Commonwealth agencies, expect small-works and services scopes sized to fit under the limit.
-- If you manage a pipeline, watch for the pile moving to $125,000 and review how work is packaged when it does.
+ **What this means for project teams:** Value contracts on the same GST basis the Rules use, and record how each scope was sized against a threshold. Suppliers should expect small-works and services scopes sized to fit under the limit, and pipeline managers should watch for the pile moving to $125,000.
 
  
 ## How often are Commonwealth construction contracts amended?
@@ -553,11 +549,7 @@ var ix=vis.indexOf(cur),k=step(e.key,ix<0?(/Up$|Left$/.test(e.key)?0:-1):ix,vis.
 
 Paste into the post body (Rich Text).
 
-**What this means for project teams:**
-
-- Plan for change as the normal case on anything at $1 million and above, where 7 in 10 contracts are amended.
-- Report option exercises and time extensions separately from scope change so your own rate can be compared with these figures.
-- If you are a non-Defence agency, benchmark against the non-Defence rate of 22%.
+**What this means for project teams:** Plan for change as the normal case on anything at $1 million and above, where 7 in 10 contracts are amended. Report option exercises and time extensions separately from scope change, and if you are a non-Defence agency, benchmark against the non-Defence rate of 22%.
 
  
 ## How do Queensland agencies buy construction?
@@ -795,11 +787,7 @@ if('MutationObserver' in window)new MutationObserver(function(){if(!root.classLi
 
 Paste into the post body (Rich Text).
 
-**What this means for project teams:**
-
-- Track direct approaches as well as open tenders, because a third of mid-size works went to limited tender.
-- Contract templates built around AS 4000 alone will not match much of the Queensland government work that states a form.
-- If you publish contract data, complete the method and form fields, since blanks make competition impossible to measure.
+**What this means for project teams:** Track direct approaches as well as open tenders, because a third of mid-size works went to limited tender. Templates built around AS 4000 alone will not match much of the Queensland government work that states a form, and blank method and form fields make competition impossible to measure.
 
  
 ## How much do state projects grow in cost and slip?
@@ -914,11 +902,7 @@ Paste into the post body (Rich Text).
 
  That points the same way as the Queensland result, where projects that stay longer in the budget show larger estimate growth.
 
- **What this means for project teams:**
-
-- Treat the first published estimate as a starting point, not a final figure.
-- Record the original budget and finish date beside the current figures in your reports so drift stays visible.
-- Compare projects of the same age rather than the same size.
+ **What this means for project teams:** Treat the first published estimate as a starting point, not a final figure. Report the original budget and finish date beside the current figures so drift stays visible, and compare projects of the same age rather than the same size.
 
  
 ## How often does Brisbane pick the cheapest tender?
@@ -1126,11 +1110,7 @@ b.addEventListener('blur',function(){pre=-1;update();});});}
 
 Paste into the post body (Rich Text).
 
-**What this means for project teams:**
-
-- Price alone does not win council work in Brisbane, so read the evaluation weightings before you price.
-- Check whether a tender is lump sum or schedule of rates before you commit, because it decides who carries quantity risk.
-- Services and goods tenders see far more single bids than works tenders.
+**What this means for project teams:** Price alone does not win council work in Brisbane, so read the evaluation weightings before you price. Check whether a tender is lump sum or schedule of rates, because it decides who carries quantity risk, and expect far more single bids on services and goods than on works.
 
  
 ## How fast does the ACT pay construction invoices?
@@ -1282,11 +1262,7 @@ plot.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='Ar
 
 Paste into the post body (Rich Text).
 
-**What this means for project teams:**
-
-- A week is a good public benchmark for ACT work, so use 7 days for the central case and 20 days for the slow end when you plan cash flow.
-- Build the forecast around Tuesday and Thursday payment runs.
-- A forecast that assumes payment on the day an invoice is approved can be out by several days.
+**What this means for project teams:** For ACT work, plan cash flow on 7 days for the central case and 20 days for the slow end, built around Tuesday and Thursday payment runs. A forecast that assumes payment on the day an invoice is approved can be out by several days.
 
  
 ## Are NSW building defect orders rising?
@@ -1387,10 +1363,7 @@ Of the 137 orders, the laws they were issued under are:
 
  Only 29 of the 110 rectification orders state a time to comply on the register page, and those give a median of 180 days.
 
- **What this means for project teams:**
-
-- Developers and builders should keep defect records, rectification programmes and sign-off evidence in a form they can produce quickly.
-- When an order sets a period to fix the work, plan on months, not weeks, since 180 days is typical where the period is stated.
+ **What this means for project teams:** Keep defect records, rectification programmes and sign-off evidence in a form you can produce quickly. When an order sets a period to fix the work, plan on months, not weeks, since 180 days is typical where the period is stated.
 
  
 ## How much paperwork sits inside a standard contract?
@@ -1450,11 +1423,7 @@ plot.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='Ar
 
 Paste into the post body (Rich Text).
 
-**What this means for project teams:** The administrative load is built into the contract.
-
-- Map each letter to its trigger and its deadline.
-- Keep a register of notices sent and received.
-- Check which letters your special conditions have changed, because NSW notes that amended clauses mean the letters need review.
+**What this means for project teams:** The administrative load is built into the contract. Map each letter to its trigger and deadline, keep a register of notices sent and received, and check which letters your special conditions have changed, because NSW notes that amended clauses mean the letters need review.
 
  
 ## How do Australian and US public owners compare?
@@ -1548,10 +1517,7 @@ var mxTip=function(host){var tip=host.querySelector(':scope>.maupstats4-tip');if
 
 Paste into the post body (Rich Text).
 
-**What this means for project teams:** Any national federal benchmark is mostly a Defence benchmark, in both countries.
-
-- Split Defence out before you compare your own contracts.
-- When you compare owners, check first whether the winner is chosen on price alone or on a weighted score.
+**What this means for project teams:** Any national federal benchmark is mostly a Defence benchmark, in both countries, so split Defence out before you compare your own contracts. When you compare owners, check first whether the winner is chosen on price alone or on a weighted score.
 
  
 ## FAQs

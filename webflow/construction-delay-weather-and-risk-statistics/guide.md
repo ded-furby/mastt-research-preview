@@ -364,12 +364,7 @@ Paste into the post body (Rich Text).
 - **AS 4000 and AS 4902:** [Holding Redlich](https://holdingredlich.com/rain-rain-go-away-inclement-weather-in-construction-contracts) notes that these give the contractor no weather relief in their standard form.
 - **Common amendments:** Projects often amend them to allow an extension of time but not costs, and often require the weather event to be published by the Bureau of Meteorology.
 
- **What this means for project teams:**
-
-- Attach the nearest gauge reading, or a Bureau of Meteorology record on Australian jobs, to every weather-day entry when it is raised.
-- Record the controlling activity affected and the date the entry was made.
-- Review credited days against the readings each month, not at completion.
-- Treat a gap between the entry and the record as a prompt to ask a question, not as grounds to refuse.
+ **What this means for project teams:** Attach the nearest gauge reading, or a Bureau of Meteorology record on Australian jobs, to every weather-day entry when it is raised, with the controlling activity affected and the date the entry was made. Review credited days against the readings each month, not at completion, and treat a gap as a prompt to ask a question, not as grounds to refuse.
 
  
 ## Do wetter seasons mean more late penalties?
@@ -451,12 +446,7 @@ Paste into the post body (Rich Text).
 - **Association only:** They are associations, not causal estimates.
 - **Regional shocks:** Hurricanes and other regional shocks can raise both rain and repair work.
 
- **What this means for project teams:**
-
-- If a contractor blames weather for a late penalty, check first whether weather days were already credited.
-- Then compare the job's rain days with the normal for that county and season.
-
-In Texas DOT records, the pattern points to rain credits absorbing most of the rain effect.
+ **What this means for project teams:** If a contractor blames weather for a late penalty, check first whether weather days were already credited, then compare the job's rain days with the normal for that county and season. In Texas DOT records, the pattern points to rain credits absorbing most of the rain effect.
 
  
 ## How much of Florida DOT's delay is weather and holidays?
@@ -628,10 +618,7 @@ Paste into the post body (Rich Text).
 
  The Society of Construction Law's [Delay and Disruption Protocol](https://scl.org.uk/resources/news/second-edition-delay-disruption-protocol), whose second edition appeared in 2017, is the common reference for determining extensions of time and compensation, and it is free to download. An owner reporting 48.7% delay and another reporting 12.5% may be describing the same performance.
 
- **What this means for project teams:**
-
-- Before comparing delay between owners, check how each one counts weather and holiday days.
-- Ask whether the figure is raw or adjusted, and report both when you publish your own.
+ **What this means for project teams:** Before comparing delay between owners, check how each one counts weather and holiday days. Ask whether a figure is raw or adjusted, and report both when you publish your own.
 
  
 ## How often are Texas DOT jobs late, and what do penalties cost?
@@ -801,11 +788,7 @@ Contract size changes the picture:
 - **Penalty size:** Penalties rise in dollars but fall as a share of the contract, from a median of 2.0% on jobs of $100,000 to $500,000 to about 0.4% on jobs over $5 million.
 - **Share charged:** The share of jobs charged peaks at about 24% for jobs of $1 million to $20 million.
 
- **What this means for project teams:** Penalties are common but rarely large.
-
-- Do not count on a median of $18,000 to recover what a late job costs you in extended supervision and disruption.
-- Check your daily rate against the real daily cost of delay.
-- Treat about one job in six past its time as a rough Texas DOT benchmark, and a far higher share in your own portfolio as a warning sign.
+ **What this means for project teams:** Penalties are common but rarely large, so do not count on a median of $18,000 to recover what a late job costs you in extended supervision and disruption. Check your daily rate against the real daily cost of delay. About one job in six past its time is a rough Texas DOT benchmark, and a far higher share in your own portfolio is a warning sign.
 
  
 ## What do public project risk registers cover?
@@ -1024,11 +1007,7 @@ b.addEventListener('blur',function(){pre=-1;update();});});}
 
 Paste into the post body (Rich Text).
 
-**What this means for project teams:**
-
-- Use the top themes as a checklist, and ask why if your register skips community, approvals or weather.
-- Add contractor insolvency with a trigger to recheck the contractor's finances during the job, not only at tender.
-- For long-lived assets, put climate risk in the project register where the team will see it.
+**What this means for project teams:** Use the top themes as a checklist, and ask why if your register skips community, approvals or weather. Add contractor insolvency with a trigger to recheck the contractor's finances during the job, not only at tender, and for long-lived assets put climate risk in the project register where the team will see it.
 
  
 ## What does an unchanged risk register look like?
@@ -1093,11 +1072,7 @@ Paste into the post body (Rich Text).
 
  The [ISO 31000:2018](https://committee.iso.org/standard/65694.html) guidelines describe a process of identifying, analysing, evaluating, treating, monitoring and communicating risks, and say any organisation, whatever its size, activity or sector, can use them. A published table that shows no change from January to December gives no sign that monitoring took place.
 
- **What this means for project teams:**
-
-- Date every review and show what moved since the last one.
-- Record changes in rating, owner and status, and close risks explicitly when they pass or occur.
-- Publish the closed list next to the open one.
+ **What this means for project teams:** Date every review and show what moved since the last one. Record changes in rating, owner and status, close risks explicitly when they pass or occur, and publish the closed list next to the open one.
 
  
 ## How long do approvals and delivery take?
@@ -1318,11 +1293,7 @@ plot.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='Ar
 
 Paste into the post body (Rich Text).
 
-**What this means for project teams:** Approval time is a cost of its own.
-
-- Track who is holding each change and for how long.
-- Report schedule and budget together, because they can move in opposite directions.
-- Show the original budget and date next to the status colour, or the colour can mislead.
+**What this means for project teams:** Approval time is a cost of its own, so track who is holding each change and for how long. Report schedule and budget together, because they can move in opposite directions, and show the original budget and date next to the status colour, or the colour can mislead.
 
  
 ## FAQs

@@ -421,12 +421,9 @@ paint();
 
 Paste into the post body (Rich Text).
 
-**What this means for project teams:**
-
-- Choose an escalation index that matches the work you are buying, then test it against your own last few tenders.
-- A basket of the items you buy most is a better guide than a general inflation rate, because input prices and bid prices can move a year apart.
-
 In Australia the ABS producer price indexes play the same role. The [June quarter 2026 release](https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/producer-price-indexes-australia/jun-2026) showed heavy and civil engineering construction prices up 3.6% over twelve months, with road and bridge construction up 4.5% in the quarter on higher bitumen and diesel prices.
+
+ **What this means for project teams:** Choose an escalation index that matches the work you are buying, then test it against your own last few tenders. A basket of the items you buy most is a better guide than a general inflation rate, because input prices and bid prices can move a year apart.
 
  
 ## Did winning bids run ahead of the engineer's estimate in 2022?
@@ -490,10 +487,7 @@ Paste into the post body (Rich Text).
  - **Two or more bidders:** When the apparent low bid is 20% or more over or under the estimate.
 - **One bidder:** When the bid is more than 10% either side of the estimate.
 
- **What this means for project teams:**
-
-- Track the share of your tenders won 20% or more over the estimate, not only the average, since in 2022 that share reached 22.6% of Texas DOT state-let construction jobs, against 4.8% to 14.8% in other years.
-- Set the review trigger before bids open and record the reason for each large variance, as the Texas DOT manual requires.
+ **What this means for project teams:** Track the share of tenders won 20% or more over the estimate, not only the average. In 2022 that share reached 22.6% of Texas DOT state-let construction jobs, against 4.8% to 14.8% in other years. Set the review trigger before bids open and record the reason for each large variance, as the Texas DOT manual requires.
 
  
 ## Did fewer bidders push prices up?
@@ -655,10 +649,7 @@ Paste into the post body (Rich Text).
 
  These are associations across jobs, not proof that bidder numbers set the price. Larger and more complex jobs draw fewer bidders and also price higher. The 2022 pattern is still consistent with contractors having less room or less appetite to bid that year, although public records cannot show why.
 
- **What this means for project teams:**
-
-- If you expect one or two bidders, plan for a winning bid 5% to 18% above your estimate.
-- Ask how many bidders your last three tenders drew before you trust an estimate built from older prices.
+ **What this means for project teams:** If you expect one or two bidders, plan for a winning bid 5% to 18% above your estimate, and check how many bidders your last three tenders drew before you trust an estimate built from older prices.
 
  
 ## How long did estimates take to catch up?
@@ -725,10 +716,7 @@ Paste into the post body (Rich Text).
 
 That suggests item averages carry price history but not project context such as location, staging, traffic and site conditions. Any estimating model has to beat 12.8% and will need project information to do it.
 
- **What this means for project teams:** When prices are rising, estimates built on last year's bids will be low.
-
-- Add escalation to the estimate in the quarter prices start to move.
-- Compare it with the latest bids rather than waiting for the next scheduled review.
+ **What this means for project teams:** When prices are rising, estimates built on last year's bids will be low. Add escalation in the quarter prices start to move, and compare the estimate with the latest bids rather than waiting for the next scheduled review.
 
  
 ## How often are bid quantities right?
@@ -868,10 +856,7 @@ Paste into the post body (Rich Text).
 
  The [Texas DOT contract administration handbook](https://www.txdot.gov/manuals/cst/cah/changes_to_the_contract/change_orders-ceghciif.html) ties its change-order checks to major items, defined as items worth at least 5% of the original contract or $100,000, whichever is less, that move more than 25% from the bid quantity. Erosion control is a median 0.3% of a contract's final cost, so on a typical job its lines fall below that test.
 
- **What this means for project teams:**
-
-- Check temporary and erosion-control quantities before you go to tender, using paid quantities from your last jobs rather than the design allowance.
-- When you compare bids, look at unit prices on the padded items as well as the totals.
+ **What this means for project teams:** Check temporary and erosion-control quantities before tender, using paid quantities from your last jobs rather than the design allowance. When you compare bids, look at unit prices on the padded items as well as the totals.
 
  
 ## Where does the money move between award and final payment?
@@ -996,10 +981,7 @@ Paste into the post body (Rich Text).
 - **Police traffic control:** The largest single line, paid $152m across 2,510 jobs.
 - **Other placeholder lines:** About $75m.
 
- **What this means for project teams:** A change register that shows only the net figure hides most of the work your team managed.
-
-- Report gross additions and reductions as well.
-- Carry an allowance for the lines you know will arrive, such as police traffic control.
+ **What this means for project teams:** A change register that shows only the net figure hides most of the work your team managed. Report gross additions and reductions as well, and carry an allowance for the lines you know will arrive, such as police traffic control.
 
  
 ## Do bigger jobs and some districts change more?
@@ -1061,10 +1043,7 @@ var rows=[].slice.call(tb.rows);rows.sort(function(a,c){var x=a.cells[k],y=c.cel
 
 Paste into the post body (Rich Text).
 
-**What this means for project teams:**
-
-- Set contingency by job size, because a flat percentage is too much for small jobs and too little for large ones.
-- Compare like with like when you benchmark a delivery team, because a statewide average hides large regional differences.
+**What this means for project teams:** Set contingency by job size, because a flat percentage is too much for small jobs and too little for large ones. When you benchmark a delivery team, compare like with like, because a statewide average hides large regional differences.
 
  
 ## What do environmental items cost, and what happens to them after award?
@@ -1449,12 +1428,7 @@ Paste into the post body (Rich Text).
 
 One caution applies. Weighted by dollars, winners priced environmental items at 0.86 of the estimate and other items at 0.97, so the check does not rule out pricing on a few large items. On the median, which describes the typical line, there is no sign of it.
 
- **What this means for project teams:**
-
-- Budget about 1% of cost for environmental controls and watch the exceptions.
-- Pay for what goes in and check it stays maintained.
-- Carry a contingency for contamination, because a bid line will not cover it.
-- Track environmental change as its own category, so it does not disappear inside the net.
+ **What this means for project teams:** Budget about 1% of cost for environmental controls and watch the exceptions. Pay for what goes in and check it stays maintained, carry a contingency for contamination because a bid line will not cover it, and track environmental change as its own category so it does not disappear inside the net.
 
  
 ## What does this mean for contingency and escalation?
@@ -1514,13 +1488,7 @@ var mxTip=function(host){var tip=host.querySelector(':scope>.mbpequote1-tip');if
 
 Paste into the post body (Rich Text).
 
-**What this means for project teams:**
-
-- Set escalation from an index you can name, then test it against your own last tenders.
-- Expect a premium of 5% to 18% when only one or two firms bid.
-- Hold contingency against gross movement and scale it by job size.
-- Carry allowances for traffic control, contamination and environmental change.
-- Report gross additions and reductions next to the net figure.
+**What this means for project teams:** Set escalation from an index you can name and test it against your own last tenders, and expect a premium of 5% to 18% when only one or two firms bid. Hold contingency against gross movement, scaled by job size, with allowances for traffic control, contamination and environmental change. Report gross additions and reductions next to the net figure.
 
  
 ## FAQs

@@ -559,11 +559,7 @@ Paste into the post body (Rich Text).
 
  It does suggest that project context, not item averages, is where an AI estimator may earn its place.
 
- **What this means for project teams:** If a vendor claims AI estimating:
-
-- Ask for the median miss against winning bids on jobs the model has not seen, and compare it with your own estimates. In this Texas test the bar is 12.8%.
-- Use item price history as an input to your estimate.
-- Keep the estimator's judgement in the loop.
+ **What this means for project teams:** If a vendor claims AI estimating, ask for its median miss against winning bids on jobs the model has not seen, and compare it with your own estimates. In this Texas test the bar is 12.8%. Use item price history as an input, and keep the estimator's judgement in the loop.
 
  
 ## Can public data predict which projects finish late?
@@ -812,10 +808,7 @@ var mxTip=function(host){var tip=host.querySelector(':scope>.maipstats1-tip');if
 
 Paste into the post body (Rich Text).
 
-**What this means for project teams:**
-
-- Ask any AI scheduling tool for its score on later years, not on a random split, and for a calibration check.
-- Treat a risk flag as a prompt to review the programme, the contractor's resources and the open variations, because most flagged jobs still finish in time.
+**What this means for project teams:** Ask any AI scheduling tool for its score on later years, not on a random split, and for a calibration check. Treat a risk flag as a prompt to review the programme, the contractor's resources and the open variations, because most flagged jobs still finish in time.
 
  
 ## What drives the late-finish prediction?
@@ -883,11 +876,7 @@ Paste into the post body (Rich Text).
 
  The model's likely use is ranking a whole portfolio quickly, not telling an experienced planner something new about one job.
 
- **What this means for project teams:**
-
-- Ask any vendor which inputs drive a risk score.
-- If the score mostly mirrors contract time, job type and size, use it to sort a portfolio.
-- Add the inputs only your team holds, such as programme logic, resourcing and open variations.
+ **What this means for project teams:** Ask any vendor which inputs drive a risk score. If it mostly mirrors contract time, job type and size, use it to sort a portfolio, then add the inputs only your team holds, such as programme logic, resourcing and open variations.
 
  
 ## Does local climate help predict late finishes?
@@ -986,11 +975,7 @@ Paste into the post body (Rich Text).
 
  That points to weather driving added days once it arrives, even though climate averages do not foretell it.
 
- **What this means for project teams:**
-
-- Do not buy a weather-aware tool to forecast finish dates from climate averages.
-- Use climate data to set realistic allowed days and float at the start.
-- Use live weather records to explain delays and support time claims after the fact.
+ **What this means for project teams:** Do not buy a weather-aware tool to forecast finish dates from climate averages. Use climate data to set realistic allowed days and float at the start, and live weather records to explain delays and support time claims after the fact.
 
  
 ## How accurately can AI sort contract documents?
@@ -1071,11 +1056,7 @@ Paste into the post body (Rich Text).
 
  The result is best read as an upper estimate for a simple method, to be re-tested with a stricter split and a hand-checked set before anyone relies on it.
 
- **What this means for project teams:**
-
-- AI can sort the common documents now, which saves filing time.
-- Keep a person on the look-alikes, such as progress claims, final claims and change proposals.
-- Ask any vendor for per-type scores rather than a single accuracy figure.
+ **What this means for project teams:** AI can sort the common documents now, which saves filing time. Keep a person on the look-alikes, such as progress claims, final claims and change proposals, and ask any vendor for per-type scores rather than a single accuracy figure.
 
  
 ## Why can't public data show everyday project paperwork?
@@ -1325,10 +1306,7 @@ Many document types have few or no public examples:
 
  The registers that a contract administrator updates every week exist only inside projects.
 
- **What this means for project teams:** AI tools that read RFIs, submittals and defect notices need a project's own data.
-
-- Check that a tool is built on your records, not only on public ones.
-- Keep those records structured, with consistent types, dates, owners and responses, so that a model has something to learn from.
+ **What this means for project teams:** AI tools that read RFIs, submittals and defect notices need a project's own data. Check that a tool is built on your records, not only on public ones, and keep those records structured, with consistent types, dates, owners and responses.
 
  
 ## Which simple rules already work without AI?
@@ -1487,10 +1465,7 @@ Paste into the post body (Rich Text).
 
 An earlier model had put the first-job rate near 43%. A direct count of completed jobs found 26%. A simple count on good records is the first check any AI claim should face.
 
- **What this means for project teams:**
-
-- At the halfway mark, compare time used with money earned and review any job more than 10 points behind.
-- When you assess bidders, ask for track record with other owners and treat a new firm as a modest extra risk rather than a reason to exclude it.
+ **What this means for project teams:** At the halfway mark, compare time used with money earned and review any job more than 10 points behind. When you assess bidders, ask for a track record with other owners and treat a new firm as a modest extra risk rather than a reason to exclude it.
 
  
 ## What public data can and cannot do for AI
