@@ -172,13 +172,11 @@ Paste into the post body (Rich Text).
 
 ## TL;DR
 
-- On **47%** of the 2,170 weekdays Texas DOT credited for rain, county gauges read under a tenth of an inch on both that day and the day before. **32%** were fully dry, against 77% on ordinary weekdays counted against contract time (charged weekdays).
-- Late penalties did not rise with wetter seasons. **12%** of Texas DOT working-day contracts, construction and maintenance together, were charged a late penalty in both the driest and the wettest rainfall group, against 16% to 18% in each of the three groups between.
-- Across 431 contracts in Florida DOT's 2025-26 workbook, days used ran **48.7%** over plan, but **12.5%** over once 32,701 weather days and 19,228 holiday days were removed.
-- About **1 in 6** active Texas DOT jobs had used more than their allowed days, at 17.1% in January 2017 and 16.4% in November 2024. The median late penalty was **$18,000**, or 0.7% of contract value.
-- Across 64 public risk registers, **88%** mention community risks, **83%** approvals and **75%** weather. Only **14%** mention contractor insolvency, **5%** treat climate change as a risk and none mention cyber risk.
-- A public hospital bond program in Washington State published the same **17 risks** in all six 2024 reports reviewed. The risk text did not change, and none was marked closed in those reports.
-- NYC school change orders took a median **224 days** to approve. Thruway jobs took a median **327 days** from letting to completion, and **47%** of Victorian projects with a finish date in two or more budgets had it pushed back.
+- Days Texas DOT credited for rain were clearly wetter than ordinary days, but **almost half** had low county rainfall readings that day and the day before.
+- Wetter work periods came with longer Texas DOT jobs, **not more late penalties**. On completed construction contracts, penalties were common but small, a median of 0.7% of contract value.
+- In Florida DOT's contract workbook, weather and holiday days make up **about three quarters** of the extra days. Removing them shrinks the reported overrun, but not the time the work took.
+- Few public risk registers mention contractor insolvency or climate risk, and **none mention cyber risk**. One hospital program's register was identical in every 2024 report reviewed.
+- NYC school change orders took a median **224 days** to approve, and most finished school phases ended late, though most had final cost estimates below budget.
 
  
 ## Do weather days match the rain gauges?
