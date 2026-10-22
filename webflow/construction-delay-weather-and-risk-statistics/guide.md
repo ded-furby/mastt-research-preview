@@ -172,11 +172,11 @@ Paste into the post body (Rich Text).
 
 ## TL;DR
 
-- Days Texas DOT credited for rain were clearly wetter than ordinary days, but **almost half** had low county rainfall readings that day and the day before.
-- Wetter work periods came with longer Texas DOT jobs, **not more late penalties**. On completed construction contracts, penalties were common but small, a median of 0.7% of contract value.
-- In Florida DOT's contract workbook, weather and holiday days make up **about three quarters** of the extra days. Removing them shrinks the reported overrun, but not the time the work took.
-- Few public risk registers mention contractor insolvency or climate risk, and **none mention cyber risk**. One hospital program's register was identical in every 2024 report reviewed.
-- NYC school change orders took a median **224 days** to approve, and most finished school phases ended late, though most had final cost estimates below budget.
+- Texas DOT's credited rain days were clearly wetter than ordinary days, yet **almost half** had low county rainfall readings.
+- Wetter work periods came with longer jobs, **not more late penalties**, and the penalties charged were small.
+- Weather and holiday days make up **three quarters** of Florida DOT's extra days, so how an owner counts delay shapes the overrun it reports.
+- Few risk registers mention contractor insolvency or climate change, **none mention cyber risk**, and one was identical in every 2024 report reviewed.
+- Approvals are slow and finish dates slip: NYC school change orders took a median **224 days** to approve.
 
  
 ## Do weather days match the rain gauges?
