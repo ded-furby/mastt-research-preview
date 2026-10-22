@@ -172,10 +172,10 @@ Paste into the post body (Rich Text).
 
 ## TL;DR
 
-- Texas DOT's credited rain days were clearly wetter than ordinary days, yet **almost half** had low county rainfall readings.
+- Texas DOT's credited rain days were wetter than ordinary days, yet **almost half** had low county rainfall readings.
 - Wetter work periods came with longer jobs, **not more late penalties**, and the penalties charged were small.
-- Weather and holiday days make up **three quarters** of Florida DOT's extra days, so how an owner counts delay shapes the overrun it reports.
-- Few risk registers mention contractor insolvency or climate change, **none mention cyber risk**, and one was identical in every 2024 report reviewed.
+- Weather and holiday days are **three quarters** of Florida DOT's extra days, so counting rules shape reported delay.
+- Few registers mention insolvency or climate change, **none mention cyber risk**, and one stayed identical through 2024.
 - Approvals are slow and finish dates slip: NYC school change orders took a median **224 days** to approve.
 
  
