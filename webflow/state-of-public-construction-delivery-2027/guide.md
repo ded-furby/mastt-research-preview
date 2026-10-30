@@ -10,8 +10,8 @@ Webflow build guide. Work top to bottom: paste each **Text** step into the post 
 | Summary | Mastt's first annual benchmark is built from public contract records, not a survey. It shows how public construction work runs on time, cost, change, bidding and risk across Texas DOT, US federal and Australian government work. |
 | Meta description | Mastt's first annual benchmark of public construction delivery, built from published contract records across Texas DOT, US federal and Australian government work. |
 | Date | October 2026 |
-| Read time | 16 min |
-| Steps | 21 text blocks, 24 embeds |
+| Read time | 13 min |
+| Steps | 22 text blocks, 24 embeds |
 
 Notes
 - Built to the Mastt Research Visualization Guidelines: one visual per HTML Embed, each with its own mastt- root id and class prefix, scoped CSS, no shadows, gradients, libraries or font imports.
@@ -130,14 +130,12 @@ File: `00-mastt-pcd-schema.html`. Add an HTML Embed at the top of the post body 
 
 Paste into the post body (Rich Text).
 
-This page is a citable benchmark of how public construction work is delivered. It draws on completed contracts and project records that governments have already published, so every figure counts what happened on real jobs, not what people recall in a survey.
+Most delivery benchmarks come from surveys, which measure what people remember. This one comes from completed contracts and project records that governments have already published, so every figure counts what happened on real jobs. Four bodies of records sit behind it:
 
- Every figure is labelled with its period, its population and its source. Where a number is our own calculation, we say so. Four bodies of records sit behind it:
-
- - **Texas DOT:** More than 10,000 completed construction contracts give the deepest view of time, cost and change inside one owner.
-- **US federal:** More than 580,000 completed construction contracts show how change behaves across agencies and contract types.
-- **Australia:** About 31,800 Commonwealth contract notices give the Australian comparison.
-- **Risk registers:** Sixty-four public project risk registers show what teams plan for.
+ - **Texas DOT:** More than 10,000 completed construction contracts, the deepest view of time, cost and change inside one owner.
+- **US federal:** More than 580,000 completed construction contracts across agencies and contract types.
+- **Australia:** About 31,800 Commonwealth contract notices.
+- **Risk registers:** Sixty-four public project risk registers.
 
 ---
 
@@ -172,25 +170,25 @@ Paste into the post body (Rich Text).
 
 ## TL;DR
 
-- 17% of 10,041 completed Texas DOT construction jobs had exactly as many working days counted against them (days charged) as they were allowed. Only 1% were charged one day more, against 6% one day fewer.
-- A 5% net change in Texas DOT job cost hides 13% of contract value moving, because reductions on original items and additions of new item types pull in opposite directions.
-- 13% of Texas DOT bid lines, about 1 in 7, were never used. Only 39% ended at the bid quantity.
-- Jobs more than 10 points behind at the halfway mark were charged late penalties 47% of the time, against 10% for jobs level with or ahead.
-- Late penalties are common but small. 22% of jobs were charged them, and the typical penalty was $18,000, or 0.7% of contract value.
-- Bigger jobs change more. 79% of Texas DOT jobs over $20m received approved additional days, against 8% under $100k, and 78.5% of US federal contracts over $1m changed in value.
-- Only 9 of 64 public project risk registers, 14%, mention contractor insolvency.
+- Finish dates pile up on the allowed day: **17%** of Texas DOT jobs landed exactly on it, and only 1% one day over.
+- A **5% net change** hides 13% of contract value moving, because reductions and additions cancel each other out.
+- Jobs well behind at the halfway mark were charged late penalties **47%** of the time, against 10% for jobs on track.
+- Late penalties are common but small: a typical **$18,000**, or 0.7% of contract value.
+- Bigger jobs change more. **79%** of jobs over $20m received approved additional days, against 8% under $100k.
+- Most large US federal contracts change after signing: **78.5%** of those over $1m moved in value.
+- Only **9 of 64** public risk registers mention contractor insolvency.
 
 ---
 
 ## Step 5: Embed 3, Note: Texas figures describe Texas DOT work only
 
-File: `05-mastt-pcd-note-1.html`. Add an HTML Embed here, directly under the text above, and paste this (12,047 characters).
+File: `05-mastt-pcd-note-1.html`. Add an HTML Embed here, directly under the text above, and paste this (12,010 characters).
 
 ```html
 <div id="mastt-pcd-note-1" class="mpcdnote1">
 <script>(function(){var r=document.getElementById('mastt-pcd-note-1');if(!r)return;try{if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;}catch(e){}r.className+=' mpcdnote1-js';})();</script>
 <style>#mastt-pcd-note-1{--mpcdnote1-ink:#0C2029;--mpcdnote1-ink-2:#45525B;--mpcdnote1-muted:#94A2AB;--mpcdnote1-axis-label:#48555E;--mpcdnote1-faint:#94A2AB;--mpcdnote1-line:#ECEFF1;--mpcdnote1-line-h:#DDE6EE;--mpcdnote1-wash:#F6F8F9;--mpcdnote1-grid:#EAEEF1;--mpcdnote1-axis:#CDD5DA;--mpcdnote1-card:#FFFFFF;--mpcdnote1-accent:#E9720E;--mpcdnote1-accent-ink:#E9720E;--mpcdnote1-blue:#0096DD;--mpcdnote1-link:#1476BE;--mpcdnote1-link-h:#0C4F86;--mpcdnote1-orange:#E9720E;--mpcdnote1-green:#5BB65E;--mpcdnote1-green-d:#2E7D33;--mpcdnote1-purple:#7E52C4;--mpcdnote1-amber:#F9B140;--mpcdnote1-cyan:#29BFD3;--mpcdnote1-red:#E8544E;--mpcdnote1-slate:#5F7D8B;--mpcdnote1-gray:#C6CBD0;--mpcdnote1-green-ink:#3F9E4C;--mpcdnote1-red-ink:#D8433D;--mpcdnote1-amber-ink:#C77F1A;--mpcdnote1-gray-ink:#8A97A0;--mpcdnote1-gray-val:#7C8B94;--series-1:#E9720E;--series-2:#0096DD;--series-3:#5BB65E;--series-4:#7E52C4;--series-5:#F9B140;--series-6:#29BFD3;--series-7:#E8544E;--foreground:var(--mpcdnote1-ink);--text-secondary:var(--mpcdnote1-ink-2);--text-muted:var(--mpcdnote1-gray-ink);--border:var(--mpcdnote1-line);--border-subtle:var(--mpcdnote1-grid);--border-strong:var(--mpcdnote1-axis);--surface:#FFFFFF;--surface-muted:var(--mpcdnote1-wash);--background:#FFFFFF;--accent:var(--mpcdnote1-accent);--accent-strong:var(--mpcdnote1-accent-ink);--accent-subtle:rgba(233,114,14,.12);--success:var(--mpcdnote1-green);--warning:var(--mpcdnote1-amber);--danger:var(--mpcdnote1-red);box-sizing:border-box;position:relative;display:block;width:100%;max-width:800px;margin:0 auto 24px;padding:0;color:var(--mpcdnote1-ink);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;font-weight:400;letter-spacing:normal;text-align:left;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}#mastt-pcd-note-1.mpcdnote1-wide{max-width:900px}#mastt-pcd-note-1 *,#mastt-pcd-note-1 *::before,#mastt-pcd-note-1 *::after{box-sizing:border-box}#mastt-pcd-note-1 :where(div,p,span,ul,ol,li,a,b,strong,em,i,small,table,thead,tbody,tr,th,td,caption,button,details,summary,dl,dt,dd,blockquote,figure,figcaption,cite,sup,sub,code){font-family:inherit;font-size:inherit;line-height:inherit;font-weight:inherit;font-style:inherit;letter-spacing:inherit;text-transform:none;color:inherit;margin:0;padding:0;border:0;border-radius:0;background:none;text-align:inherit;text-decoration:none;max-width:none;width:auto;float:none;min-height:0;box-shadow:none;quotes:none}#mastt-pcd-note-1 :where(h2,h3,h4){margin:0;padding:0;border:0;background:none;color:var(--mpcdnote1-ink);text-transform:none;letter-spacing:normal;max-width:none}#mastt-pcd-note-1 :where(b,strong){font-weight:700}#mastt-pcd-note-1 :where(em,i){font-style:italic}#mastt-pcd-note-1 :where(cite){font-style:normal}#mastt-pcd-note-1 :where(a){color:var(--mpcdnote1-link);text-decoration:none;align-self:flex-start}#mastt-pcd-note-1 :where(a):hover{color:var(--mpcdnote1-link-h)}#mastt-pcd-note-1 :where(blockquote)::before,#mastt-pcd-note-1 :where(blockquote)::after{content:none}#mastt-pcd-note-1 svg{display:block;overflow:visible;max-width:none}#mastt-pcd-note-1 :where(svg text){font-family:inherit}#mastt-pcd-note-1 .mpcdnote1-sr{position:absolute!important;left:0;top:0;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}#mastt-pcd-note-1 table.mpcdnote1-sr{display:block}#mastt-pcd-note-1 .mpcdnote1-card{background:var(--mpcdnote1-card);border:1px solid var(--mpcdnote1-line);border-radius:16px;padding:26px 30px 20px;display:flex;flex-direction:column}#mastt-pcd-note-1 .mpcdnote1-callout{background:var(--mpcdnote1-wash);border-radius:10px;padding:14px 18px;font-size:17px;line-height:1.45;color:var(--mpcdnote1-ink-2);font-weight:400}#mastt-pcd-note-1 .mpcdnote1-callout strong{color:var(--mpcdnote1-accent);font-weight:700}#mastt-pcd-note-1 .mpcdnote1-body{min-width:0;display:flex;flex-direction:column;gap:14px;margin-top:24px}#mastt-pcd-note-1 .mpcdnote1-card>.mpcdnote1-body:first-child{margin-top:4px}#mastt-pcd-note-1 .mpcdnote1-cap{margin-top:22px;text-align:center;font-size:13px;line-height:1.45;font-weight:600;letter-spacing:1.4px;text-transform:uppercase;color:var(--mpcdnote1-ink)}#mastt-pcd-note-1 .mpcdnote1-src{margin-top:7px;text-align:center;font-size:11.5px;line-height:1.45;color:var(--mpcdnote1-muted);font-weight:400}#mastt-pcd-note-1 .mpcdnote1-src+.mpcdnote1-src{margin-top:3px}#mastt-pcd-note-1 .mpcdnote1-scroll{overflow-x:auto;min-width:0;max-width:100%}#mastt-pcd-note-1 :where(.mpcdnote1-body div,.mpcdnote1-body table){min-width:0}#mastt-pcd-note-1 .mpcdnote1-body>*{max-width:100%}#mastt-pcd-note-1 .mpcdnote1-tip{position:absolute;z-index:5;pointer-events:none;background:var(--mpcdnote1-ink);color:#fff;font-size:13px;line-height:1.35;padding:7px 10px;border-radius:8px;white-space:nowrap;opacity:0;transition:opacity .12s;transform:translate(-50%,calc(-100% - 10px))}#mastt-pcd-note-1 .mpcdnote1-tip b{color:#fff;font-weight:700}#mastt-pcd-note-1 .mpcdnote1-tip.mpcdnote1-on{opacity:1}#mastt-pcd-note-1 .mpcdnote1-legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:14px;color:var(--mpcdnote1-ink)}#mastt-pcd-note-1 .mpcdnote1-key{display:inline-flex;align-items:center;gap:7px}#mastt-pcd-note-1 .mpcdnote1-sw{width:12px;height:12px;border-radius:3px;flex:none;display:inline-block}#mastt-pcd-note-1 .mpcdnote1-tabs{display:flex;flex-direction:column;gap:16px}#mastt-pcd-note-1 .mpcdnote1-tablist{display:inline-flex;flex-wrap:wrap;gap:4px;padding:4px;background:var(--mpcdnote1-wash);border-radius:10px;align-self:center;max-width:100%}#mastt-pcd-note-1 .mpcdnote1-tab{cursor:pointer;font-size:14px;font-weight:600;line-height:1.2;color:var(--mpcdnote1-ink-2);padding:8px 14px;border-radius:7px;border:1px solid transparent;transition:color .18s ease,background-color .18s ease,border-color .18s ease}#mastt-pcd-note-1 .mpcdnote1-tab:hover{color:var(--mpcdnote1-blue)}#mastt-pcd-note-1 .mpcdnote1-tab[aria-selected="true"]{background:#fff;color:var(--mpcdnote1-ink);border-color:var(--mpcdnote1-line-h)}#mastt-pcd-note-1 .mpcdnote1-tab:focus-visible{outline:2px solid var(--mpcdnote1-blue);outline-offset:2px}#mastt-pcd-note-1 .mpcdnote1-panel[hidden]{display:none!important}#mastt-pcd-note-1 .mpcdnote1-note{font-size:13px;color:var(--mpcdnote1-muted)}#mastt-pcd-note-1 .mpcdnote1-gap{height:24px}@media (max-width:560px){#mastt-pcd-note-1 .mpcdnote1-card{padding:18px 14px 14px;border-radius:12px}#mastt-pcd-note-1 .mpcdnote1-callout{font-size:14px;padding:11px 13px}#mastt-pcd-note-1 .mpcdnote1-cap{font-size:10.5px;letter-spacing:.8px;margin-top:16px}#mastt-pcd-note-1 .mpcdnote1-body{margin-top:18px}}#mastt-pcd-note-1 .mpcdnote1-ncard{display:grid;grid-template-columns:28px 1fr;column-gap:14px;align-items:start;background:var(--mpcdnote1-wash);border-radius:16px;padding:20px 24px}#mastt-pcd-note-1 .mpcdnote1-n-ic{color:var(--mpcdnote1-blue);padding-top:1px}#mastt-pcd-note-1 .mpcdnote1-n-c{display:flex;flex-direction:column;gap:6px;min-width:0}#mastt-pcd-note-1 .mpcdnote1-note-t{font-size:17px;line-height:1.4;font-weight:700;color:var(--mpcdnote1-ink)}#mastt-pcd-note-1 .mpcdnote1-n-b{font-size:16px;line-height:1.6;color:var(--mpcdnote1-ink-2)}#mastt-pcd-note-1.mpcdnote1-js .mpcdnote1-ncard{opacity:0;transform:translateY(10px)}#mastt-pcd-note-1.mpcdnote1-js.mpcdnote1-in .mpcdnote1-ncard{opacity:1;transform:none;transition:opacity .5s ease,transform .5s cubic-bezier(.22,.61,.36,1)}@media (max-width:560px){#mastt-pcd-note-1 .mpcdnote1-ncard{padding:16px;border-radius:12px;column-gap:10px}#mastt-pcd-note-1 .mpcdnote1-note-t{font-size:15.5px}#mastt-pcd-note-1 .mpcdnote1-n-b{font-size:14.5px}}</style>
-<div class="mpcdnote1-ncard" role="note"><span class="mpcdnote1-n-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v5"></path><path d="M12 7.6v.2"></path></svg></span><div class="mpcdnote1-n-c"><p class="mpcdnote1-note-t">Texas figures describe Texas DOT work only</p><div class="mpcdnote1-n-b">Texas DOT builds roads and bridges under one set of specifications. Its results are a benchmark for that kind of work, not a measure of construction as a whole. The US federal and Australian figures cover many agencies and building types, and each country records change in a different way. Dollar figures for Texas DOT and US federal work are in US dollars. Commonwealth figures are in Australian dollars, and no figure is converted.</div></div></div>
+<div class="mpcdnote1-ncard" role="note"><span class="mpcdnote1-n-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v5"></path><path d="M12 7.6v.2"></path></svg></span><div class="mpcdnote1-n-c"><p class="mpcdnote1-note-t">Texas figures describe Texas DOT work only</p><div class="mpcdnote1-n-b">Texas DOT builds roads and bridges under one set of specifications, so its results are a benchmark for that kind of work, not for construction as a whole. The US federal and Australian figures cover many agencies and building types, and each country records change differently. Texas DOT and US federal dollars are US dollars, Commonwealth figures are Australian dollars, and nothing is converted.</div></div></div>
 <script>(function(){var root=document.getElementById('mastt-pcd-note-1');if(!root||root.getAttribute('data-mpcdnote1-on'))return;root.setAttribute('data-mpcdnote1-on','1');
 var RM=!root.classList.contains('mpcdnote1-js');
 var mxGen=0;
@@ -241,16 +239,9 @@ Paste into the post body (Rich Text).
 
 ## How often do Texas DOT jobs finish on the allowed day?
 
- Far more often than a natural spread of finish times would produce. 17% of 10,041 completed Texas DOT construction jobs were charged exactly the days they were allowed, while only 1% were charged one day more.
+ Far more often than chance would produce. 17% of 10,041 completed Texas DOT construction jobs were charged exactly the days they were allowed, while only 1% were charged one day more.
 
- Texas DOT counts working days against a contract time that is set in the contract and can be extended by change order. [The Texas DOT Construction Contract Administration Manual](https://www.txdot.gov/manuals/cst/cah/prosecution_and_progress/contract_time-bceeiiih.html) says time is charged by the standard workweek method unless the contract says otherwise, and that the number of working days can be adjusted by change order in extraordinary circumstances.
-
- At final estimate, each job carries a count of days charged, meaning the working days counted against its allowed time, and a count of days allowed, meaning the bid days plus any approved additional days granted by change order. Comparing the two for all 10,041 jobs shows:
-
- - **Exactly on the day:** 1,682 jobs, or 17%, were charged exactly the days they were allowed.
-- **One day either side:** Only 83 were charged one day more, and 559 were charged one day fewer.
-- **A sharp spike:** The allowed day holds 6.7 times the daily average of the three days on either side of it.
-- **Beyond the spike:** 61% of jobs were charged fewer days than allowed and 22% more, so the spike sits between two much broader groups.
+ Each completed job carries the working days charged against it and the days it was allowed, which is the bid days plus any approved additional days. Under the [Texas DOT Construction Contract Administration Manual](https://www.txdot.gov/manuals/cst/cah/prosecution_and_progress/contract_time-bceeiiih.html), working days are charged by the standard workweek and can be adjusted by change order in extraordinary circumstances. Comparing the two counts for every job shows a spike on the allowed day.
 
 ---
 
@@ -290,24 +281,16 @@ plot.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='Ar
 
 Paste into the post body (Rich Text).
 
-### Jobs given additional days landed on the allowed day more often
+- 1,682 jobs (17%) were charged exactly the days they were allowed.
+- Only 83 were charged one day more, and 559 were charged one day fewer.
+- The allowed day holds 6.7 times the daily average of the three days on either side of it.
+- 61% of jobs were charged fewer days than allowed and 22% more, so the spike sits between two much broader groups.
+- Jobs given approved additional days landed exactly on their new allowed day 23.5% of the time, against 12.0% for jobs with no additional days.
 
- About 41% of jobs received approved additional days by change order, and the two groups closed differently:
-
- - **Jobs given additional days:** Landed exactly on their new allowed day 23.5% of the time.
-- **Jobs with no additional days:** Were charged exactly their original days 12.0% of the time.
-
- The records do not say why. One possible reason is that the recorded finish is often a number agreed at close-out, not only a measurement taken on site. The pile-up is in the records, and the explanation is our reading.
+ One reading is that the recorded finish is often a number agreed at close-out, not only a measurement taken on site. The pile-up is in the records, and the explanation is ours.
 
  
 ### One active job in six is past its allowed days
-
- Monthly progress reports on active state-let construction jobs give a view of work in progress. Two snapshots show almost the same share of jobs past their allowed days:
-
- - **11 January 2017:** 17.1% of 1,519 active Texas DOT jobs had already used more than their allowed days.
-- **10 November 2024:** The figure was 16.4% of 2,112 jobs.
-
- The statewide book of active work grew from $14.5 billion to $40.7 billion between those dates, before any adjustment for inflation, and the share running late hardly moved.
 
 ---
 
@@ -340,21 +323,21 @@ var mxTip=function(host){var tip=host.querySelector(':scope>.mpcdf02-tip');if(!t
 
 Paste into the post body (Rich Text).
 
-**What this means for project teams:** When you assess a time claim or a delay analysis, remember the final finish date may have been sized to fit, and keep the daily progress records from during the job because they hold evidence a final time statement may not. Across a portfolio, about one active job in six past its allowed time is in line with the Texas DOT record, and a much higher share is a reason to look hard at the schedule.
+- 17.1% of 1,519 active jobs had used more than their allowed days on 11 January 2017.
+- 16.4% of 2,112 had on 10 November 2024.
+- The book of active work grew from $14.5 billion to $40.7 billion between the two dates, before inflation, and the share running late hardly moved.
+
+ **What this means for project teams:** The final finish date may have been sized to fit, so keep the daily progress records from during the job, because they hold evidence a final time statement may not. Across a portfolio, about one active job in six past its allowed time is in line with the Texas DOT record, and a much higher share is a reason to look hard at the schedule.
 
  
 ## Does the halfway mark predict late penalties?
 
- It is a useful early warning, based on one snapshot so far. Jobs whose money earned trailed their time used by more than 10 percentage points at the halfway mark were charged late penalties 47% of the time, against 10% for jobs level with or ahead. The penalties themselves are usually small.
+ It is a useful early warning, from one snapshot so far. Jobs whose money earned trailed their time used by more than 10 points at the halfway mark were charged late penalties 47% of the time, against 10% for jobs level with or ahead.
+
+ Monthly reports show each job's percent of time used and percent of money earned. In January 2017, 436 active construction jobs were between 20% and 80% of the way through their allowed time, and Mastt matched them to their final records.
 
  
 ### Jobs behind at the halfway mark were charged late penalties far more often
-
- The monthly reports also show the percent of time used and the percent of money earned. In January 2017, 436 active construction jobs were between 20% and 80% of the way through their allowed time. Matching them to their final records shows how the gap between time used and money earned at that point lined up with penalties at the end:
-
- - **Level with or ahead:** Jobs whose money earned was level with or ahead of their time used were charged late penalties 10% of the time.
-- **More than 10 points behind:** Were charged late penalties 47% of the time, almost five times as often, and the penalised ones ran a median of 46 days over their allowed time.
-- **More than 20 points behind:** 55% were charged late penalties.
 
 ---
 
@@ -454,16 +437,13 @@ paint();
 
 Paste into the post body (Rich Text).
 
-The check uses two numbers most project teams already hold. Compare the percent of time used with the percent of money earned at about the halfway mark. A job that has used 50% of its time and earned 30% of its money is 20 points behind.
+- Jobs level with or ahead were charged late penalties 10% of the time.
+- Jobs more than 10 points behind were charged 47% of the time, almost five times as often, and the penalised ones ran a median of 46 days over their allowed time.
+- Jobs more than 20 points behind were charged 55% of the time.
+- The check needs two numbers every team already holds. A job that has used 50% of its time and earned 30% of its money is 20 points behind.
 
  
 ### Late penalties are common but small
-
- Texas DOT calls its late penalties liquidated damages. Across the 10,041 completed jobs:
-
- - **How often:** 22% of jobs, 2,201 in all, were charged late penalties.
-- **Typical penalty:** The typical penalised job ran 21 days over its allowed time and was charged $18,000, which is 0.7% of its contract value.
-- **All penalties:** Together they came to $109 million on $57 billion of awarded work.
 
 ---
 
@@ -496,27 +476,20 @@ var mxTip=function(host){var tip=host.querySelector(':scope>.mpcdstats1-tip');if
 
 Paste into the post body (Rich Text).
 
-The records do not say why the amounts stay small, but two rules offer a possible reason:
+- 22% of the 10,041 completed jobs, 2,201 in all, were charged late penalties.
+- The typical penalised job ran 21 days over its allowed time and was charged $18,000, which is 0.7% of its contract value.
+- All penalties together came to $109 million on $57 billion of awarded work.
 
- - **Texas DOT practice:** It describes these charges as [cost recovery, not a penalty](https://www.txdot.gov/manuals/cst/cah/prosecution_and_progress/progress_schedules-bcejejfc/failure_to_complete_work_on_time-i1019822.html), and sets the daily rate from the original bid value of the contract.
-- **Federal highway rules:** Each state transportation department must set rates that cover, as a minimum, the estimated average daily construction engineering cost ([23 CFR 635.127](https://www.law.cornell.edu/cfr/text/23/635.127)).
+ Two rules help explain why the amounts stay small. Texas DOT describes the charge as [cost recovery, not a penalty](https://www.txdot.gov/manuals/cst/cah/prosecution_and_progress/progress_schedules-bcejejfc/failure_to_complete_work_on_time-i1019822.html), and sets the daily rate from the original bid value of the contract. Federal highway rules only require each state to set rates that cover, as a minimum, its estimated average daily construction engineering cost ([23 CFR 635.127](https://www.law.cornell.edu/cfr/text/23/635.127)).
 
- A rate built around the owner's daily engineering cost does not try to price the full cost of delay.
-
- **What this means for project teams:** Add a line to your monthly report that compares the percent of time used with the percent of money earned, and treat a gap of more than 10 points near the halfway mark as a trigger to review the program. This is a single snapshot, so test the thresholds against your own history before you set hard limits. Do not count on penalties to recover delay costs, because the typical charge is under 1% of contract value.
+ **What this means for project teams:** Add a line to your monthly report that compares percent of time used with percent of money earned, and treat a gap of more than 10 points near the halfway mark as a trigger to review the programme. This is a single snapshot, so test the threshold against your own history before you set hard limits. Do not count on penalties to recover delay costs, because the typical charge is under 1% of contract value.
 
  
 ## How much does the work change under the net figure?
 
- Far more than the net figure suggests. On 5,265 completed Texas DOT construction contracts with $30.1 billion awarded, each matched line by line to its bid, the net change was 5.0% but gross movement was 13% of contract value.
+ Far more than the net figure suggests. On 5,265 completed Texas DOT construction contracts with $30.1 billion awarded, each matched line by line to its bid, the net change was 5.0% but 13% of contract value moved.
 
- Net change is final cost against the awarded amount, the number most reports show, so increases and decreases cancel each other out. Underneath the net figure, four categories of payment pulled in different directions (force account and price adjustments are combined below):
-
- - **Original bid items:** Paid 3.9% below their awarded value.
-- **New item types:** Items that were never in the bid added 7.5%.
-- **Force account and price adjustments:** Added another 1.4%, of which force account was 0.6% and price adjustments 0.8%. Force account is work paid at the actual cost of labour, equipment and materials plus a set markup, rather than at a bid unit price.
-
- Adding the four categories up without letting them cancel, 12.8% of contract value changed, or 13%. Counted item by item, with each original item's rise or fall against its bid value kept separate, movement comes to about 26% of award value.
+ Net change is final cost against the awarded amount, the number most reports show, so increases and decreases cancel each other out. Underneath it, four categories of payment pulled in different directions.
 
 ---
 
@@ -665,17 +638,20 @@ b.addEventListener('blur',function(){pre=-1;update();});});}
 
 Paste into the post body (Rich Text).
 
+- Original bid items were paid 3.9% below their awarded value.
+- Item types that were never in the bid added 7.5%.
+- Force account and price adjustments added another 1.4%. Force account is work paid at the actual cost of labour, equipment and materials plus a set markup.
+- Added up without cancelling, 12.8% of contract value changed. Counted item by item, it is about 26%.
+
+ 
 ### One bid line in seven was never used
 
- The change is broad as well as large. Across 341,637 bid lines on the same 5,265 contracts:
+ - 13.4% of 341,637 bid lines were paid nothing, about 1 in 7.
+- Only 39.1% ended at exactly the bid quantity.
+- 17.6% overran by more than 10%, and 17.2% were paid something but underran by more than 10%.
+- Vegetative watering was never used on 58% of the bid lines that included it.
 
- - **Never used:** 13.4% were paid nothing, about 1 in 7.
-- **Exact quantity:** Only 39.1% ended at exactly the bid quantity.
-- **Overruns:** 17.6% overran by more than 10%.
-- **Underruns:** 17.2% were paid something but underran by more than 10%, or 30.6% when the lines never used are counted.
-- **Vegetative watering:** 58% of the bid lines that included it were never used.
-
- The records do not say why. One possible reason is that quantities were set with a margin, which a check of bid quantities could find before the work is priced.
+ Quantities may have been set with a margin, which a check of bid quantities could find before the work is priced. Other owners report net figures too. The Victorian Auditor-General reported a net rise of 8.7% in total estimated investment across 113 major projects worth $145.5 billion in [its 2024 review](https://www.audit.vic.gov.au/node/34906), and a net figure of that kind does not show how many projects moved up or down.
 
 ---
 
@@ -708,23 +684,12 @@ var mxTip=function(host){var tip=host.querySelector(':scope>.mpcdquote1-tip');if
 
 Paste into the post body (Rich Text).
 
-### Published net figures hide the same movement
-
- Other public owners report net figures too. The Victorian Auditor-General reported a net rise of 8.7% in total estimated investment across 113 major projects worth $145.5 billion in [its 2024 review](https://www.audit.vic.gov.au/node/34906).
-
- A net figure of that kind does not show how many projects moved up or down, or by how much, which is the same limit the Texas DOT contracts show.
-
- **What this means for project teams:** Report gross additions and gross reductions beside the net figure in your change register. Check quantities before tender, especially for temporary and erosion-control items, and carry an allowance for item types that are not in the bid, the largest single source of change on these jobs.
+**What this means for project teams:** Report gross additions and gross reductions beside the net figure in your change register. Check quantities before tender, especially for temporary and erosion-control items, and carry an allowance for item types that are not in the bid, the largest single source of change on these jobs.
 
  
 ## Do bigger jobs change more?
 
- Yes, and by a wide margin. On Texas DOT work, the share of jobs given approved additional days, the length of those extensions and cost growth all climb with job size:
-
- - **Additional days:** 79% of jobs over $20m received approved additional days, against 8% of jobs under $100k.
-- **Middle size bands:** Jobs of $1m to $5m got additional days 41% of the time and jobs of $5m to $20m 58% of the time.
-- **Length of extension:** The median extension among jobs that got additional days grows from 5 days under $100k to 112 days over $20m.
-- **Cost growth:** The median rises from -0.3% on jobs under $100k to 5.2% on jobs over $20m.
+ Yes, and by a wide margin. 79% of Texas DOT jobs over $20m received approved additional days, against 8% of jobs under $100k, and median cost growth climbs from -0.3% to 5.2% across the same size bands.
 
 ---
 
@@ -824,11 +789,9 @@ paint();
 
 Paste into the post body (Rich Text).
 
-### Daily penalty rates rise with size, but the share penalised levels off
-
- The daily late-penalty rate rises with size, from a median $570 a day under $100k to $2,590 a day over $20m. The share of jobs actually penalised does not follow. It sits between 21% and 24% for every size band from $1m up.
-
- Additional days climb with size far more than penalty rates do.
+- Jobs of $1m to $5m got approved additional days 41% of the time, and jobs of $5m to $20m 58% of the time.
+- The median extension, among jobs that got one, grows from 5 days under $100k to 112 days over $20m.
+- The daily late-penalty rate rises from a median $570 under $100k to $2,590 over $20m, yet the share of jobs penalised sits between 21% and 24% for every band from $1m up.
 
 ---
 
@@ -866,14 +829,7 @@ var rows=[].slice.call(tb.rows);rows.sort(function(a,c){var x=a.cells[k],y=c.cel
 
 Paste into the post body (Rich Text).
 
-### Cost outcomes shift upward with size
-
- Bigger jobs do not only change more on average. The whole range of outcomes moves up. The middle half of jobs, leaving out the quarter with the lowest growth and the quarter with the highest, moved as follows:
-
- - **Jobs under $100k:** The middle half moved between -3.6% and +3.0%.
-- **Jobs over $20m:** The middle half moved between +1.5% and +11.0%.
-
- As jobs grow, typical cost growth rises and more jobs show large growth.
+### The whole range of outcomes moves up with size
 
 ---
 
@@ -946,19 +902,15 @@ fit();if('ResizeObserver' in window){new ResizeObserver(fit).observe(plot);}else
 
 Paste into the post body (Rich Text).
 
-**What this means for project teams:** Set contingency by job size, because a flat percentage is too much for small jobs and too little for big ones. For work over $20m, plan for days as well as dollars, because four in five such jobs received approved additional days.
+- The middle half of jobs under $100k moved between -3.6% and +3.0%.
+- The middle half of jobs over $20m moved between +1.5% and +11.0%.
+
+ **What this means for project teams:** Set contingency by job size, because a flat percentage is too much for small jobs and too little for big ones. For work over $20m, plan for days as well as dollars, because four in five such jobs received approved additional days.
 
  
 ## Do results differ between districts under the same rules?
 
  Yes. Twenty-five Texas DOT districts work under the same owner, specifications and contract forms, yet their cost growth and late-penalty rates differ widely.
-
- Comparing the districts' completed construction jobs shows:
-
- - **Cost growth:** The median runs from +5.3% in Houston to -0.5% in Lufkin.
-- **Late penalties:** The share of jobs charged runs from 13% in Odessa to 39% in San Angelo.
-
- The records do not say why. Differences in work mix and local markets are possible reasons, and so are differences in local contract administration practice.
 
 ---
 
@@ -996,7 +948,11 @@ var rows=[].slice.call(tb.rows);rows.sort(function(a,c){var x=a.cells[k],y=c.cel
 
 Paste into the post body (Rich Text).
 
-**What this means for project teams:** Compare like with like, because a statewide average hides large regional differences. Benchmark a program against the closest region and work mix, not against the headline average.
+- Median cost growth runs from +5.3% in Houston to -0.5% in Lufkin.
+- The share of jobs charged late penalties runs from 13% in Odessa to 39% in San Angelo.
+- Work mix, local markets and local contract administration practice are all possible reasons, and the records cannot separate them.
+
+ **What this means for project teams:** A statewide average hides large regional differences, so compare like with like. Benchmark a programme against the closest region and work mix, not against the headline figure.
 
  
 ## Who delivers Texas DOT work, and are new firms riskier?
@@ -1005,13 +961,6 @@ Paste into the post body (Rich Text).
 
  
 ### Subcontracting is the norm
-
- Across 3,631 active state-let construction jobs in the January 2017 and November 2024 reports:
-
- - **Jobs declaring subcontractors:** 77% declared subcontractors.
-- **Subcontractors per job:** The median active job listed 5.
-- **Share of value:** The median share of contract value declared as subcontracted was between 12% and 15% across the two dates.
-- **Share of all contract dollars:** Counting every dollar across all active jobs, between 22% and 25% was declared as subcontracted. That is higher than the share on the typical job, which suggests larger jobs subcontract a bigger share.
 
 ---
 
@@ -1044,16 +993,12 @@ var mxTip=function(host){var tip=host.querySelector(':scope>.mpcdstats2-tip');if
 
 Paste into the post body (Rich Text).
 
+- 77% of 3,631 active state-let construction jobs in the January 2017 and November 2024 reports declared subcontractors.
+- The median active job listed 5 subcontractors.
+- The typical job declared 12% to 15% of its value as subcontracted. Counting every dollar across all active jobs, it was 22% to 25%, which suggests larger jobs subcontract a bigger share.
+
+ 
 ### New firms were charged late penalties more often, and the gap did not fade
-
- Firms new to Texas DOT work were charged late penalties on 26% of their first jobs, against 20% for established firms. New here means no Texas DOT award before 2012, and the comparison covers jobs from 2012 onward.
-
- The higher rate did not fade as the new firms took on more work:
-
- - **Second to fifth jobs:** The new firms were at 27%.
-- **Sixth to twentieth jobs:** They were at 26%.
-
- That suggests the gap is about the firm and not only the first job. Firms that reach 21 or more jobs are the survivors, which may explain the lower rate in the last group.
 
 ---
 
@@ -1086,29 +1031,18 @@ var mxTip=function(host){var tip=host.querySelector(':scope>.mpcdf10-tip');if(!t
 
 Paste into the post body (Rich Text).
 
-**What this means for project teams:** Treat a new bidder as a modest extra risk, not a disaster, and ask for a track record with other owners. With about five subcontractors on a typical job, plan the paperwork and the payment chain for that many firms from the start.
+- Firms new to Texas DOT work were charged late penalties on 26% of their first jobs, against 20% for established firms.
+- On their second to fifth jobs the new firms were at 27%, and on their sixth to twentieth at 26%, so the gap is about the firm and not only the first job.
+- Firms that reach 21 or more jobs are the survivors, which may explain the lower rate in the last group.
+
+ **What this means for project teams:** Treat a new bidder as a modest extra risk, not a disaster, and ask for a track record with other owners. With about five subcontractors on a typical job, plan the paperwork and the payment chain for that many firms from the start.
 
  
 ## How often do US federal contracts change after signing?
 
- Most large federal construction contracts change after signing. Of 73,571 completed US federal construction contracts over $1m:
+ Most large ones do. Of 73,571 completed US federal construction contracts over $1m, 78.5% changed in value after signing and 74% ran past their original end date.
 
- - **Changed in value:** 78.5% changed in value after signing, and 38% received a formal change order.
-- **Ran late:** 74% ran past their original end date.
-- **Time shift:** The median shift in end date was 150 days across all of these contracts, and 258 days among those that were extended.
-- **Value growth:** Leaving out options priced at award and taken up later, the typical growth was 2.9%, and one contract in ten grew by about 31% or more.
-
- Across all 583,728 completed contracts from federal fiscal years 2008 to 2026, 39% changed in value and 16% received a change order.
-
- 
-### Change is built into the rules
-
- Change orders are a designed part of the system:
-
- - **The changes clause:** The standard federal construction clause lets the contracting officer order changes within the general scope of the contract, and requires an equitable adjustment when a change affects cost or time ([FAR 52.243-4](https://www.acquisition.gov/far/52.243-4)).
-- **Little tracking:** The US Government Accountability Office reported in 2019 that federal agencies spent more than $36 billion on construction contracts in fiscal year 2018, and that neither the General Services Administration nor the Army Corps of Engineers regularly monitors how long it takes to finalise construction contract changes ([GAO-19-500](https://www.gao.gov/products/gao-19-500)).
-
- Where finalising a change is not tracked, delay in pricing it is hard to see.
+ Change is built into the rules. The standard federal changes clause lets the contracting officer order changes within the general scope of the contract, and requires an equitable adjustment when a change affects cost or time ([FAR 52.243-4](https://www.acquisition.gov/far/52.243-4)).
 
 ---
 
@@ -1141,46 +1075,22 @@ var mxTip=function(host){var tip=host.querySelector(':scope>.mpcdf11-tip');if(!t
 
 Paste into the post body (Rich Text).
 
-### Cost-plus contracts change most
+- Across all 583,728 completed contracts from federal fiscal years 2008 to 2026, 39% changed in value and 16% received a formal change order.
+- Over $1m, 38% received a formal change order and the median end date moved 150 days, or 258 days among contracts that were extended.
+- Leaving out options priced at award, typical value growth over $1m was 2.9%, and one contract in ten grew by about 31% or more.
+- Cost-plus contracts changed in value 71% of the time against 39% for firm fixed price, and the top tenth of cost-plus contracts grew by more than 285%. Cost-plus work is rare, at 1,094 contracts against 576,302 firm fixed price.
+- Contracts with a single offer changed less often, 37% against 46% with three or four offers. One bidder does not mean a runaway job.
+- Heavy civil work had the most change orders (29%), then utility systems (19%) and non-residential building (18%). Finishing trades had the fewest (8%).
+- Firm size made no difference. Small businesses and larger firms both saw about 39% of contracts change in value, although larger firms collected more formal change orders per contract, 0.57 against 0.34.
 
- Cost-plus contracts changed in value 71% of the time, against 39% for firm fixed price. Under the federal cost-reimbursement rules, the contract states an estimated total cost that works as a ceiling the contractor may not exceed, except at its own risk, without the contracting officer's approval ([FAR 16.301-1](https://www.acquisition.gov/far/16.301-1)), so growth on these jobs can reflect a ceiling being raised.
-
- - **Top tenth:** The top tenth of cost-plus contracts grew by more than 285%, against 19.5% for firm fixed price.
-- **Rare in construction:** Cost-plus work covers 1,094 contracts against 576,302 firm fixed price.
-
- 
-### Single-bid contracts changed less often
-
- Contracts with a single offer changed in value 37% of the time, against 46% for contracts with three or four offers. One bidder does not mean a runaway job. The records do not say why, and one possible reason is that single offers are more common on small or specialist work, which changes less anyway.
-
- 
-### Heavy civil work had the most change orders
-
- By type of work, the share of contracts with at least one formal change order was:
-
- - **Other heavy and civil:** 29%.
-- **Utility systems:** 19%.
-- **Non-residential building:** 18%.
-- **Highways and bridges:** 14%.
-- **Residential building:** 9%.
-- **Building finishing:** 8%.
-
- 
-### Firm size alone does not predict change
-
- Small businesses and larger firms both saw about 39% of contracts change in value. Larger firms collected more formal change orders per contract, 0.57 against 0.34. The records do not say why, and one possible reason is the longer and bigger jobs they take on.
+ Finalising a change is rarely tracked. The US Government Accountability Office reported in 2019 that federal agencies spent more than $36 billion on construction contracts in fiscal year 2018, and that neither the General Services Administration nor the Army Corps of Engineers regularly monitors how long it takes to finalise construction contract changes ([GAO-19-500](https://www.gao.gov/products/gao-19-500)). Under the cost-reimbursement rules, the estimated total cost works as a ceiling the contractor may not exceed without approval ([FAR 16.301-1](https://www.acquisition.gov/far/16.301-1)), so growth on cost-plus jobs can reflect a ceiling being raised.
 
  **What this means for project teams:** On big federal jobs, change is the normal case, so plan contingency and administration for it from day one. Watch cost-plus jobs far more closely than fixed-price ones, and set contingency by type of work, with more for civil and utility work than for finishing trades.
 
  
 ## How do Australian and US contract changes compare?
 
- In both countries, bigger contracts change more often, and the US share is higher at every size. From contracts under $100k to contracts of $10m to $100m:
-
- - **US federal:** The share changing in value rises from 24% to 88%.
-- **Commonwealth:** The share of construction contract notices amended rises from 15% to 72%.
-
- The gap is narrowest at $100k to $1m, where the two shares are within one point.
+ In both countries, bigger contracts change more often, and the US share is higher at every size. From contracts under $100k to contracts of $10m to $100m, the US federal share changing in value rises from 24% to 88%, and the Commonwealth share amended rises from 15% to 72%.
 
 ---
 
@@ -1252,36 +1162,14 @@ if(window.ResizeObserver)new ResizeObserver(function(){measure();place();}).obse
 
 Paste into the post body (Rich Text).
 
-### The two countries record change differently
+- The gap is narrowest at $100k to $1m, where the two shares are within one point.
+- 33.6% of the 31,773 Commonwealth construction contract notices were amended at least once, and 73% of the 890 contracts at or above the [$7.5 million construction threshold](https://www.finance.gov.au/government/procurement/commonwealth-procurement-rules/procurement-method) in the Commonwealth Procurement Rules.
+- Big public jobs change in every record: 70% of Texas DOT jobs over $10m received approved additional days, 73% of Commonwealth contracts at or above $7.5m were amended, and 78.5% of US federal contracts over $1m changed in value.
 
- The two records are not the same measure, so read the comparison as a direction, not a ranking:
-
- - **US records:** Type every modification, and the figure here counts any modification that changed contract value.
-- **Commonwealth notices:** Record only whether a contract was amended, and amendments include time extensions and option exercises as well as scope changes.
-- **Reporting rule:** Under Department of Finance guidance, [options, extensions and renewals that change a contract's value by $10,000 or more](https://finance.gov.au/publications/resource-management-guides/procurement-publishing-and-reporting-obligations-rmg-423/contracting-reporting) are reported as amendments to the original contract notice.
-
- Even so, the direction is the same.
-
- 
-### Big public jobs change in every record
-
- 33.6% of the 31,773 Commonwealth construction contract notices were amended at least once. The Commonwealth Procurement Rules set a [$7.5 million threshold for construction services](https://www.finance.gov.au/government/procurement/commonwealth-procurement-rules/procurement-method), and 73% of the 890 contracts at or above that level were amended.
-
- Big public jobs change often in all three sets of records:
-
- - **Texas DOT:** 70% of jobs over $10m received approved additional days.
-- **Commonwealth:** 73% of contracts at or above $7.5m were amended.
-- **US federal:** 78.5% of contracts over $1m changed in value.
-
- The definitions differ, so the figures show a common pattern and not a ranking.
+ The two countries measure different things, so read the comparison as a direction, not a ranking. US records type every modification, while Commonwealth notices record only whether a contract was amended, and amendments include time extensions and option exercises. Under Department of Finance guidance, [options, extensions and renewals that change a contract's value by $10,000 or more](https://finance.gov.au/publications/resource-management-guides/procurement-publishing-and-reporting-obligations-rmg-423/contracting-reporting) are reported as amendments.
 
  
 ### Defence is the largest buyer in both countries
-
- Defence is the largest single buyer of public construction in both countries:
-
- - **United States:** The Department of Defense awarded 62% of the completed US federal construction contracts, 363,102 of 583,728. Its contracts changed in value slightly less often than the average, 36.5% against 39.1%.
-- **Australia:** Defence holds 53% of the contract notices and 69% of the amended ones. Its contracts were amended more often than the rest, 43% against 22%.
 
 ---
 
@@ -1397,16 +1285,9 @@ if('MutationObserver' in window)new MutationObserver(function(){if(!root.classLi
 
 Paste into the post body (Rich Text).
 
-### Agencies under the same rules change contracts at very different rates
-
- Agencies working under the same federal rules differ widely:
-
- - **Justice:** Changed 19% of its contracts in value.
-- **Interior:** Changed 51%.
-- **Transportation:** Changed 54%.
-- **Federal Aviation Administration:** The top tenth of its contracts grew by about 490%.
-
- The records do not say why. Differences in the kind of work each agency buys, and in how each agency manages change, are possible reasons.
+- The US Department of Defense awarded 62% of the completed US federal construction contracts, 363,102 of 583,728, and its contracts changed in value slightly less often than average, 36.5% against 39.1%.
+- Australian Defence holds 53% of the contract notices and 69% of the amended ones, and its contracts were amended more often than the rest, 43% against 22%.
+- Agencies under the same federal rules differ widely. Justice changed 19% of its contracts in value, Interior 51% and Transportation 54%, and the top tenth of Federal Aviation Administration contracts grew by about 490%.
 
  **What this means for project teams:** Any national federal benchmark is mostly a Defence benchmark, so split it out before you compare it with your own portfolio. When you borrow a figure from another country, check how that country defines change before you use it.
 
@@ -1415,14 +1296,7 @@ Paste into the post body (Rich Text).
 
  Project budgets grow far more than contracts do. Median cost growth on completed contracts is close to 2% for Texas DOT and Florida DOT, while completed New York City capital projects grew by a median of 28% from their first recorded budget.
 
- The two measures count different things:
-
- - **Contract growth:** Compares final cost with the contract amount, so it covers only change inside the signed contract.
-- **Budget growth:** Compares a project's latest budget with its first recorded budget, so it can include funding added in stages and change that happens before a contract is signed.
-
- The measures are not like for like, and the records do not show where the extra budget growth comes from. One possible reason is that much of the growth in a public project budget happens before award or sits outside the contract.
-
- A 2002 study in the Journal of the American Planning Association points the same way. Its [sample of 258 transport projects worth US$90 billion](https://arxiv.org/abs/1303.6604) showed cost estimates that were systematically misleading.
+ The two measures count different things. Contract growth compares final cost with the contract amount, so it covers only change inside the signed contract. Budget growth compares a project's latest budget with its first recorded budget, so it can include funding added in stages and change that happens before a contract is signed.
 
 ---
 
@@ -1460,37 +1334,29 @@ var rows=[].slice.call(tb.rows);rows.sort(function(a,c){var x=a.cells[k],y=c.cel
 
 Paste into the post body (Rich Text).
 
-**What this means for project teams:** Hold one contingency for change inside the contract and a second allowance for change that enters through scope, staging and escalation outside it. A contract benchmark of 2% will not cover a project budget that has historically grown by far more.
+- Much of the extra growth probably happens before award or sits outside the contract, although the records cannot show where it comes from.
+- A 2002 study in the Journal of the American Planning Association points the same way. Its [sample of 258 transport projects worth US$90 billion](https://arxiv.org/abs/1303.6604) showed cost estimates that were systematically misleading.
+
+ **What this means for project teams:** Hold one contingency for change inside the contract and a second allowance for change that enters through scope, staging and escalation outside it. A contract benchmark of 2% will not cover a project budget that has historically grown by far more.
 
  
 ## What do public risk registers plan for?
 
- Mostly community and stakeholder issues, approvals, weather and heritage. Contractor insolvency, by contrast, is rare: only 9 of 64 public project risk registers mention it.
+ Mostly community and stakeholder issues, approvals, weather and heritage. Contractor insolvency is rare: only 9 of 64 public project risk registers mention it.
 
- The risk register is where a project team writes down what it expects to go wrong. We read the latest version of 64 public project risk registers, 53 Australian and 11 US, covering terminal stations, motorways, rail, aquatic centres, galleries and other public works.
-
- 
-### Few registers mention contractor insolvency
-
- Searching every register for a contractor or subcontractor going insolvent, and reading each match by hand, found:
-
- - **All registers:** 9 of the 64, 14%, mention a contractor or subcontractor going insolvent.
-- **Recent Australian registers:** Only 3 of the 18 dated 2022 or later do, and seven of those 18 come from one network company.
-- **The fix given:** Where there is one, it is usually a financial check of the contractor at tender.
-
- Contractor failure is a known issue in Australian public work. A Senate inquiry into the scale and incidence of insolvency in the construction industry [reported on 3 December 2015](https://www.aph.gov.au/Parliamentary_Business/Committees/Senate/Economics/Insolvency_construction/Report). Much of the evidence it received, particularly on security of payment and imbalances in market power, was critical of the large companies at the top of the contracting chain.
+ The risk register is where a project team writes down what it expects to go wrong. Mastt read the latest version of 64 public registers, 53 Australian and 11 US, covering terminal stations, motorways, rail, aquatic centres, galleries and other public works.
 
 ---
 
-## Step 41: Embed 22, Figure 15: Risk registers that mention contractor insolvency
+## Step 41: Embed 22, Figure 15: Share of registers mentioning each theme
 
-File: `41-mastt-pcd-f15-risk-registers-that-mention-contractor.html`. Add an HTML Embed here, directly under the text above, and paste this (23,171 characters).
+File: `41-mastt-pcd-f15-share-of-registers-mentioning-each.html`. Add an HTML Embed here, directly under the text above, and paste this (19,799 characters).
 
 ```html
-<div id="mastt-pcd-f15" class="mpcdf15" role="figure" aria-label="Waffle chart: Figure 15: Risk registers that mention contractor insolvency. Yes: Value 9 registers, Share 14%, Cells 14; No: Value 55 registers, Share 86%, Cells 86. Nine of 64 registers, about one in seven, mention it.">
+<div id="mastt-pcd-f15" class="mpcdf15" role="img" aria-label="Bar chart: Figure 15: Share of registers mentioning each theme. Community and stakeholders (56 of 64). Contractor insolvency, climate change and cyber risk sit at the bottom of the list.">
 <script>(function(){var r=document.getElementById('mastt-pcd-f15');if(!r)return;try{if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;}catch(e){}r.className+=' mpcdf15-js';})();</script>
-<style>#mastt-pcd-f15{--mpcdf15-ink:#0C2029;--mpcdf15-ink-2:#45525B;--mpcdf15-muted:#94A2AB;--mpcdf15-axis-label:#48555E;--mpcdf15-faint:#94A2AB;--mpcdf15-line:#ECEFF1;--mpcdf15-line-h:#DDE6EE;--mpcdf15-wash:#F6F8F9;--mpcdf15-grid:#EAEEF1;--mpcdf15-axis:#CDD5DA;--mpcdf15-card:#FFFFFF;--mpcdf15-accent:#E9720E;--mpcdf15-accent-ink:#E9720E;--mpcdf15-blue:#0096DD;--mpcdf15-link:#1476BE;--mpcdf15-link-h:#0C4F86;--mpcdf15-orange:#E9720E;--mpcdf15-green:#5BB65E;--mpcdf15-green-d:#2E7D33;--mpcdf15-purple:#7E52C4;--mpcdf15-amber:#F9B140;--mpcdf15-cyan:#29BFD3;--mpcdf15-red:#E8544E;--mpcdf15-slate:#5F7D8B;--mpcdf15-gray:#C6CBD0;--mpcdf15-green-ink:#3F9E4C;--mpcdf15-red-ink:#D8433D;--mpcdf15-amber-ink:#C77F1A;--mpcdf15-gray-ink:#8A97A0;--mpcdf15-gray-val:#7C8B94;--series-1:#E9720E;--series-2:#0096DD;--series-3:#5BB65E;--series-4:#7E52C4;--series-5:#F9B140;--series-6:#29BFD3;--series-7:#E8544E;--foreground:var(--mpcdf15-ink);--text-secondary:var(--mpcdf15-ink-2);--text-muted:var(--mpcdf15-gray-ink);--border:var(--mpcdf15-line);--border-subtle:var(--mpcdf15-grid);--border-strong:var(--mpcdf15-axis);--surface:#FFFFFF;--surface-muted:var(--mpcdf15-wash);--background:#FFFFFF;--accent:var(--mpcdf15-accent);--accent-strong:var(--mpcdf15-accent-ink);--accent-subtle:rgba(233,114,14,.12);--success:var(--mpcdf15-green);--warning:var(--mpcdf15-amber);--danger:var(--mpcdf15-red);box-sizing:border-box;position:relative;display:block;width:100%;max-width:800px;margin:0 auto 24px;padding:0;color:var(--mpcdf15-ink);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;font-weight:400;letter-spacing:normal;text-align:left;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}#mastt-pcd-f15.mpcdf15-wide{max-width:900px}#mastt-pcd-f15 *,#mastt-pcd-f15 *::before,#mastt-pcd-f15 *::after{box-sizing:border-box}#mastt-pcd-f15 :where(div,p,span,ul,ol,li,a,b,strong,em,i,small,table,thead,tbody,tr,th,td,caption,button,details,summary,dl,dt,dd,blockquote,figure,figcaption,cite,sup,sub,code){font-family:inherit;font-size:inherit;line-height:inherit;font-weight:inherit;font-style:inherit;letter-spacing:inherit;text-transform:none;color:inherit;margin:0;padding:0;border:0;border-radius:0;background:none;text-align:inherit;text-decoration:none;max-width:none;width:auto;float:none;min-height:0;box-shadow:none;quotes:none}#mastt-pcd-f15 :where(h2,h3,h4){margin:0;padding:0;border:0;background:none;color:var(--mpcdf15-ink);text-transform:none;letter-spacing:normal;max-width:none}#mastt-pcd-f15 :where(b,strong){font-weight:700}#mastt-pcd-f15 :where(em,i){font-style:italic}#mastt-pcd-f15 :where(cite){font-style:normal}#mastt-pcd-f15 :where(a){color:var(--mpcdf15-link);text-decoration:none;align-self:flex-start}#mastt-pcd-f15 :where(a):hover{color:var(--mpcdf15-link-h)}#mastt-pcd-f15 :where(blockquote)::before,#mastt-pcd-f15 :where(blockquote)::after{content:none}#mastt-pcd-f15 svg{display:block;overflow:visible;max-width:none}#mastt-pcd-f15 :where(svg text){font-family:inherit}#mastt-pcd-f15 .mpcdf15-sr{position:absolute!important;left:0;top:0;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}#mastt-pcd-f15 table.mpcdf15-sr{display:block}#mastt-pcd-f15 .mpcdf15-card{background:var(--mpcdf15-card);border:1px solid var(--mpcdf15-line);border-radius:16px;padding:26px 30px 20px;display:flex;flex-direction:column}#mastt-pcd-f15 .mpcdf15-callout{background:var(--mpcdf15-wash);border-radius:10px;padding:14px 18px;font-size:17px;line-height:1.45;color:var(--mpcdf15-ink-2);font-weight:400}#mastt-pcd-f15 .mpcdf15-callout strong{color:var(--mpcdf15-accent);font-weight:700}#mastt-pcd-f15 .mpcdf15-body{min-width:0;display:flex;flex-direction:column;gap:14px;margin-top:24px}#mastt-pcd-f15 .mpcdf15-card>.mpcdf15-body:first-child{margin-top:4px}#mastt-pcd-f15 .mpcdf15-cap{margin-top:22px;text-align:center;font-size:13px;line-height:1.45;font-weight:600;letter-spacing:1.4px;text-transform:uppercase;color:var(--mpcdf15-ink)}#mastt-pcd-f15 .mpcdf15-src{margin-top:7px;text-align:center;font-size:11.5px;line-height:1.45;color:var(--mpcdf15-muted);font-weight:400}#mastt-pcd-f15 .mpcdf15-src+.mpcdf15-src{margin-top:3px}#mastt-pcd-f15 .mpcdf15-scroll{overflow-x:auto;min-width:0;max-width:100%}#mastt-pcd-f15 :where(.mpcdf15-body div,.mpcdf15-body table){min-width:0}#mastt-pcd-f15 .mpcdf15-body>*{max-width:100%}#mastt-pcd-f15 .mpcdf15-tip{position:absolute;z-index:5;pointer-events:none;background:var(--mpcdf15-ink);color:#fff;font-size:13px;line-height:1.35;padding:7px 10px;border-radius:8px;white-space:nowrap;opacity:0;transition:opacity .12s;transform:translate(-50%,calc(-100% - 10px))}#mastt-pcd-f15 .mpcdf15-tip b{color:#fff;font-weight:700}#mastt-pcd-f15 .mpcdf15-tip.mpcdf15-on{opacity:1}#mastt-pcd-f15 .mpcdf15-legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:14px;color:var(--mpcdf15-ink)}#mastt-pcd-f15 .mpcdf15-key{display:inline-flex;align-items:center;gap:7px}#mastt-pcd-f15 .mpcdf15-sw{width:12px;height:12px;border-radius:3px;flex:none;display:inline-block}#mastt-pcd-f15 .mpcdf15-tabs{display:flex;flex-direction:column;gap:16px}#mastt-pcd-f15 .mpcdf15-tablist{display:inline-flex;flex-wrap:wrap;gap:4px;padding:4px;background:var(--mpcdf15-wash);border-radius:10px;align-self:center;max-width:100%}#mastt-pcd-f15 .mpcdf15-tab{cursor:pointer;font-size:14px;font-weight:600;line-height:1.2;color:var(--mpcdf15-ink-2);padding:8px 14px;border-radius:7px;border:1px solid transparent;transition:color .18s ease,background-color .18s ease,border-color .18s ease}#mastt-pcd-f15 .mpcdf15-tab:hover{color:var(--mpcdf15-blue)}#mastt-pcd-f15 .mpcdf15-tab[aria-selected="true"]{background:#fff;color:var(--mpcdf15-ink);border-color:var(--mpcdf15-line-h)}#mastt-pcd-f15 .mpcdf15-tab:focus-visible{outline:2px solid var(--mpcdf15-blue);outline-offset:2px}#mastt-pcd-f15 .mpcdf15-panel[hidden]{display:none!important}#mastt-pcd-f15 .mpcdf15-note{font-size:13px;color:var(--mpcdf15-muted)}#mastt-pcd-f15 .mpcdf15-gap{height:24px}@media (max-width:560px){#mastt-pcd-f15 .mpcdf15-card{padding:18px 14px 14px;border-radius:12px}#mastt-pcd-f15 .mpcdf15-callout{font-size:14px;padding:11px 13px}#mastt-pcd-f15 .mpcdf15-cap{font-size:10.5px;letter-spacing:.8px;margin-top:16px}#mastt-pcd-f15 .mpcdf15-body{margin-top:18px}}#mastt-pcd-f15 .mpcdf15-k0{--s:var(--mpcdf15-accent);--t:var(--mpcdf15-accent)}#mastt-pcd-f15 .mpcdf15-k1{--s:var(--mpcdf15-blue);--t:var(--mpcdf15-blue)}#mastt-pcd-f15 .mpcdf15-k2{--s:var(--mpcdf15-green);--t:var(--mpcdf15-green-ink)}#mastt-pcd-f15 .mpcdf15-k3{--s:var(--mpcdf15-purple);--t:var(--mpcdf15-purple)}#mastt-pcd-f15 .mpcdf15-k4{--s:var(--mpcdf15-amber);--t:var(--mpcdf15-amber-ink)}#mastt-pcd-f15 .mpcdf15-k5{--s:var(--mpcdf15-cyan);--t:#17A2B4}#mastt-pcd-f15 .mpcdf15-k6{--s:var(--mpcdf15-red);--t:var(--mpcdf15-red-ink)}#mastt-pcd-f15 .mpcdf15-k7{--s:var(--mpcdf15-slate);--t:var(--mpcdf15-slate)}#mastt-pcd-f15 .mpcdf15-kg{--s:var(--mpcdf15-gray);--t:var(--mpcdf15-gray-val)}#mastt-pcd-f15 .mpcdf15-wf{position:relative;min-width:0}#mastt-pcd-f15 .mpcdf15-wf-body{display:flex;flex-wrap:wrap;align-items:center;gap:24px 34px;min-width:0}#mastt-pcd-f15 .mpcdf15-wf-board{flex:0 1 max(284px,calc((460px - 100%)*999));min-width:0}#mastt-pcd-f15 .mpcdf15-wf-nl .mpcdf15-wf-board{flex:1 1 100%}#mastt-pcd-f15 .mpcdf15-wf-grid{position:relative;width:100%;max-width:284px;margin:0 auto;display:grid;grid-auto-flow:column;grid-template-columns:repeat(var(--cols),minmax(0,1fr));grid-template-rows:repeat(var(--rows),auto);gap:3px;transform:scaleY(-1);outline:none;touch-action:pan-y;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent;cursor:default}#mastt-pcd-f15 .mpcdf15-wf-grid:focus-visible{outline:2px solid var(--mpcdf15-blue);outline-offset:4px;border-radius:4px}#mastt-pcd-f15 .mpcdf15-wf-grid .mpcdf15-g{display:contents;--cell:var(--s)}#mastt-pcd-f15 .mpcdf15-wf-grid i{display:block;aspect-ratio:1;border-radius:22%;background:var(--cell);transition:opacity .24s ease,filter .18s ease}#mastt-pcd-f15 .mpcdf15-wf-grid .mpcdf15-r i{border-radius:50%}#mastt-pcd-f15 .mpcdf15-wf-grid .mpcdf15-f i{position:relative}#mastt-pcd-f15 .mpcdf15-wf-grid .mpcdf15-f i::after{content:"";position:absolute;inset:3px;border:1.5px solid #fff;border-radius:inherit}#mastt-pcd-f15 .mpcdf15-wf-grid.mpcdf15-act .mpcdf15-g:not(.mpcdf15-on) i{opacity:.4}#mastt-pcd-f15 .mpcdf15-wf-grid.mpcdf15-act .mpcdf15-g.mpcdf15-on i{filter:brightness(1.07) saturate(1.05)}#mastt-pcd-f15 .mpcdf15-wf-grid i.mpcdf15-cur{position:relative;outline:2px solid var(--mpcdf15-ink);outline-offset:1px}#mastt-pcd-f15 .mpcdf15-wf-msg{display:grid;min-height:160px;place-items:center;font-size:14px;color:var(--mpcdf15-muted)}#mastt-pcd-f15 .mpcdf15-wf-legend{flex:1 1 140px;min-width:0;max-width:max(340px,calc((100% - 460px)*999));margin:0 auto;padding:0;list-style:none;display:grid;grid-template-columns:16px max-content minmax(0,1fr);column-gap:12px;row-gap:6px}#mastt-pcd-f15 .mpcdf15-wf-legend li{grid-column:1/-1;display:grid;grid-template-columns:16px 4em minmax(0,1fr);grid-template-columns:subgrid;margin:0;padding:0;list-style:none}#mastt-pcd-f15 .mpcdf15-wf-legend li::before,#mastt-pcd-f15 .mpcdf15-wf-legend li::marker{content:none}#mastt-pcd-f15 .mpcdf15-wf-item{--cell:var(--s);grid-column:1/-1;display:grid;grid-template-columns:16px 4em minmax(0,1fr);grid-template-columns:subgrid;align-items:center;width:100%;min-height:40px;color:var(--mpcdf15-ink);cursor:pointer;font-size:16px;line-height:1.3;text-align:left;-webkit-tap-highlight-color:transparent;transition:opacity .2s ease}#mastt-pcd-f15 .mpcdf15-wf-item:focus-visible{outline:2px solid var(--mpcdf15-blue);outline-offset:3px;border-radius:6px}#mastt-pcd-f15 .mpcdf15-wf-item.mpcdf15-dim{opacity:.55}#mastt-pcd-f15 .mpcdf15-wf-sw{position:relative;display:block;width:16px;height:16px;border-radius:4px;border:2px solid var(--cell);background:var(--cell)}#mastt-pcd-f15 .mpcdf15-wf-sw.mpcdf15-r{border-radius:50%}#mastt-pcd-f15 .mpcdf15-wf-sw.mpcdf15-f::after{content:"";position:absolute;inset:1px;border:1.5px solid #fff;border-radius:2px}#mastt-pcd-f15 .mpcdf15-wf-is{font-size:18px;font-weight:700;line-height:1;color:var(--t);font-variant-numeric:tabular-nums;transform-origin:left center;transition:transform .18s ease}#mastt-pcd-f15 .mpcdf15-wf-item.mpcdf15-lead .mpcdf15-wf-is{font-size:22px}#mastt-pcd-f15 .mpcdf15-wf-item.mpcdf15-on .mpcdf15-wf-is{transform:scale(1.06)}#mastt-pcd-f15 .mpcdf15-wf-il{min-width:0;overflow-wrap:anywhere}#mastt-pcd-f15 .mpcdf15-wf-tc{display:block;width:max-content;max-width:min(240px,100%);white-space:normal;line-height:1.3}#mastt-pcd-f15 .mpcdf15-wf-tr{display:flex;align-items:center;gap:8px}#mastt-pcd-f15 .mpcdf15-wf-ts{position:relative;flex:none;width:10px;height:10px;border-radius:3px;background:var(--cell)}#mastt-pcd-f15 .mpcdf15-wf-ts.mpcdf15-r{border-radius:50%}#mastt-pcd-f15 .mpcdf15-wf-ts.mpcdf15-f::after{content:"";position:absolute;inset:2px;border:1px solid var(--mpcdf15-ink);border-radius:1px}#mastt-pcd-f15 .mpcdf15-wf-tv{margin-left:auto;padding-left:8px;font-variant-numeric:tabular-nums}#mastt-pcd-f15 .mpcdf15-wf-tm{display:block;margin-left:18px;font-size:12px;opacity:.78;font-variant-numeric:tabular-nums}@keyframes mpcdf15-wf-in{from{opacity:0;transform:scale(.4)}}#mastt-pcd-f15.mpcdf15-js:not(.mpcdf15-in) .mpcdf15-wf-grid i{opacity:0}#mastt-pcd-f15.mpcdf15-js.mpcdf15-in .mpcdf15-wf-grid i{animation:mpcdf15-wf-in .5s cubic-bezier(.16,1,.3,1) var(--d,0s) backwards}#mastt-pcd-f15.mpcdf15-js .mpcdf15-wf-legend li{opacity:0;transform:translateY(6px)}#mastt-pcd-f15.mpcdf15-js.mpcdf15-in .mpcdf15-wf-legend li{opacity:1;transform:none;transition:opacity .5s ease calc(.15s + var(--i,0)*.08s),transform .5s ease calc(.15s + var(--i,0)*.08s)}@media (max-width:620px){#mastt-pcd-f15 .mpcdf15-wf-legend{column-gap:10px}#mastt-pcd-f15 .mpcdf15-wf-item{font-size:14px}#mastt-pcd-f15 .mpcdf15-wf-is{font-size:16px}#mastt-pcd-f15 .mpcdf15-wf-item.mpcdf15-lead .mpcdf15-wf-is{font-size:20px}}@media (prefers-reduced-motion:reduce){#mastt-pcd-f15 .mpcdf15-wf-grid i,#mastt-pcd-f15 .mpcdf15-wf-item,#mastt-pcd-f15 .mpcdf15-wf-is{transition:none}}</style>
-<div class="mpcdf15-card"><p class="mpcdf15-callout"><strong>Nine of 64 registers</strong>, about one in seven, mention it.</p><div class="mpcdf15-body"><div class="mpcdf15-wf" role="group" aria-label="Public risk registers by mention of contractor insolvency" data-w='{"r":10,"c":10,"p":-1,"n":[14,86],"L":["Yes","No"],"S":["14%","86%"],"M":["9 registers","55 registers"],"C":["var(--mpcdf15-accent)","var(--mpcdf15-blue)"],"H":["",""]}'><div class="mpcdf15-wf-body"><div class="mpcdf15-wf-board"><div class="mpcdf15-wf-grid" style="--cols:10;--rows:10" tabindex="0" role="group" aria-roledescription="waffle chart" aria-label="Public risk registers by mention of contractor insolvency. 100 cells. Use arrow keys to move between cells, Page Up and Page Down to jump between categories."><b class="mpcdf15-g mpcdf15-k0"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></b><b class="mpcdf15-g mpcdf15-k1"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></b></div></div><ul class="mpcdf15-wf-legend" aria-label="Categories"><li style="--i:0"><button type="button" class="mpcdf15-wf-item mpcdf15-k0 mpcdf15-lead" aria-pressed="false"><span class="mpcdf15-wf-sw" aria-hidden="true"></span><span class="mpcdf15-wf-is" data-to="14" data-suf="%">14%</span><span class="mpcdf15-wf-il">Yes</span></button></li><li style="--i:1"><button type="button" class="mpcdf15-wf-item mpcdf15-k1" aria-pressed="false"><span class="mpcdf15-wf-sw" aria-hidden="true"></span><span class="mpcdf15-wf-is" data-to="86" data-suf="%">86%</span><span class="mpcdf15-wf-il">No</span></button></li></ul></div><p class="mpcdf15-sr mpcdf15-wf-live" aria-live="polite" aria-atomic="true"></p><table class="mpcdf15-sr"><caption>Public risk registers by mention of contractor insolvency</caption><thead><tr><th scope="col">Category</th><th scope="col">Value</th><th scope="col">Share</th><th scope="col">Cells</th></tr></thead><tbody><tr><th scope="row">Yes</th><td>9 registers</td><td>14%</td><td>14</td></tr><tr><th scope="row">No</th><td>55 registers</td><td>86%</td><td>86</td></tr></tbody></table></div></div><p class="mpcdf15-cap">Figure 15: Risk registers that mention contractor insolvency</p><p class="mpcdf15-src">Source: Mastt analysis of public project risk registers, 53 Australian and 11 US, latest version of each</p></div>
+<style>#mastt-pcd-f15{--mpcdf15-ink:#0C2029;--mpcdf15-ink-2:#45525B;--mpcdf15-muted:#94A2AB;--mpcdf15-axis-label:#48555E;--mpcdf15-faint:#94A2AB;--mpcdf15-line:#ECEFF1;--mpcdf15-line-h:#DDE6EE;--mpcdf15-wash:#F6F8F9;--mpcdf15-grid:#EAEEF1;--mpcdf15-axis:#CDD5DA;--mpcdf15-card:#FFFFFF;--mpcdf15-accent:#E9720E;--mpcdf15-accent-ink:#E9720E;--mpcdf15-blue:#0096DD;--mpcdf15-link:#1476BE;--mpcdf15-link-h:#0C4F86;--mpcdf15-orange:#E9720E;--mpcdf15-green:#5BB65E;--mpcdf15-green-d:#2E7D33;--mpcdf15-purple:#7E52C4;--mpcdf15-amber:#F9B140;--mpcdf15-cyan:#29BFD3;--mpcdf15-red:#E8544E;--mpcdf15-slate:#5F7D8B;--mpcdf15-gray:#C6CBD0;--mpcdf15-green-ink:#3F9E4C;--mpcdf15-red-ink:#D8433D;--mpcdf15-amber-ink:#C77F1A;--mpcdf15-gray-ink:#8A97A0;--mpcdf15-gray-val:#7C8B94;--series-1:#E9720E;--series-2:#0096DD;--series-3:#5BB65E;--series-4:#7E52C4;--series-5:#F9B140;--series-6:#29BFD3;--series-7:#E8544E;--foreground:var(--mpcdf15-ink);--text-secondary:var(--mpcdf15-ink-2);--text-muted:var(--mpcdf15-gray-ink);--border:var(--mpcdf15-line);--border-subtle:var(--mpcdf15-grid);--border-strong:var(--mpcdf15-axis);--surface:#FFFFFF;--surface-muted:var(--mpcdf15-wash);--background:#FFFFFF;--accent:var(--mpcdf15-accent);--accent-strong:var(--mpcdf15-accent-ink);--accent-subtle:rgba(233,114,14,.12);--success:var(--mpcdf15-green);--warning:var(--mpcdf15-amber);--danger:var(--mpcdf15-red);box-sizing:border-box;position:relative;display:block;width:100%;max-width:800px;margin:0 auto 24px;padding:0;color:var(--mpcdf15-ink);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;font-weight:400;letter-spacing:normal;text-align:left;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}#mastt-pcd-f15.mpcdf15-wide{max-width:900px}#mastt-pcd-f15 *,#mastt-pcd-f15 *::before,#mastt-pcd-f15 *::after{box-sizing:border-box}#mastt-pcd-f15 :where(div,p,span,ul,ol,li,a,b,strong,em,i,small,table,thead,tbody,tr,th,td,caption,button,details,summary,dl,dt,dd,blockquote,figure,figcaption,cite,sup,sub,code){font-family:inherit;font-size:inherit;line-height:inherit;font-weight:inherit;font-style:inherit;letter-spacing:inherit;text-transform:none;color:inherit;margin:0;padding:0;border:0;border-radius:0;background:none;text-align:inherit;text-decoration:none;max-width:none;width:auto;float:none;min-height:0;box-shadow:none;quotes:none}#mastt-pcd-f15 :where(h2,h3,h4){margin:0;padding:0;border:0;background:none;color:var(--mpcdf15-ink);text-transform:none;letter-spacing:normal;max-width:none}#mastt-pcd-f15 :where(b,strong){font-weight:700}#mastt-pcd-f15 :where(em,i){font-style:italic}#mastt-pcd-f15 :where(cite){font-style:normal}#mastt-pcd-f15 :where(a){color:var(--mpcdf15-link);text-decoration:none;align-self:flex-start}#mastt-pcd-f15 :where(a):hover{color:var(--mpcdf15-link-h)}#mastt-pcd-f15 :where(blockquote)::before,#mastt-pcd-f15 :where(blockquote)::after{content:none}#mastt-pcd-f15 svg{display:block;overflow:visible;max-width:none}#mastt-pcd-f15 :where(svg text){font-family:inherit}#mastt-pcd-f15 .mpcdf15-sr{position:absolute!important;left:0;top:0;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}#mastt-pcd-f15 table.mpcdf15-sr{display:block}#mastt-pcd-f15 .mpcdf15-card{background:var(--mpcdf15-card);border:1px solid var(--mpcdf15-line);border-radius:16px;padding:26px 30px 20px;display:flex;flex-direction:column}#mastt-pcd-f15 .mpcdf15-callout{background:var(--mpcdf15-wash);border-radius:10px;padding:14px 18px;font-size:17px;line-height:1.45;color:var(--mpcdf15-ink-2);font-weight:400}#mastt-pcd-f15 .mpcdf15-callout strong{color:var(--mpcdf15-accent);font-weight:700}#mastt-pcd-f15 .mpcdf15-body{min-width:0;display:flex;flex-direction:column;gap:14px;margin-top:24px}#mastt-pcd-f15 .mpcdf15-card>.mpcdf15-body:first-child{margin-top:4px}#mastt-pcd-f15 .mpcdf15-cap{margin-top:22px;text-align:center;font-size:13px;line-height:1.45;font-weight:600;letter-spacing:1.4px;text-transform:uppercase;color:var(--mpcdf15-ink)}#mastt-pcd-f15 .mpcdf15-src{margin-top:7px;text-align:center;font-size:11.5px;line-height:1.45;color:var(--mpcdf15-muted);font-weight:400}#mastt-pcd-f15 .mpcdf15-src+.mpcdf15-src{margin-top:3px}#mastt-pcd-f15 .mpcdf15-scroll{overflow-x:auto;min-width:0;max-width:100%}#mastt-pcd-f15 :where(.mpcdf15-body div,.mpcdf15-body table){min-width:0}#mastt-pcd-f15 .mpcdf15-body>*{max-width:100%}#mastt-pcd-f15 .mpcdf15-tip{position:absolute;z-index:5;pointer-events:none;background:var(--mpcdf15-ink);color:#fff;font-size:13px;line-height:1.35;padding:7px 10px;border-radius:8px;white-space:nowrap;opacity:0;transition:opacity .12s;transform:translate(-50%,calc(-100% - 10px))}#mastt-pcd-f15 .mpcdf15-tip b{color:#fff;font-weight:700}#mastt-pcd-f15 .mpcdf15-tip.mpcdf15-on{opacity:1}#mastt-pcd-f15 .mpcdf15-legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:14px;color:var(--mpcdf15-ink)}#mastt-pcd-f15 .mpcdf15-key{display:inline-flex;align-items:center;gap:7px}#mastt-pcd-f15 .mpcdf15-sw{width:12px;height:12px;border-radius:3px;flex:none;display:inline-block}#mastt-pcd-f15 .mpcdf15-tabs{display:flex;flex-direction:column;gap:16px}#mastt-pcd-f15 .mpcdf15-tablist{display:inline-flex;flex-wrap:wrap;gap:4px;padding:4px;background:var(--mpcdf15-wash);border-radius:10px;align-self:center;max-width:100%}#mastt-pcd-f15 .mpcdf15-tab{cursor:pointer;font-size:14px;font-weight:600;line-height:1.2;color:var(--mpcdf15-ink-2);padding:8px 14px;border-radius:7px;border:1px solid transparent;transition:color .18s ease,background-color .18s ease,border-color .18s ease}#mastt-pcd-f15 .mpcdf15-tab:hover{color:var(--mpcdf15-blue)}#mastt-pcd-f15 .mpcdf15-tab[aria-selected="true"]{background:#fff;color:var(--mpcdf15-ink);border-color:var(--mpcdf15-line-h)}#mastt-pcd-f15 .mpcdf15-tab:focus-visible{outline:2px solid var(--mpcdf15-blue);outline-offset:2px}#mastt-pcd-f15 .mpcdf15-panel[hidden]{display:none!important}#mastt-pcd-f15 .mpcdf15-note{font-size:13px;color:var(--mpcdf15-muted)}#mastt-pcd-f15 .mpcdf15-gap{height:24px}@media (max-width:560px){#mastt-pcd-f15 .mpcdf15-card{padding:18px 14px 14px;border-radius:12px}#mastt-pcd-f15 .mpcdf15-callout{font-size:14px;padding:11px 13px}#mastt-pcd-f15 .mpcdf15-cap{font-size:10.5px;letter-spacing:.8px;margin-top:16px}#mastt-pcd-f15 .mpcdf15-body{margin-top:18px}}#mastt-pcd-f15 .mpcdf15-prog{display:flex;flex-direction:column;gap:7px}#mastt-pcd-f15 .mpcdf15-prog-m{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:15px;line-height:1.35}#mastt-pcd-f15 .mpcdf15-prog-l{color:var(--mpcdf15-axis-label)}#mastt-pcd-f15 .mpcdf15-prog-v{color:var(--mpcdf15-ink);font-size:17px;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}#mastt-pcd-f15 .mpcdf15-prog-t{height:10px;border-radius:999px;background:var(--mpcdf15-grid);overflow:hidden}#mastt-pcd-f15 .mpcdf15-prog-f{display:block;height:100%;border-radius:999px;background:var(--mpcdf15-blue);transform-origin:left;transition:filter .18s ease}#mastt-pcd-f15 .mpcdf15-prog:hover .mpcdf15-prog-f{filter:brightness(1.07) saturate(1.05)}#mastt-pcd-f15 .mpcdf15-prog:last-child .mpcdf15-prog-f{background:var(--mpcdf15-accent)}#mastt-pcd-f15.mpcdf15-js .mpcdf15-prog-f{transform:scaleX(0)}#mastt-pcd-f15.mpcdf15-js.mpcdf15-in .mpcdf15-prog-f{transform:scaleX(1);transition:transform .95s cubic-bezier(.22,.61,.36,1) var(--d,0s),filter .18s ease}@media (max-width:560px){#mastt-pcd-f15 .mpcdf15-prog-m{font-size:13.5px}#mastt-pcd-f15 .mpcdf15-prog-v{font-size:15px}}</style>
+<div class="mpcdf15-card"><p class="mpcdf15-callout"><strong>Contractor insolvency</strong>, climate change and cyber risk sit at the bottom of the list.</p><div class="mpcdf15-body"><div style="display:flex;flex-direction:column;gap:18px"><div class="mpcdf15-prog" role="progressbar" aria-label="Community and stakeholders (56 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="87.5" aria-valuetext="88%" style="--d:0.12s"><div class="mpcdf15-prog-m"><span class="mpcdf15-prog-l">Community and stakeholders (56 of 64)</span><span class="mpcdf15-prog-v" data-to="88" data-suf="%">88%</span></div><div class="mpcdf15-prog-t"><span class="mpcdf15-prog-f" style="width:88%"></span></div></div><div class="mpcdf15-prog" role="progressbar" aria-label="Approvals and permits (53 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="82.8" aria-valuetext="83%" style="--d:0.18s"><div class="mpcdf15-prog-m"><span class="mpcdf15-prog-l">Approvals and permits (53 of 64)</span><span class="mpcdf15-prog-v" data-to="83" data-suf="%">83%</span></div><div class="mpcdf15-prog-t"><span class="mpcdf15-prog-f" style="width:83%"></span></div></div><div class="mpcdf15-prog" role="progressbar" aria-label="Weather and flooding (48 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75" aria-valuetext="75%" style="--d:0.24s"><div class="mpcdf15-prog-m"><span class="mpcdf15-prog-l">Weather and flooding (48 of 64)</span><span class="mpcdf15-prog-v" data-to="75" data-suf="%">75%</span></div><div class="mpcdf15-prog-t"><span class="mpcdf15-prog-f" style="width:75%"></span></div></div><div class="mpcdf15-prog" role="progressbar" aria-label="Heritage and culture (46 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="71.9" aria-valuetext="72%" style="--d:0.30s"><div class="mpcdf15-prog-m"><span class="mpcdf15-prog-l">Heritage and culture (46 of 64)</span><span class="mpcdf15-prog-v" data-to="72" data-suf="%">72%</span></div><div class="mpcdf15-prog-t"><span class="mpcdf15-prog-f" style="width:72%"></span></div></div><div class="mpcdf15-prog" role="progressbar" aria-label="Safety (43 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="67.2" aria-valuetext="67%" style="--d:0.36s"><div class="mpcdf15-prog-m"><span class="mpcdf15-prog-l">Safety (43 of 64)</span><span class="mpcdf15-prog-v" data-to="67" data-suf="%">67%</span></div><div class="mpcdf15-prog-t"><span class="mpcdf15-prog-f" style="width:67%"></span></div></div><div class="mpcdf15-prog" role="progressbar" aria-label="Cost escalation (35 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="54.7" aria-valuetext="55%" style="--d:0.42s"><div class="mpcdf15-prog-m"><span class="mpcdf15-prog-l">Cost escalation (35 of 64)</span><span class="mpcdf15-prog-v" data-to="55" data-suf="%">55%</span></div><div class="mpcdf15-prog-t"><span class="mpcdf15-prog-f" style="width:55%"></span></div></div><div class="mpcdf15-prog" role="progressbar" aria-label="Contamination (33 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="51.6" aria-valuetext="52%" style="--d:0.00s"><div class="mpcdf15-prog-m"><span class="mpcdf15-prog-l">Contamination (33 of 64)</span><span class="mpcdf15-prog-v" data-to="52" data-suf="%">52%</span></div><div class="mpcdf15-prog-t"><span class="mpcdf15-prog-f" style="width:52%"></span></div></div><div class="mpcdf15-prog" role="progressbar" aria-label="Funding (32 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-valuetext="50%" style="--d:0.06s"><div class="mpcdf15-prog-m"><span class="mpcdf15-prog-l">Funding (32 of 64)</span><span class="mpcdf15-prog-v" data-to="50" data-suf="%">50%</span></div><div class="mpcdf15-prog-t"><span class="mpcdf15-prog-f" style="width:50%"></span></div></div><div class="mpcdf15-prog" role="progressbar" aria-label="Ground conditions (32 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-valuetext="50%" style="--d:0.12s"><div class="mpcdf15-prog-m"><span class="mpcdf15-prog-l">Ground conditions (32 of 64)</span><span class="mpcdf15-prog-v" data-to="50" data-suf="%">50%</span></div><div class="mpcdf15-prog-t"><span class="mpcdf15-prog-f" style="width:50%"></span></div></div><div class="mpcdf15-prog" role="progressbar" aria-label="Flora, fauna and water quality (28 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="43.8" aria-valuetext="44%" style="--d:0.18s"><div class="mpcdf15-prog-m"><span class="mpcdf15-prog-l">Flora, fauna and water quality (28 of 64)</span><span class="mpcdf15-prog-v" data-to="44" data-suf="%">44%</span></div><div class="mpcdf15-prog-t"><span class="mpcdf15-prog-f" style="width:44%"></span></div></div><div class="mpcdf15-prog" role="progressbar" aria-label="Traffic (27 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="42.2" aria-valuetext="42%" style="--d:0.24s"><div class="mpcdf15-prog-m"><span class="mpcdf15-prog-l">Traffic (27 of 64)</span><span class="mpcdf15-prog-v" data-to="42" data-suf="%">42%</span></div><div class="mpcdf15-prog-t"><span class="mpcdf15-prog-f" style="width:42%"></span></div></div><div class="mpcdf15-prog" role="progressbar" aria-label="Utilities (25 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="39.1" aria-valuetext="39%" style="--d:0.30s"><div class="mpcdf15-prog-m"><span class="mpcdf15-prog-l">Utilities (25 of 64)</span><span class="mpcdf15-prog-v" data-to="39" data-suf="%">39%</span></div><div class="mpcdf15-prog-t"><span class="mpcdf15-prog-f" style="width:39%"></span></div></div><div class="mpcdf15-prog" role="progressbar" aria-label="Scope and design change (25 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="39.1" aria-valuetext="39%" style="--d:0.36s"><div class="mpcdf15-prog-m"><span class="mpcdf15-prog-l">Scope and design change (25 of 64)</span><span class="mpcdf15-prog-v" data-to="39" data-suf="%">39%</span></div><div class="mpcdf15-prog-t"><span class="mpcdf15-prog-f" style="width:39%"></span></div></div><div class="mpcdf15-prog" role="progressbar" aria-label="Supply chain and labour (23 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="35.9" aria-valuetext="36%" style="--d:0.42s"><div class="mpcdf15-prog-m"><span class="mpcdf15-prog-l">Supply chain and labour (23 of 64)</span><span class="mpcdf15-prog-v" data-to="36" data-suf="%">36%</span></div><div class="mpcdf15-prog-t"><span class="mpcdf15-prog-f" style="width:36%"></span></div></div><div class="mpcdf15-prog" role="progressbar" aria-label="COVID or pandemic (13 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="20.3" aria-valuetext="20%" style="--d:0.00s"><div class="mpcdf15-prog-m"><span class="mpcdf15-prog-l">COVID or pandemic (13 of 64)</span><span class="mpcdf15-prog-v" data-to="20" data-suf="%">20%</span></div><div class="mpcdf15-prog-t"><span class="mpcdf15-prog-f" style="width:20%"></span></div></div><div class="mpcdf15-prog" role="progressbar" aria-label="Contractor insolvency (9 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="14.1" aria-valuetext="14%" style="--d:0.06s"><div class="mpcdf15-prog-m"><span class="mpcdf15-prog-l">Contractor insolvency (9 of 64)</span><span class="mpcdf15-prog-v" data-to="14" data-suf="%">14%</span></div><div class="mpcdf15-prog-t"><span class="mpcdf15-prog-f" style="width:14%"></span></div></div><div class="mpcdf15-prog" role="progressbar" aria-label="Climate change (as a risk) (3 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="4.7" aria-valuetext="5%" style="--d:0.12s"><div class="mpcdf15-prog-m"><span class="mpcdf15-prog-l">Climate change (as a risk) (3 of 64)</span><span class="mpcdf15-prog-v" data-to="5" data-suf="%">5%</span></div><div class="mpcdf15-prog-t"><span class="mpcdf15-prog-f" style="width:5%"></span></div></div><div class="mpcdf15-prog" role="progressbar" aria-label="Cyber (0 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-valuetext="0%" style="--d:0.18s"><div class="mpcdf15-prog-m"><span class="mpcdf15-prog-l">Cyber (0 of 64)</span><span class="mpcdf15-prog-v" data-to="0" data-suf="%">0%</span></div><div class="mpcdf15-prog-t"><span class="mpcdf15-prog-f" style="width:0%"></span></div></div></div></div><p class="mpcdf15-cap">Figure 15: Share of registers mentioning each theme</p><p class="mpcdf15-src">Source: Mastt analysis of public project risk registers, 64 registers</p><p class="mpcdf15-src">Note: Themes were found by searching each register for set keywords, so a register counts if the words appear anywhere in it. In a hand check, 11 of 12 randomly chosen matches were real risk entries. The insolvency and climate counts were confirmed by reading each match.</p></div>
 <script>(function(){var root=document.getElementById('mastt-pcd-f15');if(!root||root.getAttribute('data-mpcdf15-on'))return;root.setAttribute('data-mpcdf15-on','1');
 var RM=!root.classList.contains('mpcdf15-js');
 var mxGen=0;
@@ -1501,27 +1367,60 @@ var mxOut=function(){if(!root.classList.contains('mpcdf15-in'))return;mxGen++;ro
 if(RM||!('IntersectionObserver' in window)){root.classList.add('mpcdf15-in');}else{root.querySelectorAll('[data-to]').forEach(mxZero);var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting&&e.intersectionRatio>=.15){mxIn();}else if(!e.isIntersecting){mxOut();}});},{threshold:[0,.15]});io.observe(root);}
 root.querySelectorAll('.mpcdf15-tabs').forEach(function(box){var tabs=[].slice.call(box.querySelectorAll(':scope>.mpcdf15-tablist>.mpcdf15-tab')),panels=[].slice.call(box.querySelectorAll(':scope>.mpcdf15-panel'));var pick=function(v,focus){tabs.forEach(function(t){var on=t.getAttribute('data-v')===v;t.setAttribute('aria-selected',on?'true':'false');t.tabIndex=on?0:-1;if(on&&focus)t.focus();});panels.forEach(function(p){p.hidden=p.getAttribute('data-v')!==v;});box.dispatchEvent(new CustomEvent('mpcdf15-tab',{bubbles:true}));};tabs.forEach(function(t,i){t.addEventListener('click',function(){pick(t.getAttribute('data-v'));});t.addEventListener('keydown',function(e){var k=e.key,j=k==='ArrowRight'?i+1:k==='ArrowLeft'?i-1:-1;if(j<0&&k!=='ArrowLeft')return;e.preventDefault();var n=tabs[(j+tabs.length)%tabs.length];pick(n.getAttribute('data-v'),true);});});});
 var mxTip=function(host){var tip=host.querySelector(':scope>.mpcdf15-tip');if(!tip){tip=document.createElement('div');tip.className='mpcdf15-tip';tip.setAttribute('aria-hidden','true');host.appendChild(tip);}return{show:function(x,y,h){tip.innerHTML=h;tip.style.left=x+'px';tip.style.top=y+'px';tip.classList.add('mpcdf15-on');},hide:function(){tip.classList.remove('mpcdf15-on');}};};
+})();</script>
+</div>
+```
+
+---
+
+## Step 42: Text block 20
+
+Paste into the post body (Rich Text).
+
+### Few registers mention contractor insolvency
+
+---
+
+## Step 43: Embed 23, Figure 16: Risk registers that mention contractor insolvency
+
+File: `43-mastt-pcd-f16-risk-registers-that-mention-contractor.html`. Add an HTML Embed here, directly under the text above, and paste this (23,171 characters).
+
+```html
+<div id="mastt-pcd-f16" class="mpcdf16" role="figure" aria-label="Waffle chart: Figure 16: Risk registers that mention contractor insolvency. Yes: Value 9 registers, Share 14%, Cells 14; No: Value 55 registers, Share 86%, Cells 86. Nine of 64 registers, about one in seven, mention it.">
+<script>(function(){var r=document.getElementById('mastt-pcd-f16');if(!r)return;try{if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;}catch(e){}r.className+=' mpcdf16-js';})();</script>
+<style>#mastt-pcd-f16{--mpcdf16-ink:#0C2029;--mpcdf16-ink-2:#45525B;--mpcdf16-muted:#94A2AB;--mpcdf16-axis-label:#48555E;--mpcdf16-faint:#94A2AB;--mpcdf16-line:#ECEFF1;--mpcdf16-line-h:#DDE6EE;--mpcdf16-wash:#F6F8F9;--mpcdf16-grid:#EAEEF1;--mpcdf16-axis:#CDD5DA;--mpcdf16-card:#FFFFFF;--mpcdf16-accent:#E9720E;--mpcdf16-accent-ink:#E9720E;--mpcdf16-blue:#0096DD;--mpcdf16-link:#1476BE;--mpcdf16-link-h:#0C4F86;--mpcdf16-orange:#E9720E;--mpcdf16-green:#5BB65E;--mpcdf16-green-d:#2E7D33;--mpcdf16-purple:#7E52C4;--mpcdf16-amber:#F9B140;--mpcdf16-cyan:#29BFD3;--mpcdf16-red:#E8544E;--mpcdf16-slate:#5F7D8B;--mpcdf16-gray:#C6CBD0;--mpcdf16-green-ink:#3F9E4C;--mpcdf16-red-ink:#D8433D;--mpcdf16-amber-ink:#C77F1A;--mpcdf16-gray-ink:#8A97A0;--mpcdf16-gray-val:#7C8B94;--series-1:#E9720E;--series-2:#0096DD;--series-3:#5BB65E;--series-4:#7E52C4;--series-5:#F9B140;--series-6:#29BFD3;--series-7:#E8544E;--foreground:var(--mpcdf16-ink);--text-secondary:var(--mpcdf16-ink-2);--text-muted:var(--mpcdf16-gray-ink);--border:var(--mpcdf16-line);--border-subtle:var(--mpcdf16-grid);--border-strong:var(--mpcdf16-axis);--surface:#FFFFFF;--surface-muted:var(--mpcdf16-wash);--background:#FFFFFF;--accent:var(--mpcdf16-accent);--accent-strong:var(--mpcdf16-accent-ink);--accent-subtle:rgba(233,114,14,.12);--success:var(--mpcdf16-green);--warning:var(--mpcdf16-amber);--danger:var(--mpcdf16-red);box-sizing:border-box;position:relative;display:block;width:100%;max-width:800px;margin:0 auto 24px;padding:0;color:var(--mpcdf16-ink);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;font-weight:400;letter-spacing:normal;text-align:left;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}#mastt-pcd-f16.mpcdf16-wide{max-width:900px}#mastt-pcd-f16 *,#mastt-pcd-f16 *::before,#mastt-pcd-f16 *::after{box-sizing:border-box}#mastt-pcd-f16 :where(div,p,span,ul,ol,li,a,b,strong,em,i,small,table,thead,tbody,tr,th,td,caption,button,details,summary,dl,dt,dd,blockquote,figure,figcaption,cite,sup,sub,code){font-family:inherit;font-size:inherit;line-height:inherit;font-weight:inherit;font-style:inherit;letter-spacing:inherit;text-transform:none;color:inherit;margin:0;padding:0;border:0;border-radius:0;background:none;text-align:inherit;text-decoration:none;max-width:none;width:auto;float:none;min-height:0;box-shadow:none;quotes:none}#mastt-pcd-f16 :where(h2,h3,h4){margin:0;padding:0;border:0;background:none;color:var(--mpcdf16-ink);text-transform:none;letter-spacing:normal;max-width:none}#mastt-pcd-f16 :where(b,strong){font-weight:700}#mastt-pcd-f16 :where(em,i){font-style:italic}#mastt-pcd-f16 :where(cite){font-style:normal}#mastt-pcd-f16 :where(a){color:var(--mpcdf16-link);text-decoration:none;align-self:flex-start}#mastt-pcd-f16 :where(a):hover{color:var(--mpcdf16-link-h)}#mastt-pcd-f16 :where(blockquote)::before,#mastt-pcd-f16 :where(blockquote)::after{content:none}#mastt-pcd-f16 svg{display:block;overflow:visible;max-width:none}#mastt-pcd-f16 :where(svg text){font-family:inherit}#mastt-pcd-f16 .mpcdf16-sr{position:absolute!important;left:0;top:0;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}#mastt-pcd-f16 table.mpcdf16-sr{display:block}#mastt-pcd-f16 .mpcdf16-card{background:var(--mpcdf16-card);border:1px solid var(--mpcdf16-line);border-radius:16px;padding:26px 30px 20px;display:flex;flex-direction:column}#mastt-pcd-f16 .mpcdf16-callout{background:var(--mpcdf16-wash);border-radius:10px;padding:14px 18px;font-size:17px;line-height:1.45;color:var(--mpcdf16-ink-2);font-weight:400}#mastt-pcd-f16 .mpcdf16-callout strong{color:var(--mpcdf16-accent);font-weight:700}#mastt-pcd-f16 .mpcdf16-body{min-width:0;display:flex;flex-direction:column;gap:14px;margin-top:24px}#mastt-pcd-f16 .mpcdf16-card>.mpcdf16-body:first-child{margin-top:4px}#mastt-pcd-f16 .mpcdf16-cap{margin-top:22px;text-align:center;font-size:13px;line-height:1.45;font-weight:600;letter-spacing:1.4px;text-transform:uppercase;color:var(--mpcdf16-ink)}#mastt-pcd-f16 .mpcdf16-src{margin-top:7px;text-align:center;font-size:11.5px;line-height:1.45;color:var(--mpcdf16-muted);font-weight:400}#mastt-pcd-f16 .mpcdf16-src+.mpcdf16-src{margin-top:3px}#mastt-pcd-f16 .mpcdf16-scroll{overflow-x:auto;min-width:0;max-width:100%}#mastt-pcd-f16 :where(.mpcdf16-body div,.mpcdf16-body table){min-width:0}#mastt-pcd-f16 .mpcdf16-body>*{max-width:100%}#mastt-pcd-f16 .mpcdf16-tip{position:absolute;z-index:5;pointer-events:none;background:var(--mpcdf16-ink);color:#fff;font-size:13px;line-height:1.35;padding:7px 10px;border-radius:8px;white-space:nowrap;opacity:0;transition:opacity .12s;transform:translate(-50%,calc(-100% - 10px))}#mastt-pcd-f16 .mpcdf16-tip b{color:#fff;font-weight:700}#mastt-pcd-f16 .mpcdf16-tip.mpcdf16-on{opacity:1}#mastt-pcd-f16 .mpcdf16-legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:14px;color:var(--mpcdf16-ink)}#mastt-pcd-f16 .mpcdf16-key{display:inline-flex;align-items:center;gap:7px}#mastt-pcd-f16 .mpcdf16-sw{width:12px;height:12px;border-radius:3px;flex:none;display:inline-block}#mastt-pcd-f16 .mpcdf16-tabs{display:flex;flex-direction:column;gap:16px}#mastt-pcd-f16 .mpcdf16-tablist{display:inline-flex;flex-wrap:wrap;gap:4px;padding:4px;background:var(--mpcdf16-wash);border-radius:10px;align-self:center;max-width:100%}#mastt-pcd-f16 .mpcdf16-tab{cursor:pointer;font-size:14px;font-weight:600;line-height:1.2;color:var(--mpcdf16-ink-2);padding:8px 14px;border-radius:7px;border:1px solid transparent;transition:color .18s ease,background-color .18s ease,border-color .18s ease}#mastt-pcd-f16 .mpcdf16-tab:hover{color:var(--mpcdf16-blue)}#mastt-pcd-f16 .mpcdf16-tab[aria-selected="true"]{background:#fff;color:var(--mpcdf16-ink);border-color:var(--mpcdf16-line-h)}#mastt-pcd-f16 .mpcdf16-tab:focus-visible{outline:2px solid var(--mpcdf16-blue);outline-offset:2px}#mastt-pcd-f16 .mpcdf16-panel[hidden]{display:none!important}#mastt-pcd-f16 .mpcdf16-note{font-size:13px;color:var(--mpcdf16-muted)}#mastt-pcd-f16 .mpcdf16-gap{height:24px}@media (max-width:560px){#mastt-pcd-f16 .mpcdf16-card{padding:18px 14px 14px;border-radius:12px}#mastt-pcd-f16 .mpcdf16-callout{font-size:14px;padding:11px 13px}#mastt-pcd-f16 .mpcdf16-cap{font-size:10.5px;letter-spacing:.8px;margin-top:16px}#mastt-pcd-f16 .mpcdf16-body{margin-top:18px}}#mastt-pcd-f16 .mpcdf16-k0{--s:var(--mpcdf16-accent);--t:var(--mpcdf16-accent)}#mastt-pcd-f16 .mpcdf16-k1{--s:var(--mpcdf16-blue);--t:var(--mpcdf16-blue)}#mastt-pcd-f16 .mpcdf16-k2{--s:var(--mpcdf16-green);--t:var(--mpcdf16-green-ink)}#mastt-pcd-f16 .mpcdf16-k3{--s:var(--mpcdf16-purple);--t:var(--mpcdf16-purple)}#mastt-pcd-f16 .mpcdf16-k4{--s:var(--mpcdf16-amber);--t:var(--mpcdf16-amber-ink)}#mastt-pcd-f16 .mpcdf16-k5{--s:var(--mpcdf16-cyan);--t:#17A2B4}#mastt-pcd-f16 .mpcdf16-k6{--s:var(--mpcdf16-red);--t:var(--mpcdf16-red-ink)}#mastt-pcd-f16 .mpcdf16-k7{--s:var(--mpcdf16-slate);--t:var(--mpcdf16-slate)}#mastt-pcd-f16 .mpcdf16-kg{--s:var(--mpcdf16-gray);--t:var(--mpcdf16-gray-val)}#mastt-pcd-f16 .mpcdf16-wf{position:relative;min-width:0}#mastt-pcd-f16 .mpcdf16-wf-body{display:flex;flex-wrap:wrap;align-items:center;gap:24px 34px;min-width:0}#mastt-pcd-f16 .mpcdf16-wf-board{flex:0 1 max(284px,calc((460px - 100%)*999));min-width:0}#mastt-pcd-f16 .mpcdf16-wf-nl .mpcdf16-wf-board{flex:1 1 100%}#mastt-pcd-f16 .mpcdf16-wf-grid{position:relative;width:100%;max-width:284px;margin:0 auto;display:grid;grid-auto-flow:column;grid-template-columns:repeat(var(--cols),minmax(0,1fr));grid-template-rows:repeat(var(--rows),auto);gap:3px;transform:scaleY(-1);outline:none;touch-action:pan-y;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent;cursor:default}#mastt-pcd-f16 .mpcdf16-wf-grid:focus-visible{outline:2px solid var(--mpcdf16-blue);outline-offset:4px;border-radius:4px}#mastt-pcd-f16 .mpcdf16-wf-grid .mpcdf16-g{display:contents;--cell:var(--s)}#mastt-pcd-f16 .mpcdf16-wf-grid i{display:block;aspect-ratio:1;border-radius:22%;background:var(--cell);transition:opacity .24s ease,filter .18s ease}#mastt-pcd-f16 .mpcdf16-wf-grid .mpcdf16-r i{border-radius:50%}#mastt-pcd-f16 .mpcdf16-wf-grid .mpcdf16-f i{position:relative}#mastt-pcd-f16 .mpcdf16-wf-grid .mpcdf16-f i::after{content:"";position:absolute;inset:3px;border:1.5px solid #fff;border-radius:inherit}#mastt-pcd-f16 .mpcdf16-wf-grid.mpcdf16-act .mpcdf16-g:not(.mpcdf16-on) i{opacity:.4}#mastt-pcd-f16 .mpcdf16-wf-grid.mpcdf16-act .mpcdf16-g.mpcdf16-on i{filter:brightness(1.07) saturate(1.05)}#mastt-pcd-f16 .mpcdf16-wf-grid i.mpcdf16-cur{position:relative;outline:2px solid var(--mpcdf16-ink);outline-offset:1px}#mastt-pcd-f16 .mpcdf16-wf-msg{display:grid;min-height:160px;place-items:center;font-size:14px;color:var(--mpcdf16-muted)}#mastt-pcd-f16 .mpcdf16-wf-legend{flex:1 1 140px;min-width:0;max-width:max(340px,calc((100% - 460px)*999));margin:0 auto;padding:0;list-style:none;display:grid;grid-template-columns:16px max-content minmax(0,1fr);column-gap:12px;row-gap:6px}#mastt-pcd-f16 .mpcdf16-wf-legend li{grid-column:1/-1;display:grid;grid-template-columns:16px 4em minmax(0,1fr);grid-template-columns:subgrid;margin:0;padding:0;list-style:none}#mastt-pcd-f16 .mpcdf16-wf-legend li::before,#mastt-pcd-f16 .mpcdf16-wf-legend li::marker{content:none}#mastt-pcd-f16 .mpcdf16-wf-item{--cell:var(--s);grid-column:1/-1;display:grid;grid-template-columns:16px 4em minmax(0,1fr);grid-template-columns:subgrid;align-items:center;width:100%;min-height:40px;color:var(--mpcdf16-ink);cursor:pointer;font-size:16px;line-height:1.3;text-align:left;-webkit-tap-highlight-color:transparent;transition:opacity .2s ease}#mastt-pcd-f16 .mpcdf16-wf-item:focus-visible{outline:2px solid var(--mpcdf16-blue);outline-offset:3px;border-radius:6px}#mastt-pcd-f16 .mpcdf16-wf-item.mpcdf16-dim{opacity:.55}#mastt-pcd-f16 .mpcdf16-wf-sw{position:relative;display:block;width:16px;height:16px;border-radius:4px;border:2px solid var(--cell);background:var(--cell)}#mastt-pcd-f16 .mpcdf16-wf-sw.mpcdf16-r{border-radius:50%}#mastt-pcd-f16 .mpcdf16-wf-sw.mpcdf16-f::after{content:"";position:absolute;inset:1px;border:1.5px solid #fff;border-radius:2px}#mastt-pcd-f16 .mpcdf16-wf-is{font-size:18px;font-weight:700;line-height:1;color:var(--t);font-variant-numeric:tabular-nums;transform-origin:left center;transition:transform .18s ease}#mastt-pcd-f16 .mpcdf16-wf-item.mpcdf16-lead .mpcdf16-wf-is{font-size:22px}#mastt-pcd-f16 .mpcdf16-wf-item.mpcdf16-on .mpcdf16-wf-is{transform:scale(1.06)}#mastt-pcd-f16 .mpcdf16-wf-il{min-width:0;overflow-wrap:anywhere}#mastt-pcd-f16 .mpcdf16-wf-tc{display:block;width:max-content;max-width:min(240px,100%);white-space:normal;line-height:1.3}#mastt-pcd-f16 .mpcdf16-wf-tr{display:flex;align-items:center;gap:8px}#mastt-pcd-f16 .mpcdf16-wf-ts{position:relative;flex:none;width:10px;height:10px;border-radius:3px;background:var(--cell)}#mastt-pcd-f16 .mpcdf16-wf-ts.mpcdf16-r{border-radius:50%}#mastt-pcd-f16 .mpcdf16-wf-ts.mpcdf16-f::after{content:"";position:absolute;inset:2px;border:1px solid var(--mpcdf16-ink);border-radius:1px}#mastt-pcd-f16 .mpcdf16-wf-tv{margin-left:auto;padding-left:8px;font-variant-numeric:tabular-nums}#mastt-pcd-f16 .mpcdf16-wf-tm{display:block;margin-left:18px;font-size:12px;opacity:.78;font-variant-numeric:tabular-nums}@keyframes mpcdf16-wf-in{from{opacity:0;transform:scale(.4)}}#mastt-pcd-f16.mpcdf16-js:not(.mpcdf16-in) .mpcdf16-wf-grid i{opacity:0}#mastt-pcd-f16.mpcdf16-js.mpcdf16-in .mpcdf16-wf-grid i{animation:mpcdf16-wf-in .5s cubic-bezier(.16,1,.3,1) var(--d,0s) backwards}#mastt-pcd-f16.mpcdf16-js .mpcdf16-wf-legend li{opacity:0;transform:translateY(6px)}#mastt-pcd-f16.mpcdf16-js.mpcdf16-in .mpcdf16-wf-legend li{opacity:1;transform:none;transition:opacity .5s ease calc(.15s + var(--i,0)*.08s),transform .5s ease calc(.15s + var(--i,0)*.08s)}@media (max-width:620px){#mastt-pcd-f16 .mpcdf16-wf-legend{column-gap:10px}#mastt-pcd-f16 .mpcdf16-wf-item{font-size:14px}#mastt-pcd-f16 .mpcdf16-wf-is{font-size:16px}#mastt-pcd-f16 .mpcdf16-wf-item.mpcdf16-lead .mpcdf16-wf-is{font-size:20px}}@media (prefers-reduced-motion:reduce){#mastt-pcd-f16 .mpcdf16-wf-grid i,#mastt-pcd-f16 .mpcdf16-wf-item,#mastt-pcd-f16 .mpcdf16-wf-is{transition:none}}</style>
+<div class="mpcdf16-card"><p class="mpcdf16-callout"><strong>Nine of 64 registers</strong>, about one in seven, mention it.</p><div class="mpcdf16-body"><div class="mpcdf16-wf" role="group" aria-label="Public risk registers by mention of contractor insolvency" data-w='{"r":10,"c":10,"p":-1,"n":[14,86],"L":["Yes","No"],"S":["14%","86%"],"M":["9 registers","55 registers"],"C":["var(--mpcdf16-accent)","var(--mpcdf16-blue)"],"H":["",""]}'><div class="mpcdf16-wf-body"><div class="mpcdf16-wf-board"><div class="mpcdf16-wf-grid" style="--cols:10;--rows:10" tabindex="0" role="group" aria-roledescription="waffle chart" aria-label="Public risk registers by mention of contractor insolvency. 100 cells. Use arrow keys to move between cells, Page Up and Page Down to jump between categories."><b class="mpcdf16-g mpcdf16-k0"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></b><b class="mpcdf16-g mpcdf16-k1"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></b></div></div><ul class="mpcdf16-wf-legend" aria-label="Categories"><li style="--i:0"><button type="button" class="mpcdf16-wf-item mpcdf16-k0 mpcdf16-lead" aria-pressed="false"><span class="mpcdf16-wf-sw" aria-hidden="true"></span><span class="mpcdf16-wf-is" data-to="14" data-suf="%">14%</span><span class="mpcdf16-wf-il">Yes</span></button></li><li style="--i:1"><button type="button" class="mpcdf16-wf-item mpcdf16-k1" aria-pressed="false"><span class="mpcdf16-wf-sw" aria-hidden="true"></span><span class="mpcdf16-wf-is" data-to="86" data-suf="%">86%</span><span class="mpcdf16-wf-il">No</span></button></li></ul></div><p class="mpcdf16-sr mpcdf16-wf-live" aria-live="polite" aria-atomic="true"></p><table class="mpcdf16-sr"><caption>Public risk registers by mention of contractor insolvency</caption><thead><tr><th scope="col">Category</th><th scope="col">Value</th><th scope="col">Share</th><th scope="col">Cells</th></tr></thead><tbody><tr><th scope="row">Yes</th><td>9 registers</td><td>14%</td><td>14</td></tr><tr><th scope="row">No</th><td>55 registers</td><td>86%</td><td>86</td></tr></tbody></table></div></div><p class="mpcdf16-cap">Figure 16: Risk registers that mention contractor insolvency</p><p class="mpcdf16-src">Source: Mastt analysis of public project risk registers, 53 Australian and 11 US, latest version of each</p></div>
+<script>(function(){var root=document.getElementById('mastt-pcd-f16');if(!root||root.getAttribute('data-mpcdf16-on'))return;root.setAttribute('data-mpcdf16-on','1');
+var RM=!root.classList.contains('mpcdf16-js');
+var mxGen=0;
+var mxZero=function(el){if(!el.hasAttribute('data-final'))el.setAttribute('data-final',el.textContent);var dec=+(el.getAttribute('data-dec')||0);el.textContent=(el.getAttribute('data-pre')||'')+(0).toFixed(dec)+(el.getAttribute('data-suf')||'');};
+var mxCount=function(el,g){var to=parseFloat(el.getAttribute('data-to'));if(isNaN(to))return;var fin=el.getAttribute('data-final')||el.textContent,dec=+(el.getAttribute('data-dec')||0),pre=el.getAttribute('data-pre')||'',suf=el.getAttribute('data-suf')||'',f=new Intl.NumberFormat('en-US',{minimumFractionDigits:dec,maximumFractionDigits:dec}),t0=null,d=950;el.setAttribute('data-final',fin);var step=function(t){if(g!==mxGen)return;if(t0===null)t0=t;var p=Math.min(1,(t-t0)/d),e=1-Math.pow(1-p,3);el.textContent=pre+f.format(to*e)+suf;if(p<1)requestAnimationFrame(step);else el.textContent=fin;};requestAnimationFrame(step);};
+var mxIn=function(){if(root.classList.contains('mpcdf16-in'))return;mxGen++;var g=mxGen;root.classList.add('mpcdf16-in');root.querySelectorAll('[data-to]').forEach(function(el){mxCount(el,g);});};
+var mxOut=function(){if(!root.classList.contains('mpcdf16-in'))return;mxGen++;root.classList.remove('mpcdf16-in');root.querySelectorAll('[data-to]').forEach(mxZero);};
+if(RM||!('IntersectionObserver' in window)){root.classList.add('mpcdf16-in');}else{root.querySelectorAll('[data-to]').forEach(mxZero);var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting&&e.intersectionRatio>=.15){mxIn();}else if(!e.isIntersecting){mxOut();}});},{threshold:[0,.15]});io.observe(root);}
+root.querySelectorAll('.mpcdf16-tabs').forEach(function(box){var tabs=[].slice.call(box.querySelectorAll(':scope>.mpcdf16-tablist>.mpcdf16-tab')),panels=[].slice.call(box.querySelectorAll(':scope>.mpcdf16-panel'));var pick=function(v,focus){tabs.forEach(function(t){var on=t.getAttribute('data-v')===v;t.setAttribute('aria-selected',on?'true':'false');t.tabIndex=on?0:-1;if(on&&focus)t.focus();});panels.forEach(function(p){p.hidden=p.getAttribute('data-v')!==v;});box.dispatchEvent(new CustomEvent('mpcdf16-tab',{bubbles:true}));};tabs.forEach(function(t,i){t.addEventListener('click',function(){pick(t.getAttribute('data-v'));});t.addEventListener('keydown',function(e){var k=e.key,j=k==='ArrowRight'?i+1:k==='ArrowLeft'?i-1:-1;if(j<0&&k!=='ArrowLeft')return;e.preventDefault();var n=tabs[(j+tabs.length)%tabs.length];pick(n.getAttribute('data-v'),true);});});});
+var mxTip=function(host){var tip=host.querySelector(':scope>.mpcdf16-tip');if(!tip){tip=document.createElement('div');tip.className='mpcdf16-tip';tip.setAttribute('aria-hidden','true');host.appendChild(tip);}return{show:function(x,y,h){tip.innerHTML=h;tip.style.left=x+'px';tip.style.top=y+'px';tip.classList.add('mpcdf16-on');},hide:function(){tip.classList.remove('mpcdf16-on');}};};
 try{
 (function(){
 var clamp=function(v,lo,hi){return Math.min(hi,Math.max(lo,v));};
 var vfocus=function(el){try{return el.matches(':focus-visible');}catch(e){return true;}};
 var GAP=3;
-root.querySelectorAll('.mpcdf15-wf').forEach(function(box){
-var W=JSON.parse(box.getAttribute('data-w')),R=W.r,C=W.c,N=R*C,grid=box.querySelector('.mpcdf15-wf-grid');if(!grid)return;
-var groups=[].slice.call(grid.querySelectorAll('.mpcdf15-g')),cells=[].slice.call(grid.querySelectorAll('i')),items=[].slice.call(box.querySelectorAll('.mpcdf15-wf-item')),live=box.querySelector('.mpcdf15-wf-live'),tip=mxTip(box),tipEl=box.querySelector(':scope>.mpcdf15-tip');
+root.querySelectorAll('.mpcdf16-wf').forEach(function(box){
+var W=JSON.parse(box.getAttribute('data-w')),R=W.r,C=W.c,N=R*C,grid=box.querySelector('.mpcdf16-wf-grid');if(!grid)return;
+var groups=[].slice.call(grid.querySelectorAll('.mpcdf16-g')),cells=[].slice.call(grid.querySelectorAll('i')),items=[].slice.call(box.querySelectorAll('.mpcdf16-wf-item')),live=box.querySelector('.mpcdf16-wf-live'),tip=mxTip(box),tipEl=box.querySelector(':scope>.mpcdf16-tip');
 var owner=[],blocks=[],at=0;W.n.forEach(function(k,i){if(k>0)blocks.push({start:at,size:k});for(var j=0;j<k;j++)owner.push(i);at+=k;});
 var filled=owner.length,ptr=-1,pre=-1,pin=W.p,last=-1;
 if(!RM){cells.forEach(function(el,s){el.style.setProperty('--d',(s/N*.32).toFixed(3)+'s');});}
 var esc=function(t){return t.replace(/&/g,'&amp;').replace(/</g,'&lt;');};
 var show=function(){var i=owner[ptr],cr=cells[ptr].getBoundingClientRect(),hb=box.getBoundingClientRect();
-tip.show(0,0,'<span class="mpcdf15-wf-tc"><span class="mpcdf15-wf-tr"><span class="mpcdf15-wf-ts '+W.H[i]+'" style="--cell:'+W.C[i]+'"></span><b>'+esc(W.L[i])+'</b><span class="mpcdf15-wf-tv">'+W.S[i]+'</span></span><span class="mpcdf15-wf-tm">'+esc(W.M[i])+'</span></span>');
+tip.show(0,0,'<span class="mpcdf16-wf-tc"><span class="mpcdf16-wf-tr"><span class="mpcdf16-wf-ts '+W.H[i]+'" style="--cell:'+W.C[i]+'"></span><b>'+esc(W.L[i])+'</b><span class="mpcdf16-wf-tv">'+W.S[i]+'</span></span><span class="mpcdf16-wf-tm">'+esc(W.M[i])+'</span></span>');
 var tw=tipEl.offsetWidth,th=tipEl.offsetHeight,cx=cr.left-hb.left+cr.width/2,cy=cr.top-hb.top;
 tipEl.style.left=clamp(cx,tw/2,Math.max(tw/2,hb.width-tw/2))+'px';tipEl.style.top=(cy-th-10<0?cr.bottom-hb.top+th+20:cy)+'px';};
 var update=function(){var k=ptr>=0?owner[ptr]:pre>=0?pre:pin;
-grid.classList.toggle('mpcdf15-act',k>=0);
-groups.forEach(function(g,i){g.classList.toggle('mpcdf15-on',i===k);});
-items.forEach(function(b,i){b.classList.toggle('mpcdf15-on',i===k);b.classList.toggle('mpcdf15-dim',k>=0&&i!==k);b.setAttribute('aria-pressed',String(pin===i));});
-if(last>=0&&cells[last])cells[last].classList.remove('mpcdf15-cur');if(ptr>=0)cells[ptr].classList.add('mpcdf15-cur');last=ptr;
+grid.classList.toggle('mpcdf16-act',k>=0);
+groups.forEach(function(g,i){g.classList.toggle('mpcdf16-on',i===k);});
+items.forEach(function(b,i){b.classList.toggle('mpcdf16-on',i===k);b.classList.toggle('mpcdf16-dim',k>=0&&i!==k);b.setAttribute('aria-pressed',String(pin===i));});
+if(last>=0&&cells[last])cells[last].classList.remove('mpcdf16-cur');if(ptr>=0)cells[ptr].classList.add('mpcdf16-cur');last=ptr;
 if(ptr>=0){show();live.textContent=W.L[owner[ptr]]+', '+W.S[owner[ptr]]+', '+W.M[owner[ptr]];}else tip.hide();};
 var slotAt=function(e){var b=grid.getBoundingClientRect(),cell=(b.width-GAP*(C-1))/C;if(!b.width)return-1;var col=clamp(Math.floor((e.clientX-b.left)/(cell+GAP)),0,C-1),row=clamp(Math.floor((e.clientY-b.top)/(cell+GAP)),0,R-1);return col*R+(R-1-row);};
 var set=function(s){ptr=s>=0&&s<filled?s:-1;update();};
@@ -1536,7 +1435,7 @@ grid.addEventListener('keydown',function(e){if(e.key==='Escape'&&ptr>=0){e.preve
 var a=ptr>=0?ptr:0,col=Math.floor(a/R),row=a%R,b=0;blocks.forEach(function(x,i){if(a>=x.start&&a<x.start+x.size)b=i;});
 var mv={ArrowUp:function(){return col*R+Math.min(R-1,row+1);},ArrowDown:function(){return col*R+Math.max(0,row-1);},ArrowRight:function(){return Math.min(C-1,col+1)*R+row;},ArrowLeft:function(){return Math.max(0,col-1)*R+row;},PageDown:function(){return blocks[Math.min(blocks.length-1,b+1)].start;},PageUp:function(){return a>blocks[b].start?blocks[b].start:blocks[Math.max(0,b-1)].start;},Home:function(){return 0;},End:function(){return filled-1;}}[e.key];
 if(!mv)return;e.preventDefault();set(clamp(ptr>=0?mv():0,0,Math.max(0,filled-1)));});
-var ul=box.querySelector('.mpcdf15-wf-legend');
+var ul=box.querySelector('.mpcdf16-wf-legend');
 if(ul){ul.addEventListener('pointerleave',function(){if(pre>=0){pre=-1;update();}});
 items.forEach(function(b,i){b.addEventListener('click',function(){pin=pin===i?-1:i;update();});
 b.addEventListener('pointerenter',function(e){if(e.pointerType==='mouse'){pre=i;update();}});
@@ -1551,42 +1450,16 @@ b.addEventListener('blur',function(){pre=-1;update();});});}
 
 ---
 
-## Step 42: Embed 23, Figure 16: Share of registers mentioning each theme
-
-File: `42-mastt-pcd-f16-share-of-registers-mentioning-each.html`. Add an HTML Embed here, directly under the text above, and paste this (19,799 characters).
-
-```html
-<div id="mastt-pcd-f16" class="mpcdf16" role="img" aria-label="Bar chart: Figure 16: Share of registers mentioning each theme. Community and stakeholders (56 of 64). Contractor insolvency, climate change and cyber risk sit at the bottom of the list.">
-<script>(function(){var r=document.getElementById('mastt-pcd-f16');if(!r)return;try{if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;}catch(e){}r.className+=' mpcdf16-js';})();</script>
-<style>#mastt-pcd-f16{--mpcdf16-ink:#0C2029;--mpcdf16-ink-2:#45525B;--mpcdf16-muted:#94A2AB;--mpcdf16-axis-label:#48555E;--mpcdf16-faint:#94A2AB;--mpcdf16-line:#ECEFF1;--mpcdf16-line-h:#DDE6EE;--mpcdf16-wash:#F6F8F9;--mpcdf16-grid:#EAEEF1;--mpcdf16-axis:#CDD5DA;--mpcdf16-card:#FFFFFF;--mpcdf16-accent:#E9720E;--mpcdf16-accent-ink:#E9720E;--mpcdf16-blue:#0096DD;--mpcdf16-link:#1476BE;--mpcdf16-link-h:#0C4F86;--mpcdf16-orange:#E9720E;--mpcdf16-green:#5BB65E;--mpcdf16-green-d:#2E7D33;--mpcdf16-purple:#7E52C4;--mpcdf16-amber:#F9B140;--mpcdf16-cyan:#29BFD3;--mpcdf16-red:#E8544E;--mpcdf16-slate:#5F7D8B;--mpcdf16-gray:#C6CBD0;--mpcdf16-green-ink:#3F9E4C;--mpcdf16-red-ink:#D8433D;--mpcdf16-amber-ink:#C77F1A;--mpcdf16-gray-ink:#8A97A0;--mpcdf16-gray-val:#7C8B94;--series-1:#E9720E;--series-2:#0096DD;--series-3:#5BB65E;--series-4:#7E52C4;--series-5:#F9B140;--series-6:#29BFD3;--series-7:#E8544E;--foreground:var(--mpcdf16-ink);--text-secondary:var(--mpcdf16-ink-2);--text-muted:var(--mpcdf16-gray-ink);--border:var(--mpcdf16-line);--border-subtle:var(--mpcdf16-grid);--border-strong:var(--mpcdf16-axis);--surface:#FFFFFF;--surface-muted:var(--mpcdf16-wash);--background:#FFFFFF;--accent:var(--mpcdf16-accent);--accent-strong:var(--mpcdf16-accent-ink);--accent-subtle:rgba(233,114,14,.12);--success:var(--mpcdf16-green);--warning:var(--mpcdf16-amber);--danger:var(--mpcdf16-red);box-sizing:border-box;position:relative;display:block;width:100%;max-width:800px;margin:0 auto 24px;padding:0;color:var(--mpcdf16-ink);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;font-weight:400;letter-spacing:normal;text-align:left;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}#mastt-pcd-f16.mpcdf16-wide{max-width:900px}#mastt-pcd-f16 *,#mastt-pcd-f16 *::before,#mastt-pcd-f16 *::after{box-sizing:border-box}#mastt-pcd-f16 :where(div,p,span,ul,ol,li,a,b,strong,em,i,small,table,thead,tbody,tr,th,td,caption,button,details,summary,dl,dt,dd,blockquote,figure,figcaption,cite,sup,sub,code){font-family:inherit;font-size:inherit;line-height:inherit;font-weight:inherit;font-style:inherit;letter-spacing:inherit;text-transform:none;color:inherit;margin:0;padding:0;border:0;border-radius:0;background:none;text-align:inherit;text-decoration:none;max-width:none;width:auto;float:none;min-height:0;box-shadow:none;quotes:none}#mastt-pcd-f16 :where(h2,h3,h4){margin:0;padding:0;border:0;background:none;color:var(--mpcdf16-ink);text-transform:none;letter-spacing:normal;max-width:none}#mastt-pcd-f16 :where(b,strong){font-weight:700}#mastt-pcd-f16 :where(em,i){font-style:italic}#mastt-pcd-f16 :where(cite){font-style:normal}#mastt-pcd-f16 :where(a){color:var(--mpcdf16-link);text-decoration:none;align-self:flex-start}#mastt-pcd-f16 :where(a):hover{color:var(--mpcdf16-link-h)}#mastt-pcd-f16 :where(blockquote)::before,#mastt-pcd-f16 :where(blockquote)::after{content:none}#mastt-pcd-f16 svg{display:block;overflow:visible;max-width:none}#mastt-pcd-f16 :where(svg text){font-family:inherit}#mastt-pcd-f16 .mpcdf16-sr{position:absolute!important;left:0;top:0;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}#mastt-pcd-f16 table.mpcdf16-sr{display:block}#mastt-pcd-f16 .mpcdf16-card{background:var(--mpcdf16-card);border:1px solid var(--mpcdf16-line);border-radius:16px;padding:26px 30px 20px;display:flex;flex-direction:column}#mastt-pcd-f16 .mpcdf16-callout{background:var(--mpcdf16-wash);border-radius:10px;padding:14px 18px;font-size:17px;line-height:1.45;color:var(--mpcdf16-ink-2);font-weight:400}#mastt-pcd-f16 .mpcdf16-callout strong{color:var(--mpcdf16-accent);font-weight:700}#mastt-pcd-f16 .mpcdf16-body{min-width:0;display:flex;flex-direction:column;gap:14px;margin-top:24px}#mastt-pcd-f16 .mpcdf16-card>.mpcdf16-body:first-child{margin-top:4px}#mastt-pcd-f16 .mpcdf16-cap{margin-top:22px;text-align:center;font-size:13px;line-height:1.45;font-weight:600;letter-spacing:1.4px;text-transform:uppercase;color:var(--mpcdf16-ink)}#mastt-pcd-f16 .mpcdf16-src{margin-top:7px;text-align:center;font-size:11.5px;line-height:1.45;color:var(--mpcdf16-muted);font-weight:400}#mastt-pcd-f16 .mpcdf16-src+.mpcdf16-src{margin-top:3px}#mastt-pcd-f16 .mpcdf16-scroll{overflow-x:auto;min-width:0;max-width:100%}#mastt-pcd-f16 :where(.mpcdf16-body div,.mpcdf16-body table){min-width:0}#mastt-pcd-f16 .mpcdf16-body>*{max-width:100%}#mastt-pcd-f16 .mpcdf16-tip{position:absolute;z-index:5;pointer-events:none;background:var(--mpcdf16-ink);color:#fff;font-size:13px;line-height:1.35;padding:7px 10px;border-radius:8px;white-space:nowrap;opacity:0;transition:opacity .12s;transform:translate(-50%,calc(-100% - 10px))}#mastt-pcd-f16 .mpcdf16-tip b{color:#fff;font-weight:700}#mastt-pcd-f16 .mpcdf16-tip.mpcdf16-on{opacity:1}#mastt-pcd-f16 .mpcdf16-legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:14px;color:var(--mpcdf16-ink)}#mastt-pcd-f16 .mpcdf16-key{display:inline-flex;align-items:center;gap:7px}#mastt-pcd-f16 .mpcdf16-sw{width:12px;height:12px;border-radius:3px;flex:none;display:inline-block}#mastt-pcd-f16 .mpcdf16-tabs{display:flex;flex-direction:column;gap:16px}#mastt-pcd-f16 .mpcdf16-tablist{display:inline-flex;flex-wrap:wrap;gap:4px;padding:4px;background:var(--mpcdf16-wash);border-radius:10px;align-self:center;max-width:100%}#mastt-pcd-f16 .mpcdf16-tab{cursor:pointer;font-size:14px;font-weight:600;line-height:1.2;color:var(--mpcdf16-ink-2);padding:8px 14px;border-radius:7px;border:1px solid transparent;transition:color .18s ease,background-color .18s ease,border-color .18s ease}#mastt-pcd-f16 .mpcdf16-tab:hover{color:var(--mpcdf16-blue)}#mastt-pcd-f16 .mpcdf16-tab[aria-selected="true"]{background:#fff;color:var(--mpcdf16-ink);border-color:var(--mpcdf16-line-h)}#mastt-pcd-f16 .mpcdf16-tab:focus-visible{outline:2px solid var(--mpcdf16-blue);outline-offset:2px}#mastt-pcd-f16 .mpcdf16-panel[hidden]{display:none!important}#mastt-pcd-f16 .mpcdf16-note{font-size:13px;color:var(--mpcdf16-muted)}#mastt-pcd-f16 .mpcdf16-gap{height:24px}@media (max-width:560px){#mastt-pcd-f16 .mpcdf16-card{padding:18px 14px 14px;border-radius:12px}#mastt-pcd-f16 .mpcdf16-callout{font-size:14px;padding:11px 13px}#mastt-pcd-f16 .mpcdf16-cap{font-size:10.5px;letter-spacing:.8px;margin-top:16px}#mastt-pcd-f16 .mpcdf16-body{margin-top:18px}}#mastt-pcd-f16 .mpcdf16-prog{display:flex;flex-direction:column;gap:7px}#mastt-pcd-f16 .mpcdf16-prog-m{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:15px;line-height:1.35}#mastt-pcd-f16 .mpcdf16-prog-l{color:var(--mpcdf16-axis-label)}#mastt-pcd-f16 .mpcdf16-prog-v{color:var(--mpcdf16-ink);font-size:17px;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}#mastt-pcd-f16 .mpcdf16-prog-t{height:10px;border-radius:999px;background:var(--mpcdf16-grid);overflow:hidden}#mastt-pcd-f16 .mpcdf16-prog-f{display:block;height:100%;border-radius:999px;background:var(--mpcdf16-blue);transform-origin:left;transition:filter .18s ease}#mastt-pcd-f16 .mpcdf16-prog:hover .mpcdf16-prog-f{filter:brightness(1.07) saturate(1.05)}#mastt-pcd-f16 .mpcdf16-prog:last-child .mpcdf16-prog-f{background:var(--mpcdf16-accent)}#mastt-pcd-f16.mpcdf16-js .mpcdf16-prog-f{transform:scaleX(0)}#mastt-pcd-f16.mpcdf16-js.mpcdf16-in .mpcdf16-prog-f{transform:scaleX(1);transition:transform .95s cubic-bezier(.22,.61,.36,1) var(--d,0s),filter .18s ease}@media (max-width:560px){#mastt-pcd-f16 .mpcdf16-prog-m{font-size:13.5px}#mastt-pcd-f16 .mpcdf16-prog-v{font-size:15px}}</style>
-<div class="mpcdf16-card"><p class="mpcdf16-callout"><strong>Contractor insolvency</strong>, climate change and cyber risk sit at the bottom of the list.</p><div class="mpcdf16-body"><div style="display:flex;flex-direction:column;gap:18px"><div class="mpcdf16-prog" role="progressbar" aria-label="Community and stakeholders (56 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="87.5" aria-valuetext="88%" style="--d:0.12s"><div class="mpcdf16-prog-m"><span class="mpcdf16-prog-l">Community and stakeholders (56 of 64)</span><span class="mpcdf16-prog-v" data-to="88" data-suf="%">88%</span></div><div class="mpcdf16-prog-t"><span class="mpcdf16-prog-f" style="width:88%"></span></div></div><div class="mpcdf16-prog" role="progressbar" aria-label="Approvals and permits (53 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="82.8" aria-valuetext="83%" style="--d:0.18s"><div class="mpcdf16-prog-m"><span class="mpcdf16-prog-l">Approvals and permits (53 of 64)</span><span class="mpcdf16-prog-v" data-to="83" data-suf="%">83%</span></div><div class="mpcdf16-prog-t"><span class="mpcdf16-prog-f" style="width:83%"></span></div></div><div class="mpcdf16-prog" role="progressbar" aria-label="Weather and flooding (48 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75" aria-valuetext="75%" style="--d:0.24s"><div class="mpcdf16-prog-m"><span class="mpcdf16-prog-l">Weather and flooding (48 of 64)</span><span class="mpcdf16-prog-v" data-to="75" data-suf="%">75%</span></div><div class="mpcdf16-prog-t"><span class="mpcdf16-prog-f" style="width:75%"></span></div></div><div class="mpcdf16-prog" role="progressbar" aria-label="Heritage and culture (46 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="71.9" aria-valuetext="72%" style="--d:0.30s"><div class="mpcdf16-prog-m"><span class="mpcdf16-prog-l">Heritage and culture (46 of 64)</span><span class="mpcdf16-prog-v" data-to="72" data-suf="%">72%</span></div><div class="mpcdf16-prog-t"><span class="mpcdf16-prog-f" style="width:72%"></span></div></div><div class="mpcdf16-prog" role="progressbar" aria-label="Safety (43 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="67.2" aria-valuetext="67%" style="--d:0.36s"><div class="mpcdf16-prog-m"><span class="mpcdf16-prog-l">Safety (43 of 64)</span><span class="mpcdf16-prog-v" data-to="67" data-suf="%">67%</span></div><div class="mpcdf16-prog-t"><span class="mpcdf16-prog-f" style="width:67%"></span></div></div><div class="mpcdf16-prog" role="progressbar" aria-label="Cost escalation (35 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="54.7" aria-valuetext="55%" style="--d:0.42s"><div class="mpcdf16-prog-m"><span class="mpcdf16-prog-l">Cost escalation (35 of 64)</span><span class="mpcdf16-prog-v" data-to="55" data-suf="%">55%</span></div><div class="mpcdf16-prog-t"><span class="mpcdf16-prog-f" style="width:55%"></span></div></div><div class="mpcdf16-prog" role="progressbar" aria-label="Contamination (33 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="51.6" aria-valuetext="52%" style="--d:0.00s"><div class="mpcdf16-prog-m"><span class="mpcdf16-prog-l">Contamination (33 of 64)</span><span class="mpcdf16-prog-v" data-to="52" data-suf="%">52%</span></div><div class="mpcdf16-prog-t"><span class="mpcdf16-prog-f" style="width:52%"></span></div></div><div class="mpcdf16-prog" role="progressbar" aria-label="Funding (32 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-valuetext="50%" style="--d:0.06s"><div class="mpcdf16-prog-m"><span class="mpcdf16-prog-l">Funding (32 of 64)</span><span class="mpcdf16-prog-v" data-to="50" data-suf="%">50%</span></div><div class="mpcdf16-prog-t"><span class="mpcdf16-prog-f" style="width:50%"></span></div></div><div class="mpcdf16-prog" role="progressbar" aria-label="Ground conditions (32 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-valuetext="50%" style="--d:0.12s"><div class="mpcdf16-prog-m"><span class="mpcdf16-prog-l">Ground conditions (32 of 64)</span><span class="mpcdf16-prog-v" data-to="50" data-suf="%">50%</span></div><div class="mpcdf16-prog-t"><span class="mpcdf16-prog-f" style="width:50%"></span></div></div><div class="mpcdf16-prog" role="progressbar" aria-label="Flora, fauna and water quality (28 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="43.8" aria-valuetext="44%" style="--d:0.18s"><div class="mpcdf16-prog-m"><span class="mpcdf16-prog-l">Flora, fauna and water quality (28 of 64)</span><span class="mpcdf16-prog-v" data-to="44" data-suf="%">44%</span></div><div class="mpcdf16-prog-t"><span class="mpcdf16-prog-f" style="width:44%"></span></div></div><div class="mpcdf16-prog" role="progressbar" aria-label="Traffic (27 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="42.2" aria-valuetext="42%" style="--d:0.24s"><div class="mpcdf16-prog-m"><span class="mpcdf16-prog-l">Traffic (27 of 64)</span><span class="mpcdf16-prog-v" data-to="42" data-suf="%">42%</span></div><div class="mpcdf16-prog-t"><span class="mpcdf16-prog-f" style="width:42%"></span></div></div><div class="mpcdf16-prog" role="progressbar" aria-label="Utilities (25 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="39.1" aria-valuetext="39%" style="--d:0.30s"><div class="mpcdf16-prog-m"><span class="mpcdf16-prog-l">Utilities (25 of 64)</span><span class="mpcdf16-prog-v" data-to="39" data-suf="%">39%</span></div><div class="mpcdf16-prog-t"><span class="mpcdf16-prog-f" style="width:39%"></span></div></div><div class="mpcdf16-prog" role="progressbar" aria-label="Scope and design change (25 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="39.1" aria-valuetext="39%" style="--d:0.36s"><div class="mpcdf16-prog-m"><span class="mpcdf16-prog-l">Scope and design change (25 of 64)</span><span class="mpcdf16-prog-v" data-to="39" data-suf="%">39%</span></div><div class="mpcdf16-prog-t"><span class="mpcdf16-prog-f" style="width:39%"></span></div></div><div class="mpcdf16-prog" role="progressbar" aria-label="Supply chain and labour (23 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="35.9" aria-valuetext="36%" style="--d:0.42s"><div class="mpcdf16-prog-m"><span class="mpcdf16-prog-l">Supply chain and labour (23 of 64)</span><span class="mpcdf16-prog-v" data-to="36" data-suf="%">36%</span></div><div class="mpcdf16-prog-t"><span class="mpcdf16-prog-f" style="width:36%"></span></div></div><div class="mpcdf16-prog" role="progressbar" aria-label="COVID or pandemic (13 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="20.3" aria-valuetext="20%" style="--d:0.00s"><div class="mpcdf16-prog-m"><span class="mpcdf16-prog-l">COVID or pandemic (13 of 64)</span><span class="mpcdf16-prog-v" data-to="20" data-suf="%">20%</span></div><div class="mpcdf16-prog-t"><span class="mpcdf16-prog-f" style="width:20%"></span></div></div><div class="mpcdf16-prog" role="progressbar" aria-label="Contractor insolvency (9 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="14.1" aria-valuetext="14%" style="--d:0.06s"><div class="mpcdf16-prog-m"><span class="mpcdf16-prog-l">Contractor insolvency (9 of 64)</span><span class="mpcdf16-prog-v" data-to="14" data-suf="%">14%</span></div><div class="mpcdf16-prog-t"><span class="mpcdf16-prog-f" style="width:14%"></span></div></div><div class="mpcdf16-prog" role="progressbar" aria-label="Climate change (as a risk) (3 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="4.7" aria-valuetext="5%" style="--d:0.12s"><div class="mpcdf16-prog-m"><span class="mpcdf16-prog-l">Climate change (as a risk) (3 of 64)</span><span class="mpcdf16-prog-v" data-to="5" data-suf="%">5%</span></div><div class="mpcdf16-prog-t"><span class="mpcdf16-prog-f" style="width:5%"></span></div></div><div class="mpcdf16-prog" role="progressbar" aria-label="Cyber (0 of 64)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-valuetext="0%" style="--d:0.18s"><div class="mpcdf16-prog-m"><span class="mpcdf16-prog-l">Cyber (0 of 64)</span><span class="mpcdf16-prog-v" data-to="0" data-suf="%">0%</span></div><div class="mpcdf16-prog-t"><span class="mpcdf16-prog-f" style="width:0%"></span></div></div></div></div><p class="mpcdf16-cap">Figure 16: Share of registers mentioning each theme</p><p class="mpcdf16-src">Source: Mastt analysis of public project risk registers, 64 registers</p><p class="mpcdf16-src">Note: Themes were found by searching each register for set keywords, so a register counts if the words appear anywhere in it. In a hand check, 11 of 12 randomly chosen matches were real risk entries. The insolvency and climate counts were confirmed by reading each match.</p></div>
-<script>(function(){var root=document.getElementById('mastt-pcd-f16');if(!root||root.getAttribute('data-mpcdf16-on'))return;root.setAttribute('data-mpcdf16-on','1');
-var RM=!root.classList.contains('mpcdf16-js');
-var mxGen=0;
-var mxZero=function(el){if(!el.hasAttribute('data-final'))el.setAttribute('data-final',el.textContent);var dec=+(el.getAttribute('data-dec')||0);el.textContent=(el.getAttribute('data-pre')||'')+(0).toFixed(dec)+(el.getAttribute('data-suf')||'');};
-var mxCount=function(el,g){var to=parseFloat(el.getAttribute('data-to'));if(isNaN(to))return;var fin=el.getAttribute('data-final')||el.textContent,dec=+(el.getAttribute('data-dec')||0),pre=el.getAttribute('data-pre')||'',suf=el.getAttribute('data-suf')||'',f=new Intl.NumberFormat('en-US',{minimumFractionDigits:dec,maximumFractionDigits:dec}),t0=null,d=950;el.setAttribute('data-final',fin);var step=function(t){if(g!==mxGen)return;if(t0===null)t0=t;var p=Math.min(1,(t-t0)/d),e=1-Math.pow(1-p,3);el.textContent=pre+f.format(to*e)+suf;if(p<1)requestAnimationFrame(step);else el.textContent=fin;};requestAnimationFrame(step);};
-var mxIn=function(){if(root.classList.contains('mpcdf16-in'))return;mxGen++;var g=mxGen;root.classList.add('mpcdf16-in');root.querySelectorAll('[data-to]').forEach(function(el){mxCount(el,g);});};
-var mxOut=function(){if(!root.classList.contains('mpcdf16-in'))return;mxGen++;root.classList.remove('mpcdf16-in');root.querySelectorAll('[data-to]').forEach(mxZero);};
-if(RM||!('IntersectionObserver' in window)){root.classList.add('mpcdf16-in');}else{root.querySelectorAll('[data-to]').forEach(mxZero);var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting&&e.intersectionRatio>=.15){mxIn();}else if(!e.isIntersecting){mxOut();}});},{threshold:[0,.15]});io.observe(root);}
-root.querySelectorAll('.mpcdf16-tabs').forEach(function(box){var tabs=[].slice.call(box.querySelectorAll(':scope>.mpcdf16-tablist>.mpcdf16-tab')),panels=[].slice.call(box.querySelectorAll(':scope>.mpcdf16-panel'));var pick=function(v,focus){tabs.forEach(function(t){var on=t.getAttribute('data-v')===v;t.setAttribute('aria-selected',on?'true':'false');t.tabIndex=on?0:-1;if(on&&focus)t.focus();});panels.forEach(function(p){p.hidden=p.getAttribute('data-v')!==v;});box.dispatchEvent(new CustomEvent('mpcdf16-tab',{bubbles:true}));};tabs.forEach(function(t,i){t.addEventListener('click',function(){pick(t.getAttribute('data-v'));});t.addEventListener('keydown',function(e){var k=e.key,j=k==='ArrowRight'?i+1:k==='ArrowLeft'?i-1:-1;if(j<0&&k!=='ArrowLeft')return;e.preventDefault();var n=tabs[(j+tabs.length)%tabs.length];pick(n.getAttribute('data-v'),true);});});});
-var mxTip=function(host){var tip=host.querySelector(':scope>.mpcdf16-tip');if(!tip){tip=document.createElement('div');tip.className='mpcdf16-tip';tip.setAttribute('aria-hidden','true');host.appendChild(tip);}return{show:function(x,y,h){tip.innerHTML=h;tip.style.left=x+'px';tip.style.top=y+'px';tip.classList.add('mpcdf16-on');},hide:function(){tip.classList.remove('mpcdf16-on');}};};
-})();</script>
-</div>
-```
-
----
-
-## Step 43: Text block 20
+## Step 44: Text block 21
 
 Paste into the post body (Rich Text).
 
-### Climate change is rarely treated as a risk, and cyber risk is never mentioned
+- 9 of the 64 registers, 14%, mention a contractor or subcontractor going insolvent.
+- Only 3 of the 18 Australian registers dated 2022 or later do, and seven of those 18 come from one network company.
+- Where a fix is given, it is usually a financial check of the contractor at tender.
+- Climate change is mentioned in six registers, but only three treat it as a risk to the project. None of the 64 mention cyber risk, and 13 still mention COVID or pandemics.
 
- Searching the same registers for other risks shows how rarely some appear:
-
- - **Climate change:** Mentioned in six registers, but in only three as a risk to the project. In the other three it appears in a definitions legend or as the project's own emissions.
-- **Cyber risk:** None of the 64 registers mention it.
-- **COVID or pandemics:** About one in five, 13 of 64, still mention them.
+ Contractor failure is a known issue in Australian public work. A Senate inquiry into insolvency in the construction industry [reported on 3 December 2015](https://www.aph.gov.au/Parliamentary_Business/Committees/Senate/Economics/Insolvency_construction/Report), and much of the evidence it received, particularly on security of payment and market power, was critical of the large companies at the top of the contracting chain.
 
  **What this means for project teams:** Put contractor insolvency in the register, with a trigger to recheck the contractor's finances during the job, not only at tender. For assets that will be in service for decades, put climate risk in the project register where the team will see it.
 
@@ -1595,9 +1468,9 @@ Paste into the post body (Rich Text).
 
 ---
 
-## Step 44: Embed 24, FAQs (accordion)
+## Step 45: Embed 24, FAQs (accordion)
 
-File: `44-mastt-pcd-faq-faqs-accordion.html`. Add an HTML Embed here, directly under the text above, and paste this (18,663 characters).
+File: `45-mastt-pcd-faq-faqs-accordion.html`. Add an HTML Embed here, directly under the text above, and paste this (18,663 characters).
 
 ```html
 <div id="mastt-pcd-faq" class="mpcdfaq">
@@ -1623,7 +1496,7 @@ root.querySelectorAll('.mpcdfaq-acc').forEach(function(acc){var items=[].slice.c
 
 ---
 
-## Step 45: Text block 21
+## Step 46: Text block 22
 
 Paste into the post body (Rich Text).
 
